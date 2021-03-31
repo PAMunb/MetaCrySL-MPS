@@ -1,4 +1,4 @@
-# MetaCrySL
+# MetaCrySL-MPS
 
 MPS-based MetaCrySL language. The original MetaCrySL implementation was developed in Rascal. This one aims to implement the refinements feature from MetaCrySL but using a XText approach.
 
