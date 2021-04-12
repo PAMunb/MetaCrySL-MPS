@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="NewLanguage.generator.Generator">
+  <dependency className="MetaCrySL.Generator">
     <classNode dependClassName="MetaCrySL.templates.QueriesGenerated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Arrays" />

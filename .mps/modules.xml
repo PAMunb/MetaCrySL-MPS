@@ -3,6 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/MetaCrySL/MetaCrySL.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/NewSolution/NewSolution.msd" folder="" />
     </projectModules>
   </component>
 </project>
