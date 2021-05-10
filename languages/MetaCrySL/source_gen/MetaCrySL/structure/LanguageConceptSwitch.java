@@ -9,18 +9,34 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int IModelContent = 0;
-  public static final int Model = 1;
-  public static final int ObjectSpec = 2;
-  public static final int QualifiedName = 3;
-  public static final int Spec = 4;
+  public static final int BaseSpecType = 0;
+  public static final int EventAggregate = 1;
+  public static final int EventMethod = 2;
+  public static final int EventSpec = 3;
+  public static final int IEventSpecContent = 4;
+  public static final int IModelContent = 5;
+  public static final int IObjectsContent = 6;
+  public static final int IOrderSpecContent = 7;
+  public static final int Model = 8;
+  public static final int Object = 9;
+  public static final int ObjectSpec = 10;
+  public static final int OrderSpec = 11;
+  public static final int Spec = 12;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL);
+    builder.put(0x379a88c795f4e8bdL, BaseSpecType);
+    builder.put(0x2cacad8f8a455d07L, EventAggregate);
+    builder.put(0x2cacad8f8a455d04L, EventMethod);
+    builder.put(0x77537c9aa486c1ffL, EventSpec);
+    builder.put(0x77537c9aa486c209L, IEventSpecContent);
     builder.put(0x497367acd53b7e3cL, IModelContent);
+    builder.put(0x497367acd53be40fL, IObjectsContent);
+    builder.put(0x77537c9aa48770b3L, IOrderSpecContent);
     builder.put(0x379a88c795f4c97eL, Model);
+    builder.put(0x6fe8a826085f2877L, Object);
     builder.put(0x497367acd53b99c1L, ObjectSpec);
-    builder.put(0x379a88c795f4e8bdL, QualifiedName);
+    builder.put(0x77537c9aa48770aeL, OrderSpec);
     builder.put(0x3063bd30217d1129L, Spec);
     myIndex = builder.seal();
   }

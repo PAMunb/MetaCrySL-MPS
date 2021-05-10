@@ -4,24 +4,28 @@ package MetaCrySL.structure;
 
 import jetbrains.mps.smodel.runtime.BaseStructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptDescriptor;
-import jetbrains.mps.smodel.runtime.ConstrainedStringDatatypeDescriptor;
-import jetbrains.mps.smodel.runtime.ConstrainedStringDatatypeDescriptorImpl;
 import java.util.Collection;
 import java.util.Arrays;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.adapter.ids.SConceptId;
-import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptBaseSpecType = createDescriptorForBaseSpecType();
+  /*package*/ final ConceptDescriptor myConceptEventAggregate = createDescriptorForEventAggregate();
+  /*package*/ final ConceptDescriptor myConceptEventMethod = createDescriptorForEventMethod();
+  /*package*/ final ConceptDescriptor myConceptEventSpec = createDescriptorForEventSpec();
+  /*package*/ final ConceptDescriptor myConceptIEventSpecContent = createDescriptorForIEventSpecContent();
   /*package*/ final ConceptDescriptor myConceptIModelContent = createDescriptorForIModelContent();
+  /*package*/ final ConceptDescriptor myConceptIObjectsContent = createDescriptorForIObjectsContent();
+  /*package*/ final ConceptDescriptor myConceptIOrderSpecContent = createDescriptorForIOrderSpecContent();
   /*package*/ final ConceptDescriptor myConceptModel = createDescriptorForModel();
+  /*package*/ final ConceptDescriptor myConceptObject = createDescriptorForObject();
   /*package*/ final ConceptDescriptor myConceptObjectSpec = createDescriptorForObjectSpec();
-  /*package*/ final ConceptDescriptor myConceptQualifiedName = createDescriptorForQualifiedName();
+  /*package*/ final ConceptDescriptor myConceptOrderSpec = createDescriptorForOrderSpec();
   /*package*/ final ConceptDescriptor myConceptSpec = createDescriptorForSpec();
-  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeJavaName = new ConstrainedStringDatatypeDescriptorImpl(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4e93bL, "JavaName", "r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4006665209295202619", "^[a-z][a-z0-9_]*(\\.[a-z0-9_]+)+$");
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -36,21 +40,37 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptIModelContent, myConceptModel, myConceptObjectSpec, myConceptQualifiedName, myConceptSpec);
+    return Arrays.asList(myConceptBaseSpecType, myConceptEventAggregate, myConceptEventMethod, myConceptEventSpec, myConceptIEventSpecContent, myConceptIModelContent, myConceptIObjectsContent, myConceptIOrderSpecContent, myConceptModel, myConceptObject, myConceptObjectSpec, myConceptOrderSpec, myConceptSpec);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.BaseSpecType:
+        return myConceptBaseSpecType;
+      case LanguageConceptSwitch.EventAggregate:
+        return myConceptEventAggregate;
+      case LanguageConceptSwitch.EventMethod:
+        return myConceptEventMethod;
+      case LanguageConceptSwitch.EventSpec:
+        return myConceptEventSpec;
+      case LanguageConceptSwitch.IEventSpecContent:
+        return myConceptIEventSpecContent;
       case LanguageConceptSwitch.IModelContent:
         return myConceptIModelContent;
+      case LanguageConceptSwitch.IObjectsContent:
+        return myConceptIObjectsContent;
+      case LanguageConceptSwitch.IOrderSpecContent:
+        return myConceptIOrderSpecContent;
       case LanguageConceptSwitch.Model:
         return myConceptModel;
+      case LanguageConceptSwitch.Object:
+        return myConceptObject;
       case LanguageConceptSwitch.ObjectSpec:
         return myConceptObjectSpec;
-      case LanguageConceptSwitch.QualifiedName:
-        return myConceptQualifiedName;
+      case LanguageConceptSwitch.OrderSpec:
+        return myConceptOrderSpec;
       case LanguageConceptSwitch.Spec:
         return myConceptSpec;
       default:
@@ -58,19 +78,76 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     }
   }
 
-  @Override
-  public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myCSDatatypeJavaName);
-  }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
     return myIndexSwitch.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForBaseSpecType() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "BaseSpecType", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4e8bdL);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4006665209295202493");
+    b.version(2);
+    b.alias("JavaQualifiedName");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForEventAggregate() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "EventAggregate", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x2cacad8f8a455d07L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c209L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3219138665674792199");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForEventMethod() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "EventMethod", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x2cacad8f8a455d04L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c209L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3219138665674792196");
+    b.version(2);
+    b.alias("EventMethod");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForEventSpec() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "EventSpec", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c1ffL);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53b7e3cL);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/8598353117207511551");
+    b.version(2);
+    b.aggregate("content", 0x77537c9aa486c226L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c209L).optional(true).ordered(true).multiple(true).origin("8598353117207511590").done();
+    b.alias("EVENTS");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForIEventSpecContent() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "IEventSpecContent", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c209L);
+    b.interface_();
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/8598353117207511561");
+    b.version(2);
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForIModelContent() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "IModelContent", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53b7e3cL);
     b.interface_();
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5292687979099946556");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForIObjectsContent() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "IObjectsContent", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53be40fL);
+    b.interface_();
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5292687979099972623");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForIOrderSpecContent() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "IOrderSpecContent", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa48770b3L);
+    b.interface_();
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/8598353117207556275");
     b.version(2);
     return b.create();
   }
@@ -83,22 +160,34 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("Model");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForObject() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "Object", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x6fe8a826085f2877L);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53be40fL);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/8063880014109550711");
+    b.version(2);
+    b.property("name", 0x6fe8a826085f287eL).type(PrimitiveTypeId.STRING).origin("8063880014109550718").done();
+    b.aggregate("objectType", 0x6fe8a826085f2880L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4e8bdL).optional(false).ordered(true).multiple(false).origin("8063880014109550720").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForObjectSpec() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "ObjectSpec", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53b99c1L);
     b.class_(false, false, false);
     b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53b7e3cL);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5292687979099953601");
     b.version(2);
+    b.aggregate("contents", 0x497367acd53be42aL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53be40fL).optional(true).ordered(true).multiple(true).origin("5292687979099972650").done();
     b.alias("OBJECTS");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForQualifiedName() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "QualifiedName", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4e8bdL);
+  private static ConceptDescriptor createDescriptorForOrderSpec() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "OrderSpec", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa48770aeL);
     b.class_(false, false, false);
-    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4006665209295202493");
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53b7e3cL);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/8598353117207556270");
     b.version(2);
-    b.property("name", 0x379a88c795f4e8eaL).type(PrimitiveTypeId.STRING).origin("4006665209295202538").done();
-    b.alias("JavaQualifiedName");
+    b.aggregate("content", 0x77537c9aa48770b1L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa48770b3L).optional(true).ordered(true).multiple(true).origin("8598353117207556273").done();
+    b.alias("ORDER");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSpec() {
@@ -108,7 +197,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3486838550932820265");
     b.version(2);
+    b.property("ABSTRACT", 0x497367acd53c2433L).type(PrimitiveTypeId.BOOLEAN).origin("5292687979099989043").done();
     b.aggregate("classType", 0x379a88c795f4e8c2L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4e8bdL).optional(false).ordered(true).multiple(false).origin("4006665209295202498").done();
+    b.aggregate("objects", 0x77537c9aa4898d17L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53b99c1L).optional(false).ordered(true).multiple(false).origin("8598353117207694615").done();
+    b.aggregate("events", 0x77537c9aa4898d1bL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c1ffL).optional(false).ordered(true).multiple(false).origin("8598353117207694619").done();
+    b.aggregate("order", 0x77537c9aa4898d20L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa48770aeL).optional(true).ordered(true).multiple(true).origin("8598353117207694624").done();
     b.aggregate("content", 0x497367acd53b7e40L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53b7e3cL).optional(true).ordered(true).multiple(true).origin("5292687979099946560").done();
     b.alias("SPEC");
     return b.create();

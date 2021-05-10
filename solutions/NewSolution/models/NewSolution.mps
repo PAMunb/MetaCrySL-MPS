@@ -9,21 +9,48 @@
     <import index="qgj4" ref="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)" />
   </imports>
   <registry>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
     <language id="fbc67e5c-fd70-43b1-b837-3c3551c2500b" name="MetaCrySL">
       <concept id="3486838550932820265" name="MetaCrySL.structure.Spec" flags="ng" index="h7EKp">
-        <child id="5292687979099946560" name="content" index="2si1BG" />
+        <property id="5292687979099989043" name="ABSTRACT" index="2sjOev" />
         <child id="4006665209295202498" name="classType" index="2yrA05" />
+        <child id="8598353117207694619" name="events" index="3jQJ61" />
+        <child id="8598353117207694615" name="objects" index="3jQJ6d" />
       </concept>
-      <concept id="5292687979099953601" name="MetaCrySL.structure.ObjectSpec" flags="ng" index="2sifTH" />
-      <concept id="4006665209295202493" name="MetaCrySL.structure.QualifiedName" flags="ng" index="2yrA1U">
-        <property id="4006665209295202538" name="name" index="2yrA0H" />
+      <concept id="5292687979099953601" name="MetaCrySL.structure.ObjectSpec" flags="ng" index="2sifTH">
+        <child id="5292687979099972650" name="contents" index="2si8e6" />
+      </concept>
+      <concept id="4006665209295202493" name="MetaCrySL.structure.BaseSpecType" flags="ng" index="2yrA1U" />
+      <concept id="8598353117207511551" name="MetaCrySL.structure.EventSpec" flags="ng" index="3jPrP_">
+        <child id="8598353117207511590" name="content" index="3jPrUW" />
+      </concept>
+      <concept id="8598353117207511561" name="MetaCrySL.structure.IEventSpecContent" flags="ng" index="3jPrUj" />
+      <concept id="8063880014109550711" name="MetaCrySL.structure.Object" flags="ng" index="1BHS1h">
+        <property id="8063880014109550718" name="name" index="1BHS1o" />
+        <child id="8063880014109550720" name="objectType" index="1BHS2A" />
       </concept>
     </language>
   </registry>
-  <node concept="h7EKp" id="3uqyculXCWd">
-    <node concept="2sifTH" id="4_NpUNleULw" role="2si1BG" />
-    <node concept="2yrA1U" id="3uqyculXCWf" role="2yrA05">
-      <property role="2yrA0H" value="java.core.String" />
+  <node concept="h7EKp" id="7SIMDerEHiv">
+    <property role="TrG5h" value="BasicSpec" />
+    <property role="2sjOev" value="false" />
+    <node concept="2yrA1U" id="3$gvgVqO5SR" role="2yrA05">
+      <property role="TrG5h" value="asas" />
+    </node>
+    <node concept="2sifTH" id="6ZCE2o8oyAJ" role="3jQJ6d">
+      <node concept="1BHS1h" id="6ZCE2o8oJOS" role="2si8e6">
+        <property role="1BHS1o" value="foo" />
+        <node concept="2yrA1U" id="6ZCE2o8oJOT" role="1BHS2A">
+          <property role="TrG5h" value="java.core.String" />
+        </node>
+      </node>
+    </node>
+    <node concept="3jPrP_" id="2MGFoYahlO0" role="3jQJ61">
+      <node concept="3jPrUj" id="2MGFoYahlO2" role="3jPrUW" />
     </node>
   </node>
 </model>

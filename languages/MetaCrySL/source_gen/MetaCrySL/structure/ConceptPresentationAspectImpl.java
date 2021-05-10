@@ -9,10 +9,18 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_BaseSpecType;
+  private ConceptPresentation props_EventAggregate;
+  private ConceptPresentation props_EventMethod;
+  private ConceptPresentation props_EventSpec;
+  private ConceptPresentation props_IEventSpecContent;
   private ConceptPresentation props_IModelContent;
+  private ConceptPresentation props_IObjectsContent;
+  private ConceptPresentation props_IOrderSpecContent;
   private ConceptPresentation props_Model;
+  private ConceptPresentation props_Object;
   private ConceptPresentation props_ObjectSpec;
-  private ConceptPresentation props_QualifiedName;
+  private ConceptPresentation props_OrderSpec;
   private ConceptPresentation props_Spec;
 
   @Override
@@ -20,32 +28,88 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.BaseSpecType:
+        if (props_BaseSpecType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_BaseSpecType = cpb.create();
+        }
+        return props_BaseSpecType;
+      case LanguageConceptSwitch.EventAggregate:
+        if (props_EventAggregate == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_EventAggregate = cpb.create();
+        }
+        return props_EventAggregate;
+      case LanguageConceptSwitch.EventMethod:
+        if (props_EventMethod == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_EventMethod = cpb.create();
+        }
+        return props_EventMethod;
+      case LanguageConceptSwitch.EventSpec:
+        if (props_EventSpec == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("This rule defines the EVENTS session");
+          cpb.presentationByName();
+          props_EventSpec = cpb.create();
+        }
+        return props_EventSpec;
+      case LanguageConceptSwitch.IEventSpecContent:
+        if (props_IEventSpecContent == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IEventSpecContent = cpb.create();
+        }
+        return props_IEventSpecContent;
       case LanguageConceptSwitch.IModelContent:
         if (props_IModelContent == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           props_IModelContent = cpb.create();
         }
         return props_IModelContent;
+      case LanguageConceptSwitch.IObjectsContent:
+        if (props_IObjectsContent == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IObjectsContent = cpb.create();
+        }
+        return props_IObjectsContent;
+      case LanguageConceptSwitch.IOrderSpecContent:
+        if (props_IOrderSpecContent == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IOrderSpecContent = cpb.create();
+        }
+        return props_IOrderSpecContent;
       case LanguageConceptSwitch.Model:
         if (props_Model == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           props_Model = cpb.create();
         }
         return props_Model;
+      case LanguageConceptSwitch.Object:
+        if (props_Object == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Object");
+          props_Object = cpb.create();
+        }
+        return props_Object;
       case LanguageConceptSwitch.ObjectSpec:
         if (props_ObjectSpec == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("It corresponds to the declaration of the variables (names) used throughout the specification.");
           cpb.rawPresentation("OBJECTS");
           props_ObjectSpec = cpb.create();
         }
         return props_ObjectSpec;
-      case LanguageConceptSwitch.QualifiedName:
-        if (props_QualifiedName == null) {
+      case LanguageConceptSwitch.OrderSpec:
+        if (props_OrderSpec == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("JavaQualifiedName");
-          props_QualifiedName = cpb.create();
+          cpb.shortDesc("Uses a regular expression on the labeled events");
+          cpb.rawPresentation("ORDER");
+          props_OrderSpec = cpb.create();
         }
-        return props_QualifiedName;
+        return props_OrderSpec;
       case LanguageConceptSwitch.Spec:
         if (props_Spec == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
