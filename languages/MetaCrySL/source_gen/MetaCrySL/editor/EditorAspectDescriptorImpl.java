@@ -78,22 +78,24 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 3:
         return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_EventSpec());
       case 4:
-        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_IEventSpecContent());
+        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_Generic());
       case 5:
-        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_IModelContent());
+        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_IEventSpecContent());
       case 6:
-        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_IObjectsContent());
+        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_IModelContent());
       case 7:
-        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_IOrderSpecContent());
+        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_IObjectsContent());
       case 8:
-        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_Model());
+        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_IOrderSpecContent());
       case 9:
-        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_Object());
+        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_Model());
       case 10:
-        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_ObjectSpec());
+        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_Object());
       case 11:
-        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_OrderSpec());
+        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_ObjectSpec());
       case 12:
+        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_OrderSpec());
+      case 13:
         return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_Spec());
       default:
     }
@@ -103,5 +105,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
   private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4e8bdL), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c1ffL), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x6fe8a826085f2877L), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53b99c1L), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa48770aeL), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3063bd30217d1129L)).seal();
   private static final ConceptSwitchIndex conceptIndex1 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).seal();
   private static final ConceptSwitchIndex conceptIndex2 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).seal();
-  private static final ConceptSwitchIndex conceptIndex3 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4e8bdL), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x2cacad8f8a455d07L), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x2cacad8f8a455d04L), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c1ffL), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c209L), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53b7e3cL), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53be40fL), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa48770b3L), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4c97eL), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x6fe8a826085f2877L), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53b99c1L), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa48770aeL), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3063bd30217d1129L)).seal();
+  private static final ConceptSwitchIndex conceptIndex3 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4e8bdL), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x2cacad8f8a455d07L), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x2cacad8f8a455d04L), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c1ffL), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x5e5e66f7ea78d0e2L), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c209L), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53b7e3cL), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53be40fL), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa48770b3L), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4c97eL), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x6fe8a826085f2877L), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53b99c1L), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa48770aeL), MetaIdFactory.conceptId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3063bd30217d1129L)).seal();
 }

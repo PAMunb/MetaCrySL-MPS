@@ -1,8 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="7,0,11,0" name="MetaCrySL.typesystem.TypesystemDescriptor" />
+      <unit at="8,0,16,0" name="MetaCrySL.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:37cf7c21-7aff-495e-a21a-92ea40fa25ca(MetaCrySL.typesystem)/8506987720446468055">
+    <file name="TypesystemDescriptor.java">
+      <node id="8506987720446468055" at="10,5,11,95" concept="4" />
+      <node id="8506987720446468055" at="11,95,12,55" concept="2" />
+      <node id="8506987720446468055" at="9,33,13,5" concept="0" />
+      <scope id="8506987720446468055" at="10,5,12,55">
+        <var name="nonTypesystemRule" id="8506987720446468055" />
+      </scope>
+    </file>
+    <file name="check_BaseSpecType_NonTypesystemRule.java">
+      <node id="8506987720446468055" at="19,50,20,36" concept="5" />
+      <node id="8506987720446468055" at="22,68,23,102" concept="5" />
+      <node id="8506987720446468055" at="25,30,26,17" concept="5" />
+      <node id="8506987720446468055" at="30,0,31,0" concept="6" trace="BaseSpecType$VN" />
+      <node id="8506987720446468055" at="15,0,17,0" concept="1" trace="check_BaseSpecType_NonTypesystemRule#()V" />
+      <node id="8506987720446468055" at="17,0,19,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <node id="8506987720446468055" at="19,0,22,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8506987720446468055" at="22,0,25,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="8506987720446468055" at="25,0,28,0" concept="3" trace="overrides#()Z" />
+      <scope id="8506987720446468055" at="15,49,15,49" />
+      <scope id="8506987720446468056" at="17,125,17,125" />
+      <scope id="8506987720446468055" at="19,50,20,36" />
+      <scope id="8506987720446468055" at="22,68,23,102" />
+      <scope id="8506987720446468055" at="25,30,26,17" />
+      <scope id="8506987720446468055" at="15,0,17,0" />
+      <scope id="8506987720446468055" at="17,0,19,0">
+        <var name="baseSpecType" id="8506987720446468055" />
+        <var name="status" id="8506987720446468055" />
+        <var name="typeCheckingContext" id="8506987720446468055" />
+      </scope>
+      <scope id="8506987720446468055" at="19,0,22,0" />
+      <scope id="8506987720446468055" at="22,0,25,0">
+        <var name="argument" id="8506987720446468055" />
+      </scope>
+      <scope id="8506987720446468055" at="25,0,28,0" />
+      <unit id="8506987720446468055" at="29,0,32,0" name="MetaCrySL.typesystem.check_BaseSpecType_NonTypesystemRule$CONCEPTS" />
+      <unit id="8506987720446468055" at="14,0,33,0" name="MetaCrySL.typesystem.check_BaseSpecType_NonTypesystemRule" />
     </file>
   </root>
 </debug-info>

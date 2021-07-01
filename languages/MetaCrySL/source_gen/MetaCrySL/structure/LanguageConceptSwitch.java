@@ -13,15 +13,16 @@ public final class LanguageConceptSwitch {
   public static final int EventAggregate = 1;
   public static final int EventMethod = 2;
   public static final int EventSpec = 3;
-  public static final int IEventSpecContent = 4;
-  public static final int IModelContent = 5;
-  public static final int IObjectsContent = 6;
-  public static final int IOrderSpecContent = 7;
-  public static final int Model = 8;
-  public static final int Object = 9;
-  public static final int ObjectSpec = 10;
-  public static final int OrderSpec = 11;
-  public static final int Spec = 12;
+  public static final int Generic = 4;
+  public static final int IEventSpecContent = 5;
+  public static final int IModelContent = 6;
+  public static final int IObjectsContent = 7;
+  public static final int IOrderSpecContent = 8;
+  public static final int Model = 9;
+  public static final int Object = 10;
+  public static final int ObjectSpec = 11;
+  public static final int OrderSpec = 12;
+  public static final int Spec = 13;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL);
@@ -29,6 +30,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x2cacad8f8a455d07L, EventAggregate);
     builder.put(0x2cacad8f8a455d04L, EventMethod);
     builder.put(0x77537c9aa486c1ffL, EventSpec);
+    builder.put(0x5e5e66f7ea78d0e2L, Generic);
     builder.put(0x77537c9aa486c209L, IEventSpecContent);
     builder.put(0x497367acd53b7e3cL, IModelContent);
     builder.put(0x497367acd53be40fL, IObjectsContent);

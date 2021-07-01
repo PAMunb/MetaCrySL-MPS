@@ -62,27 +62,6 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4_NpUNleTB1" resolve="ObjectSpec" />
     </node>
-    <node concept="1TJgyj" id="7tjv9E$yoOr" role="1TKVEi">
-      <property role="IQ2ns" value="8598353117207694619" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="events" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="7tjv9E$xG7Z" resolve="EventSpec" />
-    </node>
-    <node concept="1TJgyj" id="7tjv9E$yoOw" role="1TKVEi">
-      <property role="IQ2ns" value="8598353117207694624" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="order" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="7tjv9E$xR2I" resolve="OrderSpec" />
-    </node>
-    <node concept="1TJgyj" id="4_NpUNleRT0" role="1TKVEi">
-      <property role="IQ2ns" value="5292687979099946560" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="content" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="4_NpUNleRSW" resolve="IModelContent" />
-    </node>
     <node concept="PrWs8" id="4_NpUNleNN7" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

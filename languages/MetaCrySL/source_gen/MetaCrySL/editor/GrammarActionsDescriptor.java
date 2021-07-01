@@ -30,7 +30,6 @@ import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
 import com.mbeddr.mpsutil.grammarcells.runtime.IFlagModelAccess;
 import com.mbeddr.mpsutil.grammarcells.runtime.Parser;
 import java.util.Objects;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.mpsutil.grammarcells.runtime.StringOrSequenceQuery;
 import com.mbeddr.mpsutil.grammarcells.runtime.MultiTextActionItem;
 import org.jetbrains.annotations.NotNull;
@@ -45,7 +44,6 @@ import org.jetbrains.mps.openapi.model.SModel;
 import java.util.Set;
 import org.jetbrains.mps.openapi.language.SLanguage;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import org.jetbrains.mps.openapi.language.SProperty;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 
@@ -146,16 +144,16 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
         }));
         ListSequence.fromList(redirectedAfter).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from(new Object() {
           public TransformationMenuContext redirect() {
-            // redirect to classType 
+            // redirect to classType
             final SNode sourceNode = _context.getNode();
 
-            // Use the grammar rules for a deep search 
+            // Use the grammar rules for a deep search
             SNode parentNode = new Parser(_context.getModel()).isEndOf(sourceNode, _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.Spec$$M, LINKS.classType$xK7l);
             if (parentNode != null) {
               return _context.withNode(parentNode);
             }
 
-            // There might be no grammar for some concepts. Try a single level check. 
+            // There might be no grammar for some concepts. Try a single level check.
             if (SNodeOperations.isInstanceOf(sourceNode, CONCEPTS.BaseSpecType$VN) && SNodeOperations.isInstanceOf(SNodeOperations.getParent(sourceNode), CONCEPTS.Spec$$M) && Objects.equals(sourceNode.getContainmentLink(), LINKS.classType$xK7l) && (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) == false) {
               TransformationMenuContext parentContext = _context.withNode(_context.getNode().getParent());
               return parentContext;
@@ -171,41 +169,19 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
         }));
         ListSequence.fromList(redirectedAfter).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from(new Object() {
           public TransformationMenuContext redirect() {
-            // redirect to objects 
+            // redirect to objects
             final SNode sourceNode = _context.getNode();
 
-            // Use the grammar rules for a deep search 
+            // Use the grammar rules for a deep search
             SNode parentNode = new Parser(_context.getModel()).isEndOf(sourceNode, _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.Spec$$M, LINKS.objects$gW0K);
             if (parentNode != null) {
               return _context.withNode(parentNode);
             }
 
-            // There might be no grammar for some concepts. Try a single level check. 
+            // There might be no grammar for some concepts. Try a single level check.
             if (SNodeOperations.isInstanceOf(sourceNode, CONCEPTS.ObjectSpec$wv) && SNodeOperations.isInstanceOf(SNodeOperations.getParent(sourceNode), CONCEPTS.Spec$$M) && Objects.equals(sourceNode.getContainmentLink(), LINKS.objects$gW0K) && (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) == false) {
               TransformationMenuContext parentContext = _context.withNode(_context.getNode().getParent());
               return parentContext;
-            }
-
-            return null;
-          }
-        }.redirect(), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
-          public Boolean invoke(TransformationMenuContext parentContext) {
-            final SNode sourceNode = parentContext.getNode();
-            return true;
-          }
-        }));
-        ListSequence.fromList(redirectedAfter).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from(new Object() {
-          public TransformationMenuContext redirect() {
-            // redirect to content 
-            final SNode listElement = GrammarCellsUtil.getListElementForSideTransformation(_context.getNode(), LINKS.content$wOzS, CONCEPTS.Spec$$M, CONCEPTS.IModelContent$k4, _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM);
-            if (listElement != null && (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) == false) {
-              List<SNode> allChildren = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(listElement), CONCEPTS.Spec$$M), LINKS.content$wOzS);
-              SNode allowedChild = null;
-              allowedChild = ListSequence.fromList(allChildren).first();
-              if (listElement == allowedChild) {
-                TransformationMenuContext parentContext = _context.withNode(SNodeOperations.getParent(listElement));
-                return parentContext;
-              }
             }
 
             return null;
@@ -329,7 +305,6 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
     /*package*/ static final SConcept Spec$$M = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3063bd30217d1129L, "MetaCrySL.structure.Spec");
     /*package*/ static final SConcept BaseSpecType$VN = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4e8bdL, "MetaCrySL.structure.BaseSpecType");
     /*package*/ static final SConcept ObjectSpec$wv = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53b99c1L, "MetaCrySL.structure.ObjectSpec");
-    /*package*/ static final SInterfaceConcept IModelContent$k4 = MetaAdapterFactory.getInterfaceConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53b7e3cL, "MetaCrySL.structure.IModelContent");
   }
 
   private static final class PROPS {
@@ -339,6 +314,5 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
   private static final class LINKS {
     /*package*/ static final SContainmentLink classType$xK7l = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3063bd30217d1129L, 0x379a88c795f4e8c2L, "classType");
     /*package*/ static final SContainmentLink objects$gW0K = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3063bd30217d1129L, 0x77537c9aa4898d17L, "objects");
-    /*package*/ static final SContainmentLink content$wOzS = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3063bd30217d1129L, 0x497367acd53b7e40L, "content");
   }
 }

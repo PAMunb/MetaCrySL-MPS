@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:e7c3d8a0-81c9-461d-beb8-e06fd01a34f1(Sandbox.metacrysl@tests)/4140086963698241300">
+    <file name="InvalidNameTestCase_Test.java">
+      <node id="4140086963698241300" at="21,37,22,25" concept="3" />
+      <node id="4140086963698241300" at="28,52,29,19" concept="3" />
+      <node id="4140086963698241300" at="16,0,18,0" concept="2" trace="ourParamCache" />
+      <node id="4140086963698241300" at="18,0,20,0" concept="1" trace="myWithCommandRule" />
+      <node id="4140086963698241300" at="21,0,24,0" concept="0" trace="InvalidNameTestCase_Test#()V" />
+      <node id="4140086963698241300" at="28,0,31,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <scope id="4140086963698241300" at="21,37,22,25" />
+      <scope id="4140086963698241300" at="28,52,29,19" />
+      <scope id="4140086963698241300" at="21,0,24,0" />
+      <scope id="4140086963698241300" at="28,0,31,0">
+        <var name="owner" id="4140086963698241300" />
+      </scope>
+      <unit id="4140086963698241300" at="26,0,34,0" name="Sandbox.metacrysl.InvalidNameTestCase_Test$TestBody" />
+      <unit id="4140086963698241300" at="14,0,35,0" name="Sandbox.metacrysl.InvalidNameTestCase_Test" />
+    </file>
+  </root>
+</debug-info>
+

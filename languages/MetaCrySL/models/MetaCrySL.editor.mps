@@ -85,20 +85,12 @@
           <ref role="1NtTu8" to="qgj4:7tjv9E$yoOn" resolve="objects" />
         </node>
       </node>
-      <node concept="3EZMnI" id="4_NpUNlf0VD" role="3EZMnx">
-        <node concept="VPM3Z" id="4_NpUNlf0VF" role="3F10Kt" />
-        <node concept="3F2HdR" id="4_NpUNlf0VR" role="3EZMnx">
-          <ref role="1NtTu8" to="qgj4:4_NpUNleRT0" resolve="content" />
-          <node concept="2iRfu4" id="4_NpUNlf0VT" role="2czzBx" />
-        </node>
-        <node concept="2iRfu4" id="4_NpUNlf0VI" role="2iSdaV" />
-      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3uqyculXeA5">
     <ref role="1XX52x" to="qgj4:3uqyculXeyX" resolve="BaseSpecType" />
     <node concept="3F0A7n" id="2MGFoYaeVSt" role="2wV5jI">
-      <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <ref role="1NtTu8" to="qgj4:uaUHXxGedh" resolve="name" />
     </node>
   </node>
   <node concept="24kQdi" id="4_NpUNleYh6">

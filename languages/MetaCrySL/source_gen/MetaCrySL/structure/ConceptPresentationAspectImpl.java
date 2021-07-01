@@ -13,6 +13,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_EventAggregate;
   private ConceptPresentation props_EventMethod;
   private ConceptPresentation props_EventSpec;
+  private ConceptPresentation props_Generic;
   private ConceptPresentation props_IEventSpecContent;
   private ConceptPresentation props_IModelContent;
   private ConceptPresentation props_IObjectsContent;
@@ -31,7 +32,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.BaseSpecType:
         if (props_BaseSpecType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("JavaQualifiedName");
           props_BaseSpecType = cpb.create();
         }
         return props_BaseSpecType;
@@ -57,6 +58,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_EventSpec = cpb.create();
         }
         return props_EventSpec;
+      case LanguageConceptSwitch.Generic:
+        if (props_Generic == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Generic = cpb.create();
+        }
+        return props_Generic;
       case LanguageConceptSwitch.IEventSpecContent:
         if (props_IEventSpecContent == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
