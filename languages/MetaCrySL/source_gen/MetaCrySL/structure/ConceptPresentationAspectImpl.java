@@ -10,18 +10,27 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_BaseSpecType;
+  private ConceptPresentation props_ConstraintSpec;
+  private ConceptPresentation props_EnsuresSpec;
   private ConceptPresentation props_EventAggregate;
   private ConceptPresentation props_EventMethod;
   private ConceptPresentation props_EventSpec;
+  private ConceptPresentation props_ForbiddenSpec;
   private ConceptPresentation props_Generic;
   private ConceptPresentation props_IEventSpecContent;
   private ConceptPresentation props_IModelContent;
   private ConceptPresentation props_IObjectsContent;
   private ConceptPresentation props_IOrderSpecContent;
+  private ConceptPresentation props_JavaQualifiedName;
   private ConceptPresentation props_Model;
+  private ConceptPresentation props_NegatesSpec;
   private ConceptPresentation props_Object;
   private ConceptPresentation props_ObjectSpec;
+  private ConceptPresentation props_ObjectTypeParam;
   private ConceptPresentation props_OrderSpec;
+  private ConceptPresentation props_ParameterizedType;
+  private ConceptPresentation props_RequiresSpec;
+  private ConceptPresentation props_SimpleType;
   private ConceptPresentation props_Spec;
 
   @Override
@@ -32,10 +41,23 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.BaseSpecType:
         if (props_BaseSpecType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("JavaQualifiedName");
           props_BaseSpecType = cpb.create();
         }
         return props_BaseSpecType;
+      case LanguageConceptSwitch.ConstraintSpec:
+        if (props_ConstraintSpec == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ConstraintSpec");
+          props_ConstraintSpec = cpb.create();
+        }
+        return props_ConstraintSpec;
+      case LanguageConceptSwitch.EnsuresSpec:
+        if (props_EnsuresSpec == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("EnsuresSpec");
+          props_EnsuresSpec = cpb.create();
+        }
+        return props_EnsuresSpec;
       case LanguageConceptSwitch.EventAggregate:
         if (props_EventAggregate == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -58,6 +80,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_EventSpec = cpb.create();
         }
         return props_EventSpec;
+      case LanguageConceptSwitch.ForbiddenSpec:
+        if (props_ForbiddenSpec == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ForbiddenSpec");
+          props_ForbiddenSpec = cpb.create();
+        }
+        return props_ForbiddenSpec;
       case LanguageConceptSwitch.Generic:
         if (props_Generic == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -89,12 +118,26 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IOrderSpecContent = cpb.create();
         }
         return props_IOrderSpecContent;
+      case LanguageConceptSwitch.JavaQualifiedName:
+        if (props_JavaQualifiedName == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("JavaQualifiedName");
+          props_JavaQualifiedName = cpb.create();
+        }
+        return props_JavaQualifiedName;
       case LanguageConceptSwitch.Model:
         if (props_Model == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           props_Model = cpb.create();
         }
         return props_Model;
+      case LanguageConceptSwitch.NegatesSpec:
+        if (props_NegatesSpec == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("NegatesSpec");
+          props_NegatesSpec = cpb.create();
+        }
+        return props_NegatesSpec;
       case LanguageConceptSwitch.Object:
         if (props_Object == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -110,6 +153,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ObjectSpec = cpb.create();
         }
         return props_ObjectSpec;
+      case LanguageConceptSwitch.ObjectTypeParam:
+        if (props_ObjectTypeParam == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ObjectTypeParam");
+          props_ObjectTypeParam = cpb.create();
+        }
+        return props_ObjectTypeParam;
       case LanguageConceptSwitch.OrderSpec:
         if (props_OrderSpec == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -118,6 +168,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_OrderSpec = cpb.create();
         }
         return props_OrderSpec;
+      case LanguageConceptSwitch.ParameterizedType:
+        if (props_ParameterizedType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ParameterizedType");
+          props_ParameterizedType = cpb.create();
+        }
+        return props_ParameterizedType;
+      case LanguageConceptSwitch.RequiresSpec:
+        if (props_RequiresSpec == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("RequiresSpec");
+          props_RequiresSpec = cpb.create();
+        }
+        return props_RequiresSpec;
+      case LanguageConceptSwitch.SimpleType:
+        if (props_SimpleType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("SimpleType");
+          props_SimpleType = cpb.create();
+        }
+        return props_SimpleType;
       case LanguageConceptSwitch.Spec:
         if (props_Spec == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

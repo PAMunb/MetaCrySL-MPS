@@ -6,10 +6,21 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="fbc67e5c-fd70-43b1-b837-3c3551c2500b" name="MetaCrySL" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="1rvj" ref="r:37cf7c21-7aff-495e-a21a-92ea40fa25ca(MetaCrySL.typesystem)" />
+  </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI" />
+      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A">
+        <child id="8489045168660938517" name="errorRef" index="3lydEf" />
+      </concept>
+      <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
+        <child id="1215604436604" name="nodeOperations" index="7EUXB" />
+      </concept>
+      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
+        <reference id="8333855927540250453" name="declaration" index="39XzEq" />
+      </concept>
+      <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
@@ -37,12 +48,42 @@
   <node concept="2XOHcx" id="2MGFoYaiAdg">
     <property role="2XOHcw" value="${project_home}" />
   </node>
-  <node concept="1lH9Xt" id="3_OyMyatoWk">
-    <property role="TrG5h" value="InvalidNameTestCase" />
-    <node concept="1qefOq" id="7oeT4a1O4XC" role="1SKRRt">
-      <node concept="2yrA1U" id="7oeT4a1O4XB" role="1qenE9">
-        <property role="1AewAe" value="asasas.a" />
-        <node concept="7CXmI" id="7oeT4a1OxDy" role="lGtFl" />
+  <node concept="1lH9Xt" id="2GG1rt$rl1e">
+    <property role="TrG5h" value="Test" />
+    <node concept="1qefOq" id="2GG1rt$rl1R" role="1SKRRt">
+      <node concept="2yrA1U" id="2GG1rt$rl1V" role="1qenE9">
+        <property role="1AewAe" value="asaasasas" />
+        <node concept="7CXmI" id="2GG1rt$rl2N" role="lGtFl">
+          <node concept="1TM$A" id="2GG1rt$rl2O" role="7EUXB">
+            <node concept="2PYRI3" id="2GG1rt$rSih" role="3lydEf">
+              <ref role="39XzEq" to="1rvj:2GG1rt$rSfL" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="2GG1rt$rlfL" role="1SKRRt">
+      <node concept="2yrA1U" id="2GG1rt$sRwD" role="1qenE9">
+        <property role="1AewAe" value="java.util.string" />
+        <node concept="7CXmI" id="2GG1rt$t2d5" role="lGtFl">
+          <node concept="1TM$A" id="2GG1rt$t2d6" role="7EUXB">
+            <node concept="2PYRI3" id="2GG1rt$t2da" role="3lydEf">
+              <ref role="39XzEq" to="1rvj:2GG1rt$rSfL" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="2GG1rt$rlt_" role="1SKRRt">
+      <node concept="2yrA1U" id="2GG1rt$rltK" role="1qenE9">
+        <property role="1AewAe" value="AAAAAAAAA" />
+        <node concept="7CXmI" id="2GG1rt$rltM" role="lGtFl">
+          <node concept="1TM$A" id="2GG1rt$rltN" role="7EUXB">
+            <node concept="2PYRI3" id="2GG1rt$rSil" role="3lydEf">
+              <ref role="39XzEq" to="1rvj:2GG1rt$rSfL" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
