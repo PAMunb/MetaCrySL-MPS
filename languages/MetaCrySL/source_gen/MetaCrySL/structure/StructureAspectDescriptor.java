@@ -14,6 +14,7 @@ import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptBaseSpecType = createDescriptorForBaseSpecType();
@@ -39,6 +40,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptRequiresSpec = createDescriptorForRequiresSpec();
   /*package*/ final ConceptDescriptor myConceptSimpleType = createDescriptorForSimpleType();
   /*package*/ final ConceptDescriptor myConceptSpec = createDescriptorForSpec();
+  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeID = new ConstrainedStringDatatypeDescriptorImpl(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x7e718a995e6e50cdL, "ID", "r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/9111215912466141389", "([a-z]|[A-Z]|_)([a-z]|[A-Z]|_|[0-9])*");
   /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeTestName = new ConstrainedStringDatatypeDescriptorImpl(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x78aeadf61b0e1fbL, "TestName", "r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/543504950189154811", "^[a-z][a-z0-9_]*(\\.[a-z0-9_]+)+$");
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -114,7 +116,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myCSDatatypeTestName);
+    return Arrays.asList(myCSDatatypeID, myCSDatatypeTestName);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -248,7 +250,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53be40fL);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/8063880014109550711");
     b.version(2);
-    b.property("name", 0x6fe8a826085f287eL).type(PrimitiveTypeId.STRING).origin("8063880014109550718").done();
+    b.property("name", 0x6fe8a826085f287eL).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x7e718a995e6e50cdL)).origin("8063880014109550718").done();
     b.aggregate("objectType", 0x6fe8a826085f2880L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4e8bdL).optional(false).ordered(true).multiple(false).origin("8063880014109550720").done();
     return b.create();
   }

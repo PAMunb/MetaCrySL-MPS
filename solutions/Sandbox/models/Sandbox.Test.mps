@@ -17,7 +17,9 @@
         <child id="4006665209295202498" name="classType" index="2yrA05" />
         <child id="8598353117207694615" name="objects" index="3jQJ6d" />
       </concept>
-      <concept id="5292687979099953601" name="MetaCrySL.structure.ObjectSpec" flags="ng" index="2sifTH" />
+      <concept id="5292687979099953601" name="MetaCrySL.structure.ObjectSpec" flags="ng" index="2sifTH">
+        <child id="5292687979099972650" name="contents" index="2si8e6" />
+      </concept>
       <concept id="9111215912465869806" name="MetaCrySL.structure.BaseSpecType" flags="ng" index="w6U5R">
         <child id="9111215912465870129" name="name" index="w6UuC" />
       </concept>
@@ -27,12 +29,23 @@
       <concept id="4006665209295202493" name="MetaCrySL.structure.JavaQualifiedName" flags="ng" index="2yrA1U">
         <property id="543504950189155153" name="name" index="1AewAe" />
       </concept>
+      <concept id="8063880014109550711" name="MetaCrySL.structure.Object" flags="ng" index="1BHS1h">
+        <property id="8063880014109550718" name="name" index="1BHS1o" />
+        <child id="8063880014109550720" name="objectType" index="1BHS2A" />
+      </concept>
     </language>
   </registry>
   <node concept="h7EKp" id="7TLyD_uqaWw">
     <property role="TrG5h" value="basicModelWithoutAbstract" />
     <property role="2sjOev" value="true" />
-    <node concept="2sifTH" id="7TLyD_uqaWy" role="3jQJ6d" />
+    <node concept="2sifTH" id="7TLyD_uqaWy" role="3jQJ6d">
+      <node concept="1BHS1h" id="6DMAokX1aTR" role="2si8e6">
+        <property role="1BHS1o" value="asasas" />
+        <node concept="2yrA1U" id="6DMAokX1aUA" role="1BHS2A">
+          <property role="1AewAe" value="asasasa" />
+        </node>
+      </node>
+    </node>
     <node concept="w6Ug5" id="7TLyD_uqG61" role="2yrA05">
       <property role="w6Uh6" value="as" />
       <node concept="2yrA1U" id="7TLyD_uqG64" role="w6UuC">
