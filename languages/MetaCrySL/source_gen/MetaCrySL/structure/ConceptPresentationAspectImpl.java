@@ -16,12 +16,15 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_EventMethod;
   private ConceptPresentation props_EventSpec;
   private ConceptPresentation props_ForbiddenSpec;
+  private ConceptPresentation props_FormalArg;
+  private ConceptPresentation props_FormalArgs;
   private ConceptPresentation props_Generic;
   private ConceptPresentation props_IEventSpecContent;
   private ConceptPresentation props_IModelContent;
   private ConceptPresentation props_IObjectsContent;
   private ConceptPresentation props_IOrderSpecContent;
   private ConceptPresentation props_JavaQualifiedName;
+  private ConceptPresentation props_MethodDef;
   private ConceptPresentation props_Model;
   private ConceptPresentation props_NegatesSpec;
   private ConceptPresentation props_Object;
@@ -87,6 +90,21 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ForbiddenSpec = cpb.create();
         }
         return props_ForbiddenSpec;
+      case LanguageConceptSwitch.FormalArg:
+        if (props_FormalArg == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("It should accept a wild card ('_') or something like 'int x' ");
+          props_FormalArg = cpb.create();
+        }
+        return props_FormalArg;
+      case LanguageConceptSwitch.FormalArgs:
+        if (props_FormalArgs == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents a list of formal arguments");
+          cpb.rawPresentation("FormalArgs");
+          props_FormalArgs = cpb.create();
+        }
+        return props_FormalArgs;
       case LanguageConceptSwitch.Generic:
         if (props_Generic == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -125,6 +143,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_JavaQualifiedName = cpb.create();
         }
         return props_JavaQualifiedName;
+      case LanguageConceptSwitch.MethodDef:
+        if (props_MethodDef == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents a method definition");
+          cpb.rawPresentation("MethodDef");
+          props_MethodDef = cpb.create();
+        }
+        return props_MethodDef;
       case LanguageConceptSwitch.Model:
         if (props_Model == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

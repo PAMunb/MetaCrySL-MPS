@@ -50,7 +50,17 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="1716599163375643733" name="com.mbeddr.mpsutil.grammarcells.structure.BracketsCell" flags="ng" index="drBAd">
+        <child id="1716599163375643743" name="left" index="drBA7" />
+        <child id="1716599163375643746" name="inner" index="drBAU" />
+        <child id="1716599163375643751" name="right" index="drBAZ" />
+      </concept>
+      <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n" />
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
+      <concept id="3011849438420226693" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarInfoCell" flags="ng" index="1WcQYu">
+        <child id="8207263695490916687" name="rules" index="2El2Yn" />
+        <child id="2862331529394260612" name="projection" index="1LiK7o" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -169,6 +179,13 @@
         </node>
         <node concept="2iRfu4" id="7TLyD_urn2A" role="2iSdaV" />
       </node>
+      <node concept="3EZMnI" id="6DMAokX1LSm" role="3EZMnx">
+        <node concept="VPM3Z" id="6DMAokX1LSo" role="3F10Kt" />
+        <node concept="3F1sOY" id="6DMAokX1LSE" role="3EZMnx">
+          <ref role="1NtTu8" to="qgj4:3yXHyrT60wR" resolve="events" />
+        </node>
+        <node concept="2iRfu4" id="6DMAokX1LSr" role="2iSdaV" />
+      </node>
       <node concept="2iRkQZ" id="7TLyD_uq1PX" role="2iSdaV" />
     </node>
   </node>
@@ -215,6 +232,53 @@
         <property role="3F0ifm" value="&gt;" />
       </node>
       <node concept="2iRfu4" id="7TLyD_uqC8T" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6DMAokX1ZOE">
+    <property role="3GE5qa" value="spec.events" />
+    <ref role="1XX52x" to="qgj4:2MGFoYahlO4" resolve="EventMethod" />
+    <node concept="3EZMnI" id="6DMAokX1ZOG" role="2wV5jI">
+      <node concept="3F0A7n" id="6DMAokX1ZON" role="3EZMnx">
+        <ref role="1NtTu8" to="qgj4:6DMAokX1ZNG" resolve="label" />
+      </node>
+      <node concept="3F0ifn" id="6DMAokX1ZOT" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F1sOY" id="6DMAokX1ZRS" role="3EZMnx">
+        <ref role="1NtTu8" to="qgj4:6DMAokX1ZRe" resolve="method" />
+      </node>
+      <node concept="3F0ifn" id="6DMAokX1ZSE" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+      </node>
+      <node concept="2iRfu4" id="6DMAokX1ZOJ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6DMAokX2evm">
+    <property role="3GE5qa" value="spec.events.method" />
+    <ref role="1XX52x" to="qgj4:6DMAokX1ZPX" resolve="MethodDef" />
+    <node concept="1WcQYu" id="1DmMGWMQazb" role="2wV5jI">
+      <node concept="2ElW$n" id="1DmMGWMQazi" role="2El2Yn" />
+      <node concept="3EZMnI" id="1DmMGWMQayS" role="1LiK7o">
+        <node concept="2iRfu4" id="1DmMGWMQayV" role="2iSdaV" />
+        <node concept="drBAd" id="3ijzaQF3ZFm" role="3EZMnx">
+          <node concept="3F0ifn" id="3ijzaQF3ZFn" role="drBA7">
+            <property role="3F0ifm" value="(" />
+          </node>
+          <node concept="3F1sOY" id="3ijzaQF3ZFo" role="drBAU">
+            <ref role="1NtTu8" to="qgj4:3ijzaQF4fv7" resolve="as" />
+          </node>
+          <node concept="3F0ifn" id="3ijzaQF3ZFp" role="drBAZ">
+            <property role="3F0ifm" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3ijzaQF4Lev">
+    <property role="3GE5qa" value="spec.events.method" />
+    <ref role="1XX52x" to="qgj4:3ijzaQF4Ldy" resolve="WildcardArg" />
+    <node concept="PMmxH" id="3ijzaQF4Le_" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>

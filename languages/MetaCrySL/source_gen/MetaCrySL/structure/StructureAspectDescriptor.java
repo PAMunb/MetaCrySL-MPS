@@ -13,8 +13,8 @@ import jetbrains.mps.smodel.adapter.ids.SConceptId;
 import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
-import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
+import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptBaseSpecType = createDescriptorForBaseSpecType();
@@ -24,12 +24,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptEventMethod = createDescriptorForEventMethod();
   /*package*/ final ConceptDescriptor myConceptEventSpec = createDescriptorForEventSpec();
   /*package*/ final ConceptDescriptor myConceptForbiddenSpec = createDescriptorForForbiddenSpec();
+  /*package*/ final ConceptDescriptor myConceptFormalArg = createDescriptorForFormalArg();
+  /*package*/ final ConceptDescriptor myConceptFormalArgs = createDescriptorForFormalArgs();
   /*package*/ final ConceptDescriptor myConceptGeneric = createDescriptorForGeneric();
   /*package*/ final ConceptDescriptor myConceptIEventSpecContent = createDescriptorForIEventSpecContent();
   /*package*/ final ConceptDescriptor myConceptIModelContent = createDescriptorForIModelContent();
   /*package*/ final ConceptDescriptor myConceptIObjectsContent = createDescriptorForIObjectsContent();
   /*package*/ final ConceptDescriptor myConceptIOrderSpecContent = createDescriptorForIOrderSpecContent();
   /*package*/ final ConceptDescriptor myConceptJavaQualifiedName = createDescriptorForJavaQualifiedName();
+  /*package*/ final ConceptDescriptor myConceptMethodDef = createDescriptorForMethodDef();
   /*package*/ final ConceptDescriptor myConceptModel = createDescriptorForModel();
   /*package*/ final ConceptDescriptor myConceptNegatesSpec = createDescriptorForNegatesSpec();
   /*package*/ final ConceptDescriptor myConceptObject = createDescriptorForObject();
@@ -52,11 +55,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   @Override
   public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
     deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
+    deps.aggregatedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBaseSpecType, myConceptConstraintSpec, myConceptEnsuresSpec, myConceptEventAggregate, myConceptEventMethod, myConceptEventSpec, myConceptForbiddenSpec, myConceptGeneric, myConceptIEventSpecContent, myConceptIModelContent, myConceptIObjectsContent, myConceptIOrderSpecContent, myConceptJavaQualifiedName, myConceptModel, myConceptNegatesSpec, myConceptObject, myConceptObjectSpec, myConceptObjectTypeParam, myConceptOrderSpec, myConceptParameterizedType, myConceptRequiresSpec, myConceptSimpleType, myConceptSpec);
+    return Arrays.asList(myConceptBaseSpecType, myConceptConstraintSpec, myConceptEnsuresSpec, myConceptEventAggregate, myConceptEventMethod, myConceptEventSpec, myConceptForbiddenSpec, myConceptFormalArg, myConceptFormalArgs, myConceptGeneric, myConceptIEventSpecContent, myConceptIModelContent, myConceptIObjectsContent, myConceptIOrderSpecContent, myConceptJavaQualifiedName, myConceptMethodDef, myConceptModel, myConceptNegatesSpec, myConceptObject, myConceptObjectSpec, myConceptObjectTypeParam, myConceptOrderSpec, myConceptParameterizedType, myConceptRequiresSpec, myConceptSimpleType, myConceptSpec);
   }
 
   @Override
@@ -77,6 +81,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptEventSpec;
       case LanguageConceptSwitch.ForbiddenSpec:
         return myConceptForbiddenSpec;
+      case LanguageConceptSwitch.FormalArg:
+        return myConceptFormalArg;
+      case LanguageConceptSwitch.FormalArgs:
+        return myConceptFormalArgs;
       case LanguageConceptSwitch.Generic:
         return myConceptGeneric;
       case LanguageConceptSwitch.IEventSpecContent:
@@ -89,6 +97,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptIOrderSpecContent;
       case LanguageConceptSwitch.JavaQualifiedName:
         return myConceptJavaQualifiedName;
+      case LanguageConceptSwitch.MethodDef:
+        return myConceptMethodDef;
       case LanguageConceptSwitch.Model:
         return myConceptModel;
       case LanguageConceptSwitch.NegatesSpec:
@@ -160,6 +170,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c209L);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3219138665674792196");
     b.version(2);
+    b.property("label", 0x6a7299853d07fcecL).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x7e718a995e6e50cdL)).origin("7670361912899009772").done();
+    b.aggregate("method", 0x6a7299853d07fdceL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x6a7299853d07fd7dL).optional(true).ordered(true).multiple(false).origin("7670361912899009998").done();
     b.alias("EventMethod");
     return b.create();
   }
@@ -178,6 +190,20 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "ForbiddenSpec", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x38bdb626f91809fbL);
     b.class_(false, false, false);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4088624315226393083");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForFormalArg() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "FormalArg", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x6a7299853d0ad109L);
+    b.interface_();
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/7670361912899195287");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForFormalArgs() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "FormalArgs", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x6a7299853d08e6d7L);
+    b.class_(false, false, false);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/7670361912899069655");
     b.version(2);
     return b.create();
   }
@@ -226,6 +252,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("name", 0x78aeadf61b0e351L).type(PrimitiveTypeId.STRING).origin("543504950189155153").done();
     b.alias("JavaQualifiedName");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMethodDef() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "MethodDef", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x6a7299853d07fd7dL);
+    b.class_(false, false, false);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/7670361912899009917");
+    b.version(2);
+    b.property("methodName", 0x6a7299853d08e65dL).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x7e718a995e6e50cdL)).origin("7670361912899069533").done();
+    b.associate("a", 0x1a56cacf32d86b62L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x7e718a995e6a2beeL).optional(true).origin("1897927284243327842").done();
+    b.aggregate("args", 0x6a7299853d08e750L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x6a7299853d08e6d7L).optional(true).ordered(true).multiple(true).origin("7670361912899069776").done();
+    b.aggregate("as", 0x34938cadab10f7c7L).target(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da51L).optional(true).ordered(true).multiple(false).origin("3788526389075965895").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForModel() {

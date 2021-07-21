@@ -15,6 +15,7 @@
       <concept id="3486838550932820265" name="MetaCrySL.structure.Spec" flags="ng" index="h7EKp">
         <property id="5292687979099989043" name="ABSTRACT" index="2sjOev" />
         <child id="4006665209295202498" name="classType" index="2yrA05" />
+        <child id="4088624315226392631" name="events" index="31DrSh" />
         <child id="8598353117207694615" name="objects" index="3jQJ6d" />
       </concept>
       <concept id="5292687979099953601" name="MetaCrySL.structure.ObjectSpec" flags="ng" index="2sifTH">
@@ -29,6 +30,14 @@
       <concept id="4006665209295202493" name="MetaCrySL.structure.JavaQualifiedName" flags="ng" index="2yrA1U">
         <property id="543504950189155153" name="name" index="1AewAe" />
       </concept>
+      <concept id="3219138665674792196" name="MetaCrySL.structure.EventMethod" flags="ng" index="2AUv2b">
+        <property id="7670361912899009772" name="label" index="1ntmlD" />
+        <child id="7670361912899009998" name="method" index="1ntmhb" />
+      </concept>
+      <concept id="8598353117207511551" name="MetaCrySL.structure.EventSpec" flags="ng" index="3jPrP_">
+        <child id="8598353117207511590" name="content" index="3jPrUW" />
+      </concept>
+      <concept id="7670361912899009917" name="MetaCrySL.structure.MethodDef" flags="ng" index="1ntmjS" />
       <concept id="8063880014109550711" name="MetaCrySL.structure.Object" flags="ng" index="1BHS1h">
         <property id="8063880014109550718" name="name" index="1BHS1o" />
         <child id="8063880014109550720" name="objectType" index="1BHS2A" />
@@ -50,6 +59,12 @@
       <property role="w6Uh6" value="as" />
       <node concept="2yrA1U" id="7TLyD_uqG64" role="w6UuC">
         <property role="1AewAe" value="java.string" />
+      </node>
+    </node>
+    <node concept="3jPrP_" id="6DMAokX1ZJA" role="31DrSh">
+      <node concept="2AUv2b" id="6DMAokX2tOA" role="3jPrUW">
+        <property role="1ntmlD" value="c1" />
+        <node concept="1ntmjS" id="3ijzaQF4wMK" role="1ntmhb" />
       </node>
     </node>
   </node>
