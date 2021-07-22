@@ -9,11 +9,13 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_AggregateList;
   private ConceptPresentation props_BaseSpecType;
   private ConceptPresentation props_ConstraintSpec;
   private ConceptPresentation props_EnsuresSpec;
   private ConceptPresentation props_EventAggregate;
   private ConceptPresentation props_EventMethod;
+  private ConceptPresentation props_EventRef;
   private ConceptPresentation props_EventSpec;
   private ConceptPresentation props_ForbiddenSpec;
   private ConceptPresentation props_FormalArg;
@@ -24,6 +26,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_IObjectsContent;
   private ConceptPresentation props_IOrderSpecContent;
   private ConceptPresentation props_JavaQualifiedName;
+  private ConceptPresentation props_MethodArg;
   private ConceptPresentation props_MethodDef;
   private ConceptPresentation props_Model;
   private ConceptPresentation props_NegatesSpec;
@@ -35,12 +38,21 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_RequiresSpec;
   private ConceptPresentation props_SimpleType;
   private ConceptPresentation props_Spec;
+  private ConceptPresentation props_WildcardArg;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.AggregateList:
+        if (props_AggregateList == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents a list of labels: 'l1 | l2 | l3'");
+          cpb.rawPresentation("AggregateList");
+          props_AggregateList = cpb.create();
+        }
+        return props_AggregateList;
       case LanguageConceptSwitch.BaseSpecType:
         if (props_BaseSpecType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -75,6 +87,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_EventMethod = cpb.create();
         }
         return props_EventMethod;
+      case LanguageConceptSwitch.EventRef:
+        if (props_EventRef == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1b51b988bd4cea81L, 0x1b51b988bd4cea96L, "label", "", "");
+          props_EventRef = cpb.create();
+        }
+        return props_EventRef;
       case LanguageConceptSwitch.EventSpec:
         if (props_EventSpec == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -93,7 +112,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.FormalArg:
         if (props_FormalArg == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("It should accept a wild card ('_') or something like 'int x' ");
+          cpb.rawPresentation("FormalArg");
           props_FormalArg = cpb.create();
         }
         return props_FormalArg;
@@ -143,6 +162,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_JavaQualifiedName = cpb.create();
         }
         return props_JavaQualifiedName;
+      case LanguageConceptSwitch.MethodArg:
+        if (props_MethodArg == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("It should accept a wild card ('_') or something like 'int x' ");
+          props_MethodArg = cpb.create();
+        }
+        return props_MethodArg;
       case LanguageConceptSwitch.MethodDef:
         if (props_MethodDef == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -222,6 +248,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Spec = cpb.create();
         }
         return props_Spec;
+      case LanguageConceptSwitch.WildcardArg:
+        if (props_WildcardArg == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("_");
+          props_WildcardArg = cpb.create();
+        }
+        return props_WildcardArg;
     }
     return null;
   }

@@ -30,14 +30,27 @@
       <concept id="4006665209295202493" name="MetaCrySL.structure.JavaQualifiedName" flags="ng" index="2yrA1U">
         <property id="543504950189155153" name="name" index="1AewAe" />
       </concept>
+      <concept id="1968558509080242399" name="MetaCrySL.structure.AggregateList" flags="ng" index="2A7l5n">
+        <child id="1968558509080242900" name="refs" index="2A7lds" />
+      </concept>
+      <concept id="1968558509080242817" name="MetaCrySL.structure.EventRef" flags="ng" index="2A7lc9">
+        <reference id="1968558509080242838" name="label" index="2A7lcu" />
+      </concept>
+      <concept id="3219138665674792199" name="MetaCrySL.structure.EventAggregate" flags="ng" index="2AUv28">
+        <child id="1968558509080242397" name="aggregate" index="2A7l5l" />
+      </concept>
       <concept id="3219138665674792196" name="MetaCrySL.structure.EventMethod" flags="ng" index="2AUv2b">
-        <property id="7670361912899009772" name="label" index="1ntmlD" />
         <child id="7670361912899009998" name="method" index="1ntmhb" />
       </concept>
       <concept id="8598353117207511551" name="MetaCrySL.structure.EventSpec" flags="ng" index="3jPrP_">
         <child id="8598353117207511590" name="content" index="3jPrUW" />
       </concept>
-      <concept id="7670361912899009917" name="MetaCrySL.structure.MethodDef" flags="ng" index="1ntmjS" />
+      <concept id="8598353117207511561" name="MetaCrySL.structure.IEventSpecContent" flags="ng" index="3jPrUj">
+        <property id="6570391813124595933" name="label" index="2NgTxn" />
+      </concept>
+      <concept id="7670361912899009917" name="MetaCrySL.structure.MethodDef" flags="ng" index="1ntmjS">
+        <property id="7670361912899069533" name="methodName" index="1nuBZo" />
+      </concept>
       <concept id="8063880014109550711" name="MetaCrySL.structure.Object" flags="ng" index="1BHS1h">
         <property id="8063880014109550718" name="name" index="1BHS1o" />
         <child id="8063880014109550720" name="objectType" index="1BHS2A" />
@@ -62,9 +75,19 @@
       </node>
     </node>
     <node concept="3jPrP_" id="6DMAokX1ZJA" role="31DrSh">
-      <node concept="2AUv2b" id="6DMAokX2tOA" role="3jPrUW">
-        <property role="1ntmlD" value="c1" />
-        <node concept="1ntmjS" id="3ijzaQF4wMK" role="1ntmhb" />
+      <node concept="2AUv2b" id="5GII8FCsg$_" role="3jPrUW">
+        <property role="2NgTxn" value="c1" />
+        <node concept="1ntmjS" id="5GII8FCsg$B" role="1ntmhb">
+          <property role="1nuBZo" value="method1" />
+        </node>
+      </node>
+      <node concept="2AUv28" id="5GII8FCsyJ6" role="3jPrUW">
+        <property role="2NgTxn" value="cl" />
+        <node concept="2A7l5n" id="5GII8FCsyJb" role="2A7l5l">
+          <node concept="2A7lc9" id="5GII8FCsyJd" role="2A7lds">
+            <ref role="2A7lcu" node="5GII8FCsg$_" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
