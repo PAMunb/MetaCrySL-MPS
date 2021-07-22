@@ -17,11 +17,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_EventMethod;
   private ConceptPresentation props_EventRef;
   private ConceptPresentation props_EventSpec;
+  private ConceptPresentation props_ForbiddenMethod;
   private ConceptPresentation props_ForbiddenSpec;
   private ConceptPresentation props_FormalArg;
   private ConceptPresentation props_FormalArgs;
   private ConceptPresentation props_Generic;
   private ConceptPresentation props_IEventSpecContent;
+  private ConceptPresentation props_IForbiddenContent;
   private ConceptPresentation props_IModelContent;
   private ConceptPresentation props_IObjectsContent;
   private ConceptPresentation props_IOrderSpecContent;
@@ -102,10 +104,17 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_EventSpec = cpb.create();
         }
         return props_EventSpec;
+      case LanguageConceptSwitch.ForbiddenMethod:
+        if (props_ForbiddenMethod == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ForbiddenMethod");
+          props_ForbiddenMethod = cpb.create();
+        }
+        return props_ForbiddenMethod;
       case LanguageConceptSwitch.ForbiddenSpec:
         if (props_ForbiddenSpec == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ForbiddenSpec");
+          cpb.rawPresentation("FORBIDDEN");
           props_ForbiddenSpec = cpb.create();
         }
         return props_ForbiddenSpec;
@@ -137,6 +146,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IEventSpecContent = cpb.create();
         }
         return props_IEventSpecContent;
+      case LanguageConceptSwitch.IForbiddenContent:
+        if (props_IForbiddenContent == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IForbiddenContent = cpb.create();
+        }
+        return props_IForbiddenContent;
       case LanguageConceptSwitch.IModelContent:
         if (props_IModelContent == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

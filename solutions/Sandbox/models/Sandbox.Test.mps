@@ -15,7 +15,9 @@
       <concept id="3486838550932820265" name="MetaCrySL.structure.Spec" flags="ng" index="h7EKp">
         <property id="5292687979099989043" name="ABSTRACT" index="2sjOev" />
         <child id="4006665209295202498" name="classType" index="2yrA05" />
+        <child id="6570391813125228699" name="forbidden" index="2Nm70h" />
         <child id="4088624315226392631" name="events" index="31DrSh" />
+        <child id="4088624315226392735" name="order" index="31DrUT" />
         <child id="8598353117207694615" name="objects" index="3jQJ6d" />
       </concept>
       <concept id="5292687979099953601" name="MetaCrySL.structure.ObjectSpec" flags="ng" index="2sifTH">
@@ -42,6 +44,13 @@
       <concept id="3219138665674792196" name="MetaCrySL.structure.EventMethod" flags="ng" index="2AUv2b">
         <child id="7670361912899009998" name="method" index="1ntmhb" />
       </concept>
+      <concept id="6570391813125228978" name="MetaCrySL.structure.ForbiddenMethod" flags="ng" index="2Nm74S">
+        <child id="6570391813125229224" name="method" index="2Nm78y" />
+      </concept>
+      <concept id="4088624315226393083" name="MetaCrySL.structure.ForbiddenSpec" flags="ng" index="31DrZt">
+        <child id="6570391813125228936" name="forbidenMethods" index="2Nm742" />
+      </concept>
+      <concept id="8598353117207556270" name="MetaCrySL.structure.OrderSpec" flags="ng" index="3jP0KO" />
       <concept id="8598353117207511551" name="MetaCrySL.structure.EventSpec" flags="ng" index="3jPrP_">
         <child id="8598353117207511590" name="content" index="3jPrUW" />
       </concept>
@@ -87,6 +96,14 @@
           <node concept="2A7lc9" id="5GII8FCsyJd" role="2A7lds">
             <ref role="2A7lcu" node="5GII8FCsg$_" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3jP0KO" id="5GII8FCtGvt" role="31DrUT" />
+    <node concept="31DrZt" id="5GII8FCtZX7" role="2Nm70h">
+      <node concept="2Nm74S" id="5GII8FCuAyj" role="2Nm742">
+        <node concept="1ntmjS" id="5GII8FCuAyl" role="2Nm78y">
+          <property role="1nuBZo" value="method1" />
         </node>
       </node>
     </node>

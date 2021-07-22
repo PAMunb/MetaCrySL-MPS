@@ -66,13 +66,21 @@
       <property role="IQ2ns" value="4088624315226392631" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="events" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7tjv9E$xG7Z" resolve="EventSpec" />
     </node>
     <node concept="1TJgyj" id="3yXHyrT60yv" role="1TKVEi">
       <property role="IQ2ns" value="4088624315226392735" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="order" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7tjv9E$xR2I" resolve="OrderSpec" />
+    </node>
+    <node concept="1TJgyj" id="5GII8FCtGyr" role="1TKVEi">
+      <property role="IQ2ns" value="6570391813125228699" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="forbidden" />
+      <ref role="20lvS9" node="3yXHyrT60BV" resolve="ForbiddenSpec" />
     </node>
     <node concept="1TJgyi" id="4_NpUNlf2gN" role="1TKVEl">
       <property role="IQ2nx" value="5292687979099989043" />

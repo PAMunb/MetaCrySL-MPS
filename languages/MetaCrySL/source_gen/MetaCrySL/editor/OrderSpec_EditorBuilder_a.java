@@ -51,12 +51,17 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     editorCell.setCellId("Collection_b0j60x_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
+    editorCell.addEditorCell(createComponent_0());
     editorCell.addEditorCell(createCollection_1());
+    return editorCell;
+  }
+  private EditorCell createComponent_0() {
+    EditorCell editorCell = getCellFactory().createEditorComponentCell(myNode, "jetbrains.mps.lang.core.editor.alias");
     return editorCell;
   }
   private EditorCell createCollection_1() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_b0j60x_a0");
+    editorCell.setCellId("Collection_b0j60x_b0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
@@ -69,17 +74,17 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new contentListHandler_b0j60x_b0a(myNode, getEditorContext());
+    AbstractCellListHandler handler = new contentListHandler_b0j60x_b1a(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Horizontal(), false);
     editorCell.setCellId("refNodeList_content");
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class contentListHandler_b0j60x_b0a extends RefNodeListHandler {
+  private static class contentListHandler_b0j60x_b1a extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public contentListHandler_b0j60x_b0a(SNode ownerNode, EditorContext context) {
+    public contentListHandler_b0j60x_b1a(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -102,7 +107,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(contentListHandler_b0j60x_b0a.this.getNode(), LINKS.content$18ak));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(contentListHandler_b0j60x_b1a.this.getNode(), LINKS.content$18ak));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
