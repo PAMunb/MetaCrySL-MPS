@@ -45,6 +45,7 @@
         <child id="7670361912899009998" name="method" index="1ntmhb" />
       </concept>
       <concept id="6570391813125228978" name="MetaCrySL.structure.ForbiddenMethod" flags="ng" index="2Nm74S">
+        <property id="6570391813125466567" name="alternative" index="2Nld5d" />
         <child id="6570391813125229224" name="method" index="2Nm78y" />
       </concept>
       <concept id="4088624315226393083" name="MetaCrySL.structure.ForbiddenSpec" flags="ng" index="31DrZt">
@@ -102,6 +103,7 @@
     <node concept="3jP0KO" id="5GII8FCtGvt" role="31DrUT" />
     <node concept="31DrZt" id="5GII8FCtZX7" role="2Nm70h">
       <node concept="2Nm74S" id="5GII8FCuAyj" role="2Nm742">
+        <property role="2Nld5d" value="c" />
         <node concept="1ntmjS" id="5GII8FCuAyl" role="2Nm78y">
           <property role="1nuBZo" value="method1" />
         </node>

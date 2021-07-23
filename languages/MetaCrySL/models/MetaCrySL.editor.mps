@@ -58,6 +58,9 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
+        <child id="5083944728298846681" name="option" index="_tjki" />
+      </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -372,8 +375,22 @@
   <node concept="24kQdi" id="5GII8FCujcJ">
     <property role="3GE5qa" value="spec.forbidden" />
     <ref role="1XX52x" to="qgj4:5GII8FCtGAM" resolve="ForbiddenMethod" />
-    <node concept="3F1sOY" id="5GII8FCuje1" role="2wV5jI">
-      <ref role="1NtTu8" to="qgj4:5GII8FCtGEC" resolve="method" />
+    <node concept="3EZMnI" id="5GII8FCuAB9" role="2wV5jI">
+      <node concept="2iRfu4" id="5GII8FCuABa" role="2iSdaV" />
+      <node concept="3F1sOY" id="5GII8FCuABd" role="3EZMnx">
+        <ref role="1NtTu8" to="qgj4:5GII8FCtGEC" resolve="method" />
+      </node>
+      <node concept="_tjkj" id="5GII8FCuABi" role="3EZMnx">
+        <node concept="3EZMnI" id="5GII8FCuTCl" role="_tjki">
+          <node concept="2iRfu4" id="5GII8FCuTCm" role="2iSdaV" />
+          <node concept="3F0ifn" id="5GII8FCuTCH" role="3EZMnx">
+            <property role="3F0ifm" value="=&gt;" />
+          </node>
+          <node concept="3F0A7n" id="5GII8FCuTD6" role="3EZMnx">
+            <ref role="1NtTu8" to="qgj4:5GII8FCuAB7" resolve="alternative" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

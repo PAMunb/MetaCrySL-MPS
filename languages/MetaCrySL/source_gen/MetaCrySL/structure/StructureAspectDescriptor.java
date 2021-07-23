@@ -13,8 +13,8 @@ import jetbrains.mps.smodel.adapter.ids.SConceptId;
 import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
-import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAggregateList = createDescriptorForAggregateList();
@@ -225,6 +225,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x5b2eb88ae876c9c7L);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/6570391813125228978");
     b.version(2);
+    b.property("alternative", 0x5b2eb88ae87a69c7L).type(PrimitiveTypeId.STRING).origin("6570391813125466567").done();
     b.aggregate("method", 0x5b2eb88ae876caa8L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x6a7299853d07fd7dL).optional(true).ordered(true).multiple(false).origin("6570391813125229224").done();
     return b.create();
   }
@@ -414,7 +415,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("objects", 0x77537c9aa4898d17L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53b99c1L).optional(false).ordered(true).multiple(false).origin("8598353117207694615").done();
     b.aggregate("events", 0x38bdb626f9180837L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c1ffL).optional(false).ordered(true).multiple(false).origin("4088624315226392631").done();
     b.aggregate("order", 0x38bdb626f918089fL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa48770aeL).optional(false).ordered(true).multiple(false).origin("4088624315226392735").done();
-    b.aggregate("forbidden", 0x5b2eb88ae876c89bL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x38bdb626f91809fbL).optional(false).ordered(true).multiple(false).origin("6570391813125228699").done();
+    b.aggregate("forbidden", 0x5b2eb88ae876c89bL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x38bdb626f91809fbL).optional(true).ordered(true).multiple(false).origin("6570391813125228699").done();
     b.alias("SPEC");
     return b.create();
   }
