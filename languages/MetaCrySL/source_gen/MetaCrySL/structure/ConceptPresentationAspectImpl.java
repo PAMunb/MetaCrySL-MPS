@@ -11,6 +11,7 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_AggregateList;
   private ConceptPresentation props_BaseSpecType;
+  private ConceptPresentation props_CallTo;
   private ConceptPresentation props_ConstraintSpec;
   private ConceptPresentation props_EnsuresSpec;
   private ConceptPresentation props_EventAggregate;
@@ -22,16 +23,21 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_FormalArg;
   private ConceptPresentation props_FormalArgs;
   private ConceptPresentation props_Generic;
+  private ConceptPresentation props_IConstraintContent;
   private ConceptPresentation props_IEventSpecContent;
   private ConceptPresentation props_IForbiddenContent;
   private ConceptPresentation props_IModelContent;
   private ConceptPresentation props_IObjectsContent;
   private ConceptPresentation props_IOrderSpecContent;
+  private ConceptPresentation props_InstacenOf;
   private ConceptPresentation props_JavaQualifiedName;
+  private ConceptPresentation props_Length;
   private ConceptPresentation props_MethodArg;
   private ConceptPresentation props_MethodDef;
   private ConceptPresentation props_Model;
   private ConceptPresentation props_NegatesSpec;
+  private ConceptPresentation props_NoCallTo;
+  private ConceptPresentation props_NotHardCoded;
   private ConceptPresentation props_Object;
   private ConceptPresentation props_ObjectSpec;
   private ConceptPresentation props_ObjectTypeParam;
@@ -61,10 +67,18 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_BaseSpecType = cpb.create();
         }
         return props_BaseSpecType;
+      case LanguageConceptSwitch.CallTo:
+        if (props_CallTo == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("callTo");
+          props_CallTo = cpb.create();
+        }
+        return props_CallTo;
       case LanguageConceptSwitch.ConstraintSpec:
         if (props_ConstraintSpec == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ConstraintSpec");
+          cpb.shortDesc("Defines constraints for objects defined under OBJECTS clause and used as parameters or return values in the EVENTS section");
+          cpb.rawPresentation("CONSTRAINTS");
           props_ConstraintSpec = cpb.create();
         }
         return props_ConstraintSpec;
@@ -140,6 +154,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Generic = cpb.create();
         }
         return props_Generic;
+      case LanguageConceptSwitch.IConstraintContent:
+        if (props_IConstraintContent == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IConstraintContent = cpb.create();
+        }
+        return props_IConstraintContent;
       case LanguageConceptSwitch.IEventSpecContent:
         if (props_IEventSpecContent == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -170,6 +190,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IOrderSpecContent = cpb.create();
         }
         return props_IOrderSpecContent;
+      case LanguageConceptSwitch.InstacenOf:
+        if (props_InstacenOf == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("instanceOf");
+          props_InstacenOf = cpb.create();
+        }
+        return props_InstacenOf;
       case LanguageConceptSwitch.JavaQualifiedName:
         if (props_JavaQualifiedName == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -177,6 +204,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_JavaQualifiedName = cpb.create();
         }
         return props_JavaQualifiedName;
+      case LanguageConceptSwitch.Length:
+        if (props_Length == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("length");
+          props_Length = cpb.create();
+        }
+        return props_Length;
       case LanguageConceptSwitch.MethodArg:
         if (props_MethodArg == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -205,6 +239,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_NegatesSpec = cpb.create();
         }
         return props_NegatesSpec;
+      case LanguageConceptSwitch.NoCallTo:
+        if (props_NoCallTo == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("noCallTo");
+          props_NoCallTo = cpb.create();
+        }
+        return props_NoCallTo;
+      case LanguageConceptSwitch.NotHardCoded:
+        if (props_NotHardCoded == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("notHardCoded");
+          props_NotHardCoded = cpb.create();
+        }
+        return props_NotHardCoded;
       case LanguageConceptSwitch.Object:
         if (props_Object == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

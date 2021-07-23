@@ -15,6 +15,7 @@
       <concept id="3486838550932820265" name="MetaCrySL.structure.Spec" flags="ng" index="h7EKp">
         <property id="5292687979099989043" name="ABSTRACT" index="2sjOev" />
         <child id="4006665209295202498" name="classType" index="2yrA05" />
+        <child id="6570391813125641578" name="contraint" index="2NkURw" />
         <child id="6570391813125228699" name="forbidden" index="2Nm70h" />
         <child id="4088624315226392631" name="events" index="31DrSh" />
         <child id="4088624315226392735" name="order" index="31DrUT" />
@@ -47,6 +48,25 @@
       <concept id="6570391813125228978" name="MetaCrySL.structure.ForbiddenMethod" flags="ng" index="2Nm74S">
         <property id="6570391813125466567" name="alternative" index="2Nld5d" />
         <child id="6570391813125229224" name="method" index="2Nm78y" />
+      </concept>
+      <concept id="6570391813126775067" name="MetaCrySL.structure.InstacenOf" flags="ng" index="2NCdAh">
+        <property id="6570391813126775170" name="var" index="2NCd$8" />
+        <property id="6570391813126775174" name="varType" index="2NCd$c" />
+      </concept>
+      <concept id="6570391813126558971" name="MetaCrySL.structure.Length" flags="ng" index="2NDqLL">
+        <property id="6570391813126559014" name="var" index="2NDqQG" />
+      </concept>
+      <concept id="6570391813126347402" name="MetaCrySL.structure.NotHardCoded" flags="ng" index="2NEm80">
+        <property id="6570391813126347555" name="var" index="2NEmeD" />
+      </concept>
+      <concept id="6570391813126140579" name="MetaCrySL.structure.CallTo" flags="ng" index="2NEwCD">
+        <property id="6570391813126140682" name="method" index="2NEwI0" />
+      </concept>
+      <concept id="6570391813126039421" name="MetaCrySL.structure.NoCallTo" flags="ng" index="2NFpZR">
+        <property id="6570391813126039524" name="method" index="2NFpXI" />
+      </concept>
+      <concept id="4088624315226392760" name="MetaCrySL.structure.ConstraintSpec" flags="ng" index="31DrUu">
+        <child id="6570391813125641491" name="constraints" index="2NkUQp" />
       </concept>
       <concept id="4088624315226393083" name="MetaCrySL.structure.ForbiddenSpec" flags="ng" index="31DrZt">
         <child id="6570391813125228936" name="forbidenMethods" index="2Nm742" />
@@ -107,6 +127,24 @@
         <node concept="1ntmjS" id="5GII8FCuAyl" role="2Nm78y">
           <property role="1nuBZo" value="method1" />
         </node>
+      </node>
+    </node>
+    <node concept="31DrUu" id="5GII8FCw1th" role="2NkURw">
+      <node concept="2NFpZR" id="5GII8FCxb9T" role="2NkUQp">
+        <property role="2NFpXI" value="n" />
+      </node>
+      <node concept="2NEwCD" id="5GII8FCxXD6" role="2NkUQp">
+        <property role="2NEwI0" value="n" />
+      </node>
+      <node concept="2NEm80" id="5GII8FCyLhm" role="2NkUQp">
+        <property role="2NEmeD" value="haha" />
+      </node>
+      <node concept="2NDqLL" id="5GII8FCzbHy" role="2NkUQp">
+        <property role="2NDqQG" value="n" />
+      </node>
+      <node concept="2NCdAh" id="5GII8FC$1vG" role="2NkUQp">
+        <property role="2NCd$8" value="n" />
+        <property role="2NCd$c" value="n" />
       </node>
     </node>
   </node>
