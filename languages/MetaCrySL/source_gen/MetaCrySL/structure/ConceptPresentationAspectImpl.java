@@ -29,6 +29,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_IConstraintContent;
   private ConceptPresentation props_IEventSpecContent;
   private ConceptPresentation props_IForbiddenContent;
+  private ConceptPresentation props_IMethodArg;
   private ConceptPresentation props_IModelContent;
   private ConceptPresentation props_IObjectsContent;
   private ConceptPresentation props_IOrderSpecContent;
@@ -36,7 +37,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_InstacenOf;
   private ConceptPresentation props_JavaQualifiedName;
   private ConceptPresentation props_Length;
-  private ConceptPresentation props_MethodArg;
   private ConceptPresentation props_MethodDef;
   private ConceptPresentation props_Model;
   private ConceptPresentation props_NegatesSpec;
@@ -197,6 +197,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IForbiddenContent = cpb.create();
         }
         return props_IForbiddenContent;
+      case LanguageConceptSwitch.IMethodArg:
+        if (props_IMethodArg == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("It should accept a wild card ('_') or something like 'int x' ");
+          props_IMethodArg = cpb.create();
+        }
+        return props_IMethodArg;
       case LanguageConceptSwitch.IModelContent:
         if (props_IModelContent == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -243,13 +250,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Length = cpb.create();
         }
         return props_Length;
-      case LanguageConceptSwitch.MethodArg:
-        if (props_MethodArg == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("It should accept a wild card ('_') or something like 'int x' ");
-          props_MethodArg = cpb.create();
-        }
-        return props_MethodArg;
       case LanguageConceptSwitch.MethodDef:
         if (props_MethodDef == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

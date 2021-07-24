@@ -21,8 +21,14 @@
         <child id="4088624315226392735" name="order" index="31DrUT" />
         <child id="8598353117207694615" name="objects" index="3jQJ6d" />
       </concept>
+      <concept id="1004539440856805899" name="MetaCrySL.structure.FormalArgs" flags="ng" index="2qOQl7">
+        <child id="1004539440857168714" name="args" index="2qQuK6" />
+      </concept>
       <concept id="5292687979099953601" name="MetaCrySL.structure.ObjectSpec" flags="ng" index="2sifTH">
         <child id="5292687979099972650" name="contents" index="2si8e6" />
+      </concept>
+      <concept id="3788526389076105194" name="MetaCrySL.structure.FormalArg" flags="ng" index="2vw9H7">
+        <property id="3788526389076105215" name="argument" index="2vw9Hi" />
       </concept>
       <concept id="9111215912465869806" name="MetaCrySL.structure.BaseSpecType" flags="ng" index="w6U5R">
         <child id="9111215912465870129" name="name" index="w6UuC" />
@@ -80,6 +86,7 @@
       </concept>
       <concept id="7670361912899009917" name="MetaCrySL.structure.MethodDef" flags="ng" index="1ntmjS">
         <property id="7670361912899069533" name="methodName" index="1nuBZo" />
+        <child id="1004539440856805896" name="args" index="2qOQl4" />
       </concept>
       <concept id="8063880014109550711" name="MetaCrySL.structure.Object" flags="ng" index="1BHS1h">
         <property id="8063880014109550718" name="name" index="1BHS1o" />
@@ -107,8 +114,16 @@
     <node concept="3jPrP_" id="6DMAokX1ZJA" role="31DrSh">
       <node concept="2AUv2b" id="5GII8FCsg$_" role="3jPrUW">
         <property role="2NgTxn" value="c1" />
-        <node concept="1ntmjS" id="5GII8FCsg$B" role="1ntmhb">
-          <property role="1nuBZo" value="method1" />
+        <node concept="1ntmjS" id="RKPOMnajxL" role="1ntmhb">
+          <property role="1nuBZo" value="method" />
+          <node concept="2qOQl7" id="RKPOMnbHNz" role="2qOQl4">
+            <node concept="2vw9H7" id="RKPOMnbHN_" role="2qQuK6">
+              <property role="2vw9Hi" value="_" />
+            </node>
+            <node concept="2vw9H7" id="RKPOMnbHNI" role="2qQuK6">
+              <property role="2vw9Hi" value="abc" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2AUv28" id="5GII8FCsyJ6" role="3jPrUW">
