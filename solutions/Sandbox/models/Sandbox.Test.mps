@@ -21,6 +21,18 @@
         <child id="4088624315226392735" name="order" index="31DrUT" />
         <child id="8598353117207694615" name="objects" index="3jQJ6d" />
       </concept>
+      <concept id="1004539440857664366" name="MetaCrySL.structure.ZeroOrMore" flags="ng" index="2qK1Ky" />
+      <concept id="1004539440857664124" name="MetaCrySL.structure.Optional" flags="ng" index="2qK1OK" />
+      <concept id="1004539440857660154" name="MetaCrySL.structure.BasicEventOpExp" flags="ng" index="2qK6QQ">
+        <child id="1004539440858307046" name="exp" index="2qM$UE" />
+      </concept>
+      <concept id="1004539440857790430" name="MetaCrySL.structure.SequenceExp" flags="ng" index="2qKA2i">
+        <child id="1004539440858052105" name="right" index="2qLA55" />
+        <child id="1004539440858052103" name="left" index="2qLA5b" />
+      </concept>
+      <concept id="1004539440858307559" name="MetaCrySL.structure.EventLabelExp" flags="ng" index="2qM$MF">
+        <property id="1004539440858307640" name="label" index="2qM$HO" />
+      </concept>
       <concept id="1004539440856805899" name="MetaCrySL.structure.FormalArgs" flags="ng" index="2qOQl7">
         <child id="1004539440857168714" name="args" index="2qQuK6" />
       </concept>
@@ -77,7 +89,9 @@
       <concept id="4088624315226393083" name="MetaCrySL.structure.ForbiddenSpec" flags="ng" index="31DrZt">
         <child id="6570391813125228936" name="forbidenMethods" index="2Nm742" />
       </concept>
-      <concept id="8598353117207556270" name="MetaCrySL.structure.OrderSpec" flags="ng" index="3jP0KO" />
+      <concept id="8598353117207556270" name="MetaCrySL.structure.OrderSpec" flags="ng" index="3jP0KO">
+        <child id="8598353117207556273" name="content" index="3jP0KF" />
+      </concept>
       <concept id="8598353117207511551" name="MetaCrySL.structure.EventSpec" flags="ng" index="3jPrP_">
         <child id="8598353117207511590" name="content" index="3jPrUW" />
       </concept>
@@ -135,7 +149,25 @@
         </node>
       </node>
     </node>
-    <node concept="3jP0KO" id="5GII8FCtGvt" role="31DrUT" />
+    <node concept="3jP0KO" id="5GII8FCtGvt" role="31DrUT">
+      <node concept="2qKA2i" id="RKPOMnfEu1" role="3jP0KF">
+        <node concept="2qM$MF" id="RKPOMnfEur" role="2qLA5b">
+          <property role="2qM$HO" value="c1" />
+        </node>
+        <node concept="2qKA2i" id="RKPOMnfEvx" role="2qLA55">
+          <node concept="2qK1OK" id="RKPOMnfEw1" role="2qLA5b">
+            <node concept="2qM$MF" id="RKPOMnfEw4" role="2qM$UE">
+              <property role="2qM$HO" value="c2" />
+            </node>
+          </node>
+          <node concept="2qK1Ky" id="RKPOMnfEwq" role="2qLA55">
+            <node concept="2qM$MF" id="RKPOMnfEwt" role="2qM$UE">
+              <property role="2qM$HO" value="c3" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="31DrZt" id="5GII8FCtZX7" role="2Nm70h">
       <node concept="2Nm74S" id="5GII8FCuAyj" role="2Nm742">
         <property role="2Nld5d" value="c" />
