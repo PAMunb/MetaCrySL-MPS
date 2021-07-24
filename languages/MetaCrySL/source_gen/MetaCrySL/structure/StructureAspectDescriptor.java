@@ -273,7 +273,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("MetaCrySL.structure.BasicEventExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0xdf0d74c9730b7e3L);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/1004539440857660154");
     b.version(2);
-    b.aggregate("exp", 0xdf0d74c973a99e6L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0xdf0d74c9730b886L).optional(true).ordered(true).multiple(false).origin("1004539440858307046").done();
+    b.aggregate("exp", 0xdf0d74c973a99e6L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0xdf0d74c9730b96aL).optional(true).ordered(true).multiple(false).origin("1004539440858307046").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForBrackets() {

@@ -27,13 +27,16 @@
         <property id="1004539440858834861" name="label" index="2qGB3x" />
       </concept>
       <concept id="1004539440857664366" name="MetaCrySL.structure.ZeroOrMore" flags="ng" index="2qK1Ky" />
-      <concept id="1004539440857664124" name="MetaCrySL.structure.Optional" flags="ng" index="2qK1OK" />
       <concept id="1004539440857660154" name="MetaCrySL.structure.BasicEventOpExp" flags="ng" index="2qK6QQ">
         <child id="1004539440858307046" name="exp" index="2qM$UE" />
       </concept>
       <concept id="1004539440857790430" name="MetaCrySL.structure.SequenceExp" flags="ng" index="2qKA2i">
         <child id="1004539440858052105" name="right" index="2qLA55" />
         <child id="1004539440858052103" name="left" index="2qLA5b" />
+      </concept>
+      <concept id="1004539440857790086" name="MetaCrySL.structure.ChoiceExp" flags="ng" index="2qKA7a">
+        <child id="1004539440858052078" name="left" index="2qLAay" />
+        <child id="1004539440858052080" name="right" index="2qLAaW" />
       </concept>
       <concept id="1004539440858307559" name="MetaCrySL.structure.EventLabelExp" flags="ng" index="2qM$MF">
         <property id="1004539440858307640" name="label" index="2qM$HO" />
@@ -161,19 +164,17 @@
       </node>
     </node>
     <node concept="3jP0KO" id="5GII8FCtGvt" role="31DrUT">
-      <node concept="2qKA2i" id="RKPOMnfEu1" role="3jP0KF">
-        <node concept="2qM$MF" id="RKPOMnfEur" role="2qLA5b">
-          <property role="2qM$HO" value="c1" />
+      <node concept="2qKA7a" id="RKPOMnjgA0" role="3jP0KF">
+        <node concept="2qM$MF" id="RKPOMnjgAq" role="2qLAay">
+          <property role="2qM$HO" value="cs" />
         </node>
-        <node concept="2qKA2i" id="RKPOMnfEvx" role="2qLA55">
-          <node concept="2qK1OK" id="RKPOMnfEw1" role="2qLA5b">
-            <node concept="2qM$MF" id="RKPOMnfEw4" role="2qM$UE">
-              <property role="2qM$HO" value="c2" />
+        <node concept="2qK1Ky" id="RKPOMnjgAL" role="2qLAaW">
+          <node concept="2qKA2i" id="RKPOMnjLP_" role="2qM$UE">
+            <node concept="2qM$MF" id="RKPOMnjLPZ" role="2qLA5b">
+              <property role="2qM$HO" value="c1" />
             </node>
-          </node>
-          <node concept="2qK1Ky" id="RKPOMnfEwq" role="2qLA55">
-            <node concept="2qM$MF" id="RKPOMnfEwt" role="2qM$UE">
-              <property role="2qM$HO" value="c3" />
+            <node concept="2qM$MF" id="RKPOMnjLQ2" role="2qLA55">
+              <property role="2qM$HO" value="c2" />
             </node>
           </node>
         </node>
