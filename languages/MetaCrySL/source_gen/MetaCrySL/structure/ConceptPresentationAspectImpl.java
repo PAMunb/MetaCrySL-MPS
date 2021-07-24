@@ -10,7 +10,9 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_AggregateList;
+  private ConceptPresentation props_AtomicContraintExp;
   private ConceptPresentation props_BaseSpecType;
+  private ConceptPresentation props_Brackets;
   private ConceptPresentation props_CallTo;
   private ConceptPresentation props_ConstraintSpec;
   private ConceptPresentation props_EnsuresSpec;
@@ -22,6 +24,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ForbiddenSpec;
   private ConceptPresentation props_FormalArg;
   private ConceptPresentation props_FormalArgs;
+  private ConceptPresentation props_FunctionCall;
   private ConceptPresentation props_Generic;
   private ConceptPresentation props_IConstraintContent;
   private ConceptPresentation props_IEventSpecContent;
@@ -29,6 +32,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_IModelContent;
   private ConceptPresentation props_IObjectsContent;
   private ConceptPresentation props_IOrderSpecContent;
+  private ConceptPresentation props_InSet;
   private ConceptPresentation props_InstacenOf;
   private ConceptPresentation props_JavaQualifiedName;
   private ConceptPresentation props_Length;
@@ -46,6 +50,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_RequiresSpec;
   private ConceptPresentation props_SimpleType;
   private ConceptPresentation props_Spec;
+  private ConceptPresentation props_Value;
   private ConceptPresentation props_WildcardArg;
 
   @Override
@@ -61,12 +66,25 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_AggregateList = cpb.create();
         }
         return props_AggregateList;
+      case LanguageConceptSwitch.AtomicContraintExp:
+        if (props_AtomicContraintExp == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AtomicContraintExp = cpb.create();
+        }
+        return props_AtomicContraintExp;
       case LanguageConceptSwitch.BaseSpecType:
         if (props_BaseSpecType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           props_BaseSpecType = cpb.create();
         }
         return props_BaseSpecType;
+      case LanguageConceptSwitch.Brackets:
+        if (props_Brackets == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Brackets");
+          props_Brackets = cpb.create();
+        }
+        return props_Brackets;
       case LanguageConceptSwitch.CallTo:
         if (props_CallTo == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -147,6 +165,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_FormalArgs = cpb.create();
         }
         return props_FormalArgs;
+      case LanguageConceptSwitch.FunctionCall:
+        if (props_FunctionCall == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("FunctionCall");
+          props_FunctionCall = cpb.create();
+        }
+        return props_FunctionCall;
       case LanguageConceptSwitch.Generic:
         if (props_Generic == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -190,6 +215,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IOrderSpecContent = cpb.create();
         }
         return props_IOrderSpecContent;
+      case LanguageConceptSwitch.InSet:
+        if (props_InSet == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("InSet");
+          props_InSet = cpb.create();
+        }
+        return props_InSet;
       case LanguageConceptSwitch.InstacenOf:
         if (props_InstacenOf == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -311,6 +343,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Spec = cpb.create();
         }
         return props_Spec;
+      case LanguageConceptSwitch.Value:
+        if (props_Value == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Value = cpb.create();
+        }
+        return props_Value;
       case LanguageConceptSwitch.WildcardArg:
         if (props_WildcardArg == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

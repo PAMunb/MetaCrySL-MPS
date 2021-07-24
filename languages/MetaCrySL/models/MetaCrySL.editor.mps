@@ -58,10 +58,20 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="1716599163375643733" name="com.mbeddr.mpsutil.grammarcells.structure.BracketsCell" flags="ng" index="drBAd">
+        <child id="1716599163375643743" name="left" index="drBA7" />
+        <child id="1716599163375643746" name="inner" index="drBAU" />
+        <child id="1716599163375643751" name="right" index="drBAZ" />
+      </concept>
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
+      <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n" />
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
+      <concept id="3011849438420226693" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarInfoCell" flags="ng" index="1WcQYu">
+        <child id="8207263695490916687" name="rules" index="2El2Yn" />
+        <child id="2862331529394260612" name="projection" index="1LiK7o" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -519,6 +529,39 @@
         <property role="3F0ifm" value="]" />
       </node>
       <node concept="2iRfu4" id="5GII8FCzA7S" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="RKPOMn84m3">
+    <property role="3GE5qa" value="spec.constraint.basic-exp.atomic" />
+    <ref role="1XX52x" to="qgj4:RKPOMn84j6" resolve="Brackets" />
+    <node concept="1WcQYu" id="RKPOMn84mF" role="2wV5jI">
+      <node concept="2ElW$n" id="RKPOMn84mM" role="2El2Yn" />
+      <node concept="3EZMnI" id="RKPOMn84m5" role="1LiK7o">
+        <node concept="2iRfu4" id="RKPOMn84m8" role="2iSdaV" />
+        <node concept="drBAd" id="RKPOMn84mz" role="3EZMnx">
+          <node concept="3F0ifn" id="RKPOMn84m$" role="drBA7">
+            <property role="3F0ifm" value="(" />
+          </node>
+          <node concept="3F1sOY" id="RKPOMn84m_" role="drBAU">
+            <ref role="1NtTu8" to="qgj4:RKPOMn84kn" resolve="exp" />
+          </node>
+          <node concept="3F0ifn" id="RKPOMn84mA" role="drBAZ">
+            <property role="3F0ifm" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="RKPOMn84sp">
+    <property role="3GE5qa" value="spec.constraint.basic-exp.atomic" />
+    <ref role="1XX52x" to="qgj4:RKPOMn84n$" resolve="FunctionCall" />
+    <node concept="1WcQYu" id="RKPOMn84zt" role="2wV5jI">
+      <node concept="3EZMnI" id="RKPOMn84sr" role="1LiK7o">
+        <node concept="3F0A7n" id="RKPOMn84za" role="3EZMnx">
+          <ref role="1NtTu8" to="qgj4:RKPOMn84sQ" resolve="methodName" />
+        </node>
+        <node concept="2iRfu4" id="RKPOMn84su" role="2iSdaV" />
+      </node>
     </node>
   </node>
 </model>
