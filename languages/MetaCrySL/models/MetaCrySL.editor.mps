@@ -244,6 +244,13 @@
         </node>
         <node concept="2iRfu4" id="5GII8FCvhme" role="2iSdaV" />
       </node>
+      <node concept="3EZMnI" id="RKPOMngany" role="3EZMnx">
+        <node concept="VPM3Z" id="RKPOMngan$" role="3F10Kt" />
+        <node concept="3F1sOY" id="RKPOMngao6" role="3EZMnx">
+          <ref role="1NtTu8" to="qgj4:RKPOMngamY" resolve="ensure" />
+        </node>
+        <node concept="2iRfu4" id="RKPOMnganB" role="2iSdaV" />
+      </node>
       <node concept="2iRkQZ" id="7TLyD_uq1PX" role="2iSdaV" />
     </node>
   </node>
@@ -661,6 +668,39 @@
     <ref role="1XX52x" to="qgj4:RKPOMneDJB" resolve="EventLabelExp" />
     <node concept="3F0A7n" id="RKPOMneDLr" role="2wV5jI">
       <ref role="1NtTu8" to="qgj4:RKPOMneDKS" resolve="label" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="RKPOMnfEFt">
+    <property role="3GE5qa" value="spec.ensures" />
+    <ref role="1XX52x" to="qgj4:3yXHyrT60Am" resolve="EnsuresSpec" />
+    <node concept="3EZMnI" id="RKPOMnfEFv" role="2wV5jI">
+      <node concept="PMmxH" id="RKPOMnfEFA" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F2HdR" id="RKPOMnfEFO" role="3EZMnx">
+        <ref role="1NtTu8" to="qgj4:RKPOMnfEEp" resolve="content" />
+        <node concept="2iRkQZ" id="RKPOMnfEFR" role="2czzBx" />
+      </node>
+      <node concept="2iRkQZ" id="RKPOMnfEFy" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="RKPOMngEtD">
+    <property role="3GE5qa" value="spec.ensures" />
+    <ref role="1XX52x" to="qgj4:RKPOMngEoL" resolve="EnsurePredicate" />
+    <node concept="3EZMnI" id="RKPOMngEtF" role="2wV5jI">
+      <node concept="3F1sOY" id="RKPOMngEu6" role="3EZMnx">
+        <ref role="1NtTu8" to="qgj4:RKPOMngEpK" resolve="predicate" />
+      </node>
+      <node concept="3F0ifn" id="RKPOMngEuc" role="3EZMnx">
+        <property role="3F0ifm" value="after" />
+      </node>
+      <node concept="3F0A7n" id="RKPOMngEuJ" role="3EZMnx">
+        <ref role="1NtTu8" to="qgj4:RKPOMngEuH" resolve="label" />
+      </node>
+      <node concept="3F0ifn" id="RKPOMngEvx" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+      </node>
+      <node concept="2iRfu4" id="RKPOMngEtI" role="2iSdaV" />
     </node>
   </node>
 </model>

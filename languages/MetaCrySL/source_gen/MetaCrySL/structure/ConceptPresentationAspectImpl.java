@@ -11,6 +11,7 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_AggregateList;
   private ConceptPresentation props_AtomicContraintExp;
+  private ConceptPresentation props_AtomicPredicate;
   private ConceptPresentation props_BaseSpecType;
   private ConceptPresentation props_BasicEventExp;
   private ConceptPresentation props_BasicEventOpExp;
@@ -18,6 +19,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_CallTo;
   private ConceptPresentation props_ChoiceExp;
   private ConceptPresentation props_ConstraintSpec;
+  private ConceptPresentation props_EnsurePredicate;
   private ConceptPresentation props_EnsuresSpec;
   private ConceptPresentation props_EventAggregate;
   private ConceptPresentation props_EventExp;
@@ -33,6 +35,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_FunctionCall;
   private ConceptPresentation props_Generic;
   private ConceptPresentation props_IConstraintContent;
+  private ConceptPresentation props_IEnsureContent;
   private ConceptPresentation props_IEventSpecContent;
   private ConceptPresentation props_IForbiddenContent;
   private ConceptPresentation props_IMethodArg;
@@ -83,6 +86,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_AtomicContraintExp = cpb.create();
         }
         return props_AtomicContraintExp;
+      case LanguageConceptSwitch.AtomicPredicate:
+        if (props_AtomicPredicate == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("AtomicPredicate");
+          props_AtomicPredicate = cpb.create();
+        }
+        return props_AtomicPredicate;
       case LanguageConceptSwitch.BaseSpecType:
         if (props_BaseSpecType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -130,10 +140,17 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ConstraintSpec = cpb.create();
         }
         return props_ConstraintSpec;
+      case LanguageConceptSwitch.EnsurePredicate:
+        if (props_EnsurePredicate == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("EnsurePredicate");
+          props_EnsurePredicate = cpb.create();
+        }
+        return props_EnsurePredicate;
       case LanguageConceptSwitch.EnsuresSpec:
         if (props_EnsuresSpec == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("EnsuresSpec");
+          cpb.rawPresentation("ENSURES");
           props_EnsuresSpec = cpb.create();
         }
         return props_EnsuresSpec;
@@ -235,6 +252,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IConstraintContent = cpb.create();
         }
         return props_IConstraintContent;
+      case LanguageConceptSwitch.IEnsureContent:
+        if (props_IEnsureContent == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IEnsureContent = cpb.create();
+        }
+        return props_IEnsureContent;
       case LanguageConceptSwitch.IEventSpecContent:
         if (props_IEventSpecContent == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
