@@ -15,6 +15,7 @@
       <concept id="3486838550932820265" name="MetaCrySL.structure.Spec" flags="ng" index="h7EKp">
         <property id="5292687979099989043" name="ABSTRACT" index="2sjOev" />
         <child id="1004539440858703294" name="ensure" index="2qG7bM" />
+        <child id="1004539440859103775" name="neg" index="2qHxlj" />
         <child id="4006665209295202498" name="classType" index="2yrA05" />
         <child id="6570391813125641578" name="contraint" index="2NkURw" />
         <child id="6570391813125228699" name="forbidden" index="2Nm70h" />
@@ -86,6 +87,9 @@
       </concept>
       <concept id="6570391813126039421" name="MetaCrySL.structure.NoCallTo" flags="ng" index="2NFpZR">
         <property id="6570391813126039524" name="method" index="2NFpXI" />
+      </concept>
+      <concept id="4088624315226447472" name="MetaCrySL.structure.NegatesSpec" flags="ng" index="31Dmxm">
+        <child id="1004539440858969039" name="content" index="2qH6i3" />
       </concept>
       <concept id="4088624315226392760" name="MetaCrySL.structure.ConstraintSpec" flags="ng" index="31DrUu">
         <child id="6570391813125641491" name="constraints" index="2NkUQp" />
@@ -203,6 +207,11 @@
     </node>
     <node concept="31DrYK" id="RKPOMnhb48" role="2qG7bM">
       <node concept="2qGB5X" id="RKPOMnhb5B" role="2qNBRl">
+        <property role="2qGB3x" value="c2" />
+      </node>
+    </node>
+    <node concept="31Dmxm" id="RKPOMnidlI" role="2qHxlj">
+      <node concept="2qGB5X" id="RKPOMniITm" role="2qH6i3">
         <property role="2qGB3x" value="c2" />
       </node>
     </node>

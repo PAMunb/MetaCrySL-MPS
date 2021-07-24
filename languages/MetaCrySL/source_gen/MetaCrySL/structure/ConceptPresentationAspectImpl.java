@@ -40,6 +40,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_IForbiddenContent;
   private ConceptPresentation props_IMethodArg;
   private ConceptPresentation props_IModelContent;
+  private ConceptPresentation props_INegatesContent;
   private ConceptPresentation props_IObjectsContent;
   private ConceptPresentation props_IOrderSpecContent;
   private ConceptPresentation props_InSet;
@@ -283,6 +284,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IModelContent = cpb.create();
         }
         return props_IModelContent;
+      case LanguageConceptSwitch.INegatesContent:
+        if (props_INegatesContent == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_INegatesContent = cpb.create();
+        }
+        return props_INegatesContent;
       case LanguageConceptSwitch.IObjectsContent:
         if (props_IObjectsContent == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -340,7 +347,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.NegatesSpec:
         if (props_NegatesSpec == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("NegatesSpec");
+          cpb.rawPresentation("NEGATES");
           props_NegatesSpec = cpb.create();
         }
         return props_NegatesSpec;
