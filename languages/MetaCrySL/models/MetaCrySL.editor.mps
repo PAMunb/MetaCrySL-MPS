@@ -815,5 +815,54 @@
       <node concept="2iRfu4" id="5yMZgyMNCuY" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="5yMZgyMNDCX">
+    <property role="3GE5qa" value="spec.constraint.basic" />
+    <ref role="1XX52x" to="qgj4:5GII8FC$tjH" resolve="InSet" />
+    <node concept="3EZMnI" id="5yMZgyMNDD4" role="2wV5jI">
+      <node concept="3F1sOY" id="6zPEcbYwdj$" role="3EZMnx">
+        <ref role="1NtTu8" to="qgj4:5yMZgyMNDDN" resolve="left" />
+      </node>
+      <node concept="PMmxH" id="6zPEcbYwdk2" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F1sOY" id="6zPEcbYwdkt" role="3EZMnx">
+        <ref role="1NtTu8" to="qgj4:5yMZgyMNDEt" resolve="right" />
+      </node>
+      <node concept="2iRfu4" id="5yMZgyMNDD7" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5yMZgyMNDHY">
+    <property role="3GE5qa" value="spec.constraint.basic" />
+    <ref role="1XX52x" to="qgj4:5yMZgyMNDGp" resolve="MetaVariable" />
+    <node concept="3EZMnI" id="5yMZgyMNDIk" role="2wV5jI">
+      <node concept="3F0ifn" id="5yMZgyMNDIJ" role="3EZMnx">
+        <property role="3F0ifm" value="${" />
+      </node>
+      <node concept="3F0A7n" id="5yMZgyMNDJN" role="3EZMnx">
+        <ref role="1NtTu8" to="qgj4:5yMZgyMNDJ9" resolve="label" />
+      </node>
+      <node concept="3F0ifn" id="5yMZgyMNDJV" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+      </node>
+      <node concept="2iRfu4" id="5yMZgyMNDIn" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6zPEcbYw7yH">
+    <ref role="1XX52x" to="qgj4:6zPEcbYw7wm" resolve="LiteralSet" />
+    <node concept="3EZMnI" id="6zPEcbYw7yJ" role="2wV5jI">
+      <node concept="3F0ifn" id="6zPEcbYw7yQ" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+      </node>
+      <node concept="3F2HdR" id="6zPEcbYw7yW" role="3EZMnx">
+        <ref role="1NtTu8" to="qgj4:6zPEcbYw7yh" resolve="set" />
+        <node concept="2iRfu4" id="6zPEcbYw7yZ" role="2czzBx" />
+        <node concept="35HoNQ" id="6zPEcbYw7z3" role="2czzBI" />
+      </node>
+      <node concept="3F0ifn" id="6zPEcbYw7zb" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+      </node>
+      <node concept="2iRfu4" id="6zPEcbYw7yM" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

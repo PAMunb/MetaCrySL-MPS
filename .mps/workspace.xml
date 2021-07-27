@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="909bb958-00db-4373-9fa0-19071b158520" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EditorAspectDescriptorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EditorAspectDescriptorImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$10$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$10$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/OrderSpec_EditorBuilder_a$contentListHandler_b0j60x_b0a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/OrderSpec_EditorBuilder_a$contentListHandler_b0j60x_b0a.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/ConceptPresentationAspectImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/ConceptPresentationAspectImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/LanguageConceptSwitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/LanguageConceptSwitch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/StructureAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/StructureAspectDescriptor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.editor.mps" afterDir="false" />
@@ -36,7 +30,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="55ed42c6-1aa4-4d6f-a32e-c9e68796fdf5/r:478de513-c394-4085-99c6-eec13318aa8a(TempModule55ed42c6-1aa4-4d6f-a32e-c9e68796fdf5/ConsoleModel_53316536425876)">
+            <model ref="878e3b10-c2cb-4733-8616-a58a6c255421/r:733d6c4f-c782-4bb6-ae7d-73bd98a12736(TempModule878e3b10-c2cb-4733-8616-a58a6c255421/ConsoleModel_6829792151033)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -56,11 +50,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="5yMZgyMIc7R">
-                <node concept="3balQm" id="5yMZgyMIc7S" role="aymYE" />
-                <node concept="2Clz$F" id="5yMZgyMIc7T" role="aymYO" />
-                <node concept="2_V_lH" id="5yMZgyMIc7U" role="1PhJh3">
-                  <ref role="2_V_lI" node="5yMZgyMIc7T" resolve="CommandHolder" />
+              <node concept="aymSD" id="6zPEcbYw7pd">
+                <node concept="3balQm" id="6zPEcbYw7pe" role="aymYE" />
+                <node concept="2Clz$F" id="6zPEcbYw7pf" role="aymYO" />
+                <node concept="2_V_lH" id="6zPEcbYw7pg" role="1PhJh3">
+                  <ref role="2_V_lI" node="6zPEcbYw7pf" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -232,6 +226,36 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.editor.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="constraint" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:85e9c5fc-5e07-4b15-902b-439fb0104632(MetaCrySL.behavior) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.behavior.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -250,8 +274,10 @@
               <option name="myItemId" value="spec" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="constraint" />
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -285,42 +311,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="constraint" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="360eeca1-1b13-4f91-93e6-d5923d341a86" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -335,11 +325,19 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.structure]" />
+              <option name="myItemId" value="r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.editor.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="spec" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="constraint" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -353,7 +351,71 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:85e9c5fc-5e07-4b15-902b-439fb0104632(MetaCrySL.behavior) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.behavior.mps]" />
+              <option name="myItemId" value="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.structure]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="constraint" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.structure]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="constraint" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atomic" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.structure]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="constraint" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -379,7 +441,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="boolean-exp" />
+              <option name="myItemId" value="relational" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -393,7 +455,19 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.structure]" />
+              <option name="myItemId" value="r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.editor.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="constraint" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="boolean" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -437,6 +511,44 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.editor.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.structure]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <SELECTED>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </SELECTED>
         </subPane>
       </pane>
       <pane id="FileSystem">
@@ -710,7 +822,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627348401669</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Adicionados constrations concepts:&#10;- Relational&#10;- Arithmetic">
+      <created>1627350486392</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1627350486392</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="UsagesViewTool">
@@ -823,7 +942,8 @@
     <MESSAGE value="Criado concept e editor do Negates" />
     <MESSAGE value="Alterando estrutura de order" />
     <MESSAGE value="Adicionados constrations concepts:&#10;- Implies&#10;- Conjunction&#10;- Disjunction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionados constrations concepts:&#10;- Implies&#10;- Conjunction&#10;- Disjunction" />
+    <MESSAGE value="Adicionados constrations concepts:&#10;- Relational&#10;- Arithmetic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionados constrations concepts:&#10;- Relational&#10;- Arithmetic" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
