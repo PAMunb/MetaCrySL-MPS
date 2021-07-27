@@ -23,10 +23,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptBaseSpecType = createDescriptorForBaseSpecType();
   /*package*/ final ConceptDescriptor myConceptBasicEventExp = createDescriptorForBasicEventExp();
   /*package*/ final ConceptDescriptor myConceptBasicEventOpExp = createDescriptorForBasicEventOpExp();
+  /*package*/ final ConceptDescriptor myConceptBooleanExp = createDescriptorForBooleanExp();
   /*package*/ final ConceptDescriptor myConceptBrackets = createDescriptorForBrackets();
   /*package*/ final ConceptDescriptor myConceptCallTo = createDescriptorForCallTo();
   /*package*/ final ConceptDescriptor myConceptChoiceExp = createDescriptorForChoiceExp();
+  /*package*/ final ConceptDescriptor myConceptConjunctionExp = createDescriptorForConjunctionExp();
+  /*package*/ final ConceptDescriptor myConceptConstraintExp = createDescriptorForConstraintExp();
   /*package*/ final ConceptDescriptor myConceptConstraintSpec = createDescriptorForConstraintSpec();
+  /*package*/ final ConceptDescriptor myConceptDisjunctionExp = createDescriptorForDisjunctionExp();
   /*package*/ final ConceptDescriptor myConceptEnsurePredicate = createDescriptorForEnsurePredicate();
   /*package*/ final ConceptDescriptor myConceptEnsuresSpec = createDescriptorForEnsuresSpec();
   /*package*/ final ConceptDescriptor myConceptEventAggregate = createDescriptorForEventAggregate();
@@ -51,8 +55,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptINegatesContent = createDescriptorForINegatesContent();
   /*package*/ final ConceptDescriptor myConceptIObjectsContent = createDescriptorForIObjectsContent();
   /*package*/ final ConceptDescriptor myConceptIOrderSpecContent = createDescriptorForIOrderSpecContent();
+  /*package*/ final ConceptDescriptor myConceptImpliesExp = createDescriptorForImpliesExp();
   /*package*/ final ConceptDescriptor myConceptInSet = createDescriptorForInSet();
   /*package*/ final ConceptDescriptor myConceptInstacenOf = createDescriptorForInstacenOf();
+  /*package*/ final ConceptDescriptor myConceptIntValue = createDescriptorForIntValue();
   /*package*/ final ConceptDescriptor myConceptJavaQualifiedName = createDescriptorForJavaQualifiedName();
   /*package*/ final ConceptDescriptor myConceptLength = createDescriptorForLength();
   /*package*/ final ConceptDescriptor myConceptMethodDef = createDescriptorForMethodDef();
@@ -91,7 +97,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAggregateList, myConceptAtomicContraintExp, myConceptAtomicPredicate, myConceptBaseSpecType, myConceptBasicEventExp, myConceptBasicEventOpExp, myConceptBrackets, myConceptCallTo, myConceptChoiceExp, myConceptConstraintSpec, myConceptEnsurePredicate, myConceptEnsuresSpec, myConceptEventAggregate, myConceptEventExp, myConceptEventLabelExp, myConceptEventMethod, myConceptEventRef, myConceptEventRefExp, myConceptEventSpec, myConceptForbiddenMethod, myConceptForbiddenSpec, myConceptFormalArg, myConceptFormalArgs, myConceptFunctionCall, myConceptGeneric, myConceptIConstraintContent, myConceptIEnsureContent, myConceptIEventSpecContent, myConceptIForbiddenContent, myConceptIMethodArg, myConceptIModelContent, myConceptINegatesContent, myConceptIObjectsContent, myConceptIOrderSpecContent, myConceptInSet, myConceptInstacenOf, myConceptJavaQualifiedName, myConceptLength, myConceptMethodDef, myConceptModel, myConceptNegatesSpec, myConceptNoCallTo, myConceptNotHardCoded, myConceptObject, myConceptObjectSpec, myConceptObjectTypeParam, myConceptOneOrMore, myConceptOptional, myConceptOrderSpec, myConceptParameterizedType, myConceptPrimaryExp, myConceptRequiresSpec, myConceptSequenceExp, myConceptSimpleType, myConceptSpec, myConceptValue, myConceptWildcardArg, myConceptZeroOrMore);
+    return Arrays.asList(myConceptAggregateList, myConceptAtomicContraintExp, myConceptAtomicPredicate, myConceptBaseSpecType, myConceptBasicEventExp, myConceptBasicEventOpExp, myConceptBooleanExp, myConceptBrackets, myConceptCallTo, myConceptChoiceExp, myConceptConjunctionExp, myConceptConstraintExp, myConceptConstraintSpec, myConceptDisjunctionExp, myConceptEnsurePredicate, myConceptEnsuresSpec, myConceptEventAggregate, myConceptEventExp, myConceptEventLabelExp, myConceptEventMethod, myConceptEventRef, myConceptEventRefExp, myConceptEventSpec, myConceptForbiddenMethod, myConceptForbiddenSpec, myConceptFormalArg, myConceptFormalArgs, myConceptFunctionCall, myConceptGeneric, myConceptIConstraintContent, myConceptIEnsureContent, myConceptIEventSpecContent, myConceptIForbiddenContent, myConceptIMethodArg, myConceptIModelContent, myConceptINegatesContent, myConceptIObjectsContent, myConceptIOrderSpecContent, myConceptImpliesExp, myConceptInSet, myConceptInstacenOf, myConceptIntValue, myConceptJavaQualifiedName, myConceptLength, myConceptMethodDef, myConceptModel, myConceptNegatesSpec, myConceptNoCallTo, myConceptNotHardCoded, myConceptObject, myConceptObjectSpec, myConceptObjectTypeParam, myConceptOneOrMore, myConceptOptional, myConceptOrderSpec, myConceptParameterizedType, myConceptPrimaryExp, myConceptRequiresSpec, myConceptSequenceExp, myConceptSimpleType, myConceptSpec, myConceptValue, myConceptWildcardArg, myConceptZeroOrMore);
   }
 
   @Override
@@ -110,14 +116,22 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptBasicEventExp;
       case LanguageConceptSwitch.BasicEventOpExp:
         return myConceptBasicEventOpExp;
+      case LanguageConceptSwitch.BooleanExp:
+        return myConceptBooleanExp;
       case LanguageConceptSwitch.Brackets:
         return myConceptBrackets;
       case LanguageConceptSwitch.CallTo:
         return myConceptCallTo;
       case LanguageConceptSwitch.ChoiceExp:
         return myConceptChoiceExp;
+      case LanguageConceptSwitch.ConjunctionExp:
+        return myConceptConjunctionExp;
+      case LanguageConceptSwitch.ConstraintExp:
+        return myConceptConstraintExp;
       case LanguageConceptSwitch.ConstraintSpec:
         return myConceptConstraintSpec;
+      case LanguageConceptSwitch.DisjunctionExp:
+        return myConceptDisjunctionExp;
       case LanguageConceptSwitch.EnsurePredicate:
         return myConceptEnsurePredicate;
       case LanguageConceptSwitch.EnsuresSpec:
@@ -166,10 +180,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptIObjectsContent;
       case LanguageConceptSwitch.IOrderSpecContent:
         return myConceptIOrderSpecContent;
+      case LanguageConceptSwitch.ImpliesExp:
+        return myConceptImpliesExp;
       case LanguageConceptSwitch.InSet:
         return myConceptInSet;
       case LanguageConceptSwitch.InstacenOf:
         return myConceptInstacenOf;
+      case LanguageConceptSwitch.IntValue:
+        return myConceptIntValue;
       case LanguageConceptSwitch.JavaQualifiedName:
         return myConceptJavaQualifiedName;
       case LanguageConceptSwitch.Length:
@@ -276,6 +294,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("exp", 0xdf0d74c973a99e6L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0xdf0d74c9730b96aL).optional(true).ordered(true).multiple(false).origin("1004539440858307046").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForBooleanExp() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "BooleanExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x58b2fd08b2bcd6ecL);
+    b.class_(false, true, false);
+    b.super_("MetaCrySL.structure.ConstraintExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x58b2fd08b2bcd893L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/6391449034992441068");
+    b.version(2);
+    b.aggregate("left", 0x58b2fd08b2bcdbbeL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x58b2fd08b2bcd893L).optional(false).ordered(true).multiple(false).origin("6391449034992442302").done();
+    b.aggregate("right", 0x58b2fd08b2bcdbc0L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x58b2fd08b2bcd893L).optional(false).ordered(true).multiple(false).origin("6391449034992442304").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForBrackets() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "Brackets", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0xdf0d74c972044c6L);
     b.class_(false, false, false);
@@ -305,6 +333,23 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("right", 0xdf0d74c9736b5f0L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0xdf0d74c9730b96aL).optional(false).ordered(true).multiple(false).origin("1004539440858052080").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForConjunctionExp() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "ConjunctionExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x58b2fd08b2bcede9L);
+    b.class_(false, false, false);
+    b.super_("MetaCrySL.structure.BooleanExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x58b2fd08b2bcd6ecL);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/6391449034992446953");
+    b.version(2);
+    b.alias("&&");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForConstraintExp() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "ConstraintExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x58b2fd08b2bcd893L);
+    b.class_(false, true, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x5b2eb88ae87d14c2L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/6391449034992441491");
+    b.version(2);
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForConstraintSpec() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "ConstraintSpec", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x38bdb626f91808b8L);
     b.class_(false, false, false);
@@ -312,6 +357,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.aggregate("constraints", 0x5b2eb88ae87d1513L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x5b2eb88ae87d14c2L).optional(true).ordered(true).multiple(true).origin("6570391813125641491").done();
     b.alias("CONSTRAINTS");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForDisjunctionExp() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "DisjunctionExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x58b2fd08b2bcd7a2L);
+    b.class_(false, false, false);
+    b.super_("MetaCrySL.structure.BooleanExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x58b2fd08b2bcd6ecL);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/6391449034992441250");
+    b.version(2);
+    b.alias("||");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForEnsurePredicate() {
@@ -518,6 +572,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForImpliesExp() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "ImpliesExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x58b2fd08b2bcd765L);
+    b.class_(false, false, false);
+    b.super_("MetaCrySL.structure.BooleanExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x58b2fd08b2bcd6ecL);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/6391449034992441189");
+    b.version(2);
+    b.alias("=>");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForInSet() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "InSet", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x5b2eb88ae891d4edL);
     b.class_(false, false, false);
@@ -535,6 +598,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("var", 0x5b2eb88ae88e6182L).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x7e718a995e6e50cdL)).origin("6570391813126775170").done();
     b.property("varType", 0x5b2eb88ae88e6186L).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x7e718a995e6e50cdL)).origin("6570391813126775174").done();
     b.alias("instanceOf");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForIntValue() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "IntValue", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0xdf0d74c974f1f01L);
+    b.class_(false, false, false);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/1004539440859651841");
+    b.version(2);
+    b.property("value", 0xdf0d74c974f1f16L).type(PrimitiveTypeId.STRING).origin("1004539440859651862").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForJavaQualifiedName() {

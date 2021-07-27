@@ -734,5 +734,36 @@
       <node concept="2iRkQZ" id="RKPOMnhbfu" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="RKPOMnjN7z">
+    <ref role="1XX52x" to="qgj4:RKPOMnjLW1" resolve="IntValue" />
+    <node concept="3F0A7n" id="RKPOMnjN7A" role="2wV5jI">
+      <ref role="1NtTu8" to="qgj4:RKPOMnjLWm" resolve="value" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5yMZgyMJdIN">
+    <property role="3GE5qa" value="spec.constraint.boolean-exp" />
+    <ref role="1XX52x" to="qgj4:5yMZgyMJdrG" resolve="BooleanExp" />
+    <node concept="3EZMnI" id="5yMZgyMJdIP" role="2wV5jI">
+      <node concept="3F1sOY" id="5yMZgyMJdJF" role="3EZMnx">
+        <ref role="1NtTu8" to="qgj4:5yMZgyMJdIY" resolve="left" />
+      </node>
+      <node concept="1Lj6DL" id="5yMZgyMJdJL" role="3EZMnx">
+        <node concept="1Lj6DC" id="5yMZgyMJdJN" role="1Lj8FM">
+          <node concept="3clFbS" id="5yMZgyMJdJP" role="2VODD2">
+            <node concept="3clFbF" id="5yMZgyMJdOR" role="3cqZAp">
+              <node concept="2OqwBi" id="5yMZgyMJefr" role="3clFbG">
+                <node concept="1Lj6YZ" id="5yMZgyMJdOQ" role="2Oq$k0" />
+                <node concept="3n3YKJ" id="5yMZgyMJeBO" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5yMZgyMJdOG" role="3EZMnx">
+        <ref role="1NtTu8" to="qgj4:5yMZgyMJdJ0" resolve="right" />
+      </node>
+      <node concept="2iRfu4" id="5yMZgyMJdIS" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
