@@ -16,7 +16,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
   <root>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="19,0,307,0" name="MetaCrySL.editor.EditorAspectDescriptorImpl" />
+      <unit at="19,0,313,0" name="MetaCrySL.editor.EditorAspectDescriptorImpl" />
     </file>
     <file name="EventRef_SubstituteMenu.java">
       <unit at="90,0,93,0" name="MetaCrySL.editor.EventRef_SubstituteMenu$CONCEPTS" />
@@ -59,6 +59,11 @@
       <unit at="57,0,60,0" name="MetaCrySL.editor.GrammarCellsSubstituteMenu_ArithmeticExp$CONCEPTS" />
       <unit at="46,0,56,0" name="MetaCrySL.editor.GrammarCellsSubstituteMenu_ArithmeticExp$GrammarCellsSubstituteMenuPart_cwbs1n_a" />
       <unit at="21,0,61,0" name="MetaCrySL.editor.GrammarCellsSubstituteMenu_ArithmeticExp" />
+    </file>
+    <file name="GrammarCellsSubstituteMenu_AtomicConstraint.java">
+      <unit at="57,0,60,0" name="MetaCrySL.editor.GrammarCellsSubstituteMenu_AtomicConstraint$CONCEPTS" />
+      <unit at="46,0,56,0" name="MetaCrySL.editor.GrammarCellsSubstituteMenu_AtomicConstraint$GrammarCellsSubstituteMenuPart_1rw4w2_a" />
+      <unit at="21,0,61,0" name="MetaCrySL.editor.GrammarCellsSubstituteMenu_AtomicConstraint" />
     </file>
     <file name="GrammarCellsSubstituteMenu_AtomicContraintExp.java">
       <unit at="57,0,60,0" name="MetaCrySL.editor.GrammarCellsSubstituteMenu_AtomicContraintExp$CONCEPTS" />
@@ -414,6 +419,11 @@
       <unit at="57,0,60,0" name="MetaCrySL.editor.GrammarCellsSubstituteMenu_Spec$CONCEPTS" />
       <unit at="46,0,56,0" name="MetaCrySL.editor.GrammarCellsSubstituteMenu_Spec$GrammarCellsSubstituteMenuPart_8haeln_a" />
       <unit at="21,0,61,0" name="MetaCrySL.editor.GrammarCellsSubstituteMenu_Spec" />
+    </file>
+    <file name="GrammarCellsSubstituteMenu_StringValue.java">
+      <unit at="57,0,60,0" name="MetaCrySL.editor.GrammarCellsSubstituteMenu_StringValue$CONCEPTS" />
+      <unit at="46,0,56,0" name="MetaCrySL.editor.GrammarCellsSubstituteMenu_StringValue$GrammarCellsSubstituteMenuPart_gznzxe_a" />
+      <unit at="21,0,61,0" name="MetaCrySL.editor.GrammarCellsSubstituteMenu_StringValue" />
     </file>
     <file name="GrammarCellsSubstituteMenu_Unequal.java">
       <unit at="57,0,60,0" name="MetaCrySL.editor.GrammarCellsSubstituteMenu_Unequal$CONCEPTS" />
@@ -2293,7 +2303,7 @@
       <node id="1004539440859656678" at="64,89,65,145" concept="8" />
       <node id="1004539440859656678" at="66,12,67,24" concept="8" />
       <node id="1004539440859656678" at="68,15,69,40" concept="2" />
-      <node id="1004539440859656675" at="74,0,75,0" concept="11" trace="value$USxK" />
+      <node id="1004539440859656675" at="74,0,75,0" concept="11" trace="value$1JqR" />
       <node id="1004539440859656675" at="78,0,79,0" concept="11" trace="PropertyAttribute$Gb" />
       <node id="1004539440859656675" at="27,0,29,0" concept="3" trace="myNode" />
       <node id="1004539440859656675" at="41,0,44,0" concept="6" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -5742,6 +5752,114 @@
       <unit id="7563136704685570221" at="154,0,157,0" name="MetaCrySL.editor.LiteralSet_EditorBuilder_a$CONCEPTS" />
       <unit id="7563136704685570221" at="69,0,143,0" name="MetaCrySL.editor.LiteralSet_EditorBuilder_a$setListHandler_461xbw_b0" />
       <unit id="7563136704685570221" at="27,0,158,0" name="MetaCrySL.editor.LiteralSet_EditorBuilder_a" />
+    </file>
+  </root>
+  <root nodeRef="r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)/7563136704685858544">
+    <file name="StringValue_Editor.java">
+      <node id="7563136704685858544" at="11,79,12,77" concept="8" />
+      <node id="7563136704685858544" at="11,0,14,0" concept="6" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="7563136704685858544" at="11,79,12,77" />
+      <scope id="7563136704685858544" at="11,0,14,0">
+        <var name="editorContext" id="7563136704685858544" />
+        <var name="node" id="7563136704685858544" />
+      </scope>
+      <unit id="7563136704685858544" at="10,0,15,0" name="MetaCrySL.editor.StringValue_Editor" />
+    </file>
+    <file name="StringValue_EditorBuilder_a.java">
+      <node id="7563136704685858544" at="36,91,37,19" concept="12" />
+      <node id="7563136704685858544" at="37,19,38,18" concept="2" />
+      <node id="7563136704685858544" at="43,26,44,18" concept="8" />
+      <node id="7563136704685858544" at="47,39,48,32" concept="8" />
+      <node id="7563136704685858544" at="51,43,52,122" concept="7" />
+      <node id="7563136704685858544" at="52,122,53,48" concept="2" />
+      <node id="7563136704685858544" at="53,48,54,28" concept="2" />
+      <node id="7563136704685858544" at="54,28,55,31" concept="2" />
+      <node id="7563136704685858560" at="55,31,56,49" concept="2" />
+      <node id="7563136704685858565" at="56,49,57,49" concept="2" />
+      <node id="7563136704685858595" at="57,49,58,49" concept="2" />
+      <node id="7563136704685858544" at="58,49,59,22" concept="8" />
+      <node id="7563136704685858560" at="61,41,62,95" concept="7" />
+      <node id="7563136704685858560" at="62,95,63,47" concept="2" />
+      <node id="7563136704685858560" at="63,47,64,34" concept="7" />
+      <node id="7563136704685858600" at="64,34,65,54" concept="2" />
+      <node id="7563136704685858605" at="65,54,66,55" concept="2" />
+      <node id="7563136704685858560" at="66,55,67,40" concept="2" />
+      <node id="7563136704685858560" at="67,40,68,34" concept="2" />
+      <node id="7563136704685858560" at="68,34,69,22" concept="8" />
+      <node id="7563136704685858565" at="71,41,72,39" concept="2" />
+      <node id="7563136704685858565" at="73,9,74,50" concept="7" />
+      <node id="7563136704685858565" at="74,50,75,76" concept="2" />
+      <node id="7563136704685858565" at="75,76,76,149" concept="7" />
+      <node id="7563136704685858565" at="76,149,77,46" concept="2" />
+      <node id="7563136704685858565" at="77,46,78,45" concept="2" />
+      <node id="7563136704685858565" at="78,45,79,86" concept="2" />
+      <node id="7563136704685858565" at="79,86,80,33" concept="2" />
+      <node id="7563136704685858565" at="80,33,81,155" concept="7" />
+      <node id="7563136704685858565" at="83,41,84,118" concept="8" />
+      <node id="7563136704685858565" at="87,74,88,89" concept="7" />
+      <node id="7563136704685858565" at="88,89,89,145" concept="8" />
+      <node id="7563136704685858565" at="90,12,91,24" concept="8" />
+      <node id="7563136704685858565" at="92,15,93,40" concept="2" />
+      <node id="7563136704685858595" at="96,41,97,95" concept="7" />
+      <node id="7563136704685858595" at="97,95,98,47" concept="2" />
+      <node id="7563136704685858595" at="98,47,99,34" concept="2" />
+      <node id="7563136704685858595" at="99,34,100,22" concept="8" />
+      <node id="7563136704685858544" at="104,0,105,0" concept="11" trace="value$WFpl" />
+      <node id="7563136704685858544" at="108,0,109,0" concept="11" trace="PropertyAttribute$Gb" />
+      <node id="7563136704685858544" at="33,0,35,0" concept="3" trace="myNode" />
+      <node id="7563136704685858544" at="47,0,50,0" concept="6" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="7563136704685858565" at="83,0,86,0" concept="6" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="7563136704685858544" at="36,0,40,0" concept="1" trace="StringValue_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7563136704685858544" at="41,0,46,0" concept="6" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7563136704685858565" at="81,155,86,9" concept="7" />
+      <node id="7563136704685858565" at="86,9,91,24" concept="5" />
+      <node id="7563136704685858595" at="96,0,102,0" concept="6" trace="createConstant_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="7563136704685858544" at="51,0,61,0" concept="6" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="7563136704685858560" at="61,0,71,0" concept="6" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="7563136704685858565" at="72,39,94,5" concept="13" />
+      <node id="7563136704685858565" at="71,0,96,0" concept="6" trace="createProperty_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="7563136704685858544" at="43,26,44,18" />
+      <scope id="7563136704685858544" at="47,39,48,32" />
+      <scope id="7563136704685858565" at="83,41,84,118" />
+      <scope id="7563136704685858565" at="92,15,93,40" />
+      <scope id="7563136704685858544" at="36,91,38,18" />
+      <scope id="7563136704685858565" at="87,74,89,145">
+        <var name="manager" id="7563136704685858565" />
+      </scope>
+      <scope id="7563136704685858544" at="47,0,50,0" />
+      <scope id="7563136704685858565" at="83,0,86,0">
+        <var name="it" id="7563136704685858565" />
+      </scope>
+      <scope id="7563136704685858544" at="36,0,40,0">
+        <var name="context" id="7563136704685858544" />
+        <var name="node" id="7563136704685858544" />
+      </scope>
+      <scope id="7563136704685858595" at="96,41,100,22">
+        <var name="editorCell" id="7563136704685858595" />
+      </scope>
+      <scope id="7563136704685858544" at="41,0,46,0" />
+      <scope id="7563136704685858595" at="96,0,102,0" />
+      <scope id="7563136704685858544" at="51,43,59,22">
+        <var name="editorCell" id="7563136704685858544" />
+      </scope>
+      <scope id="7563136704685858560" at="61,41,69,22">
+        <var name="editorCell" id="7563136704685858560" />
+        <var name="style" id="7563136704685858560" />
+      </scope>
+      <scope id="7563136704685858544" at="51,0,61,0" />
+      <scope id="7563136704685858560" at="61,0,71,0" />
+      <scope id="7563136704685858565" at="73,9,91,24">
+        <var name="currentPropertyAttributes" id="7563136704685858565" />
+        <var name="editorCell" id="7563136704685858565" />
+        <var name="property" id="7563136704685858565" />
+        <var name="propertyAttributes" id="7563136704685858565" />
+      </scope>
+      <scope id="7563136704685858565" at="71,41,94,5" />
+      <scope id="7563136704685858565" at="71,0,96,0" />
+      <unit id="7563136704685858544" at="103,0,106,0" name="MetaCrySL.editor.StringValue_EditorBuilder_a$PROPS" />
+      <unit id="7563136704685858544" at="107,0,110,0" name="MetaCrySL.editor.StringValue_EditorBuilder_a$CONCEPTS" />
+      <unit id="7563136704685858565" at="82,102,86,7" name="MetaCrySL.editor.StringValue_EditorBuilder_a$1" />
+      <unit id="7563136704685858544" at="32,0,111,0" name="MetaCrySL.editor.StringValue_EditorBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)/7670361912899009834">

@@ -29,7 +29,12 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
+        <property id="1186414551515" name="flag" index="VOm3f" />
+      </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="8313721352726366579" name="jetbrains.mps.lang.editor.structure.CellModel_Empty" flags="ng" index="35HoNQ" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
@@ -735,9 +740,10 @@
     </node>
   </node>
   <node concept="24kQdi" id="RKPOMnjN7z">
+    <property role="3GE5qa" value="spec.constraint.basic.atomic" />
     <ref role="1XX52x" to="qgj4:RKPOMnjLW1" resolve="IntValue" />
     <node concept="3F0A7n" id="RKPOMnjN7A" role="2wV5jI">
-      <ref role="1NtTu8" to="qgj4:RKPOMnjLWm" resolve="value" />
+      <ref role="1NtTu8" to="qgj4:6zPEcbYxdGk" resolve="value" />
     </node>
   </node>
   <node concept="24kQdi" id="5yMZgyMJdIN">
@@ -862,6 +868,38 @@
         <property role="3F0ifm" value="}" />
       </node>
       <node concept="2iRfu4" id="6zPEcbYw7yM" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6zPEcbYxdVK">
+    <property role="3GE5qa" value="spec.constraint.basic.atomic" />
+    <ref role="1XX52x" to="qgj4:6zPEcbYxdRn" resolve="StringValue" />
+    <node concept="3EZMnI" id="6zPEcbYxdVM" role="2wV5jI">
+      <node concept="2iRfu4" id="6zPEcbYxdVP" role="2iSdaV" />
+      <node concept="3F0ifn" id="6zPEcbYxdW0" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
+        <node concept="11L4FC" id="6zPEcbYxdWC" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="6zPEcbYxdWH" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6zPEcbYxdW5" role="3EZMnx">
+        <ref role="1NtTu8" to="qgj4:6zPEcbYxdVT" resolve="value" />
+      </node>
+      <node concept="3F0ifn" id="6zPEcbYxdWz" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6zPEcbYxTel">
+    <property role="3GE5qa" value="spec.constraint.basic.atomic" />
+    <ref role="1XX52x" to="qgj4:6zPEcbYxTdk" resolve="Variable" />
+    <node concept="3EZMnI" id="6zPEcbYxTen" role="2wV5jI">
+      <node concept="3F0A7n" id="6zPEcbYxTeu" role="3EZMnx">
+        <ref role="1NtTu8" to="qgj4:6zPEcbYxTdZ" resolve="varName" />
+      </node>
+      <node concept="2iRfu4" id="6zPEcbYxTeq" role="2iSdaV" />
     </node>
   </node>
 </model>

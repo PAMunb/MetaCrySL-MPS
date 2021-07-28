@@ -11,6 +11,7 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_AggregateList;
   private ConceptPresentation props_ArithmeticExp;
+  private ConceptPresentation props_AtomicConstraint;
   private ConceptPresentation props_AtomicContraintExp;
   private ConceptPresentation props_AtomicPredicate;
   private ConceptPresentation props_BaseSpecType;
@@ -82,6 +83,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_SequenceExp;
   private ConceptPresentation props_SimpleType;
   private ConceptPresentation props_Spec;
+  private ConceptPresentation props_StringValue;
   private ConceptPresentation props_Unequal;
   private ConceptPresentation props_Value;
   private ConceptPresentation props_WildcardArg;
@@ -106,6 +108,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ArithmeticExp = cpb.create();
         }
         return props_ArithmeticExp;
+      case LanguageConceptSwitch.AtomicConstraint:
+        if (props_AtomicConstraint == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("AtomicConstraint");
+          props_AtomicConstraint = cpb.create();
+        }
+        return props_AtomicConstraint;
       case LanguageConceptSwitch.AtomicContraintExp:
         if (props_AtomicContraintExp == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -590,6 +599,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Spec = cpb.create();
         }
         return props_Spec;
+      case LanguageConceptSwitch.StringValue:
+        if (props_StringValue == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("StringValue");
+          props_StringValue = cpb.create();
+        }
+        return props_StringValue;
       case LanguageConceptSwitch.Unequal:
         if (props_Unequal == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

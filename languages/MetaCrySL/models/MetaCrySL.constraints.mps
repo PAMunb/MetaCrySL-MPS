@@ -53,11 +53,17 @@
       </concept>
       <concept id="1153138554286" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_propertyValue" flags="nn" index="1Wqviy" />
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="1M2fIO" id="RKPOMnjLY8">
+    <property role="3GE5qa" value="spec.constraint.basic.atomic" />
     <ref role="1M2myG" to="qgj4:RKPOMnjLW1" resolve="IntValue" />
     <node concept="EnEH3" id="RKPOMnjLZ5" role="1MhHOB">
-      <ref role="EomxK" to="qgj4:RKPOMnjLWm" resolve="value" />
+      <ref role="EomxK" to="qgj4:6zPEcbYxdGk" resolve="value" />
       <node concept="QB0g5" id="RKPOMnjM0N" role="QCWH9">
         <node concept="3clFbS" id="RKPOMnjM0O" role="2VODD2">
           <node concept="3clFbF" id="RKPOMnjM8c" role="3cqZAp">

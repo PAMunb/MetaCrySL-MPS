@@ -252,6 +252,7 @@
     </node>
   </node>
   <node concept="312cEu" id="w">
+    <property role="3GE5qa" value="spec.constraint.basic.atomic" />
     <property role="TrG5h" value="IntValue_Constraints" />
     <uo k="s:originTrace" v="n:1004539440859651976" />
     <node concept="3Tm1VV" id="x" role="1B3o_S">
@@ -324,7 +325,7 @@
             <uo k="s:originTrace" v="n:1004539440859651976" />
             <node concept="1BaE9c" id="X" role="37wK5m">
               <property role="1ouuDV" value="PROPS" />
-              <property role="1BaxDp" value="value$USxK" />
+              <property role="1BaxDp" value="value$1JqR" />
               <uo k="s:originTrace" v="n:1004539440859651976" />
               <node concept="2YIFZM" id="Z" role="1Bazha">
                 <ref role="37wK5l" to="2k9e:~MetaAdapterFactory.getProperty(long,long,long,long,java.lang.String)" resolve="getProperty" />
@@ -343,7 +344,7 @@
                   <uo k="s:originTrace" v="n:1004539440859651976" />
                 </node>
                 <node concept="1adDum" id="13" role="37wK5m">
-                  <property role="1adDun" value="0xdf0d74c974f1f16L" />
+                  <property role="1adDun" value="0x68f5a8c2fe84db14L" />
                   <uo k="s:originTrace" v="n:1004539440859651976" />
                 </node>
                 <node concept="Xl_RD" id="14" role="37wK5m">
@@ -663,7 +664,7 @@
               <uo k="s:originTrace" v="n:1004539440859651976" />
               <node concept="1BaE9c" id="2i" role="37wK5m">
                 <property role="1ouuDV" value="PROPS" />
-                <property role="1BaxDp" value="value$USxK" />
+                <property role="1BaxDp" value="value$1JqR" />
                 <uo k="s:originTrace" v="n:1004539440859651976" />
                 <node concept="2YIFZM" id="2k" role="1Bazha">
                   <ref role="37wK5l" to="2k9e:~MetaAdapterFactory.getProperty(long,long,long,long,java.lang.String)" resolve="getProperty" />
@@ -682,7 +683,7 @@
                     <uo k="s:originTrace" v="n:1004539440859651976" />
                   </node>
                   <node concept="1adDum" id="2o" role="37wK5m">
-                    <property role="1adDun" value="0xdf0d74c974f1f16L" />
+                    <property role="1adDun" value="0x68f5a8c2fe84db14L" />
                     <uo k="s:originTrace" v="n:1004539440859651976" />
                   </node>
                   <node concept="Xl_RD" id="2p" role="37wK5m">
