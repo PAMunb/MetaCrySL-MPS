@@ -52,6 +52,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_INegatesContent;
   private ConceptPresentation props_IObjectsContent;
   private ConceptPresentation props_IOrderSpecContent;
+  private ConceptPresentation props_IRequiresContent;
   private ConceptPresentation props_ImpliesExp;
   private ConceptPresentation props_InSet;
   private ConceptPresentation props_InstacenOf;
@@ -77,8 +78,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_OrderSpec;
   private ConceptPresentation props_ParameterizedType;
   private ConceptPresentation props_Plus;
+  private ConceptPresentation props_Pred;
+  private ConceptPresentation props_PredParams;
+  private ConceptPresentation props_PredicateOr;
   private ConceptPresentation props_PrimaryExp;
   private ConceptPresentation props_RelationalExp;
+  private ConceptPresentation props_RequirePredicate;
   private ConceptPresentation props_RequiresSpec;
   private ConceptPresentation props_SequenceExp;
   private ConceptPresentation props_SimpleType;
@@ -86,6 +91,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_StringValue;
   private ConceptPresentation props_Unequal;
   private ConceptPresentation props_Value;
+  private ConceptPresentation props_Variable;
   private ConceptPresentation props_WildcardArg;
   private ConceptPresentation props_ZeroOrMore;
 
@@ -383,6 +389,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IOrderSpecContent = cpb.create();
         }
         return props_IOrderSpecContent;
+      case LanguageConceptSwitch.IRequiresContent:
+        if (props_IRequiresContent == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IRequiresContent = cpb.create();
+        }
+        return props_IRequiresContent;
       case LanguageConceptSwitch.ImpliesExp:
         if (props_ImpliesExp == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -559,6 +571,26 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Plus = cpb.create();
         }
         return props_Plus;
+      case LanguageConceptSwitch.Pred:
+        if (props_Pred == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Pred");
+          props_Pred = cpb.create();
+        }
+        return props_Pred;
+      case LanguageConceptSwitch.PredParams:
+        if (props_PredParams == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_PredParams = cpb.create();
+        }
+        return props_PredParams;
+      case LanguageConceptSwitch.PredicateOr:
+        if (props_PredicateOr == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("||");
+          props_PredicateOr = cpb.create();
+        }
+        return props_PredicateOr;
       case LanguageConceptSwitch.PrimaryExp:
         if (props_PrimaryExp == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -571,10 +603,16 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_RelationalExp = cpb.create();
         }
         return props_RelationalExp;
+      case LanguageConceptSwitch.RequirePredicate:
+        if (props_RequirePredicate == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_RequirePredicate = cpb.create();
+        }
+        return props_RequirePredicate;
       case LanguageConceptSwitch.RequiresSpec:
         if (props_RequiresSpec == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("RequiresSpec");
+          cpb.rawPresentation("REQUIRES");
           props_RequiresSpec = cpb.create();
         }
         return props_RequiresSpec;
@@ -619,6 +657,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Value = cpb.create();
         }
         return props_Value;
+      case LanguageConceptSwitch.Variable:
+        if (props_Variable == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Variable");
+          props_Variable = cpb.create();
+        }
+        return props_Variable;
       case LanguageConceptSwitch.WildcardArg:
         if (props_WildcardArg == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

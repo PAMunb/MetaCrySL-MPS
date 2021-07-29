@@ -14,6 +14,7 @@
     <language id="fbc67e5c-fd70-43b1-b837-3c3551c2500b" name="MetaCrySL">
       <concept id="3486838550932820265" name="MetaCrySL.structure.Spec" flags="ng" index="h7EKp">
         <property id="5292687979099989043" name="ABSTRACT" index="2sjOev" />
+        <child id="7563136704686217412" name="require" index="2mvZ06" />
         <child id="1004539440858703294" name="ensure" index="2qG7bM" />
         <child id="1004539440859103775" name="neg" index="2qHxlj" />
         <child id="4006665209295202498" name="classType" index="2yrA05" />
@@ -97,6 +98,7 @@
       <concept id="4088624315226392760" name="MetaCrySL.structure.ConstraintSpec" flags="ng" index="31DrUu">
         <child id="6570391813125641491" name="constraints" index="2NkUQp" />
       </concept>
+      <concept id="4088624315226392881" name="MetaCrySL.structure.RequiresSpec" flags="ng" index="31DrWn" />
       <concept id="4088624315226392982" name="MetaCrySL.structure.EnsuresSpec" flags="ng" index="31DrYK">
         <child id="1004539440858573465" name="content" index="2qNBRl" />
       </concept>
@@ -216,6 +218,7 @@
         <property role="2qGB3x" value="c2" />
       </node>
     </node>
+    <node concept="31DrWn" id="6zPEcbYzYqM" role="2mvZ06" />
   </node>
 </model>
 
