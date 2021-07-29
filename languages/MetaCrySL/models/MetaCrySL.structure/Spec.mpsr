@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)" content="root">
+  <persistence version="9" />
+  <imports>
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
+      </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
+      <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
+        <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
+      </concept>
+      <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
+        <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
+        <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599976176" name="target" index="20lvS9" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1TIwiD" id="7TLyD_uq1F2">
+    <property role="TrG5h" value="Spec" />
+    <property role="3GE5qa" value="spec" />
+    <property role="34LRSv" value="SPEC" />
+    <property role="EcuMT" value="3486838550932820265" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" node="3uqyculXeyx" resolve="Model" />
+    <node concept="1TJgyj" id="3uqyculXez2" role="1TKVEi">
+      <property role="IQ2ns" value="4006665209295202498" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="classType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7TLyD_uqyJI" resolve="BaseSpecType" />
+    </node>
+    <node concept="1TJgyj" id="7tjv9E$yoOn" role="1TKVEi">
+      <property role="IQ2ns" value="8598353117207694615" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="objects" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4_NpUNleTB1" resolve="ObjectSpec" />
+    </node>
+    <node concept="1TJgyj" id="3yXHyrT60wR" role="1TKVEi">
+      <property role="IQ2ns" value="4088624315226392631" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="events" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7tjv9E$xG7Z" resolve="EventSpec" />
+    </node>
+    <node concept="1TJgyj" id="3yXHyrT60yv" role="1TKVEi">
+      <property role="IQ2ns" value="4088624315226392735" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="order" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7tjv9E$xR2I" resolve="OrderSpec" />
+    </node>
+    <node concept="1TJgyj" id="5GII8FCtGyr" role="1TKVEi">
+      <property role="IQ2ns" value="6570391813125228699" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="forbidden" />
+      <ref role="20lvS9" node="3yXHyrT60BV" resolve="ForbiddenSpec" />
+    </node>
+    <node concept="1TJgyj" id="5GII8FCvhlE" role="1TKVEi">
+      <property role="IQ2ns" value="6570391813125641578" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="contraint" />
+      <ref role="20lvS9" node="3yXHyrT60yS" resolve="ConstraintSpec" />
+    </node>
+    <node concept="1TJgyj" id="6zPEcbYy_z4" role="1TKVEi">
+      <property role="IQ2ns" value="7563136704686217412" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="require" />
+      <ref role="20lvS9" node="3yXHyrT60$L" resolve="RequiresSpec" />
+    </node>
+    <node concept="1TJgyj" id="RKPOMngamY" role="1TKVEi">
+      <property role="IQ2ns" value="1004539440858703294" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="ensure" />
+      <ref role="20lvS9" node="3yXHyrT60Am" resolve="EnsuresSpec" />
+    </node>
+    <node concept="1TJgyj" id="RKPOMnhG8v" role="1TKVEi">
+      <property role="IQ2ns" value="1004539440859103775" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="neg" />
+      <ref role="20lvS9" node="3yXHyrT6dTK" resolve="NegatesSpec" />
+    </node>
+    <node concept="1TJgyi" id="4_NpUNlf2gN" role="1TKVEl">
+      <property role="IQ2nx" value="5292687979099989043" />
+      <property role="TrG5h" value="ABSTRACT" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="4_NpUNleNN7" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+</model>
+
