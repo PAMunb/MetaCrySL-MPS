@@ -14,26 +14,31 @@ public final class LanguageConceptSwitch {
   public static final int EnsuresSpec = 2;
   public static final int EventAggregate = 3;
   public static final int EventMethod = 4;
-  public static final int EventSpec = 5;
-  public static final int IConstraintContent = 6;
-  public static final int IEnsureContent = 7;
-  public static final int IEventSpecContent = 8;
-  public static final int IModelContent = 9;
-  public static final int IObjectsContent = 10;
-  public static final int IOrderSpecContent = 11;
-  public static final int IRequiresContent = 12;
-  public static final int MethodDef = 13;
-  public static final int Model = 14;
-  public static final int NegatesSpec = 15;
-  public static final int Object = 16;
-  public static final int ObjectSpec = 17;
-  public static final int ObjectTypeParam = 18;
-  public static final int OrderSpec = 19;
-  public static final int QualifiedName = 20;
-  public static final int RequiresSpec = 21;
-  public static final int Spec = 22;
-  public static final int SpecContent = 23;
-  public static final int Type = 24;
+  public static final int EventRef = 5;
+  public static final int EventSpec = 6;
+  public static final int FormalArg = 7;
+  public static final int FormalArgList = 8;
+  public static final int IConstraintContent = 9;
+  public static final int IEnsureContent = 10;
+  public static final int IEventSpecContent = 11;
+  public static final int IModelContent = 12;
+  public static final int IObjectsContent = 13;
+  public static final int IOrderSpecContent = 14;
+  public static final int IRequiresContent = 15;
+  public static final int MethodDef = 16;
+  public static final int Model = 17;
+  public static final int NegatesSpec = 18;
+  public static final int Object = 19;
+  public static final int ObjectSpec = 20;
+  public static final int ObjectTypeParam = 21;
+  public static final int OrderSpec = 22;
+  public static final int QualifiedFormalArg = 23;
+  public static final int QualifiedName = 24;
+  public static final int RequiresSpec = 25;
+  public static final int Spec = 26;
+  public static final int SpecContent = 27;
+  public static final int Type = 28;
+  public static final int WildcardArgument = 29;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL);
@@ -42,7 +47,10 @@ public final class LanguageConceptSwitch {
     builder.put(0x38bdb626f9180996L, EnsuresSpec);
     builder.put(0x2cacad8f8a455d07L, EventAggregate);
     builder.put(0x2cacad8f8a455d04L, EventMethod);
+    builder.put(0x3ac8e6d3fc52116cL, EventRef);
     builder.put(0x77537c9aa486c1ffL, EventSpec);
+    builder.put(0x3ac8e6d3fc41821dL, FormalArg);
+    builder.put(0x3ac8e6d3fc418235L, FormalArgList);
     builder.put(0x1df97434cb3fb733L, IConstraintContent);
     builder.put(0x1df97434cb3fb739L, IEnsureContent);
     builder.put(0x77537c9aa486c209L, IEventSpecContent);
@@ -57,11 +65,13 @@ public final class LanguageConceptSwitch {
     builder.put(0x497367acd53b99c1L, ObjectSpec);
     builder.put(0x7e718a995e69f583L, ObjectTypeParam);
     builder.put(0x77537c9aa48770aeL, OrderSpec);
+    builder.put(0x3ac8e6d3fc44db55L, QualifiedFormalArg);
     builder.put(0x379a88c795f4e8bdL, QualifiedName);
     builder.put(0x38bdb626f9180931L, RequiresSpec);
     builder.put(0x3063bd30217d1129L, Spec);
     builder.put(0x1df97434cb41c7b7L, SpecContent);
     builder.put(0x3ac8e6d3fc25dc2aL, Type);
+    builder.put(0x3ac8e6d3fc44db7dL, WildcardArgument);
     myIndex = builder.seal();
   }
 

@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="10,0,20,0" name="MetaCrySL.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,29,0" name="MetaCrySL.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:e5938ddb-78fe-41b8-a57a-c65c97367997(MetaCrySL.constraints)/4235889247687822751">
+    <file name="AggregateList_Constraints.java">
+      <node id="4235889247687822751" at="10,38,11,37" concept="2" />
+      <node id="4235889247687822751" at="15,0,16,0" concept="1" trace="AggregateList$HE" />
+      <node id="4235889247687822751" at="10,0,13,0" concept="0" trace="AggregateList_Constraints#()V" />
+      <scope id="4235889247687822751" at="10,38,11,37" />
+      <scope id="4235889247687822751" at="10,0,13,0" />
+      <unit id="4235889247687822751" at="14,0,17,0" name="MetaCrySL.constraints.AggregateList_Constraints$CONCEPTS" />
+      <unit id="4235889247687822751" at="9,0,18,0" name="MetaCrySL.constraints.AggregateList_Constraints" />
     </file>
   </root>
 </debug-info>

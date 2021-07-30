@@ -14,7 +14,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_EnsuresSpec;
   private ConceptPresentation props_EventAggregate;
   private ConceptPresentation props_EventMethod;
+  private ConceptPresentation props_EventRef;
   private ConceptPresentation props_EventSpec;
+  private ConceptPresentation props_FormalArg;
+  private ConceptPresentation props_FormalArgList;
   private ConceptPresentation props_IConstraintContent;
   private ConceptPresentation props_IEnsureContent;
   private ConceptPresentation props_IEventSpecContent;
@@ -29,11 +32,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ObjectSpec;
   private ConceptPresentation props_ObjectTypeParam;
   private ConceptPresentation props_OrderSpec;
+  private ConceptPresentation props_QualifiedFormalArg;
   private ConceptPresentation props_QualifiedName;
   private ConceptPresentation props_RequiresSpec;
   private ConceptPresentation props_Spec;
   private ConceptPresentation props_SpecContent;
   private ConceptPresentation props_Type;
+  private ConceptPresentation props_WildcardArgument;
 
   @Override
   @Nullable
@@ -72,10 +77,17 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.EventMethod:
         if (props_EventMethod == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("EventMethod");
           props_EventMethod = cpb.create();
         }
         return props_EventMethod;
+      case LanguageConceptSwitch.EventRef:
+        if (props_EventRef == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc52116cL, 0x3ac8e6d3fc52116dL, "ref", "", "");
+          props_EventRef = cpb.create();
+        }
+        return props_EventRef;
       case LanguageConceptSwitch.EventSpec:
         if (props_EventSpec == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -84,6 +96,19 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_EventSpec = cpb.create();
         }
         return props_EventSpec;
+      case LanguageConceptSwitch.FormalArg:
+        if (props_FormalArg == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_FormalArg = cpb.create();
+        }
+        return props_FormalArg;
+      case LanguageConceptSwitch.FormalArgList:
+        if (props_FormalArgList == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("FormalArgList");
+          props_FormalArgList = cpb.create();
+        }
+        return props_FormalArgList;
       case LanguageConceptSwitch.IConstraintContent:
         if (props_IConstraintContent == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -176,6 +201,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_OrderSpec = cpb.create();
         }
         return props_OrderSpec;
+      case LanguageConceptSwitch.QualifiedFormalArg:
+        if (props_QualifiedFormalArg == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("QualifiedFormalArg");
+          props_QualifiedFormalArg = cpb.create();
+        }
+        return props_QualifiedFormalArg;
       case LanguageConceptSwitch.QualifiedName:
         if (props_QualifiedName == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -210,6 +242,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Type = cpb.create();
         }
         return props_Type;
+      case LanguageConceptSwitch.WildcardArgument:
+        if (props_WildcardArgument == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("_");
+          props_WildcardArgument = cpb.create();
+        }
+        return props_WildcardArgument;
     }
     return null;
   }
