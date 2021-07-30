@@ -445,7 +445,7 @@
     </node>
   </node>
   <node concept="312cEu" id="1s">
-    <property role="3GE5qa" value="spec.base-spec" />
+    <property role="3GE5qa" value="" />
     <property role="TrG5h" value="check_BaseSpecType_NonTypesystemRule" />
     <uo k="s:originTrace" v="n:8506987720446468055" />
     <node concept="3clFbW" id="1t" role="jymVt">

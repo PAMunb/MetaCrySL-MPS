@@ -35,6 +35,7 @@
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="8313721352726366579" name="jetbrains.mps.lang.editor.structure.CellModel_Empty" flags="ng" index="35HoNQ" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
@@ -81,7 +82,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="3uqyculXeA5">
-    <property role="3GE5qa" value="spec.base-spec" />
+    <property role="3GE5qa" value="" />
     <ref role="1XX52x" to="qgj4:3uqyculXeyX" resolve="QualifiedName" />
     <node concept="3F0A7n" id="7TLyD_uqvqy" role="2wV5jI">
       <ref role="1NtTu8" to="qgj4:uaUHXxGedh" resolve="name" />
@@ -348,6 +349,9 @@
         <node concept="drBAd" id="3F8THfWbxSA" role="3EZMnx">
           <node concept="3F0ifn" id="3F8THfWbxSC" role="drBA7">
             <property role="3F0ifm" value="&lt;" />
+            <node concept="11LMrY" id="3F8THfWdWtE" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
           </node>
           <node concept="3F1sOY" id="3F8THfWbxSE" role="drBAU">
             <property role="39s7Ar" value="true" />
@@ -355,6 +359,9 @@
           </node>
           <node concept="3F0ifn" id="3F8THfWbxSG" role="drBAZ">
             <property role="3F0ifm" value="&gt;" />
+            <node concept="11LMrY" id="3F8THfWefeP" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
           </node>
         </node>
         <node concept="2iRfu4" id="3F8THfW9tLo" role="2iSdaV" />
