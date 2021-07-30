@@ -41,6 +41,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptOrderSpec = createDescriptorForOrderSpec();
   /*package*/ final ConceptDescriptor myConceptRequiresSpec = createDescriptorForRequiresSpec();
   /*package*/ final ConceptDescriptor myConceptSpec = createDescriptorForSpec();
+  /*package*/ final ConceptDescriptor myConceptSpecContent = createDescriptorForSpecContent();
   /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeID = new ConstrainedStringDatatypeDescriptorImpl(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL, "ID", "r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/2159885266397935419", ".");
   /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeTestName = new ConstrainedStringDatatypeDescriptorImpl(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x78aeadf61b0e1fbL, "TestName", "r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/543504950189154811", "^[a-z][a-z0-9_]*(\\.[a-z0-9_]+)+$");
   private final LanguageConceptSwitch myIndexSwitch;
@@ -57,7 +58,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAggregateList, myConceptConstraintSpec, myConceptEnsuresSpec, myConceptEventAggregate, myConceptEventMethod, myConceptEventSpec, myConceptGeneric, myConceptIConstraintContent, myConceptIEnsureContent, myConceptIEventSpecContent, myConceptIModelContent, myConceptIObjectsContent, myConceptIOrderSpecContent, myConceptIRequiresContent, myConceptJavaQualifiedName, myConceptMethodDef, myConceptModel, myConceptNegatesSpec, myConceptObject, myConceptObjectSpec, myConceptObjectTypeParam, myConceptOrderSpec, myConceptRequiresSpec, myConceptSpec);
+    return Arrays.asList(myConceptAggregateList, myConceptConstraintSpec, myConceptEnsuresSpec, myConceptEventAggregate, myConceptEventMethod, myConceptEventSpec, myConceptGeneric, myConceptIConstraintContent, myConceptIEnsureContent, myConceptIEventSpecContent, myConceptIModelContent, myConceptIObjectsContent, myConceptIOrderSpecContent, myConceptIRequiresContent, myConceptJavaQualifiedName, myConceptMethodDef, myConceptModel, myConceptNegatesSpec, myConceptObject, myConceptObjectSpec, myConceptObjectTypeParam, myConceptOrderSpec, myConceptRequiresSpec, myConceptSpec, myConceptSpecContent);
   }
 
   @Override
@@ -112,6 +113,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptRequiresSpec;
       case LanguageConceptSwitch.Spec:
         return myConceptSpec;
+      case LanguageConceptSwitch.SpecContent:
+        return myConceptSpecContent;
       default:
         return null;
     }
@@ -289,6 +292,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForObjectSpec() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "ObjectSpec", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53b99c1L);
     b.class_(false, false, false);
+    b.super_("MetaCrySL.structure.SpecContent", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb41c7b7L);
     b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53b7e3cL);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5292687979099953601");
     b.version(2);
@@ -335,6 +339,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("events", 0x38bdb626f9180837L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c1ffL).optional(false).ordered(true).multiple(false).origin("4088624315226392631").done();
     b.aggregate("order", 0x38bdb626f918089fL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa48770aeL).optional(false).ordered(true).multiple(false).origin("4088624315226392735").done();
     b.alias("SPEC");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSpecContent() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "SpecContent", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb41c7b7L);
+    b.class_(false, true, false);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/2159885266398070711");
+    b.version(2);
     return b.create();
   }
 }

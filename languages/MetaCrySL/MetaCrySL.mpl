@@ -12,11 +12,7 @@
   </facets>
   <accessoryModels />
   <sourcePath />
-  <dependencies>
-    <dependency reexport="false">7127d409-29f0-43e8-917f-f016ea288944(jetbrains.mps.lang.feedback.problem.structural)</dependency>
-  </dependencies>
   <languageVersions>
-    <language slang="l:fbc67e5c-fd70-43b1-b837-3c3551c2500b:MetaCrySL" version="0" />
     <language slang="l:9d69e719-78c8-4286-90db-fb19c107d049:com.mbeddr.mpsutil.grammarcells" version="1" />
     <language slang="l:b4f35ed8-45af-4efa-abe4-00ac26956e69:com.mbeddr.mpsutil.grammarcells.runtimelang" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
@@ -61,8 +57,6 @@
     <module reference="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
-    <module reference="033598a4-76a9-47e1-ac89-a300c0fceab8(jetbrains.mps.lang.feedback.problem)" version="0" />
-    <module reference="7127d409-29f0-43e8-917f-f016ea288944(jetbrains.mps.lang.feedback.problem.structural)" version="1" />
   </dependencyVersions>
   <extendedLanguages />
 </language>

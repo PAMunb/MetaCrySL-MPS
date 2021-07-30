@@ -33,6 +33,7 @@ public final class LanguageConceptSwitch {
   public static final int OrderSpec = 21;
   public static final int RequiresSpec = 22;
   public static final int Spec = 23;
+  public static final int SpecContent = 24;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL);
@@ -60,6 +61,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x77537c9aa48770aeL, OrderSpec);
     builder.put(0x38bdb626f9180931L, RequiresSpec);
     builder.put(0x3063bd30217d1129L, Spec);
+    builder.put(0x1df97434cb41c7b7L, SpecContent);
     myIndex = builder.seal();
   }
 

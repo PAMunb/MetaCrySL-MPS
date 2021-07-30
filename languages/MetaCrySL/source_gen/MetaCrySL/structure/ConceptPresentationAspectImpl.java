@@ -33,6 +33,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_OrderSpec;
   private ConceptPresentation props_RequiresSpec;
   private ConceptPresentation props_Spec;
+  private ConceptPresentation props_SpecContent;
 
   @Override
   @Nullable
@@ -203,6 +204,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Spec = cpb.create();
         }
         return props_Spec;
+      case LanguageConceptSwitch.SpecContent:
+        if (props_SpecContent == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_SpecContent = cpb.create();
+        }
+        return props_SpecContent;
     }
     return null;
   }

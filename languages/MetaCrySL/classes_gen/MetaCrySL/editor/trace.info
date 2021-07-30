@@ -14,7 +14,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
   <root>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="18,0,144,0" name="MetaCrySL.editor.EditorAspectDescriptorImpl" />
+      <unit at="18,0,146,0" name="MetaCrySL.editor.EditorAspectDescriptorImpl" />
     </file>
     <file name="GrammarActionsDescriptor.java">
       <unit at="336,0,339,0" name="MetaCrySL.editor.GrammarActionsDescriptor$PROPS" />
@@ -155,6 +155,11 @@
       <unit at="57,0,60,0" name="MetaCrySL.editor.GrammarCellsSubstituteMenu_Spec$CONCEPTS" />
       <unit at="46,0,56,0" name="MetaCrySL.editor.GrammarCellsSubstituteMenu_Spec$GrammarCellsSubstituteMenuPart_8haeln_a" />
       <unit at="21,0,61,0" name="MetaCrySL.editor.GrammarCellsSubstituteMenu_Spec" />
+    </file>
+    <file name="GrammarCellsSubstituteMenu_SpecContent.java">
+      <unit at="57,0,60,0" name="MetaCrySL.editor.GrammarCellsSubstituteMenu_SpecContent$CONCEPTS" />
+      <unit at="46,0,56,0" name="MetaCrySL.editor.GrammarCellsSubstituteMenu_SpecContent$GrammarCellsSubstituteMenuPart_ux9pzl_a" />
+      <unit at="21,0,61,0" name="MetaCrySL.editor.GrammarCellsSubstituteMenu_SpecContent" />
     </file>
     <file name="ReflectionUtil_copy.java">
       <unit at="9,0,60,0" name="MetaCrySL.editor.ReflectionUtil_copy" />
