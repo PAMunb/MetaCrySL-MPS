@@ -23,17 +23,18 @@ public final class LanguageConceptSwitch {
   public static final int IObjectsContent = 11;
   public static final int IOrderSpecContent = 12;
   public static final int IRequiresContent = 13;
-  public static final int JavaQualifiedName = 14;
-  public static final int MethodDef = 15;
-  public static final int Model = 16;
-  public static final int NegatesSpec = 17;
-  public static final int Object = 18;
-  public static final int ObjectSpec = 19;
-  public static final int ObjectTypeParam = 20;
-  public static final int OrderSpec = 21;
+  public static final int MethodDef = 14;
+  public static final int Model = 15;
+  public static final int NegatesSpec = 16;
+  public static final int Object = 17;
+  public static final int ObjectSpec = 18;
+  public static final int ObjectTypeParam = 19;
+  public static final int OrderSpec = 20;
+  public static final int QualifiedName = 21;
   public static final int RequiresSpec = 22;
   public static final int Spec = 23;
   public static final int SpecContent = 24;
+  public static final int Type = 25;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL);
@@ -51,7 +52,6 @@ public final class LanguageConceptSwitch {
     builder.put(0x497367acd53be40fL, IObjectsContent);
     builder.put(0x77537c9aa48770b3L, IOrderSpecContent);
     builder.put(0x1df97434cb3fb73aL, IRequiresContent);
-    builder.put(0x379a88c795f4e8bdL, JavaQualifiedName);
     builder.put(0x1df97434cb3fb789L, MethodDef);
     builder.put(0x379a88c795f4c97eL, Model);
     builder.put(0x38bdb626f918de70L, NegatesSpec);
@@ -59,9 +59,11 @@ public final class LanguageConceptSwitch {
     builder.put(0x497367acd53b99c1L, ObjectSpec);
     builder.put(0x7e718a995e69f583L, ObjectTypeParam);
     builder.put(0x77537c9aa48770aeL, OrderSpec);
+    builder.put(0x379a88c795f4e8bdL, QualifiedName);
     builder.put(0x38bdb626f9180931L, RequiresSpec);
     builder.put(0x3063bd30217d1129L, Spec);
     builder.put(0x1df97434cb41c7b7L, SpecContent);
+    builder.put(0x3ac8e6d3fc25dc2aL, Type);
     myIndex = builder.seal();
   }
 

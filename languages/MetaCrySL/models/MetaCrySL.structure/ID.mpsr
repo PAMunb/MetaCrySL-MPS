@@ -20,7 +20,7 @@
   <node concept="Az7Fb" id="1RTt3jbfVsV">
     <property role="3F6X1D" value="2159885266397935419" />
     <property role="TrG5h" value="ID" />
-    <property role="FLfZY" value="." />
+    <property role="FLfZY" value="([a-z])" />
   </node>
 </model>
 

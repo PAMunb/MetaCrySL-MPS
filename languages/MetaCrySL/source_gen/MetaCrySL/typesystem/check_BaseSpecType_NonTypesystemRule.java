@@ -36,7 +36,7 @@ public class check_BaseSpecType_NonTypesystemRule extends AbstractNonTypesystemR
     }
   }
   public SAbstractConcept getApplicableConcept() {
-    return CONCEPTS.JavaQualifiedName$VN;
+    return CONCEPTS.QualifiedName$VN;
   }
   public IsApplicableStatus isApplicableAndPattern(SNode argument) {
     return new IsApplicableStatus(argument.getConcept().isSubConceptOf(getApplicableConcept()), null);
@@ -51,6 +51,6 @@ public class check_BaseSpecType_NonTypesystemRule extends AbstractNonTypesystemR
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept JavaQualifiedName$VN = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4e8bdL, "MetaCrySL.structure.JavaQualifiedName");
+    /*package*/ static final SConcept QualifiedName$VN = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4e8bdL, "MetaCrySL.structure.QualifiedName");
   }
 }

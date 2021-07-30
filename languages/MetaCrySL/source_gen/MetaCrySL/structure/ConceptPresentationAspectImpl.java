@@ -23,7 +23,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_IObjectsContent;
   private ConceptPresentation props_IOrderSpecContent;
   private ConceptPresentation props_IRequiresContent;
-  private ConceptPresentation props_JavaQualifiedName;
   private ConceptPresentation props_MethodDef;
   private ConceptPresentation props_Model;
   private ConceptPresentation props_NegatesSpec;
@@ -31,9 +30,11 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ObjectSpec;
   private ConceptPresentation props_ObjectTypeParam;
   private ConceptPresentation props_OrderSpec;
+  private ConceptPresentation props_QualifiedName;
   private ConceptPresentation props_RequiresSpec;
   private ConceptPresentation props_Spec;
   private ConceptPresentation props_SpecContent;
+  private ConceptPresentation props_Type;
 
   @Override
   @Nullable
@@ -133,13 +134,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IRequiresContent = cpb.create();
         }
         return props_IRequiresContent;
-      case LanguageConceptSwitch.JavaQualifiedName:
-        if (props_JavaQualifiedName == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("JavaQualifiedName");
-          props_JavaQualifiedName = cpb.create();
-        }
-        return props_JavaQualifiedName;
       case LanguageConceptSwitch.MethodDef:
         if (props_MethodDef == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -190,6 +184,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_OrderSpec = cpb.create();
         }
         return props_OrderSpec;
+      case LanguageConceptSwitch.QualifiedName:
+        if (props_QualifiedName == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("JavaQualifiedName");
+          props_QualifiedName = cpb.create();
+        }
+        return props_QualifiedName;
       case LanguageConceptSwitch.RequiresSpec:
         if (props_RequiresSpec == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -210,6 +211,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SpecContent = cpb.create();
         }
         return props_SpecContent;
+      case LanguageConceptSwitch.Type:
+        if (props_Type == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Type");
+          props_Type = cpb.create();
+        }
+        return props_Type;
     }
     return null;
   }
