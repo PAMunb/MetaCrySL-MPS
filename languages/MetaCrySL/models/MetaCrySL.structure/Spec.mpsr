@@ -48,13 +48,6 @@
     <property role="EcuMT" value="3486838550932820265" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="3uqyculXeyx" resolve="Model" />
-    <node concept="1TJgyj" id="3uqyculXez2" role="1TKVEi">
-      <property role="IQ2ns" value="4006665209295202498" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="classType" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="7TLyD_uqyJI" resolve="BaseSpecType" />
-    </node>
     <node concept="1TJgyj" id="7tjv9E$yoOn" role="1TKVEi">
       <property role="IQ2ns" value="8598353117207694615" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -75,36 +68,6 @@
       <property role="20kJfa" value="order" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7tjv9E$xR2I" resolve="OrderSpec" />
-    </node>
-    <node concept="1TJgyj" id="5GII8FCtGyr" role="1TKVEi">
-      <property role="IQ2ns" value="6570391813125228699" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="forbidden" />
-      <ref role="20lvS9" node="3yXHyrT60BV" resolve="ForbiddenSpec" />
-    </node>
-    <node concept="1TJgyj" id="5GII8FCvhlE" role="1TKVEi">
-      <property role="IQ2ns" value="6570391813125641578" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="contraint" />
-      <ref role="20lvS9" node="3yXHyrT60yS" resolve="ConstraintSpec" />
-    </node>
-    <node concept="1TJgyj" id="6zPEcbYy_z4" role="1TKVEi">
-      <property role="IQ2ns" value="7563136704686217412" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="require" />
-      <ref role="20lvS9" node="3yXHyrT60$L" resolve="RequiresSpec" />
-    </node>
-    <node concept="1TJgyj" id="RKPOMngamY" role="1TKVEi">
-      <property role="IQ2ns" value="1004539440858703294" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="ensure" />
-      <ref role="20lvS9" node="3yXHyrT60Am" resolve="EnsuresSpec" />
-    </node>
-    <node concept="1TJgyj" id="RKPOMnhG8v" role="1TKVEi">
-      <property role="IQ2ns" value="1004539440859103775" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="neg" />
-      <ref role="20lvS9" node="3yXHyrT6dTK" resolve="NegatesSpec" />
     </node>
     <node concept="1TJgyi" id="4_NpUNlf2gN" role="1TKVEl">
       <property role="IQ2nx" value="5292687979099989043" />
