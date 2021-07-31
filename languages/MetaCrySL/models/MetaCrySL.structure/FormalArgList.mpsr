@@ -32,7 +32,7 @@
   </registry>
   <node concept="1TIwiD" id="3F8THfWgo8P">
     <property role="EcuMT" value="4235889247686591029" />
-    <property role="3GE5qa" value="spec.events" />
+    <property role="3GE5qa" value="spec.events.method" />
     <property role="TrG5h" value="FormalArgList" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3F8THfWgL$t" role="1TKVEi">

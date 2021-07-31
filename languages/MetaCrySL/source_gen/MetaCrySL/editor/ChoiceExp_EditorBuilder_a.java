@@ -9,15 +9,27 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
-import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
+import com.mbeddr.mpsutil.grammarcells.runtime.CellActionWithReadAccess;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import com.mbeddr.mpsutil.grammarcells.runtime.GrammarCellsUtil;
+import jetbrains.mps.smodel.action.SNodeFactoryOperations;
+import jetbrains.mps.editor.runtime.selection.SelectionUtil;
+import jetbrains.mps.openapi.editor.selection.SelectionManager;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SConcept;
 
 /*package*/ class ChoiceExp_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -43,20 +55,116 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     editorCell.setCellId("Collection_wsqj48_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
-    editorCell.addEditorCell(createRefNode_0());
-    editorCell.addEditorCell(createComponent_0());
-    editorCell.addEditorCell(createRefNode_1());
+    editorCell.addEditorCell(createCustomFactory_1());
+    editorCell.addEditorCell(createCustomFactory_3());
+    editorCell.addEditorCell(createCustomFactory_7());
     return editorCell;
   }
+  private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createRefNode_0();
+    EditorCell editorCell = new _FunctionTypes._return_P0_E0<EditorCell>() {
+      public EditorCell invoke() {
+        cell.setAction(CellActionType.DELETE, new CellActionWithReadAccess() {
+          public void execute(EditorContext editorContext) {
+            {
+              // replace with placeholder
+              SNode child = SLinkOperations.getTarget(node, LINKS.left$wnxG);
+              SAbstractConcept childConcept = SNodeOperations.getConcept(child);
+              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.EventExp$td))) {
+                SNodeFactoryOperations.setNewChild(node, LINKS.left$wnxG, null);
+                return;
+              }
+            }
+
+            SNode unwrapped = SNodeOperations.replaceWithAnother(node, SLinkOperations.getTarget(node, LINKS.right$wnZI));
+            boolean caretLeft = true;
+            if (caretLeft) {
+              SelectionUtil.selectLabelCellAnSetCaret(editorContext, unwrapped, SelectionManager.FIRST_CELL, 0);
+            } else {
+              SelectionUtil.selectLabelCellAnSetCaret(editorContext, unwrapped, SelectionManager.LAST_CELL, -1);
+            }
+          }
+          @Override
+          public boolean canExecute_inReadAction(EditorContext editorContext) {
+            {
+              // Required because we replace the existing action that would
+              // replace the node with a placeholder
+              SNode child = SLinkOperations.getTarget(node, LINKS.left$wnxG);
+              SAbstractConcept childConcept = SNodeOperations.getConcept(child);
+              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.EventExp$td))) {
+                return true;
+              }
+            }
+
+            SNode replacement = SLinkOperations.getTarget(node, LINKS.right$wnZI);
+            SContainmentLink containmentLink = node.getContainmentLink();
+            if (containmentLink == null) {
+              return true;
+            }
+            SAbstractConcept expectedConcept = containmentLink.getTargetConcept();
+            return expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(SNodeOperations.getConcept(replacement)), SNodeOperations.asSConcept(expectedConcept));
+          }
+        });
+        cell.setAction(CellActionType.BACKSPACE, new CellActionWithReadAccess() {
+          public void execute(EditorContext editorContext) {
+            {
+              // replace with placeholder
+              SNode child = SLinkOperations.getTarget(node, LINKS.left$wnxG);
+              SAbstractConcept childConcept = SNodeOperations.getConcept(child);
+              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.EventExp$td))) {
+                SNodeFactoryOperations.setNewChild(node, LINKS.left$wnxG, null);
+                return;
+              }
+            }
+
+            SNode unwrapped = SNodeOperations.replaceWithAnother(node, SLinkOperations.getTarget(node, LINKS.right$wnZI));
+            boolean caretLeft = true;
+            if (caretLeft) {
+              SelectionUtil.selectLabelCellAnSetCaret(editorContext, unwrapped, SelectionManager.FIRST_CELL, 0);
+            } else {
+              SelectionUtil.selectLabelCellAnSetCaret(editorContext, unwrapped, SelectionManager.LAST_CELL, -1);
+            }
+          }
+          @Override
+          public boolean canExecute_inReadAction(EditorContext editorContext) {
+            {
+              // Required because we replace the existing action that would
+              // replace the node with a placeholder
+              SNode child = SLinkOperations.getTarget(node, LINKS.left$wnxG);
+              SAbstractConcept childConcept = SNodeOperations.getConcept(child);
+              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.EventExp$td))) {
+                return true;
+              }
+            }
+
+            SNode replacement = SLinkOperations.getTarget(node, LINKS.right$wnZI);
+            SContainmentLink containmentLink = node.getContainmentLink();
+            if (containmentLink == null) {
+              return true;
+            }
+            SAbstractConcept expectedConcept = containmentLink.getTargetConcept();
+            return expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(SNodeOperations.getConcept(replacement)), SNodeOperations.asSConcept(expectedConcept));
+          }
+        });
+        return cell;
+      }
+    }.invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_1() {
+    return createCustomFactory_0(getEditorContext(), myNode);
+  }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new leftSingleRoleHandler_wsqj48_a0(myNode, LINKS.left$wnxG, getEditorContext());
+    SingleRoleCellProvider provider = new leftSingleRoleHandler_wsqj48_a0a(myNode, LINKS.left$wnxG, getEditorContext());
     return provider.createCell();
   }
-  private static class leftSingleRoleHandler_wsqj48_a0 extends SingleRoleCellProvider {
+  private static class leftSingleRoleHandler_wsqj48_a0a extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public leftSingleRoleHandler_wsqj48_a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public leftSingleRoleHandler_wsqj48_a0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -103,19 +211,200 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
       return "<no left>";
     }
   }
-  private EditorCell createComponent_0() {
-    EditorCell editorCell = getCellFactory().createEditorComponentCell(myNode, "jetbrains.mps.lang.core.editor.alias");
+  private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createCustomFactory_5();
+    EditorCell editorCell = new _FunctionTypes._return_P0_E0<EditorCell>() {
+      public EditorCell invoke() {
+        cell.setAction(CellActionType.DELETE, new CellActionWithReadAccess() {
+          public void execute(EditorContext editorContext) {
+
+            SNode unwrapped = SNodeOperations.replaceWithAnother(node, SLinkOperations.getTarget(node, LINKS.left$wnxG));
+            boolean caretLeft = false;
+            if (caretLeft) {
+              SelectionUtil.selectLabelCellAnSetCaret(editorContext, unwrapped, SelectionManager.FIRST_CELL, 0);
+            } else {
+              SelectionUtil.selectLabelCellAnSetCaret(editorContext, unwrapped, SelectionManager.LAST_CELL, -1);
+            }
+          }
+          @Override
+          public boolean canExecute_inReadAction(EditorContext editorContext) {
+
+            SNode replacement = SLinkOperations.getTarget(node, LINKS.left$wnxG);
+            SContainmentLink containmentLink = node.getContainmentLink();
+            if (containmentLink == null) {
+              return true;
+            }
+            SAbstractConcept expectedConcept = containmentLink.getTargetConcept();
+            return expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(SNodeOperations.getConcept(replacement)), SNodeOperations.asSConcept(expectedConcept));
+          }
+        });
+        cell.setAction(CellActionType.BACKSPACE, new CellActionWithReadAccess() {
+          public void execute(EditorContext editorContext) {
+
+            SNode unwrapped = SNodeOperations.replaceWithAnother(node, SLinkOperations.getTarget(node, LINKS.left$wnxG));
+            boolean caretLeft = false;
+            if (caretLeft) {
+              SelectionUtil.selectLabelCellAnSetCaret(editorContext, unwrapped, SelectionManager.FIRST_CELL, 0);
+            } else {
+              SelectionUtil.selectLabelCellAnSetCaret(editorContext, unwrapped, SelectionManager.LAST_CELL, -1);
+            }
+          }
+          @Override
+          public boolean canExecute_inReadAction(EditorContext editorContext) {
+
+            SNode replacement = SLinkOperations.getTarget(node, LINKS.left$wnxG);
+            SContainmentLink containmentLink = node.getContainmentLink();
+            if (containmentLink == null) {
+              return true;
+            }
+            SAbstractConcept expectedConcept = containmentLink.getTargetConcept();
+            return expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(SNodeOperations.getConcept(replacement)), SNodeOperations.asSConcept(expectedConcept));
+          }
+        });
+        return cell;
+      }
+    }.invoke();
     return editorCell;
   }
+  private EditorCell createCustomFactory_3() {
+    return createCustomFactory_2(getEditorContext(), myNode);
+  }
+  private EditorCell createCustomFactory_4(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createConstant_0();
+    EditorCell editorCell = new _FunctionTypes._return_P0_E0<EditorCell>() {
+      public EditorCell invoke() {
+        SAbstractConcept subconcept = SNodeOperations.getConcept(myNode);
+        EditorCell_Constant constant = ((EditorCell_Constant) cell);
+        String text = new Object() {
+          public String query(SAbstractConcept subconcept) {
+            return "|";
+          }
+        }.query(subconcept);
+        constant.setText(text);
+        constant.setOriginalText(text);
+        return cell;
+      }
+    }.invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_5() {
+    return createCustomFactory_4(getEditorContext(), myNode);
+  }
+  private EditorCell createConstant_0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
+    editorCell.setCellId("Constant_wsqj48_a0b0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_6(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createRefNode_1();
+    EditorCell editorCell = new _FunctionTypes._return_P0_E0<EditorCell>() {
+      public EditorCell invoke() {
+        cell.setAction(CellActionType.DELETE, new CellActionWithReadAccess() {
+          public void execute(EditorContext editorContext) {
+            {
+              // replace with placeholder
+              SNode child = SLinkOperations.getTarget(node, LINKS.right$wnZI);
+              SAbstractConcept childConcept = SNodeOperations.getConcept(child);
+              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.EventExp$td))) {
+                SNodeFactoryOperations.setNewChild(node, LINKS.right$wnZI, null);
+                return;
+              }
+            }
+
+            SNode unwrapped = SNodeOperations.replaceWithAnother(node, SLinkOperations.getTarget(node, LINKS.left$wnxG));
+            boolean caretLeft = false;
+            if (caretLeft) {
+              SelectionUtil.selectLabelCellAnSetCaret(editorContext, unwrapped, SelectionManager.FIRST_CELL, 0);
+            } else {
+              SelectionUtil.selectLabelCellAnSetCaret(editorContext, unwrapped, SelectionManager.LAST_CELL, -1);
+            }
+          }
+          @Override
+          public boolean canExecute_inReadAction(EditorContext editorContext) {
+            {
+              // Required because we replace the existing action that would
+              // replace the node with a placeholder
+              SNode child = SLinkOperations.getTarget(node, LINKS.right$wnZI);
+              SAbstractConcept childConcept = SNodeOperations.getConcept(child);
+              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.EventExp$td))) {
+                return true;
+              }
+            }
+
+            SNode replacement = SLinkOperations.getTarget(node, LINKS.left$wnxG);
+            SContainmentLink containmentLink = node.getContainmentLink();
+            if (containmentLink == null) {
+              return true;
+            }
+            SAbstractConcept expectedConcept = containmentLink.getTargetConcept();
+            return expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(SNodeOperations.getConcept(replacement)), SNodeOperations.asSConcept(expectedConcept));
+          }
+        });
+        cell.setAction(CellActionType.BACKSPACE, new CellActionWithReadAccess() {
+          public void execute(EditorContext editorContext) {
+            {
+              // replace with placeholder
+              SNode child = SLinkOperations.getTarget(node, LINKS.right$wnZI);
+              SAbstractConcept childConcept = SNodeOperations.getConcept(child);
+              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.EventExp$td))) {
+                SNodeFactoryOperations.setNewChild(node, LINKS.right$wnZI, null);
+                return;
+              }
+            }
+
+            SNode unwrapped = SNodeOperations.replaceWithAnother(node, SLinkOperations.getTarget(node, LINKS.left$wnxG));
+            boolean caretLeft = false;
+            if (caretLeft) {
+              SelectionUtil.selectLabelCellAnSetCaret(editorContext, unwrapped, SelectionManager.FIRST_CELL, 0);
+            } else {
+              SelectionUtil.selectLabelCellAnSetCaret(editorContext, unwrapped, SelectionManager.LAST_CELL, -1);
+            }
+          }
+          @Override
+          public boolean canExecute_inReadAction(EditorContext editorContext) {
+            {
+              // Required because we replace the existing action that would
+              // replace the node with a placeholder
+              SNode child = SLinkOperations.getTarget(node, LINKS.right$wnZI);
+              SAbstractConcept childConcept = SNodeOperations.getConcept(child);
+              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.EventExp$td))) {
+                return true;
+              }
+            }
+
+            SNode replacement = SLinkOperations.getTarget(node, LINKS.left$wnxG);
+            SContainmentLink containmentLink = node.getContainmentLink();
+            if (containmentLink == null) {
+              return true;
+            }
+            SAbstractConcept expectedConcept = containmentLink.getTargetConcept();
+            return expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(SNodeOperations.getConcept(replacement)), SNodeOperations.asSConcept(expectedConcept));
+          }
+        });
+        return cell;
+      }
+    }.invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_7() {
+    return createCustomFactory_6(getEditorContext(), myNode);
+  }
   private EditorCell createRefNode_1() {
-    SingleRoleCellProvider provider = new rightSingleRoleHandler_wsqj48_c0(myNode, LINKS.right$wnZI, getEditorContext());
+    SingleRoleCellProvider provider = new rightSingleRoleHandler_wsqj48_a2a(myNode, LINKS.right$wnZI, getEditorContext());
     return provider.createCell();
   }
-  private static class rightSingleRoleHandler_wsqj48_c0 extends SingleRoleCellProvider {
+  private static class rightSingleRoleHandler_wsqj48_a2a extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public rightSingleRoleHandler_wsqj48_c0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public rightSingleRoleHandler_wsqj48_a2a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -166,5 +455,9 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
   private static final class LINKS {
     /*package*/ static final SContainmentLink left$wnxG = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x398346ae4a3e5e4bL, 0x398346ae4a3e5e51L, "left");
     /*package*/ static final SContainmentLink right$wnZI = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x398346ae4a3e5e4bL, 0x398346ae4a3e5e53L, "right");
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept EventExp$td = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x398346ae4a3e5e4eL, "MetaCrySL.structure.EventExp");
   }
 }

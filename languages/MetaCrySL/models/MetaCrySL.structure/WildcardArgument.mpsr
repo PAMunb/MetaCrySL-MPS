@@ -29,7 +29,7 @@
   </registry>
   <node concept="1TIwiD" id="3F8THfWhdHX">
     <property role="EcuMT" value="4235889247686810493" />
-    <property role="3GE5qa" value="spec.events" />
+    <property role="3GE5qa" value="spec.events.method" />
     <property role="TrG5h" value="WildcardArgument" />
     <property role="34LRSv" value="_" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />

@@ -68,10 +68,10 @@
         <child id="4144233796494843475" name="right" index="1NJhzX" />
         <child id="4144233796494843473" name="left" index="1NJhzZ" />
       </concept>
-      <concept id="4144233796495165679" name="MetaCrySL.structure.BasicEventExp" flags="ng" index="1NK0T1">
-        <child id="4144233796495165681" name="exp" index="1NK0Tv" />
+      <concept id="4144233796494843464" name="MetaCrySL.structure.SequenceExp" flags="ng" index="1NJhzA">
+        <child id="4144233796495438287" name="left" index="1NL3tx" />
+        <child id="4144233796495438289" name="right" index="1NL3tZ" />
       </concept>
-      <concept id="4144233796495169578" name="MetaCrySL.structure.ZeroOrMore" flags="ng" index="1NK1U4" />
       <concept id="4144233796495980120" name="MetaCrySL.structure.PrimaryExp" flags="ng" index="1NNf3Q">
         <child id="4144233796495980121" name="event" index="1NNf3R" />
       </concept>
@@ -123,23 +123,28 @@
       </node>
     </node>
     <node concept="3jP0KO" id="3F8THfW5xnR" role="31DrUT">
-      <node concept="1NJhz_" id="3A3hETakunj" role="3jP0KF">
-        <node concept="1NNf3Q" id="3A3hETakZK1" role="1NJhzZ">
-          <node concept="36AJuZ" id="3A3hETakZK4" role="1NNf3R">
-            <ref role="36AJuY" node="3F8THfWg3Jv" />
+      <node concept="1NJhz_" id="4OY2ypI6VNb" role="3jP0KF">
+        <node concept="1NJhz_" id="4OY2ypI6VNd" role="1NJhzZ">
+          <node concept="1NNf3Q" id="3A3hETakZK1" role="1NJhzZ">
+            <node concept="36AJuZ" id="3A3hETakZK4" role="1NNf3R">
+              <ref role="36AJuY" node="3F8THfWg3Jv" />
+            </node>
           </node>
-        </node>
-        <node concept="1NJhz_" id="3A3hETakZUT" role="1NJhzX">
-          <node concept="1NNf3Q" id="3A3hETakZV2" role="1NJhzZ">
+          <node concept="1NNf3Q" id="3A3hETakZV2" role="1NJhzX">
             <node concept="36AJuZ" id="3A3hETakZV5" role="1NNf3R">
               <ref role="36AJuY" node="3A3hETaf_Sc" />
             </node>
           </node>
-          <node concept="1NK1U4" id="3A3hETamfI1" role="1NJhzX">
-            <node concept="1NNf3Q" id="3A3hETamfI3" role="1NK0Tv">
-              <node concept="36AJuZ" id="3A3hETamfI7" role="1NNf3R">
-                <ref role="36AJuY" node="3A3hETaf_Sc" />
-              </node>
+        </node>
+        <node concept="1NJhzA" id="4OY2ypI7QuC" role="1NJhzX">
+          <node concept="1NNf3Q" id="4OY2ypI7QuN" role="1NL3tx">
+            <node concept="36AJuZ" id="4OY2ypI7QuL" role="1NNf3R">
+              <ref role="36AJuY" node="3F8THfWg3Jv" />
+            </node>
+          </node>
+          <node concept="1NNf3Q" id="4OY2ypI9AXZ" role="1NL3tZ">
+            <node concept="36AJuZ" id="4OY2ypI9AXX" role="1NNf3R">
+              <ref role="36AJuY" node="3A3hETaf_Sc" />
             </node>
           </node>
         </node>

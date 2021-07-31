@@ -20,7 +20,7 @@
   </registry>
   <node concept="PlHQZ" id="3F8THfWhdHk">
     <property role="TrG5h" value="FormalArg" />
-    <property role="3GE5qa" value="spec.events" />
+    <property role="3GE5qa" value="spec.events.method" />
     <property role="EcuMT" value="4235889247686591005" />
   </node>
 </model>
