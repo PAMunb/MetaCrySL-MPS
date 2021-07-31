@@ -47,14 +47,14 @@
     <node concept="1TJgyi" id="6ZCE2o8nMxY" role="1TKVEl">
       <property role="IQ2nx" value="8063880014109550718" />
       <property role="TrG5h" value="name" />
-      <ref role="AX2Wp" node="7TLyD_ur_3d" resolve="ID" />
+      <ref role="AX2Wp" node="1RTt3jbfVsV" resolve="ID" />
     </node>
     <node concept="1TJgyj" id="6ZCE2o8nMy0" role="1TKVEi">
       <property role="IQ2ns" value="8063880014109550720" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="objectType" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="3uqyculXeyX" resolve="JavaQualifiedName" />
+      <ref role="20lvS9" node="3F8THfW9tKE" resolve="Type" />
     </node>
     <node concept="PrWs8" id="6ZCE2o8oyAP" role="PzmwI">
       <ref role="PrY4T" node="4_NpUNleYgf" resolve="IObjectsContent" />
