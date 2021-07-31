@@ -14,6 +14,7 @@
     </language>
     <language id="fbc67e5c-fd70-43b1-b837-3c3551c2500b" name="MetaCrySL">
       <concept id="3486838550932820265" name="MetaCrySL.structure.Spec" flags="ng" index="h7EKp">
+        <property id="5292687979099989043" name="ABSTRACT" index="2sjOev" />
         <child id="4088624315226392631" name="events" index="31DrSh" />
         <child id="4088624315226392735" name="order" index="31DrUT" />
         <child id="8598353117207694615" name="objects" index="3jQJ6d" />
@@ -67,6 +68,10 @@
         <child id="4144233796494843475" name="right" index="1NJhzX" />
         <child id="4144233796494843473" name="left" index="1NJhzZ" />
       </concept>
+      <concept id="4144233796495165679" name="MetaCrySL.structure.BasicEventExp" flags="ng" index="1NK0T1">
+        <child id="4144233796495165681" name="exp" index="1NK0Tv" />
+      </concept>
+      <concept id="4144233796495169578" name="MetaCrySL.structure.ZeroOrMore" flags="ng" index="1NK1U4" />
       <concept id="4144233796495980120" name="MetaCrySL.structure.PrimaryExp" flags="ng" index="1NNf3Q">
         <child id="4144233796495980121" name="event" index="1NNf3R" />
       </concept>
@@ -74,6 +79,7 @@
   </registry>
   <node concept="h7EKp" id="3F8THfW5xnO">
     <property role="TrG5h" value="testingFile" />
+    <property role="2sjOev" value="false" />
     <node concept="2sifTH" id="3F8THfW5xnP" role="3jQJ6d">
       <node concept="1BHS1h" id="3F8THfWbi8A" role="2si8e6">
         <property role="1BHS1o" value="asasasasas10229" />
@@ -123,9 +129,18 @@
             <ref role="36AJuY" node="3F8THfWg3Jv" />
           </node>
         </node>
-        <node concept="1NNf3Q" id="3A3hETakZK6" role="1NJhzX">
-          <node concept="36AJuZ" id="3A3hETakZK9" role="1NNf3R">
-            <ref role="36AJuY" node="3A3hETaf_Sc" />
+        <node concept="1NJhz_" id="3A3hETakZUT" role="1NJhzX">
+          <node concept="1NNf3Q" id="3A3hETakZV2" role="1NJhzZ">
+            <node concept="36AJuZ" id="3A3hETakZV5" role="1NNf3R">
+              <ref role="36AJuY" node="3A3hETaf_Sc" />
+            </node>
+          </node>
+          <node concept="1NK1U4" id="3A3hETamfI1" role="1NJhzX">
+            <node concept="1NNf3Q" id="3A3hETamfI3" role="1NK0Tv">
+              <node concept="36AJuZ" id="3A3hETamfI7" role="1NNf3R">
+                <ref role="36AJuY" node="3A3hETaf_Sc" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

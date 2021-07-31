@@ -38,7 +38,7 @@
     <node concept="1TJgyj" id="3A3hETagOzL" role="1TKVEi">
       <property role="IQ2ns" value="4144233796495165681" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="event" />
+      <property role="20kJfa" value="exp" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3A3hETajVpo" resolve="PrimaryExp" />
     </node>

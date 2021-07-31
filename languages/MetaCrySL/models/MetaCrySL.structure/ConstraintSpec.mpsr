@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)" content="root">
   <persistence version="9" />
-  <imports>
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-  </imports>
+  <imports />
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
@@ -38,7 +36,7 @@
     <property role="TrG5h" value="ConstraintSpec" />
     <property role="34LRSv" value="CONSTRAINTS" />
     <property role="R4oN_" value="Defines constraints for objects defined under OBJECTS clause and used as parameters or return values in the EVENTS section" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="1RTt3jbgsuR" resolve="SpecContent" />
     <node concept="1TJgyj" id="5GII8FCvhkj" role="1TKVEi">
       <property role="IQ2ns" value="6570391813125641491" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

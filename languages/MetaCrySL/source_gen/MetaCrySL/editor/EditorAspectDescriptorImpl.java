@@ -175,7 +175,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 33:
         return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_Spec());
       case 34:
-        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_SpecContent());
+        return Arrays.asList(new SubstituteMenu[]{new GrammarCellsSubstituteMenu_SpecContent(), new SpecContent_SubstituteMenu()});
       case 35:
         return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_Type());
       case 36:

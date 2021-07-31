@@ -181,7 +181,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("MetaCrySL.structure.EventExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x398346ae4a3e5e4eL);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4144233796495165679");
     b.version(2);
-    b.aggregate("event", 0x398346ae4a4348f1L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x398346ae4a4fb658L).optional(false).ordered(true).multiple(false).origin("4144233796495165681").done();
+    b.aggregate("exp", 0x398346ae4a4348f1L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x398346ae4a4fb658L).optional(false).ordered(true).multiple(false).origin("4144233796495165681").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForChoiceExp() {
@@ -199,6 +199,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForConstraintSpec() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "ConstraintSpec", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x38bdb626f91808b8L);
     b.class_(false, false, false);
+    b.super_("MetaCrySL.structure.SpecContent", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb41c7b7L);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4088624315226392760");
     b.version(2);
     b.aggregate("constraints", 0x5b2eb88ae87d1513L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb733L).optional(true).ordered(true).multiple(true).origin("6570391813125641491").done();
@@ -468,6 +469,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("objects", 0x77537c9aa4898d17L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53b99c1L).optional(false).ordered(true).multiple(false).origin("8598353117207694615").done();
     b.aggregate("events", 0x38bdb626f9180837L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c1ffL).optional(false).ordered(true).multiple(false).origin("4088624315226392631").done();
     b.aggregate("order", 0x38bdb626f918089fL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa48770aeL).optional(false).ordered(true).multiple(false).origin("4088624315226392735").done();
+    b.aggregate("adicional", 0x398346ae4a5901a9L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb41c7b7L).optional(true).ordered(true).multiple(true).origin("4144233796496589225").done();
     b.alias("SPEC");
     return b.create();
   }
