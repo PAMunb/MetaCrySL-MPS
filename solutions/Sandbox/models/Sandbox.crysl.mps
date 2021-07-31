@@ -42,6 +42,10 @@
       <concept id="4935365387813273278" name="MetaCrySL.structure.LiteralSet" flags="ng" index="2H8WSl">
         <child id="4935365387813273396" name="set" index="2H8WYv" />
       </concept>
+      <concept id="4935365387816079728" name="MetaCrySL.structure.FunctionCall" flags="ng" index="2HXe7r">
+        <property id="4935365387816079729" name="methodName" index="2HXe7q" />
+        <child id="4935365387816079733" name="args" index="2HXe7u" />
+      </concept>
       <concept id="4088624315226392760" name="MetaCrySL.structure.ConstraintSpec" flags="ng" index="31DrUu">
         <child id="6570391813125641491" name="constraints" index="2NkUQp" />
       </concept>
@@ -176,6 +180,12 @@
       <node concept="1nKPDz" id="31LRAxBYbDv" role="2NkUQp">
         <node concept="1nN3Tl" id="31LRAxBYbDz" role="1nI4Ja">
           <ref role="1nN3Tm" node="31LRAxBKWUE" />
+        </node>
+      </node>
+      <node concept="2HXe7r" id="4hXWaJD_Uec" role="2NkUQp">
+        <property role="2HXe7q" value="method" />
+        <node concept="1nymgi" id="4hXWaJD_Ueo" role="2HXe7u">
+          <property role="1nymgl" value="hahahah" />
         </node>
       </node>
       <node concept="2H8WSj" id="4hXWaJDpniB" role="2NkUQp">

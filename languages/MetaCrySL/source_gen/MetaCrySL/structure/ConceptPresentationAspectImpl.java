@@ -30,6 +30,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_EventSpec;
   private ConceptPresentation props_FormalArg;
   private ConceptPresentation props_FormalArgList;
+  private ConceptPresentation props_FunctionCall;
   private ConceptPresentation props_GreaterOrEqual;
   private ConceptPresentation props_GreaterThan;
   private ConceptPresentation props_IConstraintContent;
@@ -225,6 +226,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_FormalArgList = cpb.create();
         }
         return props_FormalArgList;
+      case LanguageConceptSwitch.FunctionCall:
+        if (props_FunctionCall == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("funCall");
+          props_FunctionCall = cpb.create();
+        }
+        return props_FunctionCall;
       case LanguageConceptSwitch.GreaterOrEqual:
         if (props_GreaterOrEqual == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

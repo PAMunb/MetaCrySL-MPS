@@ -1188,5 +1188,29 @@
       <node concept="2iRfu4" id="4hXWaJDnzXl" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="4hXWaJDyh6h">
+    <property role="3GE5qa" value="spec.constraint.atomic.function-call" />
+    <ref role="1XX52x" to="qgj4:4hXWaJDyh5K" resolve="FunctionCall" />
+    <node concept="3EZMnI" id="4hXWaJDyh6j" role="2wV5jI">
+      <node concept="3F0A7n" id="4hXWaJDyh6q" role="3EZMnx">
+        <ref role="1NtTu8" to="qgj4:4hXWaJDyh5L" resolve="methodName" />
+      </node>
+      <node concept="3F0ifn" id="4hXWaJDyh6w" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" node="31LRAxBGCeq" resolve="brackets" />
+      </node>
+      <node concept="3F2HdR" id="4hXWaJDyh6C" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="qgj4:4hXWaJDyh5P" resolve="args" />
+        <node concept="2iRfu4" id="4hXWaJDyh6E" role="2czzBx" />
+        <node concept="35HoNQ" id="4hXWaJDyh6J" role="2czzBI" />
+      </node>
+      <node concept="3F0ifn" id="4hXWaJDyh6S" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" node="31LRAxBGCeq" resolve="brackets" />
+      </node>
+      <node concept="2iRfu4" id="4hXWaJDyh6m" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
