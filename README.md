@@ -10,3 +10,22 @@ The CrySL language is used by the [CogniCrypt](https://www.eclipse.org/cognicryp
 ### Project Status
 
 This implementation of MetaCrySL is in development. This is the current status:
+#### Language Grammar
+- [ ] SPEC
+    - [X] OBJECTS
+      - [X] label with type
+      - [ ] label with generics
+    - [ ] CONSTRAINTS
+      - [ ] alg
+      - [ ] mode
+      - [ ] padding
+      - [X] length
+      - [X] neverTypeOf
+      - [X] notHardCoded
+      - [X] instanceOf
+      - [X] callTo
+      - [X] noCallTo
+#### User Interation
+- [ ] Full text-like interaction
+  - [ ] Copy-n-pase
+  - [ ] Text-highlight
