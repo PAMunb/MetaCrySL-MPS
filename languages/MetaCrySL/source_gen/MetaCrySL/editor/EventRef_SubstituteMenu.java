@@ -14,14 +14,14 @@ import jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase;
 import jetbrains.mps.smodel.SNodePointer;
 import jetbrains.mps.lang.editor.menus.substitute.ReferenceScopeSubstituteMenuPart;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
-import jetbrains.mps.lang.editor.menus.ConceptMenusPart;
-import java.util.Collection;
-import jetbrains.mps.smodel.ConceptDescendantsCache;
-import jetbrains.mps.lang.editor.menus.substitute.DefaultSubstituteMenuLookup;
-import jetbrains.mps.smodel.language.LanguageRegistry;
+import jetbrains.mps.lang.editor.menus.substitute.ReferenceScopeSubstituteMenuItem;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.openapi.editor.menus.EditorMenuTraceInfo;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.jetbrains.mps.openapi.language.SReferenceLink;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 public class EventRef_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
@@ -29,7 +29,6 @@ public class EventRef_SubstituteMenu extends SubstituteMenuBase {
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
     result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_bedxz3_a(), CONCEPTS.EventRef$iV));
-    result.add(new SMP_Subconcepts_bedxz3_b());
     return result;
   }
 
@@ -37,7 +36,7 @@ public class EventRef_SubstituteMenu extends SubstituteMenuBase {
   @Override
   public List<SubstituteMenuItem> createMenuItems(@NotNull SubstituteMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for EventRef. Generated from implicit smart reference attribute.", new SNodePointer("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)", "4235889247687676268")));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for " + "EventRef", new SNodePointer("r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)", "4144233796494318626")));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -56,7 +55,7 @@ public class EventRef_SubstituteMenu extends SubstituteMenuBase {
     @Override
     public List<SubstituteMenuItem> createItems(SubstituteMenuContext context) {
       context.getEditorMenuTrace().pushTraceInfo();
-      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("reference scope substitute menu part", null));
+      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("reference scope substitute menu part", new SNodePointer("r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)", "4144233796494319183")));
       try {
         return super.createItems(context);
       } finally {
@@ -64,26 +63,35 @@ public class EventRef_SubstituteMenu extends SubstituteMenuBase {
       }
     }
 
-  }
-  public class SMP_Subconcepts_bedxz3_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
-    protected Collection getConcepts(final SubstituteMenuContext _context) {
-      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.EventRef$iV);
-    }
+    @Override
     @NotNull
-    @Override
-    public List<SubstituteMenuItem> createItems(SubstituteMenuContext context) {
-      context.getEditorMenuTrace().pushTraceInfo();
-      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "EventRef", null));
-      try {
-        return super.createItems(context);
-      } finally {
-        context.getEditorMenuTrace().popTraceInfo();
-      }
+    protected ReferenceScopeSubstituteMenuItem createItem(SubstituteMenuContext context, SNode referencedNode) {
+      return new Item(context, referencedNode, getSConcept(), getReferenceLink());
     }
+    private class Item extends ReferenceScopeSubstituteMenuItem {
+      private final SubstituteMenuContext _context;
+      private final SNode referencedNode;
+      private EditorMenuTraceInfo myTraceInfo;
 
-    @Override
-    protected Collection<SubstituteMenuItem> createItemsForConcept(SubstituteMenuContext context, SAbstractConcept concept) {
-      return context.createItems(new DefaultSubstituteMenuLookup(LanguageRegistry.getInstance(context.getEditorContext().getRepository()), concept));
+      private Item(SubstituteMenuContext context, SNode refNode, SAbstractConcept concept, SReferenceLink referenceLink) {
+        super(concept, context, refNode, referenceLink);
+        _context = context;
+        referencedNode = refNode;
+        myTraceInfo = context.getEditorMenuTrace().getTraceInfo();
+      }
+      @Override
+      public String getMatchingText(String pattern) {
+        return SPropertyOperations.getString(referencedNode, PROPS.label$PDXj);
+      }
+      @Override
+      public String getVisibleMatchingText(String pattern) {
+        return SPropertyOperations.getString(referencedNode, PROPS.label$PDXj);
+      }
+
+      @Override
+      public EditorMenuTraceInfo getTraceInfo() {
+        return myTraceInfo;
+      }
     }
   }
 
@@ -93,5 +101,9 @@ public class EventRef_SubstituteMenu extends SubstituteMenuBase {
 
   private static final class LINKS {
     /*package*/ static final SReferenceLink ref$1i6i = MetaAdapterFactory.getReferenceLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc52116cL, 0x3ac8e6d3fc52116dL, "ref");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty label$PDXj = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c209L, 0x5b2eb88ae86d20ddL, "label");
   }
 }

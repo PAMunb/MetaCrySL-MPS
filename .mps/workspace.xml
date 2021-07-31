@@ -3,75 +3,31 @@
   <component name="ChangeListManager">
     <list default="true" id="909bb958-00db-4373-9fa0-19071b158520" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/Language.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/Language.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/constraints/ConstraintsAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/constraints/ConstraintsAspectDescriptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/constraints/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/constraints/aspectcps-descriptorclasses.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/constraints/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/constraints/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EditorAspectDescriptorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EditorAspectDescriptorImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventAggregate_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventAggregate_EditorBuilder_a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventMethod_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventMethod_EditorBuilder_a$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventMethod_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventMethod_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventMethod_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventMethod_EditorBuilder_a$LINKS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventMethod_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventMethod_EditorBuilder_a$PROPS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventMethod_EditorBuilder_a$methodSingleRoleHandler_kg92y0_c0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventMethod_EditorBuilder_a$methodSingleRoleHandler_kg92y0_c0.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventMethod_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventMethod_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/MetaCrySL.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/MetaCrySL.mpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/AggregateList_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/AggregateList_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/AggregateList_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/AggregateList_EditorBuilder_a$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/AggregateList_EditorBuilder_a$eventsListHandler_l80ujb_a0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/AggregateList_EditorBuilder_a$eventsListHandler_l80ujb_a0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/AggregateList_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/AggregateList_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventRef_SubstituteMenu$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventRef_SubstituteMenu$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventRef_SubstituteMenu$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventRef_SubstituteMenu$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventRef_SubstituteMenu$SMP_ReferenceScope_bedxz3_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventRef_SubstituteMenu$SMP_ReferenceScope_bedxz3_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventRef_SubstituteMenu$SMP_Subconcepts_bedxz3_b.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventRef_SubstituteMenu$SMP_Subconcepts_bedxz3_b.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventRef_SubstituteMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventRef_SubstituteMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$1$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$1$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$12$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$12$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$12$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$12$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$13$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$13$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$13$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$13$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$13$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$13$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$14$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$14$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$14$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$14$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$14.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$15$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$15$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$15$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$15$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$15$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$15$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$15$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$15$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$15.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$16$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$16$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$16$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$16$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$16.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$17$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$17$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$17$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$17$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$17.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$18$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$18$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$18.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$18.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$18$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$18$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$19$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$19$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$19.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$19.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$2$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$2$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$2$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$2$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$20.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$20.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$21.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$21.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$3$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$4$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$4$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$4$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$5$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$20$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$20$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$26$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$26$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$5$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$5$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$5$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$5$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$6$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$6$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$6$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$6$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$6$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$6$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$7$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$7$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$8$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$8$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$CONCEPTS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$LINKS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$PROPS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Object_EditorBuilder_a$objectTypeSingleRoleHandler_3ja71y_a0a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Object_EditorBuilder_a$objectTypeSingleRoleHandler_3ja71y_a0a.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/OrderSpec_EditorBuilder_a$contentListHandler_b0j60x_b0a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/OrderSpec_EditorBuilder_a$contentListHandler_b0j60x_b0a.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Spec_EditorBuilder_a$classTypeSingleRoleHandler_x1u9mg_c0a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Spec_EditorBuilder_a$classTypeSingleRoleHandler_x1u9mg_c0a.class" afterDir="false" />
@@ -81,53 +37,13 @@
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$nameSingleRoleHandler_a1nfgp_a0a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$nameSingleRoleHandler_a1nfgp_a0a.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$nameSingleRoleHandler_a1nfgp_b0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$nameSingleRoleHandler_a1nfgp_b0.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/ConceptPresentationAspectImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/ConceptPresentationAspectImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/LanguageConceptSwitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/LanguageConceptSwitch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/StructureAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/StructureAspectDescriptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/typesystem/TypesystemDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/typesystem/TypesystemDescriptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/typesystem/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/typesystem/aspectcps-descriptorclasses.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/typesystem/check_BaseSpecType_NonTypesystemRule$CONCEPTS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/typesystem/check_BaseSpecType_NonTypesystemRule$PROPS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/typesystem/check_BaseSpecType_NonTypesystemRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/typesystem/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/typesystem/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.constraints.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.constraints.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.editor.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.structure/AggregateList.mpsr" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.structure/AggregateList.mpsr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.structure/EventAggregate.mpsr" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.structure/EventAggregate.mpsr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.structure/EventSpec.mpsr" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.structure/EventSpec.mpsr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.structure/IEventSpecContent.mpsr" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.structure/IEventSpecContent.mpsr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.structure/MethodDef.mpsr" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.structure/MethodDef.mpsr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/constraints/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/constraints/dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/constraints/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/constraints/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/editor/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/editor/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/structure/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/structure/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/typesystem/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/typesystem/dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/typesystem/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/typesystem/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/Language.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/constraints/ConstraintsAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/constraints/ConstraintsAspectDescriptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/constraints/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/constraints/aspectcps-descriptorclasses.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/constraints/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/constraints/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/EditorAspectDescriptorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/EditorAspectDescriptorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/EventAggregate_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/EventAggregate_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/EventMethod_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/EventMethod_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/GrammarActionsDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/GrammarActionsDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/AggregateList_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/AggregateList_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/EventRef_SubstituteMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/EventRef_SubstituteMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/structure/ConceptPresentationAspectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/structure/ConceptPresentationAspectImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/structure/LanguageConceptSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/structure/LanguageConceptSwitch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/structure/StructureAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/structure/StructureAspectDescriptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/structure/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/typesystem/TypesystemDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/typesystem/TypesystemDescriptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/typesystem/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/typesystem/aspectcps-descriptorclasses.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/typesystem/check_BaseSpecType_NonTypesystemRule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/typesystem/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/typesystem/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/Sandbox/models/Sandbox.crysl.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Sandbox/models/Sandbox.crysl.mps" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +57,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="ab02be6a-d95e-4cc4-8b79-37a22083c2ca/r:cbcb710e-b605-441f-bd9c-b4ca1b97bf85(TempModuleab02be6a-d95e-4cc4-8b79-37a22083c2ca/ConsoleModel_4376377130425)">
+            <model ref="21590bc2-862f-48df-a93b-0426d23bb6c1/r:35c84886-037d-4cc1-9180-2cea6026697d(TempModule21590bc2-862f-48df-a93b-0426d23bb6c1/ConsoleModel_90323313813)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -161,11 +77,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="3F8THfW5xmV">
-                <node concept="3balQm" id="3F8THfW5xmW" role="aymYE" />
-                <node concept="2Clz$F" id="3F8THfW5xmX" role="aymYO" />
-                <node concept="2_V_lH" id="3F8THfW5xmY" role="1PhJh3">
-                  <ref role="2_V_lI" node="3F8THfW5xmX" resolve="CommandHolder" />
+              <node concept="aymSD" id="3A3hETacF$8">
+                <node concept="3balQm" id="3A3hETacF$9" role="aymYE" />
+                <node concept="2Clz$F" id="3A3hETacF$a" role="aymYO" />
+                <node concept="2_V_lH" id="3A3hETacF$b" role="1PhJh3">
+                  <ref role="2_V_lI" node="3A3hETacF$a" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -312,144 +228,11 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
-      <pane id="FileSystem">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="" />
-            </path>
-            <path>
-              <item name="" type="" />
-              <item name="" type="" />
-            </path>
-            <path>
-              <item name="" type="" />
-              <item name="" type="" />
-              <item name="" type="" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/test/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.structure]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ba6b983b-dee1-424d-a73b-867d051ffe67" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/test/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.structure]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="events" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/test/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:37cf7c21-7aff-495e-a21a-92ea40fa25ca(MetaCrySL.typesystem) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/test/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.typesystem.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/test/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:37cf7c21-7aff-495e-a21a-92ea40fa25ca(MetaCrySL.typesystem) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/test/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.typesystem.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -464,62 +247,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Sandbox" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/test/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.structure]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:85e9c5fc-5e07-4b15-902b-439fb0104632(MetaCrySL.behavior) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/test/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.behavior.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/test/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.structure]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -551,6 +278,58 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="r:85e9c5fc-5e07-4b15-902b-439fb0104632(MetaCrySL.behavior) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/test/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.behavior.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:f6b52abb-01aa-4fc5-ab27-1be83220cae4(MetaCrySL.intentions) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/test/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.intentions.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/test/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.editor.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/test/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.editor.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -560,6 +339,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="events" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ba6b983b-dee1-424d-a73b-867d051ffe67" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/test/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.editor.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -573,6 +380,25 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
+        </subPane>
+      </pane>
+      <pane id="FileSystem">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
       <pane id="Scope">
@@ -589,18 +415,7 @@
           <expand>
             <path>
               <item name="Project" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/workspace-unb/TG/test/MetaCrySL-MPS" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="Project" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/workspace-unb/TG/test/MetaCrySL-MPS" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="solutions" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Project" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/workspace-unb/TG/test/MetaCrySL-MPS" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="solutions" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Sandbox" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="~/workspace-unb/TG/MetaCrySL-MPS" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
@@ -893,6 +708,164 @@
   <component name="UsagesViewTool">
     <version id="1" />
     <tabs>
+      <tab>
+        <result_provider class_name="jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.UnionNode">
+          <child rpn="jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode">
+            <generated_finder class_name="jetbrains.mps.lang.structure.findUsages.NodeUsages_Finder" />
+          </child>
+        </result_provider>
+        <query>
+          <scope scope_class="jetbrains.mps.ide.findusages.model.scopes.ProjectScope" />
+          <holder holder_class="jetbrains.mps.ide.findusages.model.holders.NodeHolder">
+            <node ref="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/2159885266398070711" title="SpecContent" />
+          </holder>
+        </query>
+        <usage_view>
+          <tree_wrapper>
+            <view_options>
+              <options category_option="false" module_option="true" model_option="true" root_option="true" path_option="false" count_option="true" info_option="true" view_searched_nodes_option="true" group_searched_nodes_option="true" autoscroll_option="false" />
+            </view_options>
+            <contents caption="" excluded="false" isresult="false" results_section="false">
+              <role name="main root" />
+              <child caption="Searched nodes" excluded="false" isresult="false" results_section="false">
+                <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.SearchedNodesNodeData" />
+                <role name="searched nodes" />
+                <child caption="Searched nodes" excluded="false" isresult="false" results_section="false" category="Searched nodes" category_kind="Category">
+                  <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" />
+                  <role name="category:Category" />
+                  <child caption="MetaCrySL" excluded="false" isresult="false" results_section="false" module_ref="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)">
+                    <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" />
+                    <role name="module" />
+                    <child caption="MetaCrySL.structure" excluded="false" isresult="false" results_section="false">
+                      <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" />
+                      <role name="model" />
+                      <child caption="SpecContent" info="" excluded="false" isresult="true" results_section="false" nodePtr="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/2159885266398070711" isRoot="true">
+                        <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                        <role name="target" />
+                      </child>
+                      <model uid="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)" />
+                    </child>
+                  </child>
+                </child>
+              </child>
+              <child caption="Usages" excluded="false" isresult="false" results_section="true">
+                <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ResultsNodeData" />
+                <role name="results" />
+                <child caption="Node Usages" excluded="false" isresult="false" results_section="true" category="Node Usages" category_kind="Category">
+                  <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" />
+                  <role name="category:Category" />
+                  <child caption="MetaCrySL" excluded="false" isresult="false" results_section="true" module_ref="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)">
+                    <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" />
+                    <role name="module" />
+                    <child caption="MetaCrySL.structure" excluded="false" isresult="false" results_section="true">
+                      <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" />
+                      <role name="model" />
+                      <child caption="ObjectSpec" info="" excluded="false" isresult="true" results_section="true" nodePtr="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5292687979099953601" isRoot="true">
+                        <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                        <role name="target" />
+                      </child>
+                      <model uid="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)" />
+                    </child>
+                  </child>
+                </child>
+              </child>
+            </contents>
+          </tree_wrapper>
+        </usage_view>
+      </tab>
+      <tab>
+        <result_provider class_name="jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.UnionNode">
+          <child rpn="jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode">
+            <generated_finder class_name="jetbrains.mps.lang.structure.findUsages.NodeUsages_Finder" />
+          </child>
+        </result_provider>
+        <query>
+          <scope scope_class="jetbrains.mps.ide.findusages.model.scopes.ProjectScope" />
+          <holder holder_class="jetbrains.mps.ide.findusages.model.holders.NodeHolder">
+            <node ref="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/1004539440856581745" title="AtomicContraintExp" />
+          </holder>
+        </query>
+        <usage_view>
+          <tree_wrapper>
+            <view_options>
+              <options category_option="false" module_option="true" model_option="true" root_option="true" path_option="false" count_option="true" info_option="true" view_searched_nodes_option="true" group_searched_nodes_option="true" autoscroll_option="false" />
+            </view_options>
+            <contents caption="" excluded="false" isresult="false" results_section="false">
+              <role name="main root" />
+              <child caption="Searched nodes" excluded="false" isresult="false" results_section="false">
+                <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.SearchedNodesNodeData" />
+                <role name="searched nodes" />
+                <child caption="Searched nodes" excluded="false" isresult="false" results_section="false" category="Searched nodes" category_kind="Category">
+                  <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" />
+                  <role name="category:Category" />
+                  <child caption="MetaCrySL" excluded="false" isresult="false" results_section="false" module_ref="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)">
+                    <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" />
+                    <role name="module" />
+                    <child caption="MetaCrySL.structure" excluded="false" isresult="false" results_section="false">
+                      <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" />
+                      <role name="model" />
+                      <child caption="AtomicContraintExp" info="" excluded="false" isresult="true" results_section="false" nodePtr="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/1004539440856581745" isRoot="true">
+                        <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                        <role name="target" />
+                      </child>
+                      <model uid="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)" />
+                    </child>
+                  </child>
+                </child>
+              </child>
+              <child caption="Usages" excluded="false" isresult="false" results_section="true">
+                <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ResultsNodeData" />
+                <role name="results" />
+                <child caption="Node Usages" excluded="false" isresult="false" results_section="true" category="Node Usages" category_kind="Category">
+                  <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" />
+                  <role name="category:Category" />
+                  <child caption="MetaCrySL" excluded="false" isresult="false" results_section="true" module_ref="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)">
+                    <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" />
+                    <role name="module" />
+                    <child caption="MetaCrySL.structure" excluded="false" isresult="false" results_section="true">
+                      <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" />
+                      <role name="model" />
+                      <child caption="Brackets" info="" excluded="false" isresult="false" results_section="true" nodePtr="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/1004539440856581318" isRoot="true">
+                        <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                        <role name="root" />
+                        <child caption="AtomicContraintExp" info="(role: implements in: Brackets)" excluded="false" isresult="true" results_section="true" nodePtr="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/1004539440856581809">
+                          <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                          <role name="target" />
+                        </child>
+                      </child>
+                      <child caption="FunctionCall" info="" excluded="false" isresult="false" results_section="true" nodePtr="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/1004539440856581604" isRoot="true">
+                        <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                        <role name="root" />
+                        <child caption="AtomicContraintExp" info="(role: implements in: FunctionCall)" excluded="false" isresult="true" results_section="true" nodePtr="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/1004539440856581831">
+                          <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                          <role name="target" />
+                        </child>
+                      </child>
+                      <child caption="InSet" info="" excluded="false" isresult="false" results_section="true" nodePtr="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/6570391813127001325" isRoot="true">
+                        <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                        <role name="root" />
+                        <child caption="left" info="(role: linkDeclaration in: InSet)" excluded="false" isresult="true" results_section="true" nodePtr="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/6391449034993605235">
+                          <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                          <role name="target" />
+                        </child>
+                      </child>
+                      <child caption="Value" info="" excluded="false" isresult="false" results_section="true" nodePtr="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/1004539440856598373" isRoot="true">
+                        <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                        <role name="root" />
+                        <child caption="AtomicContraintExp" info="(role: extends in: Value)" excluded="false" isresult="true" results_section="true" nodePtr="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/1004539440856581787">
+                          <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                          <role name="target" />
+                        </child>
+                      </child>
+                      <model uid="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)" />
+                    </child>
+                  </child>
+                </child>
+              </child>
+            </contents>
+          </tree_wrapper>
+        </usage_view>
+      </tab>
       <tab>
         <result_provider class_name="jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.UnionNode">
           <child rpn="jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode">
