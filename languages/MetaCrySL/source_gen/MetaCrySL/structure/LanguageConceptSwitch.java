@@ -65,20 +65,21 @@ public final class LanguageConceptSwitch {
   public static final int Optional = 53;
   public static final int OrderSpec = 54;
   public static final int PlusExpression = 55;
-  public static final int PrimaryExp = 56;
-  public static final int QualifiedFormalArg = 57;
-  public static final int QualifiedName = 58;
-  public static final int RelationalExp = 59;
-  public static final int RequiresSpec = 60;
-  public static final int SequenceExp = 61;
-  public static final int Spec = 62;
-  public static final int SpecContent = 63;
-  public static final int StringValue = 64;
-  public static final int Type = 65;
-  public static final int Value = 66;
-  public static final int Variable = 67;
-  public static final int WildcardArgument = 68;
-  public static final int ZeroOrMore = 69;
+  public static final int Predicate = 56;
+  public static final int PrimaryExp = 57;
+  public static final int QualifiedFormalArg = 58;
+  public static final int QualifiedName = 59;
+  public static final int RelationalExp = 60;
+  public static final int RequiresSpec = 61;
+  public static final int SequenceExp = 62;
+  public static final int Spec = 63;
+  public static final int SpecContent = 64;
+  public static final int StringValue = 65;
+  public static final int Type = 66;
+  public static final int Value = 67;
+  public static final int Variable = 68;
+  public static final int WildcardArgument = 69;
+  public static final int ZeroOrMore = 70;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL);
@@ -138,6 +139,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x398346ae4a4348ecL, Optional);
     builder.put(0x77537c9aa48770aeL, OrderSpec);
     builder.put(0x4d3e0a266e2e416aL, PlusExpression);
+    builder.put(0x447df0abe997b026L, Predicate);
     builder.put(0x398346ae4a4fb658L, PrimaryExp);
     builder.put(0x3ac8e6d3fc44db55L, QualifiedFormalArg);
     builder.put(0x379a88c795f4e8bdL, QualifiedName);

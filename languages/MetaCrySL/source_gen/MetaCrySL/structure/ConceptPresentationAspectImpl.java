@@ -65,6 +65,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Optional;
   private ConceptPresentation props_OrderSpec;
   private ConceptPresentation props_PlusExpression;
+  private ConceptPresentation props_Predicate;
   private ConceptPresentation props_PrimaryExp;
   private ConceptPresentation props_QualifiedFormalArg;
   private ConceptPresentation props_QualifiedName;
@@ -464,6 +465,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_PlusExpression = cpb.create();
         }
         return props_PlusExpression;
+      case LanguageConceptSwitch.Predicate:
+        if (props_Predicate == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Predicate");
+          props_Predicate = cpb.create();
+        }
+        return props_Predicate;
       case LanguageConceptSwitch.PrimaryExp:
         if (props_PrimaryExp == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

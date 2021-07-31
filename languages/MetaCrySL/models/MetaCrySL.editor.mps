@@ -173,10 +173,15 @@
       <concept id="3921456275302774825" name="com.mbeddr.mpsutil.grammarcells.structure.SplittableCell" flags="sg" stub="3921456275302774831" index="2lNzut">
         <child id="3921456275305506525" name="tokenizer" index="2lD6_D" />
       </concept>
+      <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
+        <child id="5083944728298846681" name="option" index="_tjki" />
+        <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
+      </concept>
       <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n">
         <child id="8207263695491670784" name="priority" index="2EmURo" />
       </concept>
       <concept id="8207263695491691232" name="com.mbeddr.mpsutil.grammarcells.structure.SubconceptExpression" flags="ng" index="2EmZKS" />
+      <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
@@ -1210,6 +1215,43 @@
         <ref role="1k5W1q" node="31LRAxBGCeq" resolve="brackets" />
       </node>
       <node concept="2iRfu4" id="4hXWaJDyh6m" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4hXWaJD_V13">
+    <property role="3GE5qa" value="spec.constraint.atomic" />
+    <ref role="1XX52x" to="qgj4:4hXWaJD_V0A" resolve="Predicate" />
+    <node concept="3EZMnI" id="4hXWaJD_V15" role="2wV5jI">
+      <node concept="_tjkj" id="4hXWaJD_V1c" role="3EZMnx">
+        <node concept="3F0A7n" id="4hXWaJD_V1i" role="_tjki">
+          <ref role="1NtTu8" to="qgj4:4hXWaJD_V0B" resolve="negate" />
+        </node>
+        <node concept="ZYGn8" id="4hXWaJDA1rW" role="ZWbT9">
+          <node concept="3clFbS" id="4hXWaJDA1rX" role="2VODD2">
+            <node concept="3clFbF" id="4hXWaJDJwSS" role="3cqZAp">
+              <node concept="Xl_RD" id="4hXWaJDA1s_" role="3clFbG">
+                <property role="Xl_RC" value="neg" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4hXWaJD_V1I" role="3EZMnx">
+        <ref role="1NtTu8" to="qgj4:4hXWaJD_V1$" resolve="label" />
+      </node>
+      <node concept="3F0ifn" id="4hXWaJD_V1Y" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <ref role="1k5W1q" node="31LRAxBGCeq" resolve="brackets" />
+      </node>
+      <node concept="3F2HdR" id="4hXWaJD_V1r" role="3EZMnx">
+        <ref role="1NtTu8" to="qgj4:4hXWaJD_V1p" resolve="exp" />
+        <node concept="2iRfu4" id="4hXWaJD_V1t" role="2czzBx" />
+        <node concept="35HoNQ" id="4hXWaJD_V1y" role="2czzBI" />
+      </node>
+      <node concept="3F0ifn" id="4hXWaJD_V2g" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <ref role="1k5W1q" node="31LRAxBGCeq" resolve="brackets" />
+      </node>
+      <node concept="2iRfu4" id="4hXWaJD_V18" role="2iSdaV" />
     </node>
   </node>
 </model>
