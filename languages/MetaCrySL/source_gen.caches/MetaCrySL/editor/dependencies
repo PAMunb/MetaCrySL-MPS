@@ -333,6 +333,7 @@
     <classNode dependClassName="MetaCrySL.editor.GrammarCellsSubstituteMenu_IEventSpecContent" />
     <classNode dependClassName="MetaCrySL.editor.GrammarCellsSubstituteMenu_ILiteralSet" />
     <classNode dependClassName="MetaCrySL.editor.GrammarCellsSubstituteMenu_IModelContent" />
+    <classNode dependClassName="MetaCrySL.editor.GrammarCellsSubstituteMenu_INegatesContent" />
     <classNode dependClassName="MetaCrySL.editor.GrammarCellsSubstituteMenu_IObjectsContent" />
     <classNode dependClassName="MetaCrySL.editor.GrammarCellsSubstituteMenu_IOrderSpecContent" />
     <classNode dependClassName="MetaCrySL.editor.GrammarCellsSubstituteMenu_IRequiresContent" />
@@ -1348,6 +1349,24 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
   <dependency className="MetaCrySL.editor.GrammarCellsSubstituteMenu_IModelContent">
+    <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuPart" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.MenuPart" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuItem" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SInterfaceConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.module.SModule" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.module.SRepository" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
+  </dependency>
+  <dependency className="MetaCrySL.editor.GrammarCellsSubstituteMenu_INegatesContent">
     <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuPart" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.ArrayList" />
