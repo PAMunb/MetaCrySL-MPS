@@ -1254,5 +1254,45 @@
       <node concept="2iRfu4" id="4hXWaJD_V18" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="3NGg4jh_XIw">
+    <property role="3GE5qa" value="spec.forbidden" />
+    <ref role="1XX52x" to="qgj4:3NGg4jh_XIs" resolve="ForbiddenSpec" />
+    <node concept="3EZMnI" id="3NGg4jh_XIC" role="2wV5jI">
+      <node concept="PMmxH" id="3NGg4jh_XIJ" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3EZMnI" id="3NGg4jh_XIO" role="3EZMnx">
+        <node concept="VPM3Z" id="3NGg4jh_XIQ" role="3F10Kt" />
+        <node concept="3XFhqQ" id="3NGg4jh_XIZ" role="3EZMnx" />
+        <node concept="3F2HdR" id="3NGg4jh_XJ5" role="3EZMnx">
+          <ref role="1NtTu8" to="qgj4:3NGg4jh_XIu" resolve="content" />
+          <node concept="2iRfu4" id="3NGg4jh_XJ7" role="2czzBx" />
+        </node>
+        <node concept="2iRfu4" id="3NGg4jh_XIT" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="3NGg4jh_XIF" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3NGg4jhBQe5">
+    <property role="3GE5qa" value="spec.forbidden" />
+    <ref role="1XX52x" to="qgj4:3NGg4jhBQd6" resolve="ForbiddenMethod" />
+    <node concept="3EZMnI" id="3NGg4jhBQe7" role="2wV5jI">
+      <node concept="3F1sOY" id="3NGg4jhBQee" role="3EZMnx">
+        <ref role="1NtTu8" to="qgj4:3NGg4jhBQd7" resolve="method" />
+      </node>
+      <node concept="_tjkj" id="3NGg4jhBQek" role="3EZMnx">
+        <node concept="3EZMnI" id="3NGg4jhBQeu" role="_tjki">
+          <node concept="3F0ifn" id="3NGg4jhBQew" role="3EZMnx">
+            <property role="3F0ifm" value="=&gt;" />
+          </node>
+          <node concept="3F0A7n" id="3NGg4jhBQeC" role="3EZMnx">
+            <ref role="1NtTu8" to="qgj4:3NGg4jhBQdd" resolve="alternative" />
+          </node>
+          <node concept="2iRfu4" id="3NGg4jhBQex" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="3NGg4jhBQea" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
