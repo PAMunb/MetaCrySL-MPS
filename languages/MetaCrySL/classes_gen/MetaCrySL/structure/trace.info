@@ -9,26 +9,26 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="ConceptPresentationAspectImpl.java">
-      <unit at="11,0,605,0" name="MetaCrySL.structure.ConceptPresentationAspectImpl" />
+      <unit at="11,0,606,0" name="MetaCrySL.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <unit at="10,0,176,0" name="MetaCrySL.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="19,0,970,0" name="MetaCrySL.structure.StructureAspectDescriptor" />
+      <unit at="19,0,971,0" name="MetaCrySL.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/2159885266397935416">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="2159885266397935416" at="38,0,39,0" concept="1" trace="props_IConstraintContent" />
-      <node id="2159885266397935416" at="270,47,271,76" concept="3" />
-      <node id="2159885266397935416" at="271,76,272,50" concept="0" />
-      <node id="2159885266397935416" at="273,9,274,40" concept="4" />
-      <node id="2159885266397935416" at="269,52,273,9" concept="2" />
-      <scope id="2159885266397935416" at="270,47,272,50">
+      <node id="2159885266397935416" at="271,47,272,76" concept="3" />
+      <node id="2159885266397935416" at="272,76,273,50" concept="0" />
+      <node id="2159885266397935416" at="274,9,275,40" concept="4" />
+      <node id="2159885266397935416" at="270,52,274,9" concept="2" />
+      <scope id="2159885266397935416" at="271,47,273,50">
         <var name="cpb" id="2159885266397935416" />
       </scope>
-      <scope id="2159885266397935416" at="269,52,274,40" />
+      <scope id="2159885266397935416" at="270,52,275,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="2159885266397935416" at="38,0,39,0" concept="5" trace="IConstraintContent" />
@@ -54,14 +54,14 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/2159885266397935417">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="2159885266397935417" at="39,0,40,0" concept="1" trace="props_IEnsureContent" />
-      <node id="2159885266397935417" at="276,43,277,76" concept="3" />
-      <node id="2159885266397935417" at="277,76,278,46" concept="0" />
-      <node id="2159885266397935417" at="279,9,280,36" concept="4" />
-      <node id="2159885266397935417" at="275,48,279,9" concept="2" />
-      <scope id="2159885266397935417" at="276,43,278,46">
+      <node id="2159885266397935417" at="277,43,278,76" concept="3" />
+      <node id="2159885266397935417" at="278,76,279,46" concept="0" />
+      <node id="2159885266397935417" at="280,9,281,36" concept="4" />
+      <node id="2159885266397935417" at="276,48,280,9" concept="2" />
+      <scope id="2159885266397935417" at="277,43,279,46">
         <var name="cpb" id="2159885266397935417" />
       </scope>
-      <scope id="2159885266397935417" at="275,48,280,36" />
+      <scope id="2159885266397935417" at="276,48,281,36" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="2159885266397935417" at="39,0,40,0" concept="5" trace="IEnsureContent" />
@@ -86,14 +86,14 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/2159885266397935418">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="2159885266397935418" at="47,0,48,0" concept="1" trace="props_IRequiresContent" />
-      <node id="2159885266397935418" at="324,45,325,76" concept="3" />
-      <node id="2159885266397935418" at="325,76,326,48" concept="0" />
-      <node id="2159885266397935418" at="327,9,328,38" concept="4" />
-      <node id="2159885266397935418" at="323,50,327,9" concept="2" />
-      <scope id="2159885266397935418" at="324,45,326,48">
+      <node id="2159885266397935418" at="325,45,326,76" concept="3" />
+      <node id="2159885266397935418" at="326,76,327,48" concept="0" />
+      <node id="2159885266397935418" at="328,9,329,38" concept="4" />
+      <node id="2159885266397935418" at="324,50,328,9" concept="2" />
+      <scope id="2159885266397935418" at="325,45,327,48">
         <var name="cpb" id="2159885266397935418" />
       </scope>
-      <scope id="2159885266397935418" at="323,50,328,38" />
+      <scope id="2159885266397935418" at="324,50,329,38" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="2159885266397935418" at="47,0,48,0" concept="5" trace="IRequiresContent" />
@@ -123,15 +123,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/2159885266397935497">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="2159885266397935497" at="57,0,58,0" concept="1" trace="props_MethodDef" />
-      <node id="2159885266397935497" at="393,38,394,76" concept="3" />
-      <node id="2159885266397935497" at="394,76,395,43" concept="0" />
-      <node id="2159885266397935497" at="395,43,396,41" concept="0" />
-      <node id="2159885266397935497" at="397,9,398,31" concept="4" />
-      <node id="2159885266397935497" at="392,43,397,9" concept="2" />
-      <scope id="2159885266397935497" at="393,38,396,41">
+      <node id="2159885266397935497" at="394,38,395,76" concept="3" />
+      <node id="2159885266397935497" at="395,76,396,43" concept="0" />
+      <node id="2159885266397935497" at="396,43,397,41" concept="0" />
+      <node id="2159885266397935497" at="398,9,399,31" concept="4" />
+      <node id="2159885266397935497" at="393,43,398,9" concept="2" />
+      <scope id="2159885266397935497" at="394,38,397,41">
         <var name="cpb" id="2159885266397935497" />
       </scope>
-      <scope id="2159885266397935497" at="392,43,398,31" />
+      <scope id="2159885266397935497" at="393,43,399,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="2159885266397935497" at="57,0,58,0" concept="5" trace="MethodDef" />
@@ -192,14 +192,14 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/2159885266398070711">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="2159885266398070711" at="80,0,81,0" concept="1" trace="props_SpecContent" />
-      <node id="2159885266398070711" at="555,40,556,76" concept="3" />
-      <node id="2159885266398070711" at="556,76,557,43" concept="0" />
-      <node id="2159885266398070711" at="558,9,559,33" concept="4" />
-      <node id="2159885266398070711" at="554,45,558,9" concept="2" />
-      <scope id="2159885266398070711" at="555,40,557,43">
+      <node id="2159885266398070711" at="556,40,557,76" concept="3" />
+      <node id="2159885266398070711" at="557,76,558,43" concept="0" />
+      <node id="2159885266398070711" at="559,9,560,33" concept="4" />
+      <node id="2159885266398070711" at="555,45,559,9" concept="2" />
+      <scope id="2159885266398070711" at="556,40,558,43">
         <var name="cpb" id="2159885266398070711" />
       </scope>
-      <scope id="2159885266398070711" at="554,45,559,33" />
+      <scope id="2159885266398070711" at="555,45,560,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="2159885266398070711" at="80,0,81,0" concept="5" trace="SpecContent" />
@@ -208,17 +208,17 @@
     <file name="StructureAspectDescriptor.java">
       <node id="2159885266398070711" at="88,0,89,0" concept="1" trace="myConceptSpecContent" />
       <node id="2159885266398070711" at="253,45,254,36" concept="4" />
-      <node id="2159885266398070711" at="908,69,909,155" concept="3" />
-      <node id="2159885266398070711" at="909,155,910,33" concept="0" />
-      <node id="2159885266398070711" at="910,33,911,96" concept="0" />
-      <node id="2159885266398070711" at="911,96,912,17" concept="0" />
-      <node id="2159885266398070711" at="912,17,913,22" concept="4" />
-      <node id="2159885266398070711" at="908,0,915,0" concept="6" trace="createDescriptorForSpecContent#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="2159885266398070711" at="909,69,910,155" concept="3" />
+      <node id="2159885266398070711" at="910,155,911,33" concept="0" />
+      <node id="2159885266398070711" at="911,33,912,96" concept="0" />
+      <node id="2159885266398070711" at="912,96,913,17" concept="0" />
+      <node id="2159885266398070711" at="913,17,914,22" concept="4" />
+      <node id="2159885266398070711" at="909,0,916,0" concept="6" trace="createDescriptorForSpecContent#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="2159885266398070711" at="253,45,254,36" />
-      <scope id="2159885266398070711" at="908,69,913,22">
+      <scope id="2159885266398070711" at="909,69,914,22">
         <var name="b" id="2159885266398070711" />
       </scope>
-      <scope id="2159885266398070711" at="908,0,915,0" />
+      <scope id="2159885266398070711" at="909,0,916,0" />
     </file>
   </root>
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3219138665674792196">
@@ -330,15 +330,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3490815726186562500">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="3490815726186562500" at="64,0,65,0" concept="1" trace="props_NotHardCoded" />
-      <node id="3490815726186562500" at="442,41,443,76" concept="3" />
-      <node id="3490815726186562500" at="443,76,444,46" concept="0" />
-      <node id="3490815726186562500" at="444,46,445,44" concept="0" />
-      <node id="3490815726186562500" at="446,9,447,34" concept="4" />
-      <node id="3490815726186562500" at="441,46,446,9" concept="2" />
-      <scope id="3490815726186562500" at="442,41,445,44">
+      <node id="3490815726186562500" at="443,41,444,76" concept="3" />
+      <node id="3490815726186562500" at="444,76,445,46" concept="0" />
+      <node id="3490815726186562500" at="445,46,446,44" concept="0" />
+      <node id="3490815726186562500" at="447,9,448,34" concept="4" />
+      <node id="3490815726186562500" at="442,46,447,9" concept="2" />
+      <scope id="3490815726186562500" at="443,41,446,44">
         <var name="cpb" id="3490815726186562500" />
       </scope>
-      <scope id="3490815726186562500" at="441,46,447,34" />
+      <scope id="3490815726186562500" at="442,46,448,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="3490815726186562500" at="64,0,65,0" concept="5" trace="NotHardCoded" />
@@ -365,15 +365,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3490815726186562571">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="3490815726186562571" at="52,0,53,0" concept="1" trace="props_Length" />
-      <node id="3490815726186562571" at="358,35,359,76" concept="3" />
-      <node id="3490815726186562571" at="359,76,360,40" concept="0" />
-      <node id="3490815726186562571" at="360,40,361,38" concept="0" />
-      <node id="3490815726186562571" at="362,9,363,28" concept="4" />
-      <node id="3490815726186562571" at="357,40,362,9" concept="2" />
-      <scope id="3490815726186562571" at="358,35,361,38">
+      <node id="3490815726186562571" at="359,35,360,76" concept="3" />
+      <node id="3490815726186562571" at="360,76,361,40" concept="0" />
+      <node id="3490815726186562571" at="361,40,362,38" concept="0" />
+      <node id="3490815726186562571" at="363,9,364,28" concept="4" />
+      <node id="3490815726186562571" at="358,40,363,9" concept="2" />
+      <scope id="3490815726186562571" at="359,35,362,38">
         <var name="cpb" id="3490815726186562571" />
       </scope>
-      <scope id="3490815726186562571" at="357,40,363,28" />
+      <scope id="3490815726186562571" at="358,40,364,28" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="3490815726186562571" at="52,0,53,0" concept="5" trace="Length" />
@@ -400,15 +400,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3490815726186562640">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="3490815726186562640" at="50,0,51,0" concept="1" trace="props_InstanceOf" />
-      <node id="3490815726186562640" at="344,39,345,76" concept="3" />
-      <node id="3490815726186562640" at="345,76,346,44" concept="0" />
-      <node id="3490815726186562640" at="346,44,347,42" concept="0" />
-      <node id="3490815726186562640" at="348,9,349,32" concept="4" />
-      <node id="3490815726186562640" at="343,44,348,9" concept="2" />
-      <scope id="3490815726186562640" at="344,39,347,42">
+      <node id="3490815726186562640" at="345,39,346,76" concept="3" />
+      <node id="3490815726186562640" at="346,76,347,44" concept="0" />
+      <node id="3490815726186562640" at="347,44,348,42" concept="0" />
+      <node id="3490815726186562640" at="349,9,350,32" concept="4" />
+      <node id="3490815726186562640" at="344,44,349,9" concept="2" />
+      <scope id="3490815726186562640" at="345,39,348,42">
         <var name="cpb" id="3490815726186562640" />
       </scope>
-      <scope id="3490815726186562640" at="343,44,349,32" />
+      <scope id="3490815726186562640" at="344,44,350,32" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="3490815726186562640" at="50,0,51,0" concept="5" trace="InstanceOf" />
@@ -436,15 +436,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3490815726187307064">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="3490815726187307064" at="61,0,62,0" concept="1" trace="props_NeverTypeOf" />
-      <node id="3490815726187307064" at="421,40,422,76" concept="3" />
-      <node id="3490815726187307064" at="422,76,423,45" concept="0" />
-      <node id="3490815726187307064" at="423,45,424,43" concept="0" />
-      <node id="3490815726187307064" at="425,9,426,33" concept="4" />
-      <node id="3490815726187307064" at="420,45,425,9" concept="2" />
-      <scope id="3490815726187307064" at="421,40,424,43">
+      <node id="3490815726187307064" at="422,40,423,76" concept="3" />
+      <node id="3490815726187307064" at="423,76,424,45" concept="0" />
+      <node id="3490815726187307064" at="424,45,425,43" concept="0" />
+      <node id="3490815726187307064" at="426,9,427,33" concept="4" />
+      <node id="3490815726187307064" at="421,45,426,9" concept="2" />
+      <scope id="3490815726187307064" at="422,40,425,43">
         <var name="cpb" id="3490815726187307064" />
       </scope>
-      <scope id="3490815726187307064" at="420,45,426,33" />
+      <scope id="3490815726187307064" at="421,45,427,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="3490815726187307064" at="61,0,62,0" concept="5" trace="NeverTypeOf" />
@@ -472,15 +472,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3490815726187307069">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="3490815726187307069" at="66,0,67,0" concept="1" trace="props_ObjectRef" />
-      <node id="3490815726187307069" at="456,38,457,76" concept="3" />
-      <node id="3490815726187307069" at="457,76,458,137" concept="0" />
-      <node id="3490815726187307069" at="458,137,459,41" concept="0" />
-      <node id="3490815726187307069" at="460,9,461,31" concept="4" />
-      <node id="3490815726187307069" at="455,43,460,9" concept="2" />
-      <scope id="3490815726187307069" at="456,38,459,41">
+      <node id="3490815726187307069" at="457,38,458,76" concept="3" />
+      <node id="3490815726187307069" at="458,76,459,137" concept="0" />
+      <node id="3490815726187307069" at="459,137,460,41" concept="0" />
+      <node id="3490815726187307069" at="461,9,462,31" concept="4" />
+      <node id="3490815726187307069" at="456,43,461,9" concept="2" />
+      <scope id="3490815726187307069" at="457,38,460,41">
         <var name="cpb" id="3490815726187307069" />
       </scope>
-      <scope id="3490815726187307069" at="455,43,461,31" />
+      <scope id="3490815726187307069" at="456,43,462,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="3490815726187307069" at="66,0,67,0" concept="5" trace="ObjectRef" />
@@ -528,7 +528,7 @@
       <node id="3490815726188832692" at="303,96,304,17" concept="0" />
       <node id="3490815726188832692" at="304,17,305,22" concept="4" />
       <node id="3490815726188832692" at="494,34,495,76" concept="0" />
-      <node id="3490815726188832692" at="936,19,937,76" concept="0" />
+      <node id="3490815726188832692" at="937,19,938,76" concept="0" />
       <node id="3490815726188832692" at="299,0,307,0" concept="6" trace="createDescriptorForAtomicConstraintExp#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="3490815726188832692" at="121,53,122,44" />
       <scope id="3490815726188832692" at="299,77,305,22">
@@ -540,14 +540,14 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3490815726188832694">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="3490815726188832694" at="83,0,84,0" concept="1" trace="props_Value" />
-      <node id="3490815726188832694" at="575,34,576,76" concept="3" />
-      <node id="3490815726188832694" at="576,76,577,37" concept="0" />
-      <node id="3490815726188832694" at="578,9,579,27" concept="4" />
-      <node id="3490815726188832694" at="574,39,578,9" concept="2" />
-      <scope id="3490815726188832694" at="575,34,577,37">
+      <node id="3490815726188832694" at="576,34,577,76" concept="3" />
+      <node id="3490815726188832694" at="577,76,578,37" concept="0" />
+      <node id="3490815726188832694" at="579,9,580,27" concept="4" />
+      <node id="3490815726188832694" at="575,39,579,9" concept="2" />
+      <scope id="3490815726188832694" at="576,34,578,37">
         <var name="cpb" id="3490815726188832694" />
       </scope>
-      <scope id="3490815726188832694" at="574,39,579,27" />
+      <scope id="3490815726188832694" at="575,39,580,27" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="3490815726188832694" at="83,0,84,0" concept="5" trace="Value" />
@@ -557,33 +557,33 @@
       <node id="3490815726188832694" at="91,0,92,0" concept="1" trace="myConceptValue" />
       <node id="3490815726188832694" at="259,39,260,30" concept="4" />
       <node id="3490815726188832694" at="628,34,629,76" concept="0" />
-      <node id="3490815726188832694" at="917,34,918,76" concept="0" />
-      <node id="3490815726188832694" at="934,63,935,149" concept="3" />
-      <node id="3490815726188832694" at="935,149,936,19" concept="0" />
-      <node id="3490815726188832694" at="937,76,938,96" concept="0" />
-      <node id="3490815726188832694" at="938,96,939,17" concept="0" />
-      <node id="3490815726188832694" at="939,17,940,22" concept="4" />
-      <node id="3490815726188832694" at="944,34,945,76" concept="0" />
-      <node id="3490815726188832694" at="934,0,942,0" concept="6" trace="createDescriptorForValue#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="3490815726188832694" at="918,34,919,76" concept="0" />
+      <node id="3490815726188832694" at="935,63,936,149" concept="3" />
+      <node id="3490815726188832694" at="936,149,937,19" concept="0" />
+      <node id="3490815726188832694" at="938,76,939,96" concept="0" />
+      <node id="3490815726188832694" at="939,96,940,17" concept="0" />
+      <node id="3490815726188832694" at="940,17,941,22" concept="4" />
+      <node id="3490815726188832694" at="945,34,946,76" concept="0" />
+      <node id="3490815726188832694" at="935,0,943,0" concept="6" trace="createDescriptorForValue#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="3490815726188832694" at="259,39,260,30" />
-      <scope id="3490815726188832694" at="934,63,940,22">
+      <scope id="3490815726188832694" at="935,63,941,22">
         <var name="b" id="3490815726188832694" />
       </scope>
-      <scope id="3490815726188832694" at="934,0,942,0" />
+      <scope id="3490815726188832694" at="935,0,943,0" />
     </file>
   </root>
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3490815726191164006">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="3490815726191164006" at="51,0,52,0" concept="1" trace="props_IntValue" />
-      <node id="3490815726191164006" at="351,37,352,76" concept="3" />
-      <node id="3490815726191164006" at="352,76,353,42" concept="0" />
-      <node id="3490815726191164006" at="353,42,354,40" concept="0" />
-      <node id="3490815726191164006" at="355,9,356,30" concept="4" />
-      <node id="3490815726191164006" at="350,42,355,9" concept="2" />
-      <scope id="3490815726191164006" at="351,37,354,40">
+      <node id="3490815726191164006" at="352,37,353,76" concept="3" />
+      <node id="3490815726191164006" at="353,76,354,42" concept="0" />
+      <node id="3490815726191164006" at="354,42,355,40" concept="0" />
+      <node id="3490815726191164006" at="356,9,357,30" concept="4" />
+      <node id="3490815726191164006" at="351,42,356,9" concept="2" />
+      <scope id="3490815726191164006" at="352,37,355,40">
         <var name="cpb" id="3490815726191164006" />
       </scope>
-      <scope id="3490815726191164006" at="350,42,356,30" />
+      <scope id="3490815726191164006" at="351,42,357,30" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="3490815726191164006" at="51,0,52,0" concept="5" trace="IntValue" />
@@ -609,15 +609,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3490815726191164026">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="3490815726191164026" at="81,0,82,0" concept="1" trace="props_StringValue" />
-      <node id="3490815726191164026" at="561,40,562,76" concept="3" />
-      <node id="3490815726191164026" at="562,76,563,45" concept="0" />
-      <node id="3490815726191164026" at="563,45,564,43" concept="0" />
-      <node id="3490815726191164026" at="565,9,566,33" concept="4" />
-      <node id="3490815726191164026" at="560,45,565,9" concept="2" />
-      <scope id="3490815726191164026" at="561,40,564,43">
+      <node id="3490815726191164026" at="562,40,563,76" concept="3" />
+      <node id="3490815726191164026" at="563,76,564,45" concept="0" />
+      <node id="3490815726191164026" at="564,45,565,43" concept="0" />
+      <node id="3490815726191164026" at="566,9,567,33" concept="4" />
+      <node id="3490815726191164026" at="561,45,566,9" concept="2" />
+      <scope id="3490815726191164026" at="562,40,565,43">
         <var name="cpb" id="3490815726191164026" />
       </scope>
-      <scope id="3490815726191164026" at="560,45,566,33" />
+      <scope id="3490815726191164026" at="561,45,567,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="3490815726191164026" at="81,0,82,0" concept="5" trace="StringValue" />
@@ -626,32 +626,32 @@
     <file name="StructureAspectDescriptor.java">
       <node id="3490815726191164026" at="89,0,90,0" concept="1" trace="myConceptStringValue" />
       <node id="3490815726191164026" at="255,45,256,36" concept="4" />
-      <node id="3490815726191164026" at="915,69,916,155" concept="3" />
-      <node id="3490815726191164026" at="916,155,917,34" concept="0" />
-      <node id="3490815726191164026" at="918,76,919,96" concept="0" />
-      <node id="3490815726191164026" at="919,96,920,17" concept="0" />
-      <node id="3490815726191164029" at="920,17,921,111" concept="0" />
-      <node id="3490815726191164026" at="921,111,922,22" concept="4" />
-      <node id="3490815726191164026" at="915,0,924,0" concept="6" trace="createDescriptorForStringValue#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="3490815726191164026" at="916,69,917,155" concept="3" />
+      <node id="3490815726191164026" at="917,155,918,34" concept="0" />
+      <node id="3490815726191164026" at="919,76,920,96" concept="0" />
+      <node id="3490815726191164026" at="920,96,921,17" concept="0" />
+      <node id="3490815726191164029" at="921,17,922,111" concept="0" />
+      <node id="3490815726191164026" at="922,111,923,22" concept="4" />
+      <node id="3490815726191164026" at="916,0,925,0" concept="6" trace="createDescriptorForStringValue#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="3490815726191164026" at="255,45,256,36" />
-      <scope id="3490815726191164026" at="915,69,922,22">
+      <scope id="3490815726191164026" at="916,69,923,22">
         <var name="b" id="3490815726191164026" />
       </scope>
-      <scope id="3490815726191164026" at="915,0,924,0" />
+      <scope id="3490815726191164026" at="916,0,925,0" />
     </file>
   </root>
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3490815726191164116">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="3490815726191164116" at="84,0,85,0" concept="1" trace="props_Variable" />
-      <node id="3490815726191164116" at="581,37,582,76" concept="3" />
-      <node id="3490815726191164116" at="582,76,583,42" concept="0" />
-      <node id="3490815726191164116" at="583,42,584,40" concept="0" />
-      <node id="3490815726191164116" at="585,9,586,30" concept="4" />
-      <node id="3490815726191164116" at="580,42,585,9" concept="2" />
-      <scope id="3490815726191164116" at="581,37,584,40">
+      <node id="3490815726191164116" at="582,37,583,76" concept="3" />
+      <node id="3490815726191164116" at="583,76,584,42" concept="0" />
+      <node id="3490815726191164116" at="584,42,585,40" concept="0" />
+      <node id="3490815726191164116" at="586,9,587,30" concept="4" />
+      <node id="3490815726191164116" at="581,42,586,9" concept="2" />
+      <scope id="3490815726191164116" at="582,37,585,40">
         <var name="cpb" id="3490815726191164116" />
       </scope>
-      <scope id="3490815726191164116" at="580,42,586,30" />
+      <scope id="3490815726191164116" at="581,42,587,30" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="3490815726191164116" at="84,0,85,0" concept="5" trace="Variable" />
@@ -660,31 +660,31 @@
     <file name="StructureAspectDescriptor.java">
       <node id="3490815726191164116" at="92,0,93,0" concept="1" trace="myConceptVariable" />
       <node id="3490815726191164116" at="261,42,262,33" concept="4" />
-      <node id="3490815726191164116" at="942,66,943,152" concept="3" />
-      <node id="3490815726191164116" at="943,152,944,34" concept="0" />
-      <node id="3490815726191164116" at="945,76,946,96" concept="0" />
-      <node id="3490815726191164116" at="946,96,947,17" concept="0" />
-      <node id="3490815726191164117" at="947,17,948,176" concept="0" />
-      <node id="3490815726191164116" at="948,176,949,22" concept="4" />
-      <node id="3490815726191164116" at="942,0,951,0" concept="6" trace="createDescriptorForVariable#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="3490815726191164116" at="943,66,944,152" concept="3" />
+      <node id="3490815726191164116" at="944,152,945,34" concept="0" />
+      <node id="3490815726191164116" at="946,76,947,96" concept="0" />
+      <node id="3490815726191164116" at="947,96,948,17" concept="0" />
+      <node id="3490815726191164117" at="948,17,949,176" concept="0" />
+      <node id="3490815726191164116" at="949,176,950,22" concept="4" />
+      <node id="3490815726191164116" at="943,0,952,0" concept="6" trace="createDescriptorForVariable#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="3490815726191164116" at="261,42,262,33" />
-      <scope id="3490815726191164116" at="942,66,949,22">
+      <scope id="3490815726191164116" at="943,66,950,22">
         <var name="b" id="3490815726191164116" />
       </scope>
-      <scope id="3490815726191164116" at="942,0,951,0" />
+      <scope id="3490815726191164116" at="943,0,952,0" />
     </file>
   </root>
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4006665209295202465">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4006665209295202465" at="59,0,60,0" concept="1" trace="props_Model" />
-      <node id="4006665209295202465" at="407,34,408,76" concept="3" />
-      <node id="4006665209295202465" at="408,76,409,37" concept="0" />
-      <node id="4006665209295202465" at="410,9,411,27" concept="4" />
-      <node id="4006665209295202465" at="406,39,410,9" concept="2" />
-      <scope id="4006665209295202465" at="407,34,409,37">
+      <node id="4006665209295202465" at="408,34,409,76" concept="3" />
+      <node id="4006665209295202465" at="409,76,410,37" concept="0" />
+      <node id="4006665209295202465" at="411,9,412,27" concept="4" />
+      <node id="4006665209295202465" at="407,39,411,9" concept="2" />
+      <scope id="4006665209295202465" at="408,34,410,37">
         <var name="cpb" id="4006665209295202465" />
       </scope>
-      <scope id="4006665209295202465" at="406,39,411,27" />
+      <scope id="4006665209295202465" at="407,39,412,27" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4006665209295202465" at="59,0,60,0" concept="5" trace="Model" />
@@ -711,15 +711,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4006665209295202493">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4006665209295202493" at="75,0,76,0" concept="1" trace="props_QualifiedName" />
-      <node id="4006665209295202493" at="521,42,522,76" concept="3" />
-      <node id="4006665209295202493" at="522,76,523,51" concept="0" />
-      <node id="4006665209295202493" at="523,51,524,45" concept="0" />
-      <node id="4006665209295202493" at="525,9,526,35" concept="4" />
-      <node id="4006665209295202493" at="520,47,525,9" concept="2" />
-      <scope id="4006665209295202493" at="521,42,524,45">
+      <node id="4006665209295202493" at="522,42,523,76" concept="3" />
+      <node id="4006665209295202493" at="523,76,524,51" concept="0" />
+      <node id="4006665209295202493" at="524,51,525,45" concept="0" />
+      <node id="4006665209295202493" at="526,9,527,35" concept="4" />
+      <node id="4006665209295202493" at="521,47,526,9" concept="2" />
+      <scope id="4006665209295202493" at="522,42,525,45">
         <var name="cpb" id="4006665209295202493" />
       </scope>
-      <scope id="4006665209295202493" at="520,47,526,35" />
+      <scope id="4006665209295202493" at="521,47,527,35" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4006665209295202493" at="75,0,76,0" concept="5" trace="QualifiedName" />
@@ -783,15 +783,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4088624315226392881">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4088624315226392881" at="77,0,78,0" concept="1" trace="props_RequiresSpec" />
-      <node id="4088624315226392881" at="534,41,535,76" concept="3" />
-      <node id="4088624315226392881" at="535,76,536,42" concept="0" />
-      <node id="4088624315226392881" at="536,42,537,44" concept="0" />
-      <node id="4088624315226392881" at="538,9,539,34" concept="4" />
-      <node id="4088624315226392881" at="533,46,538,9" concept="2" />
-      <scope id="4088624315226392881" at="534,41,537,44">
+      <node id="4088624315226392881" at="535,41,536,76" concept="3" />
+      <node id="4088624315226392881" at="536,76,537,42" concept="0" />
+      <node id="4088624315226392881" at="537,42,538,44" concept="0" />
+      <node id="4088624315226392881" at="539,9,540,34" concept="4" />
+      <node id="4088624315226392881" at="534,46,539,9" concept="2" />
+      <scope id="4088624315226392881" at="535,41,538,44">
         <var name="cpb" id="4088624315226392881" />
       </scope>
-      <scope id="4088624315226392881" at="533,46,539,34" />
+      <scope id="4088624315226392881" at="534,46,540,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4088624315226392881" at="77,0,78,0" concept="5" trace="RequiresSpec" />
@@ -855,16 +855,16 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4088624315226447472">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4088624315226447472" at="60,0,61,0" concept="1" trace="props_NegatesSpec" />
-      <node id="4088624315226447472" at="413,40,414,76" concept="3" />
-      <node id="4088624315226447472" at="414,76,415,61" concept="0" />
-      <node id="4088624315226447472" at="415,61,416,41" concept="0" />
-      <node id="4088624315226447472" at="416,41,417,43" concept="0" />
-      <node id="4088624315226447472" at="418,9,419,33" concept="4" />
-      <node id="4088624315226447472" at="412,45,418,9" concept="2" />
-      <scope id="4088624315226447472" at="413,40,417,43">
+      <node id="4088624315226447472" at="414,40,415,76" concept="3" />
+      <node id="4088624315226447472" at="415,76,416,61" concept="0" />
+      <node id="4088624315226447472" at="416,61,417,41" concept="0" />
+      <node id="4088624315226447472" at="417,41,418,43" concept="0" />
+      <node id="4088624315226447472" at="419,9,420,33" concept="4" />
+      <node id="4088624315226447472" at="413,45,419,9" concept="2" />
+      <scope id="4088624315226447472" at="414,40,418,43">
         <var name="cpb" id="4088624315226447472" />
       </scope>
-      <scope id="4088624315226447472" at="412,45,419,33" />
+      <scope id="4088624315226447472" at="413,45,420,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4088624315226447472" at="60,0,61,0" concept="5" trace="NegatesSpec" />
@@ -892,15 +892,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4144233796494843464">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4144233796494843464" at="78,0,79,0" concept="1" trace="props_SequenceExp" />
-      <node id="4144233796494843464" at="541,40,542,76" concept="3" />
-      <node id="4144233796494843464" at="542,76,543,35" concept="0" />
-      <node id="4144233796494843464" at="543,35,544,43" concept="0" />
-      <node id="4144233796494843464" at="545,9,546,33" concept="4" />
-      <node id="4144233796494843464" at="540,45,545,9" concept="2" />
-      <scope id="4144233796494843464" at="541,40,544,43">
+      <node id="4144233796494843464" at="542,40,543,76" concept="3" />
+      <node id="4144233796494843464" at="543,76,544,35" concept="0" />
+      <node id="4144233796494843464" at="544,35,545,43" concept="0" />
+      <node id="4144233796494843464" at="546,9,547,33" concept="4" />
+      <node id="4144233796494843464" at="541,45,546,9" concept="2" />
+      <scope id="4144233796494843464" at="542,40,545,43">
         <var name="cpb" id="4144233796494843464" />
       </scope>
-      <scope id="4144233796494843464" at="540,45,546,33" />
+      <scope id="4144233796494843464" at="541,45,547,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4144233796494843464" at="78,0,79,0" concept="5" trace="SequenceExp" />
@@ -998,15 +998,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4144233796495165676">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4144233796495165676" at="69,0,70,0" concept="1" trace="props_Optional" />
-      <node id="4144233796495165676" at="478,37,479,76" concept="3" />
-      <node id="4144233796495165676" at="479,76,480,35" concept="0" />
-      <node id="4144233796495165676" at="480,35,481,40" concept="0" />
-      <node id="4144233796495165676" at="482,9,483,30" concept="4" />
-      <node id="4144233796495165676" at="477,42,482,9" concept="2" />
-      <scope id="4144233796495165676" at="478,37,481,40">
+      <node id="4144233796495165676" at="479,37,480,76" concept="3" />
+      <node id="4144233796495165676" at="480,76,481,35" concept="0" />
+      <node id="4144233796495165676" at="481,35,482,40" concept="0" />
+      <node id="4144233796495165676" at="483,9,484,30" concept="4" />
+      <node id="4144233796495165676" at="478,42,483,9" concept="2" />
+      <scope id="4144233796495165676" at="479,37,482,40">
         <var name="cpb" id="4144233796495165676" />
       </scope>
-      <scope id="4144233796495165676" at="477,42,483,30" />
+      <scope id="4144233796495165676" at="478,42,484,30" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4144233796495165676" at="69,0,70,0" concept="5" trace="Optional" />
@@ -1067,15 +1067,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4144233796495169578">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4144233796495169578" at="86,0,87,0" concept="1" trace="props_ZeroOrMore" />
-      <node id="4144233796495169578" at="595,39,596,76" concept="3" />
-      <node id="4144233796495169578" at="596,76,597,35" concept="0" />
-      <node id="4144233796495169578" at="597,35,598,42" concept="0" />
-      <node id="4144233796495169578" at="599,9,600,32" concept="4" />
-      <node id="4144233796495169578" at="594,44,599,9" concept="2" />
-      <scope id="4144233796495169578" at="595,39,598,42">
+      <node id="4144233796495169578" at="596,39,597,76" concept="3" />
+      <node id="4144233796495169578" at="597,76,598,35" concept="0" />
+      <node id="4144233796495169578" at="598,35,599,42" concept="0" />
+      <node id="4144233796495169578" at="600,9,601,32" concept="4" />
+      <node id="4144233796495169578" at="595,44,600,9" concept="2" />
+      <scope id="4144233796495169578" at="596,39,599,42">
         <var name="cpb" id="4144233796495169578" />
       </scope>
-      <scope id="4144233796495169578" at="594,44,600,32" />
+      <scope id="4144233796495169578" at="595,44,601,32" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4144233796495169578" at="86,0,87,0" concept="5" trace="ZeroOrMore" />
@@ -1084,33 +1084,33 @@
     <file name="StructureAspectDescriptor.java">
       <node id="4144233796495169578" at="94,0,95,0" concept="1" trace="myConceptZeroOrMore" />
       <node id="4144233796495169578" at="265,44,266,35" concept="4" />
-      <node id="4144233796495169578" at="960,68,961,154" concept="3" />
-      <node id="4144233796495169578" at="961,154,962,34" concept="0" />
-      <node id="4144233796495169578" at="962,34,963,113" concept="0" />
-      <node id="4144233796495169578" at="963,113,964,96" concept="0" />
-      <node id="4144233796495169578" at="964,96,965,17" concept="0" />
-      <node id="4144233796495169578" at="965,17,966,17" concept="0" />
-      <node id="4144233796495169578" at="966,17,967,22" concept="4" />
-      <node id="4144233796495169578" at="960,0,969,0" concept="6" trace="createDescriptorForZeroOrMore#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="4144233796495169578" at="961,68,962,154" concept="3" />
+      <node id="4144233796495169578" at="962,154,963,34" concept="0" />
+      <node id="4144233796495169578" at="963,34,964,113" concept="0" />
+      <node id="4144233796495169578" at="964,113,965,96" concept="0" />
+      <node id="4144233796495169578" at="965,96,966,17" concept="0" />
+      <node id="4144233796495169578" at="966,17,967,17" concept="0" />
+      <node id="4144233796495169578" at="967,17,968,22" concept="4" />
+      <node id="4144233796495169578" at="961,0,970,0" concept="6" trace="createDescriptorForZeroOrMore#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="4144233796495169578" at="265,44,266,35" />
-      <scope id="4144233796495169578" at="960,68,967,22">
+      <scope id="4144233796495169578" at="961,68,968,22">
         <var name="b" id="4144233796495169578" />
       </scope>
-      <scope id="4144233796495169578" at="960,0,969,0" />
+      <scope id="4144233796495169578" at="961,0,970,0" />
     </file>
   </root>
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4144233796495169579">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4144233796495169579" at="68,0,69,0" concept="1" trace="props_OneOrMore" />
-      <node id="4144233796495169579" at="471,38,472,76" concept="3" />
-      <node id="4144233796495169579" at="472,76,473,35" concept="0" />
-      <node id="4144233796495169579" at="473,35,474,41" concept="0" />
-      <node id="4144233796495169579" at="475,9,476,31" concept="4" />
-      <node id="4144233796495169579" at="470,43,475,9" concept="2" />
-      <scope id="4144233796495169579" at="471,38,474,41">
+      <node id="4144233796495169579" at="472,38,473,76" concept="3" />
+      <node id="4144233796495169579" at="473,76,474,35" concept="0" />
+      <node id="4144233796495169579" at="474,35,475,41" concept="0" />
+      <node id="4144233796495169579" at="476,9,477,31" concept="4" />
+      <node id="4144233796495169579" at="471,43,476,9" concept="2" />
+      <scope id="4144233796495169579" at="472,38,475,41">
         <var name="cpb" id="4144233796495169579" />
       </scope>
-      <scope id="4144233796495169579" at="470,43,476,31" />
+      <scope id="4144233796495169579" at="471,43,477,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4144233796495169579" at="68,0,69,0" concept="5" trace="OneOrMore" />
@@ -1137,15 +1137,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4144233796495980120">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4144233796495980120" at="73,0,74,0" concept="1" trace="props_PrimaryExp" />
-      <node id="4144233796495980120" at="507,39,508,76" concept="3" />
-      <node id="4144233796495980120" at="508,76,509,44" concept="0" />
-      <node id="4144233796495980120" at="509,44,510,42" concept="0" />
-      <node id="4144233796495980120" at="511,9,512,32" concept="4" />
-      <node id="4144233796495980120" at="506,44,511,9" concept="2" />
-      <scope id="4144233796495980120" at="507,39,510,42">
+      <node id="4144233796495980120" at="508,39,509,76" concept="3" />
+      <node id="4144233796495980120" at="509,76,510,44" concept="0" />
+      <node id="4144233796495980120" at="510,44,511,42" concept="0" />
+      <node id="4144233796495980120" at="512,9,513,32" concept="4" />
+      <node id="4144233796495980120" at="507,44,512,9" concept="2" />
+      <scope id="4144233796495980120" at="508,39,511,42">
         <var name="cpb" id="4144233796495980120" />
       </scope>
-      <scope id="4144233796495980120" at="506,44,512,32" />
+      <scope id="4144233796495980120" at="507,44,513,32" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4144233796495980120" at="73,0,74,0" concept="5" trace="PrimaryExp" />
@@ -1172,15 +1172,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4235889247684779050">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4235889247684779050" at="82,0,83,0" concept="1" trace="props_Type" />
-      <node id="4235889247684779050" at="568,33,569,76" concept="3" />
-      <node id="4235889247684779050" at="569,76,570,38" concept="0" />
-      <node id="4235889247684779050" at="570,38,571,36" concept="0" />
-      <node id="4235889247684779050" at="572,9,573,26" concept="4" />
-      <node id="4235889247684779050" at="567,38,572,9" concept="2" />
-      <scope id="4235889247684779050" at="568,33,571,36">
+      <node id="4235889247684779050" at="569,33,570,76" concept="3" />
+      <node id="4235889247684779050" at="570,76,571,38" concept="0" />
+      <node id="4235889247684779050" at="571,38,572,36" concept="0" />
+      <node id="4235889247684779050" at="573,9,574,26" concept="4" />
+      <node id="4235889247684779050" at="568,38,573,9" concept="2" />
+      <scope id="4235889247684779050" at="569,33,572,36">
         <var name="cpb" id="4235889247684779050" />
       </scope>
-      <scope id="4235889247684779050" at="567,38,573,26" />
+      <scope id="4235889247684779050" at="568,38,574,26" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4235889247684779050" at="82,0,83,0" concept="5" trace="Type" />
@@ -1189,34 +1189,34 @@
     <file name="StructureAspectDescriptor.java">
       <node id="4235889247684779050" at="90,0,91,0" concept="1" trace="myConceptType" />
       <node id="4235889247684779050" at="257,38,258,29" concept="4" />
-      <node id="4235889247684779050" at="924,62,925,148" concept="3" />
-      <node id="4235889247684779050" at="925,148,926,34" concept="0" />
-      <node id="4235889247684779050" at="926,34,927,71" concept="0" />
-      <node id="4235889247684779050" at="927,71,928,96" concept="0" />
-      <node id="4235889247684779050" at="928,96,929,17" concept="0" />
-      <node id="4235889247684779063" at="929,17,930,198" concept="0" />
-      <node id="4235889247684971570" at="930,198,931,200" concept="0" />
-      <node id="4235889247684779050" at="931,200,932,22" concept="4" />
-      <node id="4235889247684779050" at="924,0,934,0" concept="6" trace="createDescriptorForType#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="4235889247684779050" at="925,62,926,148" concept="3" />
+      <node id="4235889247684779050" at="926,148,927,34" concept="0" />
+      <node id="4235889247684779050" at="927,34,928,71" concept="0" />
+      <node id="4235889247684779050" at="928,71,929,96" concept="0" />
+      <node id="4235889247684779050" at="929,96,930,17" concept="0" />
+      <node id="4235889247684779063" at="930,17,931,198" concept="0" />
+      <node id="4235889247684971570" at="931,198,932,200" concept="0" />
+      <node id="4235889247684779050" at="932,200,933,22" concept="4" />
+      <node id="4235889247684779050" at="925,0,935,0" concept="6" trace="createDescriptorForType#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="4235889247684779050" at="257,38,258,29" />
-      <scope id="4235889247684779050" at="924,62,932,22">
+      <scope id="4235889247684779050" at="925,62,933,22">
         <var name="b" id="4235889247684779050" />
       </scope>
-      <scope id="4235889247684779050" at="924,0,934,0" />
+      <scope id="4235889247684779050" at="925,0,935,0" />
     </file>
   </root>
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4235889247686591029">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4235889247686591029" at="34,0,35,0" concept="1" trace="props_FormalArgList" />
-      <node id="4235889247686591029" at="242,42,243,76" concept="3" />
-      <node id="4235889247686591029" at="243,76,244,47" concept="0" />
-      <node id="4235889247686591029" at="244,47,245,45" concept="0" />
-      <node id="4235889247686591029" at="246,9,247,35" concept="4" />
-      <node id="4235889247686591029" at="241,47,246,9" concept="2" />
-      <scope id="4235889247686591029" at="242,42,245,45">
+      <node id="4235889247686591029" at="243,42,244,76" concept="3" />
+      <node id="4235889247686591029" at="244,76,245,47" concept="0" />
+      <node id="4235889247686591029" at="245,47,246,45" concept="0" />
+      <node id="4235889247686591029" at="247,9,248,35" concept="4" />
+      <node id="4235889247686591029" at="242,47,247,9" concept="2" />
+      <scope id="4235889247686591029" at="243,42,246,45">
         <var name="cpb" id="4235889247686591029" />
       </scope>
-      <scope id="4235889247686591029" at="241,47,247,35" />
+      <scope id="4235889247686591029" at="242,47,248,35" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4235889247686591029" at="34,0,35,0" concept="5" trace="FormalArgList" />
@@ -1242,14 +1242,14 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4235889247686810452">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4235889247686810452" at="33,0,34,0" concept="1" trace="props_FormalArg" />
-      <node id="4235889247686810452" at="236,38,237,76" concept="3" />
-      <node id="4235889247686810452" at="237,76,238,41" concept="0" />
-      <node id="4235889247686810452" at="239,9,240,31" concept="4" />
-      <node id="4235889247686810452" at="235,43,239,9" concept="2" />
-      <scope id="4235889247686810452" at="236,38,238,41">
+      <node id="4235889247686810452" at="237,38,238,76" concept="3" />
+      <node id="4235889247686810452" at="238,76,239,41" concept="0" />
+      <node id="4235889247686810452" at="240,9,241,31" concept="4" />
+      <node id="4235889247686810452" at="236,43,240,9" concept="2" />
+      <scope id="4235889247686810452" at="237,38,239,41">
         <var name="cpb" id="4235889247686810452" />
       </scope>
-      <scope id="4235889247686810452" at="235,43,240,31" />
+      <scope id="4235889247686810452" at="236,43,241,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4235889247686810452" at="33,0,34,0" concept="5" trace="FormalArg" />
@@ -1264,7 +1264,7 @@
       <node id="4235889247686810452" at="480,96,481,17" concept="0" />
       <node id="4235889247686810452" at="481,17,482,22" concept="4" />
       <node id="4235889247686810452" at="845,34,846,76" concept="0" />
-      <node id="4235889247686810452" at="953,34,954,76" concept="0" />
+      <node id="4235889247686810452" at="954,34,955,76" concept="0" />
       <node id="4235889247686810452" at="477,0,484,0" concept="6" trace="createDescriptorForFormalArg#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="4235889247686810452" at="159,43,160,34" />
       <scope id="4235889247686810452" at="477,67,482,22">
@@ -1276,15 +1276,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4235889247686810453">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4235889247686810453" at="74,0,75,0" concept="1" trace="props_QualifiedFormalArg" />
-      <node id="4235889247686810453" at="514,47,515,76" concept="3" />
-      <node id="4235889247686810453" at="515,76,516,52" concept="0" />
-      <node id="4235889247686810453" at="516,52,517,50" concept="0" />
-      <node id="4235889247686810453" at="518,9,519,40" concept="4" />
-      <node id="4235889247686810453" at="513,52,518,9" concept="2" />
-      <scope id="4235889247686810453" at="514,47,517,50">
+      <node id="4235889247686810453" at="515,47,516,76" concept="3" />
+      <node id="4235889247686810453" at="516,76,517,52" concept="0" />
+      <node id="4235889247686810453" at="517,52,518,50" concept="0" />
+      <node id="4235889247686810453" at="519,9,520,40" concept="4" />
+      <node id="4235889247686810453" at="514,52,519,9" concept="2" />
+      <scope id="4235889247686810453" at="515,47,518,50">
         <var name="cpb" id="4235889247686810453" />
       </scope>
-      <scope id="4235889247686810453" at="513,52,519,40" />
+      <scope id="4235889247686810453" at="514,52,520,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4235889247686810453" at="74,0,75,0" concept="5" trace="QualifiedFormalArg" />
@@ -1310,15 +1310,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4235889247686810493">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4235889247686810493" at="85,0,86,0" concept="1" trace="props_WildcardArgument" />
-      <node id="4235889247686810493" at="588,45,589,76" concept="3" />
-      <node id="4235889247686810493" at="589,76,590,35" concept="0" />
-      <node id="4235889247686810493" at="590,35,591,48" concept="0" />
-      <node id="4235889247686810493" at="592,9,593,38" concept="4" />
-      <node id="4235889247686810493" at="587,50,592,9" concept="2" />
-      <scope id="4235889247686810493" at="588,45,591,48">
+      <node id="4235889247686810493" at="589,45,590,76" concept="3" />
+      <node id="4235889247686810493" at="590,76,591,35" concept="0" />
+      <node id="4235889247686810493" at="591,35,592,48" concept="0" />
+      <node id="4235889247686810493" at="593,9,594,38" concept="4" />
+      <node id="4235889247686810493" at="588,50,593,9" concept="2" />
+      <scope id="4235889247686810493" at="589,45,592,48">
         <var name="cpb" id="4235889247686810493" />
       </scope>
-      <scope id="4235889247686810493" at="587,50,593,38" />
+      <scope id="4235889247686810493" at="588,50,594,38" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4235889247686810493" at="85,0,86,0" concept="5" trace="WildcardArgument" />
@@ -1327,18 +1327,18 @@
     <file name="StructureAspectDescriptor.java">
       <node id="4235889247686810493" at="93,0,94,0" concept="1" trace="myConceptWildcardArgument" />
       <node id="4235889247686810493" at="263,50,264,41" concept="4" />
-      <node id="4235889247686810493" at="951,74,952,160" concept="3" />
-      <node id="4235889247686810493" at="952,160,953,34" concept="0" />
-      <node id="4235889247686810493" at="954,76,955,96" concept="0" />
-      <node id="4235889247686810493" at="955,96,956,17" concept="0" />
-      <node id="4235889247686810493" at="956,17,957,17" concept="0" />
-      <node id="4235889247686810493" at="957,17,958,22" concept="4" />
-      <node id="4235889247686810493" at="951,0,960,0" concept="6" trace="createDescriptorForWildcardArgument#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="4235889247686810493" at="952,74,953,160" concept="3" />
+      <node id="4235889247686810493" at="953,160,954,34" concept="0" />
+      <node id="4235889247686810493" at="955,76,956,96" concept="0" />
+      <node id="4235889247686810493" at="956,96,957,17" concept="0" />
+      <node id="4235889247686810493" at="957,17,958,17" concept="0" />
+      <node id="4235889247686810493" at="958,17,959,22" concept="4" />
+      <node id="4235889247686810493" at="952,0,961,0" concept="6" trace="createDescriptorForWildcardArgument#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="4235889247686810493" at="263,50,264,41" />
-      <scope id="4235889247686810493" at="951,74,958,22">
+      <scope id="4235889247686810493" at="952,74,959,22">
         <var name="b" id="4235889247686810493" />
       </scope>
-      <scope id="4235889247686810493" at="951,0,960,0" />
+      <scope id="4235889247686810493" at="952,0,961,0" />
     </file>
   </root>
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4235889247687676268">
@@ -1378,14 +1378,14 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4389954401096588502">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4389954401096588502" at="44,0,45,0" concept="1" trace="props_INegatesContent" />
-      <node id="4389954401096588502" at="306,44,307,76" concept="3" />
-      <node id="4389954401096588502" at="307,76,308,47" concept="0" />
-      <node id="4389954401096588502" at="309,9,310,37" concept="4" />
-      <node id="4389954401096588502" at="305,49,309,9" concept="2" />
-      <scope id="4389954401096588502" at="306,44,308,47">
+      <node id="4389954401096588502" at="307,44,308,76" concept="3" />
+      <node id="4389954401096588502" at="308,76,309,47" concept="0" />
+      <node id="4389954401096588502" at="310,9,311,37" concept="4" />
+      <node id="4389954401096588502" at="306,49,310,9" concept="2" />
+      <scope id="4389954401096588502" at="307,44,309,47">
         <var name="cpb" id="4389954401096588502" />
       </scope>
-      <scope id="4389954401096588502" at="305,49,310,37" />
+      <scope id="4389954401096588502" at="306,49,311,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4389954401096588502" at="44,0,45,0" concept="5" trace="INegatesContent" />
@@ -1410,15 +1410,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4389954401097735068">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4389954401097735068" at="32,0,33,0" concept="1" trace="props_ForbiddenSpec" />
-      <node id="4389954401097735068" at="229,42,230,76" concept="3" />
-      <node id="4389954401097735068" at="230,76,231,43" concept="0" />
-      <node id="4389954401097735068" at="231,43,232,45" concept="0" />
-      <node id="4389954401097735068" at="233,9,234,35" concept="4" />
-      <node id="4389954401097735068" at="228,47,233,9" concept="2" />
-      <scope id="4389954401097735068" at="229,42,232,45">
+      <node id="4389954401097735068" at="230,42,231,76" concept="3" />
+      <node id="4389954401097735068" at="231,76,232,43" concept="0" />
+      <node id="4389954401097735068" at="232,43,233,45" concept="0" />
+      <node id="4389954401097735068" at="234,9,235,35" concept="4" />
+      <node id="4389954401097735068" at="229,47,234,9" concept="2" />
+      <scope id="4389954401097735068" at="230,42,233,45">
         <var name="cpb" id="4389954401097735068" />
       </scope>
-      <scope id="4389954401097735068" at="228,47,234,35" />
+      <scope id="4389954401097735068" at="229,47,235,35" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4389954401097735068" at="32,0,33,0" concept="5" trace="ForbiddenSpec" />
@@ -1446,14 +1446,14 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4389954401097735069">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4389954401097735069" at="41,0,42,0" concept="1" trace="props_IForbiddenContent" />
-      <node id="4389954401097735069" at="288,46,289,76" concept="3" />
-      <node id="4389954401097735069" at="289,76,290,49" concept="0" />
-      <node id="4389954401097735069" at="291,9,292,39" concept="4" />
-      <node id="4389954401097735069" at="287,51,291,9" concept="2" />
-      <scope id="4389954401097735069" at="288,46,290,49">
+      <node id="4389954401097735069" at="289,46,290,76" concept="3" />
+      <node id="4389954401097735069" at="290,76,291,49" concept="0" />
+      <node id="4389954401097735069" at="292,9,293,39" concept="4" />
+      <node id="4389954401097735069" at="288,51,292,9" concept="2" />
+      <scope id="4389954401097735069" at="289,46,291,49">
         <var name="cpb" id="4389954401097735069" />
       </scope>
-      <scope id="4389954401097735069" at="287,51,292,39" />
+      <scope id="4389954401097735069" at="288,51,293,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4389954401097735069" at="41,0,42,0" concept="5" trace="IForbiddenContent" />
@@ -1480,14 +1480,15 @@
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4389954401098228550" at="31,0,32,0" concept="1" trace="props_ForbiddenMethod" />
       <node id="4389954401098228550" at="222,44,223,76" concept="3" />
-      <node id="4389954401098228550" at="223,76,224,49" concept="0" />
-      <node id="4389954401098228550" at="224,49,225,47" concept="0" />
-      <node id="4389954401098228550" at="226,9,227,37" concept="4" />
-      <node id="4389954401098228550" at="221,49,226,9" concept="2" />
-      <scope id="4389954401098228550" at="222,44,225,47">
+      <node id="4389954401098228550" at="223,76,224,69" concept="0" />
+      <node id="4389954401098228550" at="224,69,225,49" concept="0" />
+      <node id="4389954401098228550" at="225,49,226,47" concept="0" />
+      <node id="4389954401098228550" at="227,9,228,37" concept="4" />
+      <node id="4389954401098228550" at="221,49,227,9" concept="2" />
+      <scope id="4389954401098228550" at="222,44,226,47">
         <var name="cpb" id="4389954401098228550" />
       </scope>
-      <scope id="4389954401098228550" at="221,49,227,37" />
+      <scope id="4389954401098228550" at="221,49,228,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4389954401098228550" at="31,0,32,0" concept="5" trace="ForbiddenMethod" />
@@ -1514,15 +1515,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4935365387813273272">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4935365387813273272" at="49,0,50,0" concept="1" trace="props_InSet" />
-      <node id="4935365387813273272" at="337,34,338,76" concept="3" />
-      <node id="4935365387813273272" at="338,76,339,36" concept="0" />
-      <node id="4935365387813273272" at="339,36,340,37" concept="0" />
-      <node id="4935365387813273272" at="341,9,342,27" concept="4" />
-      <node id="4935365387813273272" at="336,39,341,9" concept="2" />
-      <scope id="4935365387813273272" at="337,34,340,37">
+      <node id="4935365387813273272" at="338,34,339,76" concept="3" />
+      <node id="4935365387813273272" at="339,76,340,36" concept="0" />
+      <node id="4935365387813273272" at="340,36,341,37" concept="0" />
+      <node id="4935365387813273272" at="342,9,343,27" concept="4" />
+      <node id="4935365387813273272" at="337,39,342,9" concept="2" />
+      <scope id="4935365387813273272" at="338,34,341,37">
         <var name="cpb" id="4935365387813273272" />
       </scope>
-      <scope id="4935365387813273272" at="336,39,342,27" />
+      <scope id="4935365387813273272" at="337,39,343,27" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4935365387813273272" at="49,0,50,0" concept="5" trace="InSet" />
@@ -1550,15 +1551,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4935365387813273278">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4935365387813273278" at="55,0,56,0" concept="1" trace="props_LiteralSet" />
-      <node id="4935365387813273278" at="379,39,380,76" concept="3" />
-      <node id="4935365387813273278" at="380,76,381,44" concept="0" />
-      <node id="4935365387813273278" at="381,44,382,42" concept="0" />
-      <node id="4935365387813273278" at="383,9,384,32" concept="4" />
-      <node id="4935365387813273278" at="378,44,383,9" concept="2" />
-      <scope id="4935365387813273278" at="379,39,382,42">
+      <node id="4935365387813273278" at="380,39,381,76" concept="3" />
+      <node id="4935365387813273278" at="381,76,382,44" concept="0" />
+      <node id="4935365387813273278" at="382,44,383,42" concept="0" />
+      <node id="4935365387813273278" at="384,9,385,32" concept="4" />
+      <node id="4935365387813273278" at="379,44,384,9" concept="2" />
+      <scope id="4935365387813273278" at="380,39,383,42">
         <var name="cpb" id="4935365387813273278" />
       </scope>
-      <scope id="4935365387813273278" at="378,44,384,32" />
+      <scope id="4935365387813273278" at="379,44,385,32" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4935365387813273278" at="55,0,56,0" concept="5" trace="LiteralSet" />
@@ -1584,15 +1585,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4935365387813273332">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4935365387813273332" at="56,0,57,0" concept="1" trace="props_MetaVariable" />
-      <node id="4935365387813273332" at="386,41,387,76" concept="3" />
-      <node id="4935365387813273332" at="387,76,388,46" concept="0" />
-      <node id="4935365387813273332" at="388,46,389,44" concept="0" />
-      <node id="4935365387813273332" at="390,9,391,34" concept="4" />
-      <node id="4935365387813273332" at="385,46,390,9" concept="2" />
-      <scope id="4935365387813273332" at="386,41,389,44">
+      <node id="4935365387813273332" at="387,41,388,76" concept="3" />
+      <node id="4935365387813273332" at="388,76,389,46" concept="0" />
+      <node id="4935365387813273332" at="389,46,390,44" concept="0" />
+      <node id="4935365387813273332" at="391,9,392,34" concept="4" />
+      <node id="4935365387813273332" at="386,46,391,9" concept="2" />
+      <scope id="4935365387813273332" at="387,41,390,44">
         <var name="cpb" id="4935365387813273332" />
       </scope>
-      <scope id="4935365387813273332" at="385,46,391,34" />
+      <scope id="4935365387813273332" at="386,46,392,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4935365387813273332" at="56,0,57,0" concept="5" trace="MetaVariable" />
@@ -1618,14 +1619,14 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4935365387813273391">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4935365387813273391" at="42,0,43,0" concept="1" trace="props_ILiteralSet" />
-      <node id="4935365387813273391" at="294,40,295,76" concept="3" />
-      <node id="4935365387813273391" at="295,76,296,43" concept="0" />
-      <node id="4935365387813273391" at="297,9,298,33" concept="4" />
-      <node id="4935365387813273391" at="293,45,297,9" concept="2" />
-      <scope id="4935365387813273391" at="294,40,296,43">
+      <node id="4935365387813273391" at="295,40,296,76" concept="3" />
+      <node id="4935365387813273391" at="296,76,297,43" concept="0" />
+      <node id="4935365387813273391" at="298,9,299,33" concept="4" />
+      <node id="4935365387813273391" at="294,45,298,9" concept="2" />
+      <scope id="4935365387813273391" at="295,40,297,43">
         <var name="cpb" id="4935365387813273391" />
       </scope>
-      <scope id="4935365387813273391" at="293,45,298,33" />
+      <scope id="4935365387813273391" at="294,45,299,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4935365387813273391" at="42,0,43,0" concept="5" trace="ILiteralSet" />
@@ -1652,15 +1653,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4935365387816079728">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4935365387816079728" at="35,0,36,0" concept="1" trace="props_FunctionCall" />
-      <node id="4935365387816079728" at="249,41,250,76" concept="3" />
-      <node id="4935365387816079728" at="250,76,251,41" concept="0" />
-      <node id="4935365387816079728" at="251,41,252,44" concept="0" />
-      <node id="4935365387816079728" at="253,9,254,34" concept="4" />
-      <node id="4935365387816079728" at="248,46,253,9" concept="2" />
-      <scope id="4935365387816079728" at="249,41,252,44">
+      <node id="4935365387816079728" at="250,41,251,76" concept="3" />
+      <node id="4935365387816079728" at="251,76,252,41" concept="0" />
+      <node id="4935365387816079728" at="252,41,253,44" concept="0" />
+      <node id="4935365387816079728" at="254,9,255,34" concept="4" />
+      <node id="4935365387816079728" at="249,46,254,9" concept="2" />
+      <scope id="4935365387816079728" at="250,41,253,44">
         <var name="cpb" id="4935365387816079728" />
       </scope>
-      <scope id="4935365387816079728" at="248,46,254,34" />
+      <scope id="4935365387816079728" at="249,46,255,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4935365387816079728" at="35,0,36,0" concept="5" trace="FunctionCall" />
@@ -1688,15 +1689,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4935365387817037862">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4935365387817037862" at="72,0,73,0" concept="1" trace="props_Predicate" />
-      <node id="4935365387817037862" at="500,38,501,76" concept="3" />
-      <node id="4935365387817037862" at="501,76,502,43" concept="0" />
-      <node id="4935365387817037862" at="502,43,503,41" concept="0" />
-      <node id="4935365387817037862" at="504,9,505,31" concept="4" />
-      <node id="4935365387817037862" at="499,43,504,9" concept="2" />
-      <scope id="4935365387817037862" at="500,38,503,41">
+      <node id="4935365387817037862" at="501,38,502,76" concept="3" />
+      <node id="4935365387817037862" at="502,76,503,43" concept="0" />
+      <node id="4935365387817037862" at="503,43,504,41" concept="0" />
+      <node id="4935365387817037862" at="505,9,506,31" concept="4" />
+      <node id="4935365387817037862" at="500,43,505,9" concept="2" />
+      <scope id="4935365387817037862" at="501,38,504,41">
         <var name="cpb" id="4935365387817037862" />
       </scope>
-      <scope id="4935365387817037862" at="499,43,505,31" />
+      <scope id="4935365387817037862" at="500,43,506,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="4935365387817037862" at="72,0,73,0" concept="5" trace="Predicate" />
@@ -1724,14 +1725,14 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5292687979099946556">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="5292687979099946556" at="43,0,44,0" concept="1" trace="props_IModelContent" />
-      <node id="5292687979099946556" at="300,42,301,76" concept="3" />
-      <node id="5292687979099946556" at="301,76,302,45" concept="0" />
-      <node id="5292687979099946556" at="303,9,304,35" concept="4" />
-      <node id="5292687979099946556" at="299,47,303,9" concept="2" />
-      <scope id="5292687979099946556" at="300,42,302,45">
+      <node id="5292687979099946556" at="301,42,302,76" concept="3" />
+      <node id="5292687979099946556" at="302,76,303,45" concept="0" />
+      <node id="5292687979099946556" at="304,9,305,35" concept="4" />
+      <node id="5292687979099946556" at="300,47,304,9" concept="2" />
+      <scope id="5292687979099946556" at="301,42,303,45">
         <var name="cpb" id="5292687979099946556" />
       </scope>
-      <scope id="5292687979099946556" at="299,47,304,35" />
+      <scope id="5292687979099946556" at="300,47,305,35" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="5292687979099946556" at="43,0,44,0" concept="5" trace="IModelContent" />
@@ -1758,16 +1759,16 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5292687979099953601">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="5292687979099953601" at="67,0,68,0" concept="1" trace="props_ObjectSpec" />
-      <node id="5292687979099953601" at="463,39,464,76" concept="3" />
-      <node id="5292687979099953601" at="464,76,465,121" concept="0" />
-      <node id="5292687979099953601" at="465,121,466,41" concept="0" />
-      <node id="5292687979099953601" at="466,41,467,42" concept="0" />
-      <node id="5292687979099953601" at="468,9,469,32" concept="4" />
-      <node id="5292687979099953601" at="462,44,468,9" concept="2" />
-      <scope id="5292687979099953601" at="463,39,467,42">
+      <node id="5292687979099953601" at="464,39,465,76" concept="3" />
+      <node id="5292687979099953601" at="465,76,466,121" concept="0" />
+      <node id="5292687979099953601" at="466,121,467,41" concept="0" />
+      <node id="5292687979099953601" at="467,41,468,42" concept="0" />
+      <node id="5292687979099953601" at="469,9,470,32" concept="4" />
+      <node id="5292687979099953601" at="463,44,469,9" concept="2" />
+      <scope id="5292687979099953601" at="464,39,468,42">
         <var name="cpb" id="5292687979099953601" />
       </scope>
-      <scope id="5292687979099953601" at="462,44,469,32" />
+      <scope id="5292687979099953601" at="463,44,470,32" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="5292687979099953601" at="67,0,68,0" concept="5" trace="ObjectSpec" />
@@ -1795,14 +1796,14 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5292687979099972623">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="5292687979099972623" at="45,0,46,0" concept="1" trace="props_IObjectsContent" />
-      <node id="5292687979099972623" at="312,44,313,76" concept="3" />
-      <node id="5292687979099972623" at="313,76,314,47" concept="0" />
-      <node id="5292687979099972623" at="315,9,316,37" concept="4" />
-      <node id="5292687979099972623" at="311,49,315,9" concept="2" />
-      <scope id="5292687979099972623" at="312,44,314,47">
+      <node id="5292687979099972623" at="313,44,314,76" concept="3" />
+      <node id="5292687979099972623" at="314,76,315,47" concept="0" />
+      <node id="5292687979099972623" at="316,9,317,37" concept="4" />
+      <node id="5292687979099972623" at="312,49,316,9" concept="2" />
+      <scope id="5292687979099972623" at="313,44,315,47">
         <var name="cpb" id="5292687979099972623" />
       </scope>
-      <scope id="5292687979099972623" at="311,49,316,37" />
+      <scope id="5292687979099972623" at="312,49,317,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="5292687979099972623" at="45,0,46,0" concept="5" trace="IObjectsContent" />
@@ -1829,15 +1830,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349649559431">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="5565897349649559431" at="48,0,49,0" concept="1" trace="props_ImpliesExp" />
-      <node id="5565897349649559431" at="330,39,331,76" concept="3" />
-      <node id="5565897349649559431" at="331,76,332,36" concept="0" />
-      <node id="5565897349649559431" at="332,36,333,42" concept="0" />
-      <node id="5565897349649559431" at="334,9,335,32" concept="4" />
-      <node id="5565897349649559431" at="329,44,334,9" concept="2" />
-      <scope id="5565897349649559431" at="330,39,333,42">
+      <node id="5565897349649559431" at="331,39,332,76" concept="3" />
+      <node id="5565897349649559431" at="332,76,333,36" concept="0" />
+      <node id="5565897349649559431" at="333,36,334,42" concept="0" />
+      <node id="5565897349649559431" at="335,9,336,32" concept="4" />
+      <node id="5565897349649559431" at="330,44,335,9" concept="2" />
+      <scope id="5565897349649559431" at="331,39,334,42">
         <var name="cpb" id="5565897349649559431" />
       </scope>
-      <scope id="5565897349649559431" at="329,44,335,32" />
+      <scope id="5565897349649559431" at="330,44,336,32" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="5565897349649559431" at="48,0,49,0" concept="5" trace="ImpliesExp" />
@@ -2008,14 +2009,14 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349649915870">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="5565897349649915870" at="76,0,77,0" concept="1" trace="props_RelationalExp" />
-      <node id="5565897349649915870" at="528,42,529,76" concept="3" />
-      <node id="5565897349649915870" at="529,76,530,45" concept="0" />
-      <node id="5565897349649915870" at="531,9,532,35" concept="4" />
-      <node id="5565897349649915870" at="527,47,531,9" concept="2" />
-      <scope id="5565897349649915870" at="528,42,530,45">
+      <node id="5565897349649915870" at="529,42,530,76" concept="3" />
+      <node id="5565897349649915870" at="530,76,531,45" concept="0" />
+      <node id="5565897349649915870" at="532,9,533,35" concept="4" />
+      <node id="5565897349649915870" at="528,47,532,9" concept="2" />
+      <scope id="5565897349649915870" at="529,42,531,45">
         <var name="cpb" id="5565897349649915870" />
       </scope>
-      <scope id="5565897349649915870" at="527,47,532,35" />
+      <scope id="5565897349649915870" at="528,47,533,35" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="5565897349649915870" at="76,0,77,0" concept="5" trace="RelationalExp" />
@@ -2042,15 +2043,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349650067716">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="5565897349650067716" at="37,0,38,0" concept="1" trace="props_GreaterThan" />
-      <node id="5565897349650067716" at="263,40,264,76" concept="3" />
-      <node id="5565897349650067716" at="264,76,265,35" concept="0" />
-      <node id="5565897349650067716" at="265,35,266,43" concept="0" />
-      <node id="5565897349650067716" at="267,9,268,33" concept="4" />
-      <node id="5565897349650067716" at="262,45,267,9" concept="2" />
-      <scope id="5565897349650067716" at="263,40,266,43">
+      <node id="5565897349650067716" at="264,40,265,76" concept="3" />
+      <node id="5565897349650067716" at="265,76,266,35" concept="0" />
+      <node id="5565897349650067716" at="266,35,267,43" concept="0" />
+      <node id="5565897349650067716" at="268,9,269,33" concept="4" />
+      <node id="5565897349650067716" at="263,45,268,9" concept="2" />
+      <scope id="5565897349650067716" at="264,40,267,43">
         <var name="cpb" id="5565897349650067716" />
       </scope>
-      <scope id="5565897349650067716" at="262,45,268,33" />
+      <scope id="5565897349650067716" at="263,45,269,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="5565897349650067716" at="37,0,38,0" concept="5" trace="GreaterThan" />
@@ -2077,15 +2078,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349650067717">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="5565897349650067717" at="54,0,55,0" concept="1" trace="props_LessThan" />
-      <node id="5565897349650067717" at="372,37,373,76" concept="3" />
-      <node id="5565897349650067717" at="373,76,374,35" concept="0" />
-      <node id="5565897349650067717" at="374,35,375,40" concept="0" />
-      <node id="5565897349650067717" at="376,9,377,30" concept="4" />
-      <node id="5565897349650067717" at="371,42,376,9" concept="2" />
-      <scope id="5565897349650067717" at="372,37,375,40">
+      <node id="5565897349650067717" at="373,37,374,76" concept="3" />
+      <node id="5565897349650067717" at="374,76,375,35" concept="0" />
+      <node id="5565897349650067717" at="375,35,376,40" concept="0" />
+      <node id="5565897349650067717" at="377,9,378,30" concept="4" />
+      <node id="5565897349650067717" at="372,42,377,9" concept="2" />
+      <scope id="5565897349650067717" at="373,37,376,40">
         <var name="cpb" id="5565897349650067717" />
       </scope>
-      <scope id="5565897349650067717" at="371,42,377,30" />
+      <scope id="5565897349650067717" at="372,42,378,30" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="5565897349650067717" at="54,0,55,0" concept="5" trace="LessThan" />
@@ -2112,15 +2113,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349650067718">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="5565897349650067718" at="36,0,37,0" concept="1" trace="props_GreaterOrEqual" />
-      <node id="5565897349650067718" at="256,43,257,76" concept="3" />
-      <node id="5565897349650067718" at="257,76,258,48" concept="0" />
-      <node id="5565897349650067718" at="258,48,259,46" concept="0" />
-      <node id="5565897349650067718" at="260,9,261,36" concept="4" />
-      <node id="5565897349650067718" at="255,48,260,9" concept="2" />
-      <scope id="5565897349650067718" at="256,43,259,46">
+      <node id="5565897349650067718" at="257,43,258,76" concept="3" />
+      <node id="5565897349650067718" at="258,76,259,48" concept="0" />
+      <node id="5565897349650067718" at="259,48,260,46" concept="0" />
+      <node id="5565897349650067718" at="261,9,262,36" concept="4" />
+      <node id="5565897349650067718" at="256,48,261,9" concept="2" />
+      <scope id="5565897349650067718" at="257,43,260,46">
         <var name="cpb" id="5565897349650067718" />
       </scope>
-      <scope id="5565897349650067718" at="255,48,261,36" />
+      <scope id="5565897349650067718" at="256,48,262,36" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="5565897349650067718" at="36,0,37,0" concept="5" trace="GreaterOrEqual" />
@@ -2146,15 +2147,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349650067719">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="5565897349650067719" at="53,0,54,0" concept="1" trace="props_LessOrEqual" />
-      <node id="5565897349650067719" at="365,40,366,76" concept="3" />
-      <node id="5565897349650067719" at="366,76,367,36" concept="0" />
-      <node id="5565897349650067719" at="367,36,368,43" concept="0" />
-      <node id="5565897349650067719" at="369,9,370,33" concept="4" />
-      <node id="5565897349650067719" at="364,45,369,9" concept="2" />
-      <scope id="5565897349650067719" at="365,40,368,43">
+      <node id="5565897349650067719" at="366,40,367,76" concept="3" />
+      <node id="5565897349650067719" at="367,76,368,36" concept="0" />
+      <node id="5565897349650067719" at="368,36,369,43" concept="0" />
+      <node id="5565897349650067719" at="370,9,371,33" concept="4" />
+      <node id="5565897349650067719" at="365,45,370,9" concept="2" />
+      <scope id="5565897349650067719" at="366,40,369,43">
         <var name="cpb" id="5565897349650067719" />
       </scope>
-      <scope id="5565897349650067719" at="364,45,370,33" />
+      <scope id="5565897349650067719" at="365,45,371,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="5565897349650067719" at="53,0,54,0" concept="5" trace="LessOrEqual" />
@@ -2216,15 +2217,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349650067721">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="5565897349650067721" at="63,0,64,0" concept="1" trace="props_NotEqual" />
-      <node id="5565897349650067721" at="435,37,436,76" concept="3" />
-      <node id="5565897349650067721" at="436,76,437,36" concept="0" />
-      <node id="5565897349650067721" at="437,36,438,40" concept="0" />
-      <node id="5565897349650067721" at="439,9,440,30" concept="4" />
-      <node id="5565897349650067721" at="434,42,439,9" concept="2" />
-      <scope id="5565897349650067721" at="435,37,438,40">
+      <node id="5565897349650067721" at="436,37,437,76" concept="3" />
+      <node id="5565897349650067721" at="437,76,438,36" concept="0" />
+      <node id="5565897349650067721" at="438,36,439,40" concept="0" />
+      <node id="5565897349650067721" at="440,9,441,30" concept="4" />
+      <node id="5565897349650067721" at="435,42,440,9" concept="2" />
+      <scope id="5565897349650067721" at="436,37,439,40">
         <var name="cpb" id="5565897349650067721" />
       </scope>
-      <scope id="5565897349650067721" at="434,42,440,30" />
+      <scope id="5565897349650067721" at="435,42,441,30" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="5565897349650067721" at="63,0,64,0" concept="5" trace="NotEqual" />
@@ -2285,15 +2286,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349650071914">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="5565897349650071914" at="71,0,72,0" concept="1" trace="props_PlusExpression" />
-      <node id="5565897349650071914" at="493,43,494,76" concept="3" />
-      <node id="5565897349650071914" at="494,76,495,35" concept="0" />
-      <node id="5565897349650071914" at="495,35,496,46" concept="0" />
-      <node id="5565897349650071914" at="497,9,498,36" concept="4" />
-      <node id="5565897349650071914" at="492,48,497,9" concept="2" />
-      <scope id="5565897349650071914" at="493,43,496,46">
+      <node id="5565897349650071914" at="494,43,495,76" concept="3" />
+      <node id="5565897349650071914" at="495,76,496,35" concept="0" />
+      <node id="5565897349650071914" at="496,35,497,46" concept="0" />
+      <node id="5565897349650071914" at="498,9,499,36" concept="4" />
+      <node id="5565897349650071914" at="493,48,498,9" concept="2" />
+      <scope id="5565897349650071914" at="494,43,497,46">
         <var name="cpb" id="5565897349650071914" />
       </scope>
-      <scope id="5565897349650071914" at="492,48,498,36" />
+      <scope id="5565897349650071914" at="493,48,499,36" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="5565897349650071914" at="71,0,72,0" concept="5" trace="PlusExpression" />
@@ -2320,15 +2321,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349650071915">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="5565897349650071915" at="58,0,59,0" concept="1" trace="props_MinusExpreesion" />
-      <node id="5565897349650071915" at="400,44,401,76" concept="3" />
-      <node id="5565897349650071915" at="401,76,402,35" concept="0" />
-      <node id="5565897349650071915" at="402,35,403,47" concept="0" />
-      <node id="5565897349650071915" at="404,9,405,37" concept="4" />
-      <node id="5565897349650071915" at="399,49,404,9" concept="2" />
-      <scope id="5565897349650071915" at="400,44,403,47">
+      <node id="5565897349650071915" at="401,44,402,76" concept="3" />
+      <node id="5565897349650071915" at="402,76,403,35" concept="0" />
+      <node id="5565897349650071915" at="403,35,404,47" concept="0" />
+      <node id="5565897349650071915" at="405,9,406,37" concept="4" />
+      <node id="5565897349650071915" at="400,49,405,9" concept="2" />
+      <scope id="5565897349650071915" at="401,44,404,47">
         <var name="cpb" id="5565897349650071915" />
       </scope>
-      <scope id="5565897349650071915" at="399,49,405,37" />
+      <scope id="5565897349650071915" at="400,49,406,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="5565897349650071915" at="58,0,59,0" concept="5" trace="MinusExpreesion" />
@@ -2395,15 +2396,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349650438248">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="5565897349650438248" at="62,0,63,0" concept="1" trace="props_NoCallTo" />
-      <node id="5565897349650438248" at="428,37,429,76" concept="3" />
-      <node id="5565897349650438248" at="429,76,430,42" concept="0" />
-      <node id="5565897349650438248" at="430,42,431,40" concept="0" />
-      <node id="5565897349650438248" at="432,9,433,30" concept="4" />
-      <node id="5565897349650438248" at="427,42,432,9" concept="2" />
-      <scope id="5565897349650438248" at="428,37,431,40">
+      <node id="5565897349650438248" at="429,37,430,76" concept="3" />
+      <node id="5565897349650438248" at="430,76,431,42" concept="0" />
+      <node id="5565897349650438248" at="431,42,432,40" concept="0" />
+      <node id="5565897349650438248" at="433,9,434,30" concept="4" />
+      <node id="5565897349650438248" at="428,42,433,9" concept="2" />
+      <scope id="5565897349650438248" at="429,37,432,40">
         <var name="cpb" id="5565897349650438248" />
       </scope>
-      <scope id="5565897349650438248" at="427,42,433,30" />
+      <scope id="5565897349650438248" at="428,42,434,30" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="5565897349650438248" at="62,0,63,0" concept="5" trace="NoCallTo" />
@@ -2430,15 +2431,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/8063880014109550711">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="8063880014109550711" at="65,0,66,0" concept="1" trace="props_Object" />
-      <node id="8063880014109550711" at="449,35,450,76" concept="3" />
-      <node id="8063880014109550711" at="450,76,451,40" concept="0" />
-      <node id="8063880014109550711" at="451,40,452,38" concept="0" />
-      <node id="8063880014109550711" at="453,9,454,28" concept="4" />
-      <node id="8063880014109550711" at="448,40,453,9" concept="2" />
-      <scope id="8063880014109550711" at="449,35,452,38">
+      <node id="8063880014109550711" at="450,35,451,76" concept="3" />
+      <node id="8063880014109550711" at="451,76,452,40" concept="0" />
+      <node id="8063880014109550711" at="452,40,453,38" concept="0" />
+      <node id="8063880014109550711" at="454,9,455,28" concept="4" />
+      <node id="8063880014109550711" at="449,40,454,9" concept="2" />
+      <scope id="8063880014109550711" at="450,35,453,38">
         <var name="cpb" id="8063880014109550711" />
       </scope>
-      <scope id="8063880014109550711" at="448,40,454,28" />
+      <scope id="8063880014109550711" at="449,40,455,28" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="8063880014109550711" at="65,0,66,0" concept="5" trace="Object" />
@@ -2501,14 +2502,14 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/8598353117207511561">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="8598353117207511561" at="40,0,41,0" concept="1" trace="props_IEventSpecContent" />
-      <node id="8598353117207511561" at="282,46,283,76" concept="3" />
-      <node id="8598353117207511561" at="283,76,284,49" concept="0" />
-      <node id="8598353117207511561" at="285,9,286,39" concept="4" />
-      <node id="8598353117207511561" at="281,51,285,9" concept="2" />
-      <scope id="8598353117207511561" at="282,46,284,49">
+      <node id="8598353117207511561" at="283,46,284,76" concept="3" />
+      <node id="8598353117207511561" at="284,76,285,49" concept="0" />
+      <node id="8598353117207511561" at="286,9,287,39" concept="4" />
+      <node id="8598353117207511561" at="282,51,286,9" concept="2" />
+      <scope id="8598353117207511561" at="283,46,285,49">
         <var name="cpb" id="8598353117207511561" />
       </scope>
-      <scope id="8598353117207511561" at="281,51,286,39" />
+      <scope id="8598353117207511561" at="282,51,287,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="8598353117207511561" at="40,0,41,0" concept="5" trace="IEventSpecContent" />
@@ -2536,16 +2537,16 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/8598353117207556270">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="8598353117207556270" at="70,0,71,0" concept="1" trace="props_OrderSpec" />
-      <node id="8598353117207556270" at="485,38,486,76" concept="3" />
-      <node id="8598353117207556270" at="486,76,487,75" concept="0" />
-      <node id="8598353117207556270" at="487,75,488,39" concept="0" />
-      <node id="8598353117207556270" at="488,39,489,41" concept="0" />
-      <node id="8598353117207556270" at="490,9,491,31" concept="4" />
-      <node id="8598353117207556270" at="484,43,490,9" concept="2" />
-      <scope id="8598353117207556270" at="485,38,489,41">
+      <node id="8598353117207556270" at="486,38,487,76" concept="3" />
+      <node id="8598353117207556270" at="487,76,488,75" concept="0" />
+      <node id="8598353117207556270" at="488,75,489,39" concept="0" />
+      <node id="8598353117207556270" at="489,39,490,41" concept="0" />
+      <node id="8598353117207556270" at="491,9,492,31" concept="4" />
+      <node id="8598353117207556270" at="485,43,491,9" concept="2" />
+      <scope id="8598353117207556270" at="486,38,490,41">
         <var name="cpb" id="8598353117207556270" />
       </scope>
-      <scope id="8598353117207556270" at="484,43,491,31" />
+      <scope id="8598353117207556270" at="485,43,492,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="8598353117207556270" at="70,0,71,0" concept="5" trace="OrderSpec" />
@@ -2572,14 +2573,14 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/8598353117207556275">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="8598353117207556275" at="46,0,47,0" concept="1" trace="props_IOrderSpecContent" />
-      <node id="8598353117207556275" at="318,46,319,76" concept="3" />
-      <node id="8598353117207556275" at="319,76,320,49" concept="0" />
-      <node id="8598353117207556275" at="321,9,322,39" concept="4" />
-      <node id="8598353117207556275" at="317,51,321,9" concept="2" />
-      <scope id="8598353117207556275" at="318,46,320,49">
+      <node id="8598353117207556275" at="319,46,320,76" concept="3" />
+      <node id="8598353117207556275" at="320,76,321,49" concept="0" />
+      <node id="8598353117207556275" at="322,9,323,39" concept="4" />
+      <node id="8598353117207556275" at="318,51,322,9" concept="2" />
+      <scope id="8598353117207556275" at="319,46,321,49">
         <var name="cpb" id="8598353117207556275" />
       </scope>
-      <scope id="8598353117207556275" at="317,51,322,39" />
+      <scope id="8598353117207556275" at="318,51,323,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="8598353117207556275" at="46,0,47,0" concept="5" trace="IOrderSpecContent" />
@@ -2606,15 +2607,15 @@
   <root nodeRef="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/9111215912465734338">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="9111215912465734338" at="79,0,80,0" concept="1" trace="props_Spec" />
-      <node id="9111215912465734338" at="548,33,549,76" concept="3" />
-      <node id="9111215912465734338" at="549,76,550,35" concept="0" />
-      <node id="9111215912465734338" at="550,35,551,36" concept="0" />
-      <node id="9111215912465734338" at="552,9,553,26" concept="4" />
-      <node id="9111215912465734338" at="547,38,552,9" concept="2" />
-      <scope id="9111215912465734338" at="548,33,551,36">
+      <node id="9111215912465734338" at="549,33,550,76" concept="3" />
+      <node id="9111215912465734338" at="550,76,551,35" concept="0" />
+      <node id="9111215912465734338" at="551,35,552,36" concept="0" />
+      <node id="9111215912465734338" at="553,9,554,26" concept="4" />
+      <node id="9111215912465734338" at="548,38,553,9" concept="2" />
+      <scope id="9111215912465734338" at="549,33,552,36">
         <var name="cpb" id="9111215912465734338" />
       </scope>
-      <scope id="9111215912465734338" at="547,38,553,26" />
+      <scope id="9111215912465734338" at="548,38,554,26" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="9111215912465734338" at="79,0,80,0" concept="5" trace="Spec" />
@@ -2634,14 +2635,15 @@
       <node id="4088624315226392631" at="901,201,902,200" concept="0" />
       <node id="4088624315226392735" at="902,200,903,199" concept="0" />
       <node id="4144233796496589225" at="903,199,904,201" concept="0" />
-      <node id="9111215912465734338" at="904,201,905,20" concept="0" />
-      <node id="9111215912465734338" at="905,20,906,22" concept="4" />
-      <node id="9111215912465734338" at="893,0,908,0" concept="6" trace="createDescriptorForSpec#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="4389954401098732223" at="904,201,905,198" concept="0" />
+      <node id="9111215912465734338" at="905,198,906,20" concept="0" />
+      <node id="9111215912465734338" at="906,20,907,22" concept="4" />
+      <node id="9111215912465734338" at="893,0,909,0" concept="6" trace="createDescriptorForSpec#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="9111215912465734338" at="251,38,252,29" />
-      <scope id="9111215912465734338" at="893,62,906,22">
+      <scope id="9111215912465734338" at="893,62,907,22">
         <var name="b" id="9111215912465734338" />
       </scope>
-      <scope id="9111215912465734338" at="893,0,908,0" />
+      <scope id="9111215912465734338" at="893,0,909,0" />
     </file>
   </root>
 </debug-info>

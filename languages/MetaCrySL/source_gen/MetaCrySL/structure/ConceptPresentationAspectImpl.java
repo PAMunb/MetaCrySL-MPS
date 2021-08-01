@@ -221,6 +221,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.ForbiddenMethod:
         if (props_ForbiddenMethod == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Specify methods that should not be called");
           cpb.rawPresentation("ForbiddenMethod");
           props_ForbiddenMethod = cpb.create();
         }
