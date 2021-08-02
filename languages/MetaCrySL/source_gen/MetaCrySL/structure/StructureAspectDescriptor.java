@@ -103,6 +103,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   @Override
   public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
     deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
+    deps.aggregatedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
   }
 
   @Override
@@ -829,6 +830,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("negate", 0x447df0abe997b027L).type(PrimitiveTypeId.BOOLEAN).origin("4935365387817037863").done();
     b.property("label", 0x447df0abe997b064L).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL)).origin("4935365387817037924").done();
     b.aggregate("exp", 0x447df0abe997b059L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e33d864L).optional(false).ordered(true).multiple(true).origin("4935365387817037913").done();
+    b.alias("Predicate");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPrimaryExp() {
@@ -928,8 +930,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x11f8a0774f2L);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4235889247684779050");
     b.version(2);
+    b.property("name1", 0x3cec4044d1ef4616L).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL)).origin("4389954401103463958").done();
     b.aggregate("name", 0x3ac8e6d3fc25dc37L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4e8bdL).optional(false).ordered(true).multiple(false).origin("4235889247684779063").done();
     b.aggregate("generic", 0x3ac8e6d3fc28cc32L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4e8bdL).optional(true).ordered(true).multiple(false).origin("4235889247684971570").done();
+    b.aggregate("test", 0x3cec4044d206acf4L).target(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x11f8a0774f2L).optional(true).ordered(true).multiple(false).origin("4389954401104997620").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForValue() {

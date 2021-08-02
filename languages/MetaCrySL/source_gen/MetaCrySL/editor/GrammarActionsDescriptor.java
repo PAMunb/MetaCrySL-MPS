@@ -67,9 +67,9 @@ import java.util.Set;
 import org.jetbrains.mps.openapi.language.SLanguage;
 import com.mbeddr.mpsutil.grammarcells.runtime.AbstractRule;
 import com.mbeddr.mpsutil.grammarcells.runtime.ISymbol;
+import com.mbeddr.mpsutil.grammarcells.runtime.PropertySymbol;
 import com.mbeddr.mpsutil.grammarcells.runtime.ChildSymbol;
 import com.mbeddr.mpsutil.grammarcells.runtime.ConstantSymbol;
-import com.mbeddr.mpsutil.grammarcells.runtime.PropertySymbol;
 import MetaCrySL.behavior.BooleanExp__BehaviorDescriptor;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -1263,6 +1263,22 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
       ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
         public Iterable<SubstituteMenuItem> query() {
           List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
+          _context.getEditorMenuTrace().pushTraceInfo();
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "StringValue", new SNodePointer("r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)", "7282692057443931770")));
+          try {
+          } finally {
+            _context.getEditorMenuTrace().popTraceInfo();
+          }
+          return ListSequence.fromList(result).where(new IWhereFilter<SubstituteMenuItem>() {
+            public boolean accept(SubstituteMenuItem it) {
+              return it != null;
+            }
+          }).toListSequence();
+        }
+      }.query()));
+      ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+        public Iterable<SubstituteMenuItem> query() {
+          List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
 
           {
             final SConcept outputConcept = CONCEPTS.Predicate$3s;
@@ -1280,6 +1296,73 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
           }
 
           return result;
+        }
+      }.query()));
+      ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+        public Iterable<SubstituteMenuItem> query() {
+          List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
+          _context.getEditorMenuTrace().pushTraceInfo();
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "Predicate", new SNodePointer("r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)", "7282692057440228948")));
+          try {
+            if (SConceptOperations.isExactly(SNodeOperations.asSConcept(expectedOutputConceptExactly), CONCEPTS.Predicate$3s)) {
+              final SAbstractConcept expectedOutputConcept = GrammarCellsUtil.getExpectedOutputConcept(_context, expectedOutputConceptExactly);
+
+              for (SConcept subconcept : ListSequence.fromList(GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.Predicate$3s, _context.getModel(), Predicate_Editor.class, _context.getEditorContext()))) {
+                final SConcept outputConcept = ((SConcept) subconcept);
+
+                if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
+                  boolean isApplicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                  if (isApplicable) {
+                    ListSequence.fromList(result).addElement(new GrammarCellsSubstituteMenuItem(_context) {
+                      private SProperty myProperty = PROPS.label$VeXS;
+
+                      public String getMatchingText(String pattern) {
+                        return pattern;
+                      }
+                      @Override
+                      public boolean canExecute(@NotNull String pattern) {
+                        if ((pattern == null || pattern.length() == 0)) {
+                          return false;
+                        }
+                        return GrammarCellsUtil.isValidPropertyValue(myProperty, expectedOutputConceptExactly, pattern);
+                      }
+                      @Override
+                      public boolean canExecuteStrictly(@NotNull String pattern) {
+                        return canExecute(pattern);
+                      }
+
+                      @Override
+                      public SNode createNode(@NotNull String pattern) {
+                        SNode newNode = SNodeFactoryOperations.createNewNode(expectedOutputConceptExactly, null);
+                        SPropertyOperations.assign(newNode, PROPS.label$VeXS, GrammarCellsUtil.toInternalPropertyValue(myProperty, pattern));
+
+                        return newNode;
+                      }
+
+
+                      @Override
+                      public void select(@NotNull SNode newNode, @NotNull String pattern) {
+                        super.select(newNode, pattern);
+                      }
+
+                      @Override
+                      public SAbstractConcept getOutputConcept() {
+                        return CONCEPTS.Predicate$3s;
+                      }
+                    });
+                  }
+                }
+
+              }
+            }
+          } finally {
+            _context.getEditorMenuTrace().popTraceInfo();
+          }
+          return ListSequence.fromList(result).where(new IWhereFilter<SubstituteMenuItem>() {
+            public boolean accept(SubstituteMenuItem it) {
+              return it != null;
+            }
+          }).toListSequence();
         }
       }.query()));
     } finally {
@@ -2556,6 +2639,52 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
           ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
             public Iterable<TransformationMenuItem> query(final TransformationMenuContext _context) {
               List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
+              _context.getEditorMenuTrace().pushTraceInfo();
+              _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "StringValue", new SNodePointer("r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)", "7282692057443931770")));
+              try {
+              } finally {
+                _context.getEditorMenuTrace().popTraceInfo();
+              }
+              return ListSequence.fromList(result).where(new IWhereFilter<TransformationMenuItem>() {
+                public boolean accept(TransformationMenuItem it) {
+                  return it != null;
+                }
+              }).toListSequence();
+            }
+          }.query(_context)));
+        }
+      }
+      {
+        boolean sideEnabled = false;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM;
+        if (sideEnabled) {
+          ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+            public Iterable<TransformationMenuItem> query(final TransformationMenuContext _context) {
+              List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
+              return ListSequence.fromList(result).where(new IWhereFilter<TransformationMenuItem>() {
+                public boolean accept(TransformationMenuItem it) {
+                  return it != null;
+                }
+              }).toListSequence();
+            }
+          }.query(_context)));
+        }
+      }
+      {
+        boolean sideEnabled = false;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM;
+        if (sideEnabled) {
+          ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+            public Iterable<TransformationMenuItem> query(final TransformationMenuContext _context) {
+              List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
+              _context.getEditorMenuTrace().pushTraceInfo();
+              _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "Predicate", new SNodePointer("r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)", "7282692057440228948")));
+              try {
+              } finally {
+                _context.getEditorMenuTrace().popTraceInfo();
+              }
               return ListSequence.fromList(result).where(new IWhereFilter<TransformationMenuItem>() {
                 public boolean accept(TransformationMenuItem it) {
                   return it != null;
@@ -2795,17 +2924,17 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
         List<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>> redirectedBefore = ListSequence.fromList(new ArrayList<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>>());
         ListSequence.fromList(redirectedBefore).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from(new Object() {
           public TransformationMenuContext redirect() {
-            // redirect to name
+            // redirect to test
             final SNode sourceNode = _context.getNode();
 
             // Use the grammar rules for a deep search
-            SNode parentNode = new Parser(_context.getModel()).isEndOf(sourceNode, _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.Type$9F, LINKS.name$xPdN);
+            SNode parentNode = new Parser(_context.getModel()).isEndOf(sourceNode, _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.Type$9F, LINKS.test$EyQY);
             if (parentNode != null) {
               return _context.withNode(parentNode);
             }
 
             // There might be no grammar for some concepts. Try a single level check.
-            if (SNodeOperations.isInstanceOf(sourceNode, CONCEPTS.QualifiedName$VN) && SNodeOperations.isInstanceOf(SNodeOperations.getParent(sourceNode), CONCEPTS.Type$9F) && Objects.equals(sourceNode.getContainmentLink(), LINKS.name$xPdN) && (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) == true) {
+            if (SNodeOperations.isInstanceOf(sourceNode, CONCEPTS.IType$a9) && SNodeOperations.isInstanceOf(SNodeOperations.getParent(sourceNode), CONCEPTS.Type$9F) && Objects.equals(sourceNode.getContainmentLink(), LINKS.test$EyQY) && (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) == true) {
               TransformationMenuContext parentContext = _context.withNode(_context.getNode().getParent());
               return parentContext;
             }
@@ -2813,6 +2942,12 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
             return null;
           }
         }.redirect(), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
+          public Boolean invoke(TransformationMenuContext parentContext) {
+            final SNode sourceNode = parentContext.getNode();
+            return true;
+          }
+        }));
+        ListSequence.fromList(redirectedBefore).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from((SNodeOperations.isInstanceOf(((SNode) _context.getNode()), CONCEPTS.Type$9F) ? _context : null), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
           public Boolean invoke(TransformationMenuContext parentContext) {
             final SNode sourceNode = parentContext.getNode();
             return true;
@@ -2850,6 +2985,16 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
             return null;
           }
         }.redirect(), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
+          public Boolean invoke(TransformationMenuContext parentContext) {
+            final SNode sourceNode = parentContext.getNode();
+            return new Object() {
+              public boolean renderingCondition(SNode node) {
+                return Sequence.fromIterable(AttributeOperations.getChildNodesAndAttributes(node, LINKS.generic$Usrq)).isNotEmpty();
+              }
+            }.renderingCondition(sourceNode);
+          }
+        }));
+        ListSequence.fromList(redirectedAfter).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from((SNodeOperations.isInstanceOf(((SNode) _context.getNode()), CONCEPTS.Type$9F) ? _context : null), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
           public Boolean invoke(TransformationMenuContext parentContext) {
             final SNode sourceNode = parentContext.getNode();
             return new Object() {
@@ -3222,9 +3367,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
         ListSequence.fromList(rules).addElement(new AbstractRule() {
           private List<ISymbol> symbols = ListSequence.fromList(new ArrayList<ISymbol>());
           {
-            ListSequence.fromList(symbols).addElement(new ChildSymbol(LINKS.name$xPdN));
+            ListSequence.fromList(symbols).addElement(new PropertySymbol(CONCEPTS.Type$9F, PROPS.name1$DoJb));
+            ListSequence.fromList(symbols).addElement(new ChildSymbol(LINKS.test$EyQY));
             ListSequence.fromList(symbols).addElement(new ConstantSymbol("<"));
             ListSequence.fromList(symbols).addElement(new ChildSymbol(LINKS.generic$Usrq));
+            ListSequence.fromList(symbols).addElement(new ConstantSymbol(">"));
             symbols = ListSequence.fromList(symbols).where(new IWhereFilter<ISymbol>() {
               public boolean accept(ISymbol it) {
                 return it != null;
@@ -3519,6 +3666,40 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
         });
       }
     }
+    {
+      final List<SConcept> subconcepts = GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.StringValue$6s, visibleLanguages);
+      for (final SAbstractConcept subconcept : subconcepts) {
+        ListSequence.fromList(rules).addElement(new AbstractRule() {
+          private List<ISymbol> symbols = ListSequence.fromList(new ArrayList<ISymbol>());
+          {
+            ListSequence.fromList(symbols).addElement(new ConstantSymbol("\""));
+            ListSequence.fromList(symbols).addElement(new PropertySymbol(CONCEPTS.StringValue$6s, PROPS.value$hckO));
+            ListSequence.fromList(symbols).addElement(new ConstantSymbol("\""));
+            symbols = ListSequence.fromList(symbols).where(new IWhereFilter<ISymbol>() {
+              public boolean accept(ISymbol it) {
+                return it != null;
+              }
+            }).toListSequence();
+          }
+          @Override
+          public List<ISymbol> getSymbols() {
+            return symbols;
+          }
+          @Override
+          public SAbstractConcept getOutputConcept() {
+            return subconcept;
+          }
+          @Override
+          public SAbstractConcept getDefinedForConcept() {
+            return CONCEPTS.StringValue$6s;
+          }
+          @Override
+          public String toString() {
+            return subconcept.getName();
+          }
+        });
+      }
+    }
 
     return rules;
   }
@@ -3546,9 +3727,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
     /*package*/ static final SConcept EventSpec$P0 = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c1ffL, "MetaCrySL.structure.EventSpec");
     /*package*/ static final SConcept OrderSpec$Y7 = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa48770aeL, "MetaCrySL.structure.OrderSpec");
     /*package*/ static final SConcept SpecContent$SN = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb41c7b7L, "MetaCrySL.structure.SpecContent");
+    /*package*/ static final SInterfaceConcept IType$a9 = MetaAdapterFactory.getInterfaceConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x11f8a0774f2L, "jetbrains.mps.lang.core.structure.IType");
     /*package*/ static final SConcept QualifiedName$VN = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4e8bdL, "MetaCrySL.structure.QualifiedName");
     /*package*/ static final SInterfaceConcept BasicExp$2E = MetaAdapterFactory.getInterfaceConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e33d864L, "MetaCrySL.structure.BasicExp");
     /*package*/ static final SConcept ForbiddenMethod$e9 = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3cec4044d19f6346L, "MetaCrySL.structure.ForbiddenMethod");
+    /*package*/ static final SConcept StringValue$6s = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867f8ba7aL, "MetaCrySL.structure.StringValue");
   }
 
   private static final class PROPS {
@@ -3557,9 +3740,12 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
     /*package*/ static final SProperty label$8VcE = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb789L, 0x3ac8e6d3fc41821eL, "label");
     /*package*/ static final SProperty argument$lGCM = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc44db55L, 0x3ac8e6d3fc44db56L, "argument");
     /*package*/ static final SProperty negate$SamM = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe997b026L, 0x447df0abe997b027L, "negate");
+    /*package*/ static final SProperty label$VeXS = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe997b026L, 0x447df0abe997b064L, "label");
     /*package*/ static final SProperty text$Fl1W = MetaAdapterFactory.getProperty(0xb4f35ed845af4efaL, 0xabe400ac26956e69L, 0x468dcccb641e8fb9L, 0x468dcccb641e99b6L, "text");
     /*package*/ static final SProperty left$Cu1K = MetaAdapterFactory.getProperty(0xb4f35ed845af4efaL, 0xabe400ac26956e69L, 0x468dcccb641e8fb9L, 0x468dcccb641e9989L, "left");
     /*package*/ static final SProperty alternative$lL7o = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3cec4044d19f6346L, 0x3cec4044d19f634dL, "alternative");
+    /*package*/ static final SProperty name1$DoJb = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc25dc2aL, 0x3cec4044d1ef4616L, "name1");
+    /*package*/ static final SProperty value$hckO = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867f8ba7aL, 0x3071de6867f8ba7dL, "value");
   }
 
   private static final class LINKS {
@@ -3580,7 +3766,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
     /*package*/ static final SContainmentLink events$My3j = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3063bd30217d1129L, 0x38bdb626f9180837L, "events");
     /*package*/ static final SContainmentLink order$Q4to = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3063bd30217d1129L, 0x38bdb626f918089fL, "order");
     /*package*/ static final SContainmentLink adicional$aUw1 = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3063bd30217d1129L, 0x398346ae4a5901a9L, "adicional");
-    /*package*/ static final SContainmentLink name$xPdN = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc25dc2aL, 0x3ac8e6d3fc25dc37L, "name");
+    /*package*/ static final SContainmentLink test$EyQY = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc25dc2aL, 0x3cec4044d206acf4L, "test");
     /*package*/ static final SContainmentLink generic$Usrq = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc25dc2aL, 0x3ac8e6d3fc28cc32L, "generic");
     /*package*/ static final SContainmentLink exp$V7to = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe997b026L, 0x447df0abe997b059L, "exp");
     /*package*/ static final SContainmentLink method$lJHi = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3cec4044d19f6346L, 0x3cec4044d19f6347L, "method");

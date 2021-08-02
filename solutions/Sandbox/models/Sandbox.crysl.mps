@@ -19,7 +19,6 @@
         <child id="4088624315226392735" name="order" index="31DrUT" />
         <child id="8598353117207694615" name="objects" index="3jQJ6d" />
         <child id="4389954401098732223" name="type" index="3HiPbV" />
-        <child id="4144233796496589225" name="adicional" index="1NQ$s7" />
       </concept>
       <concept id="5292687979099972623" name="MetaCrySL.structure.IObjectsContent" flags="ng" index="2si8ez">
         <property id="3490815726187307111" name="name" index="1nN3Sf" />
@@ -36,14 +35,6 @@
       <concept id="3219138665674792196" name="MetaCrySL.structure.EventMethod" flags="ng" index="2AUv2b">
         <child id="7670361912899009998" name="method" index="1ntmhb" />
       </concept>
-      <concept id="4935365387817037862" name="MetaCrySL.structure.Predicate" flags="ng" index="2HU$2d">
-        <property id="4935365387817037863" name="negate" index="2HU$2c" />
-        <property id="4935365387817037924" name="label" index="2HU$3f" />
-        <child id="4935365387817037913" name="exp" index="2HU$3M" />
-      </concept>
-      <concept id="4088624315226392760" name="MetaCrySL.structure.ConstraintSpec" flags="ng" index="31DrUu">
-        <child id="6570391813125641491" name="constraints" index="2NkUQp" />
-      </concept>
       <concept id="4235889247686591029" name="MetaCrySL.structure.FormalArgList" flags="ng" index="36ymjA">
         <child id="4235889247686695197" name="args" index="36yZZe" />
       </concept>
@@ -55,6 +46,7 @@
         <reference id="4235889247687676269" name="ref" index="36AJuY" />
       </concept>
       <concept id="4235889247684779050" name="MetaCrySL.structure.Type" flags="ng" index="36VjFT">
+        <property id="4389954401103463958" name="name1" index="3H0Kpi" />
         <child id="4235889247684779063" name="name" index="36VjF$" />
       </concept>
       <concept id="8598353117207556270" name="MetaCrySL.structure.OrderSpec" flags="ng" index="3jP0KO">
@@ -73,18 +65,8 @@
       <concept id="2159885266397935498" name="MetaCrySL.structure.AggregateList" flags="ng" index="3mLGeY">
         <child id="4235889247687676271" name="events" index="36AJuW" />
       </concept>
-      <concept id="3490815726191164026" name="MetaCrySL.structure.StringValue" flags="ng" index="1nymgi">
-        <property id="3490815726191164029" name="value" index="1nymgl" />
-      </concept>
       <concept id="8063880014109550711" name="MetaCrySL.structure.Object" flags="ng" index="1BHS1h">
         <child id="8063880014109550720" name="objectType" index="1BHS2A" />
-      </concept>
-      <concept id="4389954401098228550" name="MetaCrySL.structure.ForbiddenMethod" flags="ng" index="3HsMc2">
-        <property id="4389954401098228557" name="alternative" index="3HsMc9" />
-        <child id="4389954401098228551" name="method" index="3HsMc3" />
-      </concept>
-      <concept id="4389954401097735068" name="MetaCrySL.structure.ForbiddenSpec" flags="ng" index="3HuTJo">
-        <child id="4389954401097735070" name="content" index="3HuTJq" />
       </concept>
       <concept id="4144233796494843467" name="MetaCrySL.structure.ChoiceExp" flags="ng" index="1NJhz_">
         <child id="4144233796494843475" name="right" index="1NJhzX" />
@@ -106,6 +88,7 @@
       <node concept="1BHS1h" id="31LRAxBKWUE" role="2si8e6">
         <property role="1nN3Sf" value="asasas" />
         <node concept="36VjFT" id="31LRAxBKWUF" role="1BHS2A">
+          <property role="3H0Kpi" value="asas" />
           <node concept="2yrA1U" id="31LRAxBKWUG" role="36VjF$">
             <property role="1AewAe" value="asas" />
           </node>
@@ -172,27 +155,10 @@
         </node>
       </node>
     </node>
-    <node concept="3HuTJo" id="3NGg4jhBQd4" role="1NQ$s7">
-      <node concept="3HsMc2" id="3NGg4jhDKpQ" role="3HuTJq">
-        <property role="3HsMc9" value="hahaha" />
-        <node concept="3mLGeX" id="3NGg4jhDKpR" role="3HsMc3">
-          <property role="36ymjd" value="methodm" />
-          <node concept="36ymjA" id="3NGg4jhDKpS" role="36ymj8" />
-        </node>
-      </node>
-    </node>
-    <node concept="31DrUu" id="3NGg4jhRVJy" role="1NQ$s7">
-      <node concept="2HU$2d" id="3NGg4jhRVJF" role="2NkUQp">
-        <property role="2HU$3f" value="asas" />
-        <property role="2HU$2c" value="true" />
-        <node concept="1nymgi" id="3NGg4jhRVJK" role="2HU$3M">
-          <property role="1nymgl" value="asas" />
-        </node>
-      </node>
-    </node>
     <node concept="36VjFT" id="3NGg4jhFQVi" role="3HiPbV">
-      <node concept="2yrA1U" id="3NGg4jhFQVj" role="36VjF$">
-        <property role="1AewAe" value="a" />
+      <property role="3H0Kpi" value="asasas" />
+      <node concept="2yrA1U" id="3NGg4jhRWuG" role="36VjF$">
+        <property role="1AewAe" value="asasa" />
       </node>
     </node>
   </node>
