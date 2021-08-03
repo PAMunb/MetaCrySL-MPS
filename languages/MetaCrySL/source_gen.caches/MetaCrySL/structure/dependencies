@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="MetaCrySL.structure.ConceptPresentationAspectImpl">
+    <classNode dependClassName="MetaCrySL.structure.IconContainer" />
     <classNode dependClassName="MetaCrySL.structure.LanguageConceptSwitch" />
     <classNode dependClassName="MetaCrySL.structure.StructureAspectDescriptor" />
     <classNode dependClassName="java.lang.Override" />
@@ -10,6 +11,9 @@
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspectBase" />
+  </dependency>
+  <dependency className="MetaCrySL.structure.IconContainer">
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.IconResource" />
   </dependency>
   <dependency className="MetaCrySL.structure.LanguageConceptSwitch">
     <classNode dependClassName="jetbrains.mps.lang.smodel.LanguageConceptIndex" />

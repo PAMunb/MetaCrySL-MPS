@@ -5,8 +5,15 @@
     <use id="fbc67e5c-fd70-43b1-b837-3c3551c2500b" name="MetaCrySL" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
   </languages>
-  <imports />
+  <imports>
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+  </imports>
   <registry>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -29,11 +36,45 @@
       <concept id="4006665209295202493" name="MetaCrySL.structure.QualifiedName" flags="ng" index="2yrA1U">
         <property id="543504950189155153" name="name" index="1AewAe" />
       </concept>
+      <concept id="5565897349650067728" name="MetaCrySL.structure.ArithmeticExp" flags="ng" index="z43GQ">
+        <child id="5565897349650067758" name="left" index="z43G8" />
+        <child id="5565897349650067760" name="right" index="z43Gm" />
+      </concept>
+      <concept id="5565897349650071914" name="MetaCrySL.structure.PlusExpression" flags="ng" index="z44Hc" />
+      <concept id="5565897349649559459" name="MetaCrySL.structure.BooleanExp" flags="ng" index="z66m5">
+        <child id="5565897349649559487" name="left" index="z66mp" />
+        <child id="5565897349649559489" name="right" index="z66nB" />
+      </concept>
+      <concept id="5565897349649559431" name="MetaCrySL.structure.ImpliesExp" flags="ng" index="z66mx" />
       <concept id="3219138665674792199" name="MetaCrySL.structure.EventAggregate" flags="ng" index="2AUv28">
         <child id="1968558509080242397" name="aggregate" index="2A7l5l" />
       </concept>
       <concept id="3219138665674792196" name="MetaCrySL.structure.EventMethod" flags="ng" index="2AUv2b">
         <child id="7670361912899009998" name="method" index="1ntmhb" />
+      </concept>
+      <concept id="4935365387813273332" name="MetaCrySL.structure.MetaVariable" flags="ng" index="2H8WTv">
+        <property id="4935365387813273333" name="label" index="2H8WTu" />
+      </concept>
+      <concept id="1405177072845298441" name="MetaCrySL.structure.Rename" flags="ng" index="12XUCj">
+        <child id="1405177072845298528" name="type" index="12XUDU" />
+      </concept>
+      <concept id="1405177072845298293" name="MetaCrySL.structure.Refinement" flags="ng" index="12XUHJ">
+        <property id="1405177072845298325" name="name" index="12XUIf" />
+        <child id="1405177072845298335" name="type" index="12XUI5" />
+        <child id="1405177072845298420" name="content" index="12XUJI" />
+      </concept>
+      <concept id="2546026358871820577" name="MetaCrySL.structure.DefineLiteralSet" flags="ng" index="360Ohq">
+        <property id="2546026358871820580" name="label" index="360Ohv" />
+        <child id="2546026358871820582" name="set" index="360Oht" />
+      </concept>
+      <concept id="2546026358871820386" name="MetaCrySL.structure.AddConstraint" flags="ng" index="360Okp">
+        <child id="2546026358871820389" name="constraint" index="360Oku" />
+      </concept>
+      <concept id="2546026358871820327" name="MetaCrySL.structure.AddEvent" flags="ng" index="360Ols">
+        <child id="2546026358871820328" name="event" index="360Olj" />
+      </concept>
+      <concept id="2546026358871820451" name="MetaCrySL.structure.AddRequire" flags="ng" index="360Ono">
+        <child id="2546026358871820454" name="require" index="360Ont" />
       </concept>
       <concept id="4235889247686591029" name="MetaCrySL.structure.FormalArgList" flags="ng" index="36ymjA">
         <child id="4235889247686695197" name="args" index="36yZZe" />
@@ -48,6 +89,7 @@
       <concept id="4235889247684779050" name="MetaCrySL.structure.Type" flags="ng" index="36VjFT">
         <property id="4389954401103463958" name="name1" index="3H0Kpi" />
         <child id="4235889247684779063" name="name" index="36VjF$" />
+        <child id="4389954401104997620" name="test" index="3IUIMK" />
       </concept>
       <concept id="8598353117207556270" name="MetaCrySL.structure.OrderSpec" flags="ng" index="3jP0KO">
         <child id="8598353117207556273" name="content" index="3jP0KF" />
@@ -64,6 +106,12 @@
       </concept>
       <concept id="2159885266397935498" name="MetaCrySL.structure.AggregateList" flags="ng" index="3mLGeY">
         <child id="4235889247687676271" name="events" index="36AJuW" />
+      </concept>
+      <concept id="3490815726191164006" name="MetaCrySL.structure.IntValue" flags="ng" index="1nymge">
+        <property id="3490815726191164009" name="value" index="1nymg1" />
+      </concept>
+      <concept id="3490815726191164026" name="MetaCrySL.structure.StringValue" flags="ng" index="1nymgi">
+        <property id="3490815726191164029" name="value" index="1nymgl" />
       </concept>
       <concept id="8063880014109550711" name="MetaCrySL.structure.Object" flags="ng" index="1BHS1h">
         <child id="8063880014109550720" name="objectType" index="1BHS2A" />
@@ -159,6 +207,57 @@
       <property role="3H0Kpi" value="asasas" />
       <node concept="2yrA1U" id="3NGg4jhRWuG" role="36VjF$">
         <property role="1AewAe" value="asasa" />
+      </node>
+    </node>
+  </node>
+  <node concept="12XUHJ" id="1e0chDhwaps">
+    <property role="12XUIf" value="ref" />
+    <node concept="36VjFT" id="1e0chDhwapt" role="12XUI5">
+      <property role="3H0Kpi" value="someRefinement" />
+      <node concept="2yrA1U" id="1e0chDhwapu" role="36VjF$" />
+    </node>
+    <node concept="12XUCj" id="1e0chDhzF3u" role="12XUJI">
+      <node concept="36VjFT" id="1e0chDhzF3v" role="12XUDU">
+        <property role="3H0Kpi" value="asas" />
+        <node concept="2yrA1U" id="1e0chDhzF3w" role="36VjF$" />
+        <node concept="3uibUv" id="2dljnJ_lwwu" role="3IUIMK">
+          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+        </node>
+      </node>
+    </node>
+    <node concept="360Ols" id="2dljnJ_n_zd" role="12XUJI">
+      <node concept="2AUv2b" id="2dljnJ_n_z_" role="360Olj">
+        <property role="2NgTxn" value="c1" />
+        <node concept="3mLGeX" id="2dljnJ_n_zJ" role="1ntmhb">
+          <property role="36ymjd" value="ethod1m" />
+          <node concept="36ymjA" id="2dljnJ_n_zK" role="36ymj8" />
+        </node>
+      </node>
+    </node>
+    <node concept="360Okp" id="2dljnJ_n_zX" role="12XUJI">
+      <node concept="z44Hc" id="2dljnJ_n_$8" role="360Oku">
+        <node concept="1nymge" id="2dljnJ_n_$q" role="z43G8">
+          <property role="1nymg1" value="15" />
+        </node>
+        <node concept="1nymge" id="2dljnJ_n_$$" role="z43Gm">
+          <property role="1nymg1" value="16" />
+        </node>
+      </node>
+    </node>
+    <node concept="360Ono" id="2dljnJ_n_$P" role="12XUJI">
+      <node concept="z66mx" id="2dljnJ_n__6" role="360Ont">
+        <node concept="1nymgi" id="2dljnJ_n__i" role="z66mp">
+          <property role="1nymgl" value="A" />
+        </node>
+        <node concept="1nymgi" id="2dljnJ_n__z" role="z66nB">
+          <property role="1nymgl" value="B" />
+        </node>
+      </node>
+    </node>
+    <node concept="360Ohq" id="2dljnJ_tSSS" role="12XUJI">
+      <property role="360Ohv" value="set1" />
+      <node concept="2H8WTv" id="2dljnJ_tSTb" role="360Oht">
+        <property role="2H8WTu" value="lgA" />
       </node>
     </node>
   </node>
