@@ -21,6 +21,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_BooleanExp;
   private ConceptPresentation props_CallTo;
   private ConceptPresentation props_ChoiceExp;
+  private ConceptPresentation props_Config;
   private ConceptPresentation props_ConjunctionExp;
   private ConceptPresentation props_ConstraintExp;
   private ConceptPresentation props_ConstraintSpec;
@@ -59,6 +60,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_LessOrEqual;
   private ConceptPresentation props_LessThan;
   private ConceptPresentation props_LiteralSet;
+  private ConceptPresentation props_LoadModule;
   private ConceptPresentation props_MetaVariable;
   private ConceptPresentation props_MethodDef;
   private ConceptPresentation props_MinusExpreesion;
@@ -177,6 +179,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ChoiceExp = cpb.create();
         }
         return props_ChoiceExp;
+      case LanguageConceptSwitch.Config:
+        if (props_Config == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          cpb.icon(IconContainer.RESOURCE_a0a2a0a21b0id);
+          props_Config = cpb.create();
+        }
+        return props_Config;
       case LanguageConceptSwitch.ConjunctionExp:
         if (props_ConjunctionExp == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -432,6 +442,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_LiteralSet = cpb.create();
         }
         return props_LiteralSet;
+      case LanguageConceptSwitch.LoadModule:
+        if (props_LoadModule == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("LoadModule");
+          props_LoadModule = cpb.create();
+        }
+        return props_LoadModule;
       case LanguageConceptSwitch.MetaVariable:
         if (props_MetaVariable == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -578,7 +595,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_Refinement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.rawPresentation("REFINEMENT");
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a07b0gd);
+          cpb.icon(IconContainer.RESOURCE_a0a2a0a27b0id);
           props_Refinement = cpb.create();
         }
         return props_Refinement;
@@ -613,7 +630,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_Spec == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a57b0gd);
+          cpb.icon(IconContainer.RESOURCE_a0a2a0a77b0id);
           props_Spec = cpb.create();
         }
         return props_Spec;

@@ -5,6 +5,7 @@ package MetaCrySL.structure;
 import jetbrains.mps.smodel.runtime.IconResource;
 
 public class IconContainer {
-  protected static IconResource RESOURCE_a0a2a0a07b0gd = new IconResource("TextIcon_1.png", IconContainer.class);
-  protected static IconResource RESOURCE_a0a2a0a57b0gd = new IconResource("TextIcon_2.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a2a0a21b0id = new IconResource("TextIcon_3.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a2a0a27b0id = new IconResource("TextIcon_1.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a2a0a77b0id = new IconResource("TextIcon_2.png", IconContainer.class);
 }

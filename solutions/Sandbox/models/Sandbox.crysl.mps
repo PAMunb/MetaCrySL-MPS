@@ -76,6 +76,10 @@
       <concept id="2546026358871820451" name="MetaCrySL.structure.AddRequire" flags="ng" index="360Ono">
         <child id="2546026358871820454" name="require" index="360Ont" />
       </concept>
+      <concept id="2546026358874020737" name="MetaCrySL.structure.LoadModule" flags="ng" index="368HrU" />
+      <concept id="2546026358874020558" name="MetaCrySL.structure.Config" flags="ng" index="368HuP">
+        <child id="2546026358874020738" name="modules" index="368HrT" />
+      </concept>
       <concept id="4235889247686591029" name="MetaCrySL.structure.FormalArgList" flags="ng" index="36ymjA">
         <child id="4235889247686695197" name="args" index="36yZZe" />
       </concept>
@@ -260,6 +264,10 @@
         <property role="2H8WTu" value="lgA" />
       </node>
     </node>
+  </node>
+  <node concept="368HuP" id="2dljnJ_tW7H">
+    <property role="TrG5h" value="asasas" />
+    <node concept="368HrU" id="2dljnJ_tW7I" role="368HrT" />
   </node>
 </model>
 
