@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)" content="root">
   <persistence version="9" />
-  <imports>
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-  </imports>
+  <imports />
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
@@ -36,13 +34,13 @@
     <property role="3GE5qa" value="spec.ensures" />
     <property role="TrG5h" value="EnsuresSpec" />
     <property role="34LRSv" value="ENSURES" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="1RTt3jbgsuR" resolve="SpecContent" />
     <node concept="1TJgyj" id="RKPOMnfEEp" role="1TKVEi">
       <property role="IQ2ns" value="1004539440858573465" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="content" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1RTt3jbfVsT" resolve="IEnsureContent" />
+      <ref role="20lvS9" node="4OY2ypI9BZG" resolve="ConstraintExp" />
     </node>
   </node>
 </model>

@@ -56,6 +56,7 @@ import com.mbeddr.mpsutil.grammarcells.runtime.IFlagModelAccess;
 import java.util.Objects;
 import com.mbeddr.mpsutil.grammarcells.runtime.StringOrSequenceQuery;
 import com.mbeddr.mpsutil.grammarcells.runtime.EditorHierachyCache;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.AttributeOperations;
 import jetbrains.mps.openapi.editor.cells.SubstituteAction;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.action.NodeSubstituteActionsFactoryContext;
@@ -66,9 +67,9 @@ import java.util.Set;
 import org.jetbrains.mps.openapi.language.SLanguage;
 import com.mbeddr.mpsutil.grammarcells.runtime.AbstractRule;
 import com.mbeddr.mpsutil.grammarcells.runtime.ISymbol;
+import com.mbeddr.mpsutil.grammarcells.runtime.PropertySymbol;
 import com.mbeddr.mpsutil.grammarcells.runtime.ChildSymbol;
 import com.mbeddr.mpsutil.grammarcells.runtime.ConstantSymbol;
-import com.mbeddr.mpsutil.grammarcells.runtime.PropertySymbol;
 import MetaCrySL.behavior.BooleanExp__BehaviorDescriptor;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -947,6 +948,423 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
           }).toListSequence();
         }
       }.query()));
+      ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+        public Iterable<SubstituteMenuItem> query() {
+          List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
+          _context.getEditorMenuTrace().pushTraceInfo();
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "RelationalExp", new SNodePointer("r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)", "5565897349649915904")));
+          try {
+            if (SConceptOperations.isExactly(SNodeOperations.asSConcept(expectedOutputConceptExactly), CONCEPTS.RelationalExp$G5)) {
+              final SAbstractConcept wrappedConcept = CONCEPTS.ConstraintExp$S1;
+              for (SConcept subconcept : ListSequence.fromList(GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.RelationalExp$G5, _context.getModel(), RelationalExp_Editor.class, _context.getEditorContext()))) {
+                final SConcept outputConcept = ((SConcept) subconcept);
+
+                final SAbstractConcept expectedOutputConcept = GrammarCellsUtil.getExpectedOutputConcept(_context, expectedOutputConceptExactly);
+
+                boolean wrapRequired = !(SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(wrappedConcept), SNodeOperations.asSConcept(expectedOutputConcept)));
+                if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept)) && wrapRequired) {
+
+                  boolean isApplicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                  if (isApplicable) {
+                    List<SubstituteMenuItem> actions = _context.withLink(LINKS.left$Mkho).createItems(new DefaultSubstituteMenuLookup(LanguageRegistry.getInstance(_context.getEditorContext().getRepository()), wrappedConcept));
+                    List<SubstituteMenuItem> wrappedActions = ListSequence.fromList(actions).where(new IWhereFilter<SubstituteMenuItem>() {
+                      public boolean accept(SubstituteMenuItem it) {
+                        boolean isApplicable = true;
+                        final SAbstractConcept wrappedConcept = it.getOutputConcept();
+                        if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(wrappedConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
+                          return false;
+                        }
+                        final EditorContext editorContext = _context.getEditorContext();
+                        final SNode smartReferent = ((it instanceof ReferenceScopeSubstituteMenuItem) ? ((SNode) ReflectionUtil_copy.readField(ReferenceScopeSubstituteMenuItem.class, ((ReferenceScopeSubstituteMenuItem) it), "myReferent")) : null);
+
+                        return isApplicable;
+                      }
+                    }).select(new ISelector<SubstituteMenuItem, SubstituteMenuItem>() {
+                      public SubstituteMenuItem select(SubstituteMenuItem it) {
+                        final SNode smartReferent = ((it instanceof ReferenceScopeSubstituteMenuItem) ? ((SNode) ReflectionUtil_copy.readField(ReferenceScopeSubstituteMenuItem.class, ((ReferenceScopeSubstituteMenuItem) it), "myReferent")) : null);
+
+                        SubstituteMenuItem wrapper = new SubstituteMenuItemWrapper(it) {
+                          private SNode wrappedNode;
+                          @Override
+                          public SNode createNode(@NotNull String pattern) {
+                            SNode nodeToWrap = super.createNode(pattern);
+                            wrappedNode = nodeToWrap;
+                            // use setupNode after setting wrapped element to allow access to the wrapped element in node factories
+                            SNode wrapper = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(outputConcept));
+                            SLinkOperations.setTarget(wrapper, LINKS.left$Mkho, SNodeOperations.cast(nodeToWrap, CONCEPTS.ConstraintExp$S1));
+                            NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
+
+                            return wrapper;
+                          }
+                          @Override
+                          public SAbstractConcept getOutputConcept() {
+                            return outputConcept;
+                          }
+
+                          @Override
+                          public void select(@NotNull SNode createdNode, @NotNull String pattern) {
+                            GrammarCellsSubstituteMenuItem.select(_context.getEditorContext().getEditorComponent(), createdNode);
+                          }
+                        };
+                        return wrapper;
+                      }
+                    }).toListSequence();
+
+                    ListSequence.fromList(result).addSequence(ListSequence.fromList(wrappedActions));
+                  }
+
+                }
+              }
+            }
+          } finally {
+            _context.getEditorMenuTrace().popTraceInfo();
+          }
+          return ListSequence.fromList(result).where(new IWhereFilter<SubstituteMenuItem>() {
+            public boolean accept(SubstituteMenuItem it) {
+              return it != null;
+            }
+          }).toListSequence();
+        }
+      }.query()));
+      ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+        public Iterable<SubstituteMenuItem> query() {
+          List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
+          _context.getEditorMenuTrace().pushTraceInfo();
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "RelationalExp", new SNodePointer("r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)", "5565897349649916252")));
+          try {
+            if (SConceptOperations.isExactly(SNodeOperations.asSConcept(expectedOutputConceptExactly), CONCEPTS.RelationalExp$G5)) {
+              final SAbstractConcept wrappedConcept = CONCEPTS.ConstraintExp$S1;
+              for (SConcept subconcept : ListSequence.fromList(GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.RelationalExp$G5, _context.getModel(), RelationalExp_Editor.class, _context.getEditorContext()))) {
+                final SConcept outputConcept = ((SConcept) subconcept);
+
+                final SAbstractConcept expectedOutputConcept = GrammarCellsUtil.getExpectedOutputConcept(_context, expectedOutputConceptExactly);
+
+                boolean wrapRequired = !(SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(wrappedConcept), SNodeOperations.asSConcept(expectedOutputConcept)));
+                if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept)) && wrapRequired) {
+
+                  boolean isApplicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                  if (isApplicable) {
+                    List<SubstituteMenuItem> actions = _context.withLink(LINKS.right$MkJq).createItems(new DefaultSubstituteMenuLookup(LanguageRegistry.getInstance(_context.getEditorContext().getRepository()), wrappedConcept));
+                    List<SubstituteMenuItem> wrappedActions = ListSequence.fromList(actions).where(new IWhereFilter<SubstituteMenuItem>() {
+                      public boolean accept(SubstituteMenuItem it) {
+                        boolean isApplicable = true;
+                        final SAbstractConcept wrappedConcept = it.getOutputConcept();
+                        if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(wrappedConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
+                          return false;
+                        }
+                        final EditorContext editorContext = _context.getEditorContext();
+                        final SNode smartReferent = ((it instanceof ReferenceScopeSubstituteMenuItem) ? ((SNode) ReflectionUtil_copy.readField(ReferenceScopeSubstituteMenuItem.class, ((ReferenceScopeSubstituteMenuItem) it), "myReferent")) : null);
+
+                        return isApplicable;
+                      }
+                    }).select(new ISelector<SubstituteMenuItem, SubstituteMenuItem>() {
+                      public SubstituteMenuItem select(SubstituteMenuItem it) {
+                        final SNode smartReferent = ((it instanceof ReferenceScopeSubstituteMenuItem) ? ((SNode) ReflectionUtil_copy.readField(ReferenceScopeSubstituteMenuItem.class, ((ReferenceScopeSubstituteMenuItem) it), "myReferent")) : null);
+
+                        SubstituteMenuItem wrapper = new SubstituteMenuItemWrapper(it) {
+                          private SNode wrappedNode;
+                          @Override
+                          public SNode createNode(@NotNull String pattern) {
+                            SNode nodeToWrap = super.createNode(pattern);
+                            wrappedNode = nodeToWrap;
+                            // use setupNode after setting wrapped element to allow access to the wrapped element in node factories
+                            SNode wrapper = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(outputConcept));
+                            SLinkOperations.setTarget(wrapper, LINKS.right$MkJq, SNodeOperations.cast(nodeToWrap, CONCEPTS.ConstraintExp$S1));
+                            NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
+
+                            return wrapper;
+                          }
+                          @Override
+                          public SAbstractConcept getOutputConcept() {
+                            return outputConcept;
+                          }
+
+                          @Override
+                          public void select(@NotNull SNode createdNode, @NotNull String pattern) {
+                            GrammarCellsSubstituteMenuItem.select(_context.getEditorContext().getEditorComponent(), createdNode);
+                          }
+                        };
+                        return wrapper;
+                      }
+                    }).toListSequence();
+
+                    ListSequence.fromList(result).addSequence(ListSequence.fromList(wrappedActions));
+                  }
+
+                }
+              }
+            }
+          } finally {
+            _context.getEditorMenuTrace().popTraceInfo();
+          }
+          return ListSequence.fromList(result).where(new IWhereFilter<SubstituteMenuItem>() {
+            public boolean accept(SubstituteMenuItem it) {
+              return it != null;
+            }
+          }).toListSequence();
+        }
+      }.query()));
+      ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+        public Iterable<SubstituteMenuItem> query() {
+          List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
+          _context.getEditorMenuTrace().pushTraceInfo();
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "ArithmeticExp", new SNodePointer("r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)", "5565897349650067752")));
+          try {
+            if (SConceptOperations.isExactly(SNodeOperations.asSConcept(expectedOutputConceptExactly), CONCEPTS.ArithmeticExp$jn)) {
+              final SAbstractConcept wrappedConcept = CONCEPTS.ConstraintExp$S1;
+              for (SConcept subconcept : ListSequence.fromList(GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.ArithmeticExp$jn, _context.getModel(), ArithmeticExp_Editor.class, _context.getEditorContext()))) {
+                final SConcept outputConcept = ((SConcept) subconcept);
+
+                final SAbstractConcept expectedOutputConcept = GrammarCellsUtil.getExpectedOutputConcept(_context, expectedOutputConceptExactly);
+
+                boolean wrapRequired = !(SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(wrappedConcept), SNodeOperations.asSConcept(expectedOutputConcept)));
+                if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept)) && wrapRequired) {
+
+                  boolean isApplicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                  if (isApplicable) {
+                    List<SubstituteMenuItem> actions = _context.withLink(LINKS.left$t7TI).createItems(new DefaultSubstituteMenuLookup(LanguageRegistry.getInstance(_context.getEditorContext().getRepository()), wrappedConcept));
+                    List<SubstituteMenuItem> wrappedActions = ListSequence.fromList(actions).where(new IWhereFilter<SubstituteMenuItem>() {
+                      public boolean accept(SubstituteMenuItem it) {
+                        boolean isApplicable = true;
+                        final SAbstractConcept wrappedConcept = it.getOutputConcept();
+                        if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(wrappedConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
+                          return false;
+                        }
+                        final EditorContext editorContext = _context.getEditorContext();
+                        final SNode smartReferent = ((it instanceof ReferenceScopeSubstituteMenuItem) ? ((SNode) ReflectionUtil_copy.readField(ReferenceScopeSubstituteMenuItem.class, ((ReferenceScopeSubstituteMenuItem) it), "myReferent")) : null);
+
+                        return isApplicable;
+                      }
+                    }).select(new ISelector<SubstituteMenuItem, SubstituteMenuItem>() {
+                      public SubstituteMenuItem select(SubstituteMenuItem it) {
+                        final SNode smartReferent = ((it instanceof ReferenceScopeSubstituteMenuItem) ? ((SNode) ReflectionUtil_copy.readField(ReferenceScopeSubstituteMenuItem.class, ((ReferenceScopeSubstituteMenuItem) it), "myReferent")) : null);
+
+                        SubstituteMenuItem wrapper = new SubstituteMenuItemWrapper(it) {
+                          private SNode wrappedNode;
+                          @Override
+                          public SNode createNode(@NotNull String pattern) {
+                            SNode nodeToWrap = super.createNode(pattern);
+                            wrappedNode = nodeToWrap;
+                            // use setupNode after setting wrapped element to allow access to the wrapped element in node factories
+                            SNode wrapper = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(outputConcept));
+                            SLinkOperations.setTarget(wrapper, LINKS.left$t7TI, SNodeOperations.cast(nodeToWrap, CONCEPTS.ConstraintExp$S1));
+                            NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
+
+                            return wrapper;
+                          }
+                          @Override
+                          public SAbstractConcept getOutputConcept() {
+                            return outputConcept;
+                          }
+
+                          @Override
+                          public void select(@NotNull SNode createdNode, @NotNull String pattern) {
+                            GrammarCellsSubstituteMenuItem.select(_context.getEditorContext().getEditorComponent(), createdNode);
+                          }
+                        };
+                        return wrapper;
+                      }
+                    }).toListSequence();
+
+                    ListSequence.fromList(result).addSequence(ListSequence.fromList(wrappedActions));
+                  }
+
+                }
+              }
+            }
+          } finally {
+            _context.getEditorMenuTrace().popTraceInfo();
+          }
+          return ListSequence.fromList(result).where(new IWhereFilter<SubstituteMenuItem>() {
+            public boolean accept(SubstituteMenuItem it) {
+              return it != null;
+            }
+          }).toListSequence();
+        }
+      }.query()));
+      ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+        public Iterable<SubstituteMenuItem> query() {
+          List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
+          _context.getEditorMenuTrace().pushTraceInfo();
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "ArithmeticExp", new SNodePointer("r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)", "5565897349650068123")));
+          try {
+            if (SConceptOperations.isExactly(SNodeOperations.asSConcept(expectedOutputConceptExactly), CONCEPTS.ArithmeticExp$jn)) {
+              final SAbstractConcept wrappedConcept = CONCEPTS.ConstraintExp$S1;
+              for (SConcept subconcept : ListSequence.fromList(GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.ArithmeticExp$jn, _context.getModel(), ArithmeticExp_Editor.class, _context.getEditorContext()))) {
+                final SConcept outputConcept = ((SConcept) subconcept);
+
+                final SAbstractConcept expectedOutputConcept = GrammarCellsUtil.getExpectedOutputConcept(_context, expectedOutputConceptExactly);
+
+                boolean wrapRequired = !(SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(wrappedConcept), SNodeOperations.asSConcept(expectedOutputConcept)));
+                if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept)) && wrapRequired) {
+
+                  boolean isApplicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                  if (isApplicable) {
+                    List<SubstituteMenuItem> actions = _context.withLink(LINKS.right$tdj5).createItems(new DefaultSubstituteMenuLookup(LanguageRegistry.getInstance(_context.getEditorContext().getRepository()), wrappedConcept));
+                    List<SubstituteMenuItem> wrappedActions = ListSequence.fromList(actions).where(new IWhereFilter<SubstituteMenuItem>() {
+                      public boolean accept(SubstituteMenuItem it) {
+                        boolean isApplicable = true;
+                        final SAbstractConcept wrappedConcept = it.getOutputConcept();
+                        if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(wrappedConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
+                          return false;
+                        }
+                        final EditorContext editorContext = _context.getEditorContext();
+                        final SNode smartReferent = ((it instanceof ReferenceScopeSubstituteMenuItem) ? ((SNode) ReflectionUtil_copy.readField(ReferenceScopeSubstituteMenuItem.class, ((ReferenceScopeSubstituteMenuItem) it), "myReferent")) : null);
+
+                        return isApplicable;
+                      }
+                    }).select(new ISelector<SubstituteMenuItem, SubstituteMenuItem>() {
+                      public SubstituteMenuItem select(SubstituteMenuItem it) {
+                        final SNode smartReferent = ((it instanceof ReferenceScopeSubstituteMenuItem) ? ((SNode) ReflectionUtil_copy.readField(ReferenceScopeSubstituteMenuItem.class, ((ReferenceScopeSubstituteMenuItem) it), "myReferent")) : null);
+
+                        SubstituteMenuItem wrapper = new SubstituteMenuItemWrapper(it) {
+                          private SNode wrappedNode;
+                          @Override
+                          public SNode createNode(@NotNull String pattern) {
+                            SNode nodeToWrap = super.createNode(pattern);
+                            wrappedNode = nodeToWrap;
+                            // use setupNode after setting wrapped element to allow access to the wrapped element in node factories
+                            SNode wrapper = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(outputConcept));
+                            SLinkOperations.setTarget(wrapper, LINKS.right$tdj5, SNodeOperations.cast(nodeToWrap, CONCEPTS.ConstraintExp$S1));
+                            NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
+
+                            return wrapper;
+                          }
+                          @Override
+                          public SAbstractConcept getOutputConcept() {
+                            return outputConcept;
+                          }
+
+                          @Override
+                          public void select(@NotNull SNode createdNode, @NotNull String pattern) {
+                            GrammarCellsSubstituteMenuItem.select(_context.getEditorContext().getEditorComponent(), createdNode);
+                          }
+                        };
+                        return wrapper;
+                      }
+                    }).toListSequence();
+
+                    ListSequence.fromList(result).addSequence(ListSequence.fromList(wrappedActions));
+                  }
+
+                }
+              }
+            }
+          } finally {
+            _context.getEditorMenuTrace().popTraceInfo();
+          }
+          return ListSequence.fromList(result).where(new IWhereFilter<SubstituteMenuItem>() {
+            public boolean accept(SubstituteMenuItem it) {
+              return it != null;
+            }
+          }).toListSequence();
+        }
+      }.query()));
+      ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+        public Iterable<SubstituteMenuItem> query() {
+          List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
+          _context.getEditorMenuTrace().pushTraceInfo();
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "StringValue", new SNodePointer("r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)", "7282692057443931770")));
+          try {
+          } finally {
+            _context.getEditorMenuTrace().popTraceInfo();
+          }
+          return ListSequence.fromList(result).where(new IWhereFilter<SubstituteMenuItem>() {
+            public boolean accept(SubstituteMenuItem it) {
+              return it != null;
+            }
+          }).toListSequence();
+        }
+      }.query()));
+      ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+        public Iterable<SubstituteMenuItem> query() {
+          List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
+
+          {
+            final SConcept outputConcept = CONCEPTS.Predicate$3s;
+
+            if (SConceptOperations.isExactly(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConceptExactly))) {
+              final SNode parentNode = _context.getParentNode();
+              final SNode substitutedNode = _context.getCurrentTargetNode();
+              for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(outputConcept, _context.getModel(), Predicate_Editor.class, _context.getEditorContext())) {
+                boolean applicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                if (applicable) {
+                  ListSequence.fromList(result).addElement(new FlagSubstituteMenuItem(parentNode, _context.getCurrentTargetNode(), subconcept, "!", _context, new DefaultFlagModelAccess(PROPS.negate$SamM)));
+                }
+              }
+            }
+          }
+
+          return result;
+        }
+      }.query()));
+      ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+        public Iterable<SubstituteMenuItem> query() {
+          List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
+          _context.getEditorMenuTrace().pushTraceInfo();
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "Predicate", new SNodePointer("r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)", "7282692057440228948")));
+          try {
+            if (SConceptOperations.isExactly(SNodeOperations.asSConcept(expectedOutputConceptExactly), CONCEPTS.Predicate$3s)) {
+              final SAbstractConcept expectedOutputConcept = GrammarCellsUtil.getExpectedOutputConcept(_context, expectedOutputConceptExactly);
+
+              for (SConcept subconcept : ListSequence.fromList(GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.Predicate$3s, _context.getModel(), Predicate_Editor.class, _context.getEditorContext()))) {
+                final SConcept outputConcept = ((SConcept) subconcept);
+
+                if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
+                  boolean isApplicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                  if (isApplicable) {
+                    ListSequence.fromList(result).addElement(new GrammarCellsSubstituteMenuItem(_context) {
+                      private SProperty myProperty = PROPS.label$VeXS;
+
+                      public String getMatchingText(String pattern) {
+                        return pattern;
+                      }
+                      @Override
+                      public boolean canExecute(@NotNull String pattern) {
+                        if ((pattern == null || pattern.length() == 0)) {
+                          return false;
+                        }
+                        return GrammarCellsUtil.isValidPropertyValue(myProperty, expectedOutputConceptExactly, pattern);
+                      }
+                      @Override
+                      public boolean canExecuteStrictly(@NotNull String pattern) {
+                        return canExecute(pattern);
+                      }
+
+                      @Override
+                      public SNode createNode(@NotNull String pattern) {
+                        SNode newNode = SNodeFactoryOperations.createNewNode(expectedOutputConceptExactly, null);
+                        SPropertyOperations.assign(newNode, PROPS.label$VeXS, GrammarCellsUtil.toInternalPropertyValue(myProperty, pattern));
+
+                        return newNode;
+                      }
+
+
+                      @Override
+                      public void select(@NotNull SNode newNode, @NotNull String pattern) {
+                        super.select(newNode, pattern);
+                      }
+
+                      @Override
+                      public SAbstractConcept getOutputConcept() {
+                        return CONCEPTS.Predicate$3s;
+                      }
+                    });
+                  }
+                }
+
+              }
+            }
+          } finally {
+            _context.getEditorMenuTrace().popTraceInfo();
+          }
+          return ListSequence.fromList(result).where(new IWhereFilter<SubstituteMenuItem>() {
+            public boolean accept(SubstituteMenuItem it) {
+              return it != null;
+            }
+          }).toListSequence();
+        }
+      }.query()));
     } finally {
       _context.getEditorMenuTrace().popTraceInfo();
     }
@@ -1001,66 +1419,6 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                   return it != null;
                 }
               }).toListSequence();
-            }
-          }.query(_context)));
-        }
-      }
-      {
-        boolean sideEnabled = false;
-        sideEnabled |= _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM;
-        sideEnabled |= _context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM;
-        if (sideEnabled) {
-          ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
-            public Iterable<TransformationMenuItem> query(final TransformationMenuContext _context) {
-              _context.getEditorMenuTrace().pushTraceInfo();
-              _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.brackets in " + "Type", new SNodePointer("r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)", "4235889247685320230")));
-              try {
-                List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
-                {
-                  final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.QualifiedName$VN, null);
-                  if (sourceNode != null) {
-                    ListSequence.fromList(result).addElement(new GrammarCellsSideTransformTransformationMenuItem(_context) {
-                      public String getDescriptionText(String string) {
-                        return "Type";
-                      }
-                      public String getMatchingText(String pattern) {
-                        return (_context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM ? "<" : ">");
-                      }
-                      @Override
-                      public void execute(@NotNull String pattern) {
-                        doSubstitute(_context.getEditorContext(), pattern);
-                      }
-                      protected SNode doSubstitute(@Nullable EditorContext editorContext, String pattern) {
-                        SNode annotation = SNodeFactoryOperations.addNewAttribute(sourceNode, new IAttributeDescriptor.NodeAttribute(CONCEPTS.ArbitraryTextAnnotation$hv), CONCEPTS.ArbitraryTextAnnotation$hv);
-                        SPropertyOperations.assign(annotation, PROPS.text$Fl1W, getMatchingText(pattern));
-                        SPropertyOperations.assign(annotation, PROPS.left$Cu1K, _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM);
-                        SelectionUtil.selectLabelCellAnSetCaret(editorContext, annotation, "*" + CellIdManager.createPropertyId("text"), -1);
-
-                        SavedCaretPosition caretPosition = new SavedCaretPosition(editorContext);
-                        caretPosition.save();
-                        Parser parser = new Parser(SNodeOperations.getModel(sourceNode));
-                        SNode newTree = parser.processAfterTextInsert(parser.findRootExpression(sourceNode));
-                        if (newTree != null) {
-                          editorContext.flushEvents();
-                          caretPosition.restore();
-                        }
-
-                        return null;
-                      }
-                      public SAbstractConcept getOutputConcept() {
-                        return CONCEPTS.Type$9F;
-                      }
-                    });
-                  }
-                }
-                return ListSequence.fromList(result).where(new IWhereFilter<TransformationMenuItem>() {
-                  public boolean accept(TransformationMenuItem it) {
-                    return it != null;
-                  }
-                }).toListSequence();
-              } finally {
-                _context.getEditorMenuTrace().popTraceInfo();
-              }
             }
           }.query(_context)));
         }
@@ -1890,6 +2248,453 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
         }
       }
       {
+        boolean sideEnabled = false;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM;
+        if (sideEnabled) {
+          ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+            public Iterable<TransformationMenuItem> query(final TransformationMenuContext _context) {
+              List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
+              _context.getEditorMenuTrace().pushTraceInfo();
+              _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "RelationalExp", new SNodePointer("r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)", "5565897349649915904")));
+              try {
+                if (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) {
+                  final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.ConstraintExp$S1, null);
+
+                  if (sourceNode != null) {
+                    final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
+                    SContainmentLink link = sourceNode.getContainmentLink();
+                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.RelationalExp$G5, _context.getModel(), RelationalExp_Editor.class, _context.getEditorContext())) {
+                      boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
+                      if (wrapperAllowed) {
+                        final Iterable<String> matchingText = Sequence.fromIterable(Sequence.<String>singleton(new Object() {
+                          public String query(SAbstractConcept subconcept) {
+                            return SConceptOperations.conceptAlias(subconcept);
+                          }
+                        }.query(subconcept))).where(new IWhereFilter<String>() {
+                          public boolean accept(String it) {
+                            return (it != null && it.length() > 0);
+                          }
+                        });
+                        if (Sequence.fromIterable(matchingText).isNotEmpty()) {
+                          boolean sideTransformationEnabled = ConstraintsCanBeFacade.checkCanBeParent(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
+                          sideTransformationEnabled &= GrammarCellsUtil.canBeAncestor(SNodeOperations.getParent(sourceNode), subconcept, sourceNode.getContainmentLink());
+                          sideTransformationEnabled &= ConstraintsCanBeFacade.checkCanBeChild(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
+                          if (sideTransformationEnabled) {
+                            ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
+
+                              public String getDescriptionText(String string) {
+                                return NodePresentationUtil.descriptionText(subconcept);
+                              }
+                              @Override
+                              public void execute(@NotNull String pattern) {
+                                doSubstitute(_context.getEditorContext(), pattern);
+                              }
+                              protected SNode doSubstitute(@Nullable EditorContext editorContext, String pattern) {
+                                String matchingText = getMatchingText(pattern);
+                                SNode wrapper = SNodeOperations.cast(SNodeFactoryOperations.createNewNode(subconcept, null), CONCEPTS.RelationalExp$G5);
+                                SNodeOperations.replaceWithAnother(sourceNode, wrapper);
+                                SLinkOperations.setTarget(wrapper, LINKS.left$Mkho, SNodeOperations.cast(sourceNode, CONCEPTS.ConstraintExp$S1));
+
+
+                                SNode newChild = ListSequence.fromList(SNodeOperations.getChildren(wrapper)).findFirst(new IWhereFilter<SNode>() {
+                                  public boolean accept(SNode it) {
+                                    return it != sourceNode;
+                                  }
+                                });
+                                editorContext.flushEvents();
+                                if (newChild == null) {
+                                  GrammarCellsUtil.selectCellWithText(editorContext, wrapper, matchingText);
+                                } else {
+                                  SelectionUtil.selectNode(editorContext, newChild);
+                                }
+
+                                SavedCaretPosition caretPosition = new SavedCaretPosition(editorContext);
+                                caretPosition.save();
+                                Parser parser = new Parser(editorContext.getModel());
+                                SNode rebalanced = parser.rebalanceIfRequired(parser.findRootExpression(wrapper));
+                                if (rebalanced != null) {
+                                  editorContext.flushEvents();
+                                  caretPosition.restore();
+                                }
+                                return newChild;
+                              }
+                              public SAbstractConcept getOutputConcept() {
+                                return subconcept;
+                              }
+                            }.getMultipleOrSingleAction(false)));
+                            addSideTransformRemoval(_context);
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              } finally {
+                _context.getEditorMenuTrace().popTraceInfo();
+              }
+              return ListSequence.fromList(result).where(new IWhereFilter<TransformationMenuItem>() {
+                public boolean accept(TransformationMenuItem it) {
+                  return it != null;
+                }
+              }).toListSequence();
+            }
+          }.query(_context)));
+        }
+      }
+      {
+        boolean sideEnabled = false;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM;
+        if (sideEnabled) {
+          ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+            public Iterable<TransformationMenuItem> query(final TransformationMenuContext _context) {
+              List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
+              _context.getEditorMenuTrace().pushTraceInfo();
+              _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "RelationalExp", new SNodePointer("r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)", "5565897349649916252")));
+              try {
+                if (_context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM) {
+                  final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.ConstraintExp$S1, null);
+
+                  if (sourceNode != null) {
+                    final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
+                    SContainmentLink link = sourceNode.getContainmentLink();
+                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.RelationalExp$G5, _context.getModel(), RelationalExp_Editor.class, _context.getEditorContext())) {
+                      boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
+                      if (wrapperAllowed) {
+                        final Iterable<String> matchingText = Sequence.fromIterable(Sequence.<String>singleton(new Object() {
+                          public String query(SAbstractConcept subconcept) {
+                            return SConceptOperations.conceptAlias(subconcept);
+                          }
+                        }.query(subconcept))).where(new IWhereFilter<String>() {
+                          public boolean accept(String it) {
+                            return (it != null && it.length() > 0);
+                          }
+                        });
+                        if (Sequence.fromIterable(matchingText).isNotEmpty()) {
+                          boolean sideTransformationEnabled = ConstraintsCanBeFacade.checkCanBeParent(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
+                          sideTransformationEnabled &= GrammarCellsUtil.canBeAncestor(SNodeOperations.getParent(sourceNode), subconcept, sourceNode.getContainmentLink());
+                          sideTransformationEnabled &= ConstraintsCanBeFacade.checkCanBeChild(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
+                          if (sideTransformationEnabled) {
+                            ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
+
+                              public String getDescriptionText(String string) {
+                                return NodePresentationUtil.descriptionText(subconcept);
+                              }
+                              @Override
+                              public void execute(@NotNull String pattern) {
+                                doSubstitute(_context.getEditorContext(), pattern);
+                              }
+                              protected SNode doSubstitute(@Nullable EditorContext editorContext, String pattern) {
+                                String matchingText = getMatchingText(pattern);
+                                SNode wrapper = SNodeOperations.cast(SNodeFactoryOperations.createNewNode(subconcept, null), CONCEPTS.RelationalExp$G5);
+                                SNodeOperations.replaceWithAnother(sourceNode, wrapper);
+                                SLinkOperations.setTarget(wrapper, LINKS.right$MkJq, SNodeOperations.cast(sourceNode, CONCEPTS.ConstraintExp$S1));
+
+
+                                SNode newChild = ListSequence.fromList(SNodeOperations.getChildren(wrapper)).findFirst(new IWhereFilter<SNode>() {
+                                  public boolean accept(SNode it) {
+                                    return it != sourceNode;
+                                  }
+                                });
+                                editorContext.flushEvents();
+                                if (newChild == null) {
+                                  GrammarCellsUtil.selectCellWithText(editorContext, wrapper, matchingText);
+                                } else {
+                                  SelectionUtil.selectNode(editorContext, newChild);
+                                }
+
+                                SavedCaretPosition caretPosition = new SavedCaretPosition(editorContext);
+                                caretPosition.save();
+                                Parser parser = new Parser(editorContext.getModel());
+                                SNode rebalanced = parser.rebalanceIfRequired(parser.findRootExpression(wrapper));
+                                if (rebalanced != null) {
+                                  editorContext.flushEvents();
+                                  caretPosition.restore();
+                                }
+                                return newChild;
+                              }
+                              public SAbstractConcept getOutputConcept() {
+                                return subconcept;
+                              }
+                            }.getMultipleOrSingleAction(false)));
+                            addSideTransformRemoval(_context);
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              } finally {
+                _context.getEditorMenuTrace().popTraceInfo();
+              }
+              return ListSequence.fromList(result).where(new IWhereFilter<TransformationMenuItem>() {
+                public boolean accept(TransformationMenuItem it) {
+                  return it != null;
+                }
+              }).toListSequence();
+            }
+          }.query(_context)));
+        }
+      }
+      {
+        boolean sideEnabled = false;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM;
+        if (sideEnabled) {
+          ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+            public Iterable<TransformationMenuItem> query(final TransformationMenuContext _context) {
+              List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
+              _context.getEditorMenuTrace().pushTraceInfo();
+              _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "ArithmeticExp", new SNodePointer("r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)", "5565897349650067752")));
+              try {
+                if (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) {
+                  final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.ConstraintExp$S1, null);
+
+                  if (sourceNode != null) {
+                    final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
+                    SContainmentLink link = sourceNode.getContainmentLink();
+                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.ArithmeticExp$jn, _context.getModel(), ArithmeticExp_Editor.class, _context.getEditorContext())) {
+                      boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
+                      if (wrapperAllowed) {
+                        final Iterable<String> matchingText = Sequence.fromIterable(Sequence.<String>singleton(new Object() {
+                          public String query(SAbstractConcept subconcept) {
+                            return SConceptOperations.conceptAlias(subconcept);
+                          }
+                        }.query(subconcept))).where(new IWhereFilter<String>() {
+                          public boolean accept(String it) {
+                            return (it != null && it.length() > 0);
+                          }
+                        });
+                        if (Sequence.fromIterable(matchingText).isNotEmpty()) {
+                          boolean sideTransformationEnabled = ConstraintsCanBeFacade.checkCanBeParent(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
+                          sideTransformationEnabled &= GrammarCellsUtil.canBeAncestor(SNodeOperations.getParent(sourceNode), subconcept, sourceNode.getContainmentLink());
+                          sideTransformationEnabled &= ConstraintsCanBeFacade.checkCanBeChild(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
+                          if (sideTransformationEnabled) {
+                            ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
+
+                              public String getDescriptionText(String string) {
+                                return NodePresentationUtil.descriptionText(subconcept);
+                              }
+                              @Override
+                              public void execute(@NotNull String pattern) {
+                                doSubstitute(_context.getEditorContext(), pattern);
+                              }
+                              protected SNode doSubstitute(@Nullable EditorContext editorContext, String pattern) {
+                                String matchingText = getMatchingText(pattern);
+                                SNode wrapper = SNodeOperations.cast(SNodeFactoryOperations.createNewNode(subconcept, null), CONCEPTS.ArithmeticExp$jn);
+                                SNodeOperations.replaceWithAnother(sourceNode, wrapper);
+                                SLinkOperations.setTarget(wrapper, LINKS.left$t7TI, SNodeOperations.cast(sourceNode, CONCEPTS.ConstraintExp$S1));
+
+
+                                SNode newChild = ListSequence.fromList(SNodeOperations.getChildren(wrapper)).findFirst(new IWhereFilter<SNode>() {
+                                  public boolean accept(SNode it) {
+                                    return it != sourceNode;
+                                  }
+                                });
+                                editorContext.flushEvents();
+                                if (newChild == null) {
+                                  GrammarCellsUtil.selectCellWithText(editorContext, wrapper, matchingText);
+                                } else {
+                                  SelectionUtil.selectNode(editorContext, newChild);
+                                }
+
+                                SavedCaretPosition caretPosition = new SavedCaretPosition(editorContext);
+                                caretPosition.save();
+                                Parser parser = new Parser(editorContext.getModel());
+                                SNode rebalanced = parser.rebalanceIfRequired(parser.findRootExpression(wrapper));
+                                if (rebalanced != null) {
+                                  editorContext.flushEvents();
+                                  caretPosition.restore();
+                                }
+                                return newChild;
+                              }
+                              public SAbstractConcept getOutputConcept() {
+                                return subconcept;
+                              }
+                            }.getMultipleOrSingleAction(false)));
+                            addSideTransformRemoval(_context);
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              } finally {
+                _context.getEditorMenuTrace().popTraceInfo();
+              }
+              return ListSequence.fromList(result).where(new IWhereFilter<TransformationMenuItem>() {
+                public boolean accept(TransformationMenuItem it) {
+                  return it != null;
+                }
+              }).toListSequence();
+            }
+          }.query(_context)));
+        }
+      }
+      {
+        boolean sideEnabled = false;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM;
+        if (sideEnabled) {
+          ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+            public Iterable<TransformationMenuItem> query(final TransformationMenuContext _context) {
+              List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
+              _context.getEditorMenuTrace().pushTraceInfo();
+              _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "ArithmeticExp", new SNodePointer("r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)", "5565897349650068123")));
+              try {
+                if (_context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM) {
+                  final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.ConstraintExp$S1, null);
+
+                  if (sourceNode != null) {
+                    final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
+                    SContainmentLink link = sourceNode.getContainmentLink();
+                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.ArithmeticExp$jn, _context.getModel(), ArithmeticExp_Editor.class, _context.getEditorContext())) {
+                      boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
+                      if (wrapperAllowed) {
+                        final Iterable<String> matchingText = Sequence.fromIterable(Sequence.<String>singleton(new Object() {
+                          public String query(SAbstractConcept subconcept) {
+                            return SConceptOperations.conceptAlias(subconcept);
+                          }
+                        }.query(subconcept))).where(new IWhereFilter<String>() {
+                          public boolean accept(String it) {
+                            return (it != null && it.length() > 0);
+                          }
+                        });
+                        if (Sequence.fromIterable(matchingText).isNotEmpty()) {
+                          boolean sideTransformationEnabled = ConstraintsCanBeFacade.checkCanBeParent(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
+                          sideTransformationEnabled &= GrammarCellsUtil.canBeAncestor(SNodeOperations.getParent(sourceNode), subconcept, sourceNode.getContainmentLink());
+                          sideTransformationEnabled &= ConstraintsCanBeFacade.checkCanBeChild(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
+                          if (sideTransformationEnabled) {
+                            ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
+
+                              public String getDescriptionText(String string) {
+                                return NodePresentationUtil.descriptionText(subconcept);
+                              }
+                              @Override
+                              public void execute(@NotNull String pattern) {
+                                doSubstitute(_context.getEditorContext(), pattern);
+                              }
+                              protected SNode doSubstitute(@Nullable EditorContext editorContext, String pattern) {
+                                String matchingText = getMatchingText(pattern);
+                                SNode wrapper = SNodeOperations.cast(SNodeFactoryOperations.createNewNode(subconcept, null), CONCEPTS.ArithmeticExp$jn);
+                                SNodeOperations.replaceWithAnother(sourceNode, wrapper);
+                                SLinkOperations.setTarget(wrapper, LINKS.right$tdj5, SNodeOperations.cast(sourceNode, CONCEPTS.ConstraintExp$S1));
+
+
+                                SNode newChild = ListSequence.fromList(SNodeOperations.getChildren(wrapper)).findFirst(new IWhereFilter<SNode>() {
+                                  public boolean accept(SNode it) {
+                                    return it != sourceNode;
+                                  }
+                                });
+                                editorContext.flushEvents();
+                                if (newChild == null) {
+                                  GrammarCellsUtil.selectCellWithText(editorContext, wrapper, matchingText);
+                                } else {
+                                  SelectionUtil.selectNode(editorContext, newChild);
+                                }
+
+                                SavedCaretPosition caretPosition = new SavedCaretPosition(editorContext);
+                                caretPosition.save();
+                                Parser parser = new Parser(editorContext.getModel());
+                                SNode rebalanced = parser.rebalanceIfRequired(parser.findRootExpression(wrapper));
+                                if (rebalanced != null) {
+                                  editorContext.flushEvents();
+                                  caretPosition.restore();
+                                }
+                                return newChild;
+                              }
+                              public SAbstractConcept getOutputConcept() {
+                                return subconcept;
+                              }
+                            }.getMultipleOrSingleAction(false)));
+                            addSideTransformRemoval(_context);
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              } finally {
+                _context.getEditorMenuTrace().popTraceInfo();
+              }
+              return ListSequence.fromList(result).where(new IWhereFilter<TransformationMenuItem>() {
+                public boolean accept(TransformationMenuItem it) {
+                  return it != null;
+                }
+              }).toListSequence();
+            }
+          }.query(_context)));
+        }
+      }
+      {
+        boolean sideEnabled = false;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM;
+        if (sideEnabled) {
+          ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+            public Iterable<TransformationMenuItem> query(final TransformationMenuContext _context) {
+              List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
+              _context.getEditorMenuTrace().pushTraceInfo();
+              _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "StringValue", new SNodePointer("r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)", "7282692057443931770")));
+              try {
+              } finally {
+                _context.getEditorMenuTrace().popTraceInfo();
+              }
+              return ListSequence.fromList(result).where(new IWhereFilter<TransformationMenuItem>() {
+                public boolean accept(TransformationMenuItem it) {
+                  return it != null;
+                }
+              }).toListSequence();
+            }
+          }.query(_context)));
+        }
+      }
+      {
+        boolean sideEnabled = false;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM;
+        if (sideEnabled) {
+          ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+            public Iterable<TransformationMenuItem> query(final TransformationMenuContext _context) {
+              List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
+              return ListSequence.fromList(result).where(new IWhereFilter<TransformationMenuItem>() {
+                public boolean accept(TransformationMenuItem it) {
+                  return it != null;
+                }
+              }).toListSequence();
+            }
+          }.query(_context)));
+        }
+      }
+      {
+        boolean sideEnabled = false;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM;
+        if (sideEnabled) {
+          ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+            public Iterable<TransformationMenuItem> query(final TransformationMenuContext _context) {
+              List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
+              _context.getEditorMenuTrace().pushTraceInfo();
+              _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "Predicate", new SNodePointer("r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)", "7282692057440228948")));
+              try {
+              } finally {
+                _context.getEditorMenuTrace().popTraceInfo();
+              }
+              return ListSequence.fromList(result).where(new IWhereFilter<TransformationMenuItem>() {
+                public boolean accept(TransformationMenuItem it) {
+                  return it != null;
+                }
+              }).toListSequence();
+            }
+          }.query(_context)));
+        }
+      }
+      {
         final EditorContext editorContext = _context.getEditorContext();
         List<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>> redirectedBefore = ListSequence.fromList(new ArrayList<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>>());
         ListSequence.fromList(redirectedBefore).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from((SNodeOperations.isInstanceOf(((SNode) _context.getNode()), CONCEPTS.Spec$$M) ? _context : null), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
@@ -1911,6 +2716,31 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
 
         List<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>> redirectedAfter = ListSequence.fromList(new ArrayList<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>>());
         ListSequence.fromList(redirectedAfter).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from((SNodeOperations.isInstanceOf(((SNode) _context.getNode()), CONCEPTS.Spec$$M) ? _context : null), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
+          public Boolean invoke(TransformationMenuContext parentContext) {
+            final SNode sourceNode = parentContext.getNode();
+            return true;
+          }
+        }));
+        ListSequence.fromList(redirectedAfter).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from(new Object() {
+          public TransformationMenuContext redirect() {
+            // redirect to type
+            final SNode sourceNode = _context.getNode();
+
+            // Use the grammar rules for a deep search
+            SNode parentNode = new Parser(_context.getModel()).isEndOf(sourceNode, _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.Spec$$M, LINKS.type$cfMZ);
+            if (parentNode != null) {
+              return _context.withNode(parentNode);
+            }
+
+            // There might be no grammar for some concepts. Try a single level check.
+            if (SNodeOperations.isInstanceOf(sourceNode, CONCEPTS.Type$9F) && SNodeOperations.isInstanceOf(SNodeOperations.getParent(sourceNode), CONCEPTS.Spec$$M) && Objects.equals(sourceNode.getContainmentLink(), LINKS.type$cfMZ) && (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) == false) {
+              TransformationMenuContext parentContext = _context.withNode(_context.getNode().getParent());
+              return parentContext;
+            }
+
+            return null;
+          }
+        }.redirect(), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
           public Boolean invoke(TransformationMenuContext parentContext) {
             final SNode sourceNode = parentContext.getNode();
             return true;
@@ -2089,6 +2919,419 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
           }
         }.withRedirectedContext(redirectedBefore, redirectedAfter);
       }
+      {
+        final EditorContext editorContext = _context.getEditorContext();
+        List<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>> redirectedBefore = ListSequence.fromList(new ArrayList<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>>());
+        ListSequence.fromList(redirectedBefore).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from(new Object() {
+          public TransformationMenuContext redirect() {
+            // redirect to test
+            final SNode sourceNode = _context.getNode();
+
+            // Use the grammar rules for a deep search
+            SNode parentNode = new Parser(_context.getModel()).isEndOf(sourceNode, _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.Type$9F, LINKS.test$EyQY);
+            if (parentNode != null) {
+              return _context.withNode(parentNode);
+            }
+
+            // There might be no grammar for some concepts. Try a single level check.
+            if (SNodeOperations.isInstanceOf(sourceNode, CONCEPTS.IType$a9) && SNodeOperations.isInstanceOf(SNodeOperations.getParent(sourceNode), CONCEPTS.Type$9F) && Objects.equals(sourceNode.getContainmentLink(), LINKS.test$EyQY) && (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) == true) {
+              TransformationMenuContext parentContext = _context.withNode(_context.getNode().getParent());
+              return parentContext;
+            }
+
+            return null;
+          }
+        }.redirect(), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
+          public Boolean invoke(TransformationMenuContext parentContext) {
+            final SNode sourceNode = parentContext.getNode();
+            return true;
+          }
+        }));
+        ListSequence.fromList(redirectedBefore).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from((SNodeOperations.isInstanceOf(((SNode) _context.getNode()), CONCEPTS.Type$9F) ? _context : null), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
+          public Boolean invoke(TransformationMenuContext parentContext) {
+            final SNode sourceNode = parentContext.getNode();
+            return true;
+          }
+        }));
+
+        List<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>> redirectedAfter = ListSequence.fromList(new ArrayList<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>>());
+        ListSequence.fromList(redirectedAfter).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from((SNodeOperations.isInstanceOf(((SNode) _context.getNode()), CONCEPTS.Type$9F) ? _context : null), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
+          public Boolean invoke(TransformationMenuContext parentContext) {
+            final SNode sourceNode = parentContext.getNode();
+            return new Object() {
+              public boolean renderingCondition(SNode node) {
+                return Sequence.fromIterable(AttributeOperations.getChildNodesAndAttributes(node, LINKS.generic$Usrq)).isNotEmpty();
+              }
+            }.renderingCondition(sourceNode);
+          }
+        }));
+        ListSequence.fromList(redirectedAfter).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from(new Object() {
+          public TransformationMenuContext redirect() {
+            // redirect to generic
+            final SNode sourceNode = _context.getNode();
+
+            // Use the grammar rules for a deep search
+            SNode parentNode = new Parser(_context.getModel()).isEndOf(sourceNode, _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.Type$9F, LINKS.generic$Usrq);
+            if (parentNode != null) {
+              return _context.withNode(parentNode);
+            }
+
+            // There might be no grammar for some concepts. Try a single level check.
+            if (SNodeOperations.isInstanceOf(sourceNode, CONCEPTS.QualifiedName$VN) && SNodeOperations.isInstanceOf(SNodeOperations.getParent(sourceNode), CONCEPTS.Type$9F) && Objects.equals(sourceNode.getContainmentLink(), LINKS.generic$Usrq) && (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) == false) {
+              TransformationMenuContext parentContext = _context.withNode(_context.getNode().getParent());
+              return parentContext;
+            }
+
+            return null;
+          }
+        }.redirect(), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
+          public Boolean invoke(TransformationMenuContext parentContext) {
+            final SNode sourceNode = parentContext.getNode();
+            return new Object() {
+              public boolean renderingCondition(SNode node) {
+                return Sequence.fromIterable(AttributeOperations.getChildNodesAndAttributes(node, LINKS.generic$Usrq)).isNotEmpty();
+              }
+            }.renderingCondition(sourceNode);
+          }
+        }));
+        ListSequence.fromList(redirectedAfter).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from((SNodeOperations.isInstanceOf(((SNode) _context.getNode()), CONCEPTS.Type$9F) ? _context : null), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
+          public Boolean invoke(TransformationMenuContext parentContext) {
+            final SNode sourceNode = parentContext.getNode();
+            return new Object() {
+              public boolean renderingCondition(SNode node) {
+                return Sequence.fromIterable(AttributeOperations.getChildNodesAndAttributes(node, LINKS.generic$Usrq)).isNotEmpty();
+              }
+            }.renderingCondition(sourceNode);
+          }
+        }));
+        new Object() {
+          public void withRedirectedContext(final TransformationMenuContext _context) {
+            if (_context == null) {
+              return;
+            }
+            final SNode sourceNode = _context.getNode();
+            if (SNodeOperations.isInstanceOf(sourceNode, CONCEPTS.Type$9F)) {
+              final Iterable<String> matchingTexts = new StringOrSequenceQuery() {
+                public Object queryStringOrSequence() {
+                  return Sequence.<String>singleton("<");
+                }
+              }.query();
+              final boolean isApplicable = new Object() {
+                public boolean query() {
+                  return (SLinkOperations.getTarget(SNodeOperations.cast(_context.getNode(), CONCEPTS.Type$9F), LINKS.generic$Usrq) == null);
+                }
+              }.query();
+
+              if (isApplicable && Sequence.fromIterable(matchingTexts).isNotEmpty()) {
+                ListSequence.fromList(result).addElement(new MultiTextActionItem(matchingTexts, _context) {
+                  @Override
+                  public void execute(@NotNull String pattern) {
+                    doSubstitute(pattern);
+                  }
+                  public SNode doSubstitute(@NotNull String pattern) {
+                    final SNode sourceNode = _context.getNode();
+                    SNode result = SNodeFactoryOperations.setNewChild(SNodeOperations.cast(sourceNode, CONCEPTS.Type$9F), LINKS.generic$Usrq, null);
+                    return result;
+                  }
+                  @Override
+                  public SAbstractConcept getOutputConcept() {
+                    return CONCEPTS.Type$9F;
+                  }
+                });
+              }
+            }
+          }
+          public void withRedirectedContext(List<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>> beforeContexts, List<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>> afterContexts) {
+
+            List<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>> contexts = (_context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM ? afterContexts : beforeContexts);
+            contexts = ListSequence.fromList(contexts).where(new IWhereFilter<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>>() {
+              public boolean accept(Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>> it) {
+                return it != null;
+              }
+            }).toListSequence();
+
+            for (int validIndex = 0; validIndex < ListSequence.fromList(contexts).count(); validIndex++) {
+              TransformationMenuContext redirectedContext = ListSequence.fromList(contexts).getElement(validIndex)._0();
+              if (redirectedContext == null) {
+                continue;
+              }
+
+              boolean anyBeforeVisible = false;
+              for (int i = 0; i < validIndex; i++) {
+                anyBeforeVisible = anyBeforeVisible || ListSequence.fromList(contexts).getElement(i)._1().invoke(redirectedContext);
+              }
+              if (anyBeforeVisible) {
+                continue;
+              }
+
+              if (!(EditorHierachyCache.getInstance().isActiveEditor(Type_Editor.class, redirectedContext.getNode().getConcept(), GrammarCellsUtil.getSelectionHints(_context.getEditorContext())))) {
+                continue;
+              }
+
+              withRedirectedContext(redirectedContext);
+              break;
+            }
+          }
+        }.withRedirectedContext(redirectedBefore, redirectedAfter);
+      }
+      {
+        final EditorContext editorContext = _context.getEditorContext();
+        List<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>> redirectedBefore = ListSequence.fromList(new ArrayList<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>>());
+        ListSequence.fromList(redirectedBefore).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from((SNodeOperations.isInstanceOf(((SNode) _context.getNode()), CONCEPTS.Predicate$3s) ? _context : null), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
+          public Boolean invoke(TransformationMenuContext parentContext) {
+            final SNode sourceNode = parentContext.getNode();
+            return new Object() {
+              public boolean renderingCondition(SNode node) {
+                IFlagModelAccess access = new DefaultFlagModelAccess(PROPS.negate$SamM);
+                if (!(access.read(node))) {
+                  return false;
+                }
+
+
+                return true;
+              }
+            }.renderingCondition(sourceNode);
+          }
+        }));
+
+        List<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>> redirectedAfter = ListSequence.fromList(new ArrayList<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>>());
+        ListSequence.fromList(redirectedAfter).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from((SNodeOperations.isInstanceOf(((SNode) _context.getNode()), CONCEPTS.Predicate$3s) ? _context : null), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
+          public Boolean invoke(TransformationMenuContext parentContext) {
+            final SNode sourceNode = parentContext.getNode();
+            return true;
+          }
+        }));
+        ListSequence.fromList(redirectedAfter).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from((SNodeOperations.isInstanceOf(((SNode) _context.getNode()), CONCEPTS.Predicate$3s) ? _context : null), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
+          public Boolean invoke(TransformationMenuContext parentContext) {
+            final SNode sourceNode = parentContext.getNode();
+            return true;
+          }
+        }));
+        ListSequence.fromList(redirectedAfter).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from(new Object() {
+          public TransformationMenuContext redirect() {
+            // redirect to exp
+            final SNode listElement = GrammarCellsUtil.getListElementForSideTransformation(_context.getNode(), LINKS.exp$V7to, CONCEPTS.Predicate$3s, CONCEPTS.BasicExp$2E, _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM);
+            if (listElement != null && (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) == false) {
+              List<SNode> allChildren = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(listElement), CONCEPTS.Predicate$3s), LINKS.exp$V7to);
+              SNode allowedChild = null;
+              allowedChild = ListSequence.fromList(allChildren).first();
+              if (listElement == allowedChild) {
+                TransformationMenuContext parentContext = _context.withNode(SNodeOperations.getParent(listElement));
+                return parentContext;
+              }
+            }
+
+            return null;
+          }
+        }.redirect(), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
+          public Boolean invoke(TransformationMenuContext parentContext) {
+            final SNode sourceNode = parentContext.getNode();
+            return true;
+          }
+        }));
+        ListSequence.fromList(redirectedAfter).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from((SNodeOperations.isInstanceOf(((SNode) _context.getNode()), CONCEPTS.Predicate$3s) ? _context : null), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
+          public Boolean invoke(TransformationMenuContext parentContext) {
+            final SNode sourceNode = parentContext.getNode();
+            return true;
+          }
+        }));
+        new Object() {
+          public void withRedirectedContext(final TransformationMenuContext _context) {
+            if (_context == null) {
+              return;
+            }
+            final SNode sourceNode = _context.getNode();
+            if (SNodeOperations.isInstanceOf(sourceNode, CONCEPTS.Predicate$3s)) {
+              final Iterable<String> matchingTexts = new StringOrSequenceQuery() {
+                public Object queryStringOrSequence() {
+                  return "!";
+                }
+              }.query();
+              final boolean isApplicable = new Object() {
+                public boolean query() {
+                  final SNode node = _context.getNode();
+                  IFlagModelAccess access = new DefaultFlagModelAccess(PROPS.negate$SamM);
+                  boolean applicable = !(access.read(node));
+                  applicable &= !(GrammarCellsUtil.isProperty(_context.getEditorContext().getSelectedCell())) || _context.getMenuLocation() != MenuLocations.RIGHT_SIDE_TRANSFORM;
+                  return applicable;
+                }
+              }.query();
+
+              if (isApplicable && Sequence.fromIterable(matchingTexts).isNotEmpty()) {
+                ListSequence.fromList(result).addElement(new MultiTextActionItem(matchingTexts, _context) {
+                  @Override
+                  public void execute(@NotNull String pattern) {
+                    doSubstitute(pattern);
+                  }
+                  public SNode doSubstitute(@NotNull String pattern) {
+                    SNode node = SNodeOperations.cast(_context.getNode(), CONCEPTS.Predicate$3s);
+                    IFlagModelAccess access = new DefaultFlagModelAccess(PROPS.negate$SamM);
+                    access.write(node, true);
+                    SelectionUtil.selectLabelCellAnSetCaret(editorContext, node, "flag_negate", -1);
+                    return null;
+                  }
+                  @Override
+                  public SAbstractConcept getOutputConcept() {
+                    return CONCEPTS.Predicate$3s;
+                  }
+                });
+              }
+            }
+          }
+          public void withRedirectedContext(List<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>> beforeContexts, List<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>> afterContexts) {
+
+            List<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>> contexts = (_context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM ? afterContexts : beforeContexts);
+            contexts = ListSequence.fromList(contexts).where(new IWhereFilter<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>>() {
+              public boolean accept(Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>> it) {
+                return it != null;
+              }
+            }).toListSequence();
+
+            for (int validIndex = 0; validIndex < ListSequence.fromList(contexts).count(); validIndex++) {
+              TransformationMenuContext redirectedContext = ListSequence.fromList(contexts).getElement(validIndex)._0();
+              if (redirectedContext == null) {
+                continue;
+              }
+
+              boolean anyBeforeVisible = false;
+              for (int i = 0; i < validIndex; i++) {
+                anyBeforeVisible = anyBeforeVisible || ListSequence.fromList(contexts).getElement(i)._1().invoke(redirectedContext);
+              }
+              if (anyBeforeVisible) {
+                continue;
+              }
+
+              if (!(EditorHierachyCache.getInstance().isActiveEditor(Predicate_Editor.class, redirectedContext.getNode().getConcept(), GrammarCellsUtil.getSelectionHints(_context.getEditorContext())))) {
+                continue;
+              }
+
+              withRedirectedContext(redirectedContext);
+              break;
+            }
+          }
+        }.withRedirectedContext(redirectedBefore, redirectedAfter);
+      }
+      {
+        final EditorContext editorContext = _context.getEditorContext();
+        List<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>> redirectedBefore = ListSequence.fromList(new ArrayList<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>>());
+        ListSequence.fromList(redirectedBefore).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from(new Object() {
+          public TransformationMenuContext redirect() {
+            // redirect to method
+            final SNode sourceNode = _context.getNode();
+
+            // Use the grammar rules for a deep search
+            SNode parentNode = new Parser(_context.getModel()).isEndOf(sourceNode, _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.ForbiddenMethod$e9, LINKS.method$lJHi);
+            if (parentNode != null) {
+              return _context.withNode(parentNode);
+            }
+
+            // There might be no grammar for some concepts. Try a single level check.
+            if (SNodeOperations.isInstanceOf(sourceNode, CONCEPTS.MethodDef$Hb) && SNodeOperations.isInstanceOf(SNodeOperations.getParent(sourceNode), CONCEPTS.ForbiddenMethod$e9) && Objects.equals(sourceNode.getContainmentLink(), LINKS.method$lJHi) && (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) == true) {
+              TransformationMenuContext parentContext = _context.withNode(_context.getNode().getParent());
+              return parentContext;
+            }
+
+            return null;
+          }
+        }.redirect(), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
+          public Boolean invoke(TransformationMenuContext parentContext) {
+            final SNode sourceNode = parentContext.getNode();
+            return true;
+          }
+        }));
+
+        List<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>> redirectedAfter = ListSequence.fromList(new ArrayList<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>>());
+        ListSequence.fromList(redirectedAfter).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from((SNodeOperations.isInstanceOf(((SNode) _context.getNode()), CONCEPTS.ForbiddenMethod$e9) ? _context : null), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
+          public Boolean invoke(TransformationMenuContext parentContext) {
+            final SNode sourceNode = parentContext.getNode();
+            return new Object() {
+              public boolean renderingCondition(SNode node) {
+                return node.getProperty(PROPS.alternative$lL7o) != null;
+              }
+            }.renderingCondition(sourceNode);
+          }
+        }));
+        ListSequence.fromList(redirectedAfter).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from((SNodeOperations.isInstanceOf(((SNode) _context.getNode()), CONCEPTS.ForbiddenMethod$e9) ? _context : null), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
+          public Boolean invoke(TransformationMenuContext parentContext) {
+            final SNode sourceNode = parentContext.getNode();
+            return new Object() {
+              public boolean renderingCondition(SNode node) {
+                return node.getProperty(PROPS.alternative$lL7o) != null;
+              }
+            }.renderingCondition(sourceNode);
+          }
+        }));
+        new Object() {
+          public void withRedirectedContext(final TransformationMenuContext _context) {
+            if (_context == null) {
+              return;
+            }
+            final SNode sourceNode = _context.getNode();
+            if (SNodeOperations.isInstanceOf(sourceNode, CONCEPTS.ForbiddenMethod$e9)) {
+              final Iterable<String> matchingTexts = new StringOrSequenceQuery() {
+                public Object queryStringOrSequence() {
+                  return Sequence.<String>singleton("=>");
+                }
+              }.query();
+              final boolean isApplicable = new Object() {
+                public boolean query() {
+                  return _context.getNode().getProperty(PROPS.alternative$lL7o) == null;
+                }
+              }.query();
+
+              if (isApplicable && Sequence.fromIterable(matchingTexts).isNotEmpty()) {
+                ListSequence.fromList(result).addElement(new MultiTextActionItem(matchingTexts, _context) {
+                  @Override
+                  public void execute(@NotNull String pattern) {
+                    doSubstitute(pattern);
+                  }
+                  public SNode doSubstitute(@NotNull String pattern) {
+                    SProperty property = PROPS.alternative$lL7o;
+                    _context.getNode().setProperty(property, "");
+                    SelectionUtil.selectCell(editorContext, _context.getNode(), "*" + CellIdManager.createPropertyId(property.getName()));
+                    return _context.getNode();
+                  }
+                  @Override
+                  public SAbstractConcept getOutputConcept() {
+                    return CONCEPTS.ForbiddenMethod$e9;
+                  }
+                });
+              }
+            }
+          }
+          public void withRedirectedContext(List<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>> beforeContexts, List<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>> afterContexts) {
+
+            List<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>> contexts = (_context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM ? afterContexts : beforeContexts);
+            contexts = ListSequence.fromList(contexts).where(new IWhereFilter<Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>>() {
+              public boolean accept(Tuples._2<TransformationMenuContext, _FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>> it) {
+                return it != null;
+              }
+            }).toListSequence();
+
+            for (int validIndex = 0; validIndex < ListSequence.fromList(contexts).count(); validIndex++) {
+              TransformationMenuContext redirectedContext = ListSequence.fromList(contexts).getElement(validIndex)._0();
+              if (redirectedContext == null) {
+                continue;
+              }
+
+              boolean anyBeforeVisible = false;
+              for (int i = 0; i < validIndex; i++) {
+                anyBeforeVisible = anyBeforeVisible || ListSequence.fromList(contexts).getElement(i)._1().invoke(redirectedContext);
+              }
+              if (anyBeforeVisible) {
+                continue;
+              }
+
+              if (!(EditorHierachyCache.getInstance().isActiveEditor(ForbiddenMethod_Editor.class, redirectedContext.getNode().getConcept(), GrammarCellsUtil.getSelectionHints(_context.getEditorContext())))) {
+                continue;
+              }
+
+              withRedirectedContext(redirectedContext);
+              break;
+            }
+          }
+        }.withRedirectedContext(redirectedBefore, redirectedAfter);
+      }
     } finally {
       _context.getEditorMenuTrace().popTraceInfo();
     }
@@ -2124,7 +3367,8 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
         ListSequence.fromList(rules).addElement(new AbstractRule() {
           private List<ISymbol> symbols = ListSequence.fromList(new ArrayList<ISymbol>());
           {
-            ListSequence.fromList(symbols).addElement(new ChildSymbol(LINKS.name$xPdN));
+            ListSequence.fromList(symbols).addElement(new PropertySymbol(CONCEPTS.Type$9F, PROPS.name1$DoJb));
+            ListSequence.fromList(symbols).addElement(new ChildSymbol(LINKS.test$EyQY));
             ListSequence.fromList(symbols).addElement(new ConstantSymbol("<"));
             ListSequence.fromList(symbols).addElement(new ChildSymbol(LINKS.generic$Usrq));
             ListSequence.fromList(symbols).addElement(new ConstantSymbol(">"));
@@ -2346,6 +3590,116 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
         });
       }
     }
+    {
+      final List<SConcept> subconcepts = GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.RelationalExp$G5, visibleLanguages);
+      for (final SAbstractConcept subconcept : subconcepts) {
+        ListSequence.fromList(rules).addElement(new AbstractRule() {
+          private List<ISymbol> symbols = ListSequence.fromList(new ArrayList<ISymbol>());
+          {
+            ListSequence.fromList(symbols).addElement(new ChildSymbol(LINKS.left$Mkho));
+            ListSequence.fromList(symbols).addElement(new ConstantSymbol(new Object() {
+              public String query(SAbstractConcept subconcept) {
+                return SConceptOperations.conceptAlias(subconcept);
+              }
+            }.query(subconcept)));
+            ListSequence.fromList(symbols).addElement(new ChildSymbol(LINKS.right$MkJq));
+            symbols = ListSequence.fromList(symbols).where(new IWhereFilter<ISymbol>() {
+              public boolean accept(ISymbol it) {
+                return it != null;
+              }
+            }).toListSequence();
+          }
+          @Override
+          public List<ISymbol> getSymbols() {
+            return symbols;
+          }
+          @Override
+          public SAbstractConcept getOutputConcept() {
+            return subconcept;
+          }
+          @Override
+          public SAbstractConcept getDefinedForConcept() {
+            return CONCEPTS.RelationalExp$G5;
+          }
+          @Override
+          public String toString() {
+            return subconcept.getName();
+          }
+        });
+      }
+    }
+    {
+      final List<SConcept> subconcepts = GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.ArithmeticExp$jn, visibleLanguages);
+      for (final SAbstractConcept subconcept : subconcepts) {
+        ListSequence.fromList(rules).addElement(new AbstractRule() {
+          private List<ISymbol> symbols = ListSequence.fromList(new ArrayList<ISymbol>());
+          {
+            ListSequence.fromList(symbols).addElement(new ChildSymbol(LINKS.left$t7TI));
+            ListSequence.fromList(symbols).addElement(new ConstantSymbol(new Object() {
+              public String query(SAbstractConcept subconcept) {
+                return SConceptOperations.conceptAlias(subconcept);
+              }
+            }.query(subconcept)));
+            ListSequence.fromList(symbols).addElement(new ChildSymbol(LINKS.right$tdj5));
+            symbols = ListSequence.fromList(symbols).where(new IWhereFilter<ISymbol>() {
+              public boolean accept(ISymbol it) {
+                return it != null;
+              }
+            }).toListSequence();
+          }
+          @Override
+          public List<ISymbol> getSymbols() {
+            return symbols;
+          }
+          @Override
+          public SAbstractConcept getOutputConcept() {
+            return subconcept;
+          }
+          @Override
+          public SAbstractConcept getDefinedForConcept() {
+            return CONCEPTS.ArithmeticExp$jn;
+          }
+          @Override
+          public String toString() {
+            return subconcept.getName();
+          }
+        });
+      }
+    }
+    {
+      final List<SConcept> subconcepts = GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.StringValue$6s, visibleLanguages);
+      for (final SAbstractConcept subconcept : subconcepts) {
+        ListSequence.fromList(rules).addElement(new AbstractRule() {
+          private List<ISymbol> symbols = ListSequence.fromList(new ArrayList<ISymbol>());
+          {
+            ListSequence.fromList(symbols).addElement(new ConstantSymbol("\""));
+            ListSequence.fromList(symbols).addElement(new PropertySymbol(CONCEPTS.StringValue$6s, PROPS.value$hckO));
+            ListSequence.fromList(symbols).addElement(new ConstantSymbol("\""));
+            symbols = ListSequence.fromList(symbols).where(new IWhereFilter<ISymbol>() {
+              public boolean accept(ISymbol it) {
+                return it != null;
+              }
+            }).toListSequence();
+          }
+          @Override
+          public List<ISymbol> getSymbols() {
+            return symbols;
+          }
+          @Override
+          public SAbstractConcept getOutputConcept() {
+            return subconcept;
+          }
+          @Override
+          public SAbstractConcept getDefinedForConcept() {
+            return CONCEPTS.StringValue$6s;
+          }
+          @Override
+          public String toString() {
+            return subconcept.getName();
+          }
+        });
+      }
+    }
 
     return rules;
   }
@@ -2363,14 +3717,21 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
     /*package*/ static final SConcept EventRef$iV = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc52116cL, "MetaCrySL.structure.EventRef");
     /*package*/ static final SInterfaceConcept ConstraintExp$S1 = MetaAdapterFactory.getInterfaceConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266f86L, "MetaCrySL.structure.ConstraintExp");
     /*package*/ static final SConcept BooleanExp$qq = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266fa3L, "MetaCrySL.structure.BooleanExp");
-    /*package*/ static final SConcept QualifiedName$VN = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4e8bdL, "MetaCrySL.structure.QualifiedName");
+    /*package*/ static final SConcept RelationalExp$G5 = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2bdfdeL, "MetaCrySL.structure.RelationalExp");
+    /*package*/ static final SConcept ArithmeticExp$jn = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2e3110L, "MetaCrySL.structure.ArithmeticExp");
+    /*package*/ static final SConcept Predicate$3s = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe997b026L, "MetaCrySL.structure.Predicate");
+    /*package*/ static final SConcept FormalArgList$2L = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc418235L, "MetaCrySL.structure.FormalArgList");
     /*package*/ static final SConcept ArbitraryTextAnnotation$hv = MetaAdapterFactory.getConcept(0xb4f35ed845af4efaL, 0xabe400ac26956e69L, 0x468dcccb641e8fb9L, "com.mbeddr.mpsutil.grammarcells.runtimelang.structure.ArbitraryTextAnnotation");
     /*package*/ static final SConcept Type$9F = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc25dc2aL, "MetaCrySL.structure.Type");
-    /*package*/ static final SConcept FormalArgList$2L = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc418235L, "MetaCrySL.structure.FormalArgList");
     /*package*/ static final SConcept ObjectSpec$wv = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53b99c1L, "MetaCrySL.structure.ObjectSpec");
     /*package*/ static final SConcept EventSpec$P0 = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c1ffL, "MetaCrySL.structure.EventSpec");
     /*package*/ static final SConcept OrderSpec$Y7 = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa48770aeL, "MetaCrySL.structure.OrderSpec");
     /*package*/ static final SConcept SpecContent$SN = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb41c7b7L, "MetaCrySL.structure.SpecContent");
+    /*package*/ static final SInterfaceConcept IType$a9 = MetaAdapterFactory.getInterfaceConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x11f8a0774f2L, "jetbrains.mps.lang.core.structure.IType");
+    /*package*/ static final SConcept QualifiedName$VN = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4e8bdL, "MetaCrySL.structure.QualifiedName");
+    /*package*/ static final SInterfaceConcept BasicExp$2E = MetaAdapterFactory.getInterfaceConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e33d864L, "MetaCrySL.structure.BasicExp");
+    /*package*/ static final SConcept ForbiddenMethod$e9 = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3cec4044d19f6346L, "MetaCrySL.structure.ForbiddenMethod");
+    /*package*/ static final SConcept StringValue$6s = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867f8ba7aL, "MetaCrySL.structure.StringValue");
   }
 
   private static final class PROPS {
@@ -2378,8 +3739,13 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
     /*package*/ static final SProperty label$PDXj = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c209L, 0x5b2eb88ae86d20ddL, "label");
     /*package*/ static final SProperty label$8VcE = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb789L, 0x3ac8e6d3fc41821eL, "label");
     /*package*/ static final SProperty argument$lGCM = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc44db55L, 0x3ac8e6d3fc44db56L, "argument");
+    /*package*/ static final SProperty negate$SamM = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe997b026L, 0x447df0abe997b027L, "negate");
+    /*package*/ static final SProperty label$VeXS = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe997b026L, 0x447df0abe997b064L, "label");
     /*package*/ static final SProperty text$Fl1W = MetaAdapterFactory.getProperty(0xb4f35ed845af4efaL, 0xabe400ac26956e69L, 0x468dcccb641e8fb9L, 0x468dcccb641e99b6L, "text");
     /*package*/ static final SProperty left$Cu1K = MetaAdapterFactory.getProperty(0xb4f35ed845af4efaL, 0xabe400ac26956e69L, 0x468dcccb641e8fb9L, 0x468dcccb641e9989L, "left");
+    /*package*/ static final SProperty alternative$lL7o = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3cec4044d19f6346L, 0x3cec4044d19f634dL, "alternative");
+    /*package*/ static final SProperty name1$DoJb = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc25dc2aL, 0x3cec4044d1ef4616L, "name1");
+    /*package*/ static final SProperty value$hckO = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867f8ba7aL, 0x3071de6867f8ba7dL, "value");
   }
 
   private static final class LINKS {
@@ -2391,12 +3757,19 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
     /*package*/ static final SContainmentLink event$oZEM = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x398346ae4a4fb658L, 0x398346ae4a4fb659L, "event");
     /*package*/ static final SContainmentLink left$REXc = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266fa3L, 0x4d3e0a266e266fbfL, "left");
     /*package*/ static final SContainmentLink right$RFre = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266fa3L, 0x4d3e0a266e266fc1L, "right");
+    /*package*/ static final SContainmentLink left$Mkho = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2bdfdeL, 0x4d3e0a266e2be006L, "left");
+    /*package*/ static final SContainmentLink right$MkJq = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2bdfdeL, 0x4d3e0a266e2be008L, "right");
+    /*package*/ static final SContainmentLink left$t7TI = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2e3110L, 0x4d3e0a266e2e312eL, "left");
+    /*package*/ static final SContainmentLink right$tdj5 = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2e3110L, 0x4d3e0a266e2e3130L, "right");
+    /*package*/ static final SContainmentLink type$cfMZ = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3063bd30217d1129L, 0x3cec4044d1a712bfL, "type");
     /*package*/ static final SContainmentLink objects$gW0K = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3063bd30217d1129L, 0x77537c9aa4898d17L, "objects");
     /*package*/ static final SContainmentLink events$My3j = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3063bd30217d1129L, 0x38bdb626f9180837L, "events");
     /*package*/ static final SContainmentLink order$Q4to = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3063bd30217d1129L, 0x38bdb626f918089fL, "order");
     /*package*/ static final SContainmentLink adicional$aUw1 = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3063bd30217d1129L, 0x398346ae4a5901a9L, "adicional");
-    /*package*/ static final SContainmentLink name$xPdN = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc25dc2aL, 0x3ac8e6d3fc25dc37L, "name");
+    /*package*/ static final SContainmentLink test$EyQY = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc25dc2aL, 0x3cec4044d206acf4L, "test");
     /*package*/ static final SContainmentLink generic$Usrq = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc25dc2aL, 0x3ac8e6d3fc28cc32L, "generic");
+    /*package*/ static final SContainmentLink exp$V7to = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe997b026L, 0x447df0abe997b059L, "exp");
+    /*package*/ static final SContainmentLink method$lJHi = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3cec4044d19f6346L, 0x3cec4044d19f6347L, "method");
     /*package*/ static final SContainmentLink args$8UvB = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb789L, 0x3ac8e6d3fc41821bL, "args");
   }
 }

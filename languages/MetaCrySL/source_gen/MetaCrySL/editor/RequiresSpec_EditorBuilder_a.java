@@ -91,7 +91,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       return LINKS.content$GjvZ;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.IRequiresContent$Py;
+      return CONCEPTS.ConstraintExp$S1;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -147,6 +147,6 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SInterfaceConcept IRequiresContent$Py = MetaAdapterFactory.getInterfaceConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73aL, "MetaCrySL.structure.IRequiresContent");
+    /*package*/ static final SInterfaceConcept ConstraintExp$S1 = MetaAdapterFactory.getInterfaceConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266f86L, "MetaCrySL.structure.ConstraintExp");
   }
 }

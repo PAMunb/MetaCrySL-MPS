@@ -17,46 +17,89 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptAddConstraint = createDescriptorForAddConstraint();
+  /*package*/ final ConceptDescriptor myConceptAddEnsure = createDescriptorForAddEnsure();
+  /*package*/ final ConceptDescriptor myConceptAddEvent = createDescriptorForAddEvent();
+  /*package*/ final ConceptDescriptor myConceptAddRequire = createDescriptorForAddRequire();
   /*package*/ final ConceptDescriptor myConceptAggregateList = createDescriptorForAggregateList();
+  /*package*/ final ConceptDescriptor myConceptArithmeticExp = createDescriptorForArithmeticExp();
+  /*package*/ final ConceptDescriptor myConceptAtomicConstraintExp = createDescriptorForAtomicConstraintExp();
   /*package*/ final ConceptDescriptor myConceptBasicEventExp = createDescriptorForBasicEventExp();
+  /*package*/ final ConceptDescriptor myConceptBasicExp = createDescriptorForBasicExp();
   /*package*/ final ConceptDescriptor myConceptBooleanExp = createDescriptorForBooleanExp();
+  /*package*/ final ConceptDescriptor myConceptCallTo = createDescriptorForCallTo();
   /*package*/ final ConceptDescriptor myConceptChoiceExp = createDescriptorForChoiceExp();
+  /*package*/ final ConceptDescriptor myConceptConfig = createDescriptorForConfig();
   /*package*/ final ConceptDescriptor myConceptConjunctionExp = createDescriptorForConjunctionExp();
   /*package*/ final ConceptDescriptor myConceptConstraintExp = createDescriptorForConstraintExp();
   /*package*/ final ConceptDescriptor myConceptConstraintSpec = createDescriptorForConstraintSpec();
+  /*package*/ final ConceptDescriptor myConceptDefineLiteralSet = createDescriptorForDefineLiteralSet();
   /*package*/ final ConceptDescriptor myConceptDisjunctionExp = createDescriptorForDisjunctionExp();
   /*package*/ final ConceptDescriptor myConceptEnsuresSpec = createDescriptorForEnsuresSpec();
+  /*package*/ final ConceptDescriptor myConceptEqual = createDescriptorForEqual();
   /*package*/ final ConceptDescriptor myConceptEventAggregate = createDescriptorForEventAggregate();
   /*package*/ final ConceptDescriptor myConceptEventExp = createDescriptorForEventExp();
   /*package*/ final ConceptDescriptor myConceptEventMethod = createDescriptorForEventMethod();
   /*package*/ final ConceptDescriptor myConceptEventRef = createDescriptorForEventRef();
   /*package*/ final ConceptDescriptor myConceptEventSpec = createDescriptorForEventSpec();
+  /*package*/ final ConceptDescriptor myConceptForbiddenMethod = createDescriptorForForbiddenMethod();
+  /*package*/ final ConceptDescriptor myConceptForbiddenSpec = createDescriptorForForbiddenSpec();
   /*package*/ final ConceptDescriptor myConceptFormalArg = createDescriptorForFormalArg();
   /*package*/ final ConceptDescriptor myConceptFormalArgList = createDescriptorForFormalArgList();
+  /*package*/ final ConceptDescriptor myConceptFunctionCall = createDescriptorForFunctionCall();
+  /*package*/ final ConceptDescriptor myConceptGreaterOrEqual = createDescriptorForGreaterOrEqual();
+  /*package*/ final ConceptDescriptor myConceptGreaterThan = createDescriptorForGreaterThan();
   /*package*/ final ConceptDescriptor myConceptIConstraintContent = createDescriptorForIConstraintContent();
   /*package*/ final ConceptDescriptor myConceptIEnsureContent = createDescriptorForIEnsureContent();
   /*package*/ final ConceptDescriptor myConceptIEventSpecContent = createDescriptorForIEventSpecContent();
+  /*package*/ final ConceptDescriptor myConceptIForbiddenContent = createDescriptorForIForbiddenContent();
+  /*package*/ final ConceptDescriptor myConceptILiteralSet = createDescriptorForILiteralSet();
   /*package*/ final ConceptDescriptor myConceptIModelContent = createDescriptorForIModelContent();
+  /*package*/ final ConceptDescriptor myConceptINegatesContent = createDescriptorForINegatesContent();
   /*package*/ final ConceptDescriptor myConceptIObjectsContent = createDescriptorForIObjectsContent();
   /*package*/ final ConceptDescriptor myConceptIOrderSpecContent = createDescriptorForIOrderSpecContent();
+  /*package*/ final ConceptDescriptor myConceptIRefinementContent = createDescriptorForIRefinementContent();
   /*package*/ final ConceptDescriptor myConceptIRequiresContent = createDescriptorForIRequiresContent();
   /*package*/ final ConceptDescriptor myConceptImpliesExp = createDescriptorForImpliesExp();
+  /*package*/ final ConceptDescriptor myConceptInSet = createDescriptorForInSet();
+  /*package*/ final ConceptDescriptor myConceptInstanceOf = createDescriptorForInstanceOf();
+  /*package*/ final ConceptDescriptor myConceptIntValue = createDescriptorForIntValue();
+  /*package*/ final ConceptDescriptor myConceptLength = createDescriptorForLength();
+  /*package*/ final ConceptDescriptor myConceptLessOrEqual = createDescriptorForLessOrEqual();
+  /*package*/ final ConceptDescriptor myConceptLessThan = createDescriptorForLessThan();
+  /*package*/ final ConceptDescriptor myConceptLiteralSet = createDescriptorForLiteralSet();
+  /*package*/ final ConceptDescriptor myConceptLoadModule = createDescriptorForLoadModule();
+  /*package*/ final ConceptDescriptor myConceptMetaVariable = createDescriptorForMetaVariable();
   /*package*/ final ConceptDescriptor myConceptMethodDef = createDescriptorForMethodDef();
+  /*package*/ final ConceptDescriptor myConceptMinusExpreesion = createDescriptorForMinusExpreesion();
   /*package*/ final ConceptDescriptor myConceptModel = createDescriptorForModel();
   /*package*/ final ConceptDescriptor myConceptNegatesSpec = createDescriptorForNegatesSpec();
+  /*package*/ final ConceptDescriptor myConceptNeverTypeOf = createDescriptorForNeverTypeOf();
+  /*package*/ final ConceptDescriptor myConceptNoCallTo = createDescriptorForNoCallTo();
+  /*package*/ final ConceptDescriptor myConceptNotEqual = createDescriptorForNotEqual();
+  /*package*/ final ConceptDescriptor myConceptNotHardCoded = createDescriptorForNotHardCoded();
   /*package*/ final ConceptDescriptor myConceptObject = createDescriptorForObject();
+  /*package*/ final ConceptDescriptor myConceptObjectRef = createDescriptorForObjectRef();
   /*package*/ final ConceptDescriptor myConceptObjectSpec = createDescriptorForObjectSpec();
   /*package*/ final ConceptDescriptor myConceptOneOrMore = createDescriptorForOneOrMore();
   /*package*/ final ConceptDescriptor myConceptOptional = createDescriptorForOptional();
   /*package*/ final ConceptDescriptor myConceptOrderSpec = createDescriptorForOrderSpec();
+  /*package*/ final ConceptDescriptor myConceptPlusExpression = createDescriptorForPlusExpression();
+  /*package*/ final ConceptDescriptor myConceptPredicate = createDescriptorForPredicate();
   /*package*/ final ConceptDescriptor myConceptPrimaryExp = createDescriptorForPrimaryExp();
   /*package*/ final ConceptDescriptor myConceptQualifiedFormalArg = createDescriptorForQualifiedFormalArg();
   /*package*/ final ConceptDescriptor myConceptQualifiedName = createDescriptorForQualifiedName();
+  /*package*/ final ConceptDescriptor myConceptRefinement = createDescriptorForRefinement();
+  /*package*/ final ConceptDescriptor myConceptRelationalExp = createDescriptorForRelationalExp();
+  /*package*/ final ConceptDescriptor myConceptRename = createDescriptorForRename();
   /*package*/ final ConceptDescriptor myConceptRequiresSpec = createDescriptorForRequiresSpec();
   /*package*/ final ConceptDescriptor myConceptSequenceExp = createDescriptorForSequenceExp();
   /*package*/ final ConceptDescriptor myConceptSpec = createDescriptorForSpec();
   /*package*/ final ConceptDescriptor myConceptSpecContent = createDescriptorForSpecContent();
+  /*package*/ final ConceptDescriptor myConceptStringValue = createDescriptorForStringValue();
   /*package*/ final ConceptDescriptor myConceptType = createDescriptorForType();
+  /*package*/ final ConceptDescriptor myConceptValue = createDescriptorForValue();
+  /*package*/ final ConceptDescriptor myConceptVariable = createDescriptorForVariable();
   /*package*/ final ConceptDescriptor myConceptWildcardArgument = createDescriptorForWildcardArgument();
   /*package*/ final ConceptDescriptor myConceptZeroOrMore = createDescriptorForZeroOrMore();
   /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeID = new ConstrainedStringDatatypeDescriptorImpl(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL, "ID", "r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/2159885266397935419", "(?<head>[a-zA-Z_])(?<tail>([a-zA-Z0-9_])+)");
@@ -70,35 +113,58 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   @Override
   public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
     deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
+    deps.aggregatedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAggregateList, myConceptBasicEventExp, myConceptBooleanExp, myConceptChoiceExp, myConceptConjunctionExp, myConceptConstraintExp, myConceptConstraintSpec, myConceptDisjunctionExp, myConceptEnsuresSpec, myConceptEventAggregate, myConceptEventExp, myConceptEventMethod, myConceptEventRef, myConceptEventSpec, myConceptFormalArg, myConceptFormalArgList, myConceptIConstraintContent, myConceptIEnsureContent, myConceptIEventSpecContent, myConceptIModelContent, myConceptIObjectsContent, myConceptIOrderSpecContent, myConceptIRequiresContent, myConceptImpliesExp, myConceptMethodDef, myConceptModel, myConceptNegatesSpec, myConceptObject, myConceptObjectSpec, myConceptOneOrMore, myConceptOptional, myConceptOrderSpec, myConceptPrimaryExp, myConceptQualifiedFormalArg, myConceptQualifiedName, myConceptRequiresSpec, myConceptSequenceExp, myConceptSpec, myConceptSpecContent, myConceptType, myConceptWildcardArgument, myConceptZeroOrMore);
+    return Arrays.asList(myConceptAddConstraint, myConceptAddEnsure, myConceptAddEvent, myConceptAddRequire, myConceptAggregateList, myConceptArithmeticExp, myConceptAtomicConstraintExp, myConceptBasicEventExp, myConceptBasicExp, myConceptBooleanExp, myConceptCallTo, myConceptChoiceExp, myConceptConfig, myConceptConjunctionExp, myConceptConstraintExp, myConceptConstraintSpec, myConceptDefineLiteralSet, myConceptDisjunctionExp, myConceptEnsuresSpec, myConceptEqual, myConceptEventAggregate, myConceptEventExp, myConceptEventMethod, myConceptEventRef, myConceptEventSpec, myConceptForbiddenMethod, myConceptForbiddenSpec, myConceptFormalArg, myConceptFormalArgList, myConceptFunctionCall, myConceptGreaterOrEqual, myConceptGreaterThan, myConceptIConstraintContent, myConceptIEnsureContent, myConceptIEventSpecContent, myConceptIForbiddenContent, myConceptILiteralSet, myConceptIModelContent, myConceptINegatesContent, myConceptIObjectsContent, myConceptIOrderSpecContent, myConceptIRefinementContent, myConceptIRequiresContent, myConceptImpliesExp, myConceptInSet, myConceptInstanceOf, myConceptIntValue, myConceptLength, myConceptLessOrEqual, myConceptLessThan, myConceptLiteralSet, myConceptLoadModule, myConceptMetaVariable, myConceptMethodDef, myConceptMinusExpreesion, myConceptModel, myConceptNegatesSpec, myConceptNeverTypeOf, myConceptNoCallTo, myConceptNotEqual, myConceptNotHardCoded, myConceptObject, myConceptObjectRef, myConceptObjectSpec, myConceptOneOrMore, myConceptOptional, myConceptOrderSpec, myConceptPlusExpression, myConceptPredicate, myConceptPrimaryExp, myConceptQualifiedFormalArg, myConceptQualifiedName, myConceptRefinement, myConceptRelationalExp, myConceptRename, myConceptRequiresSpec, myConceptSequenceExp, myConceptSpec, myConceptSpecContent, myConceptStringValue, myConceptType, myConceptValue, myConceptVariable, myConceptWildcardArgument, myConceptZeroOrMore);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.AddConstraint:
+        return myConceptAddConstraint;
+      case LanguageConceptSwitch.AddEnsure:
+        return myConceptAddEnsure;
+      case LanguageConceptSwitch.AddEvent:
+        return myConceptAddEvent;
+      case LanguageConceptSwitch.AddRequire:
+        return myConceptAddRequire;
       case LanguageConceptSwitch.AggregateList:
         return myConceptAggregateList;
+      case LanguageConceptSwitch.ArithmeticExp:
+        return myConceptArithmeticExp;
+      case LanguageConceptSwitch.AtomicConstraintExp:
+        return myConceptAtomicConstraintExp;
       case LanguageConceptSwitch.BasicEventExp:
         return myConceptBasicEventExp;
+      case LanguageConceptSwitch.BasicExp:
+        return myConceptBasicExp;
       case LanguageConceptSwitch.BooleanExp:
         return myConceptBooleanExp;
+      case LanguageConceptSwitch.CallTo:
+        return myConceptCallTo;
       case LanguageConceptSwitch.ChoiceExp:
         return myConceptChoiceExp;
+      case LanguageConceptSwitch.Config:
+        return myConceptConfig;
       case LanguageConceptSwitch.ConjunctionExp:
         return myConceptConjunctionExp;
       case LanguageConceptSwitch.ConstraintExp:
         return myConceptConstraintExp;
       case LanguageConceptSwitch.ConstraintSpec:
         return myConceptConstraintSpec;
+      case LanguageConceptSwitch.DefineLiteralSet:
+        return myConceptDefineLiteralSet;
       case LanguageConceptSwitch.DisjunctionExp:
         return myConceptDisjunctionExp;
       case LanguageConceptSwitch.EnsuresSpec:
         return myConceptEnsuresSpec;
+      case LanguageConceptSwitch.Equal:
+        return myConceptEqual;
       case LanguageConceptSwitch.EventAggregate:
         return myConceptEventAggregate;
       case LanguageConceptSwitch.EventExp:
@@ -109,34 +175,82 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptEventRef;
       case LanguageConceptSwitch.EventSpec:
         return myConceptEventSpec;
+      case LanguageConceptSwitch.ForbiddenMethod:
+        return myConceptForbiddenMethod;
+      case LanguageConceptSwitch.ForbiddenSpec:
+        return myConceptForbiddenSpec;
       case LanguageConceptSwitch.FormalArg:
         return myConceptFormalArg;
       case LanguageConceptSwitch.FormalArgList:
         return myConceptFormalArgList;
+      case LanguageConceptSwitch.FunctionCall:
+        return myConceptFunctionCall;
+      case LanguageConceptSwitch.GreaterOrEqual:
+        return myConceptGreaterOrEqual;
+      case LanguageConceptSwitch.GreaterThan:
+        return myConceptGreaterThan;
       case LanguageConceptSwitch.IConstraintContent:
         return myConceptIConstraintContent;
       case LanguageConceptSwitch.IEnsureContent:
         return myConceptIEnsureContent;
       case LanguageConceptSwitch.IEventSpecContent:
         return myConceptIEventSpecContent;
+      case LanguageConceptSwitch.IForbiddenContent:
+        return myConceptIForbiddenContent;
+      case LanguageConceptSwitch.ILiteralSet:
+        return myConceptILiteralSet;
       case LanguageConceptSwitch.IModelContent:
         return myConceptIModelContent;
+      case LanguageConceptSwitch.INegatesContent:
+        return myConceptINegatesContent;
       case LanguageConceptSwitch.IObjectsContent:
         return myConceptIObjectsContent;
       case LanguageConceptSwitch.IOrderSpecContent:
         return myConceptIOrderSpecContent;
+      case LanguageConceptSwitch.IRefinementContent:
+        return myConceptIRefinementContent;
       case LanguageConceptSwitch.IRequiresContent:
         return myConceptIRequiresContent;
       case LanguageConceptSwitch.ImpliesExp:
         return myConceptImpliesExp;
+      case LanguageConceptSwitch.InSet:
+        return myConceptInSet;
+      case LanguageConceptSwitch.InstanceOf:
+        return myConceptInstanceOf;
+      case LanguageConceptSwitch.IntValue:
+        return myConceptIntValue;
+      case LanguageConceptSwitch.Length:
+        return myConceptLength;
+      case LanguageConceptSwitch.LessOrEqual:
+        return myConceptLessOrEqual;
+      case LanguageConceptSwitch.LessThan:
+        return myConceptLessThan;
+      case LanguageConceptSwitch.LiteralSet:
+        return myConceptLiteralSet;
+      case LanguageConceptSwitch.LoadModule:
+        return myConceptLoadModule;
+      case LanguageConceptSwitch.MetaVariable:
+        return myConceptMetaVariable;
       case LanguageConceptSwitch.MethodDef:
         return myConceptMethodDef;
+      case LanguageConceptSwitch.MinusExpreesion:
+        return myConceptMinusExpreesion;
       case LanguageConceptSwitch.Model:
         return myConceptModel;
       case LanguageConceptSwitch.NegatesSpec:
         return myConceptNegatesSpec;
+      case LanguageConceptSwitch.NeverTypeOf:
+        return myConceptNeverTypeOf;
+      case LanguageConceptSwitch.NoCallTo:
+        return myConceptNoCallTo;
+      case LanguageConceptSwitch.NotEqual:
+        return myConceptNotEqual;
+      case LanguageConceptSwitch.NotHardCoded:
+        return myConceptNotHardCoded;
       case LanguageConceptSwitch.Object:
         return myConceptObject;
+      case LanguageConceptSwitch.ObjectRef:
+        return myConceptObjectRef;
       case LanguageConceptSwitch.ObjectSpec:
         return myConceptObjectSpec;
       case LanguageConceptSwitch.OneOrMore:
@@ -145,12 +259,22 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptOptional;
       case LanguageConceptSwitch.OrderSpec:
         return myConceptOrderSpec;
+      case LanguageConceptSwitch.PlusExpression:
+        return myConceptPlusExpression;
+      case LanguageConceptSwitch.Predicate:
+        return myConceptPredicate;
       case LanguageConceptSwitch.PrimaryExp:
         return myConceptPrimaryExp;
       case LanguageConceptSwitch.QualifiedFormalArg:
         return myConceptQualifiedFormalArg;
       case LanguageConceptSwitch.QualifiedName:
         return myConceptQualifiedName;
+      case LanguageConceptSwitch.Refinement:
+        return myConceptRefinement;
+      case LanguageConceptSwitch.RelationalExp:
+        return myConceptRelationalExp;
+      case LanguageConceptSwitch.Rename:
+        return myConceptRename;
       case LanguageConceptSwitch.RequiresSpec:
         return myConceptRequiresSpec;
       case LanguageConceptSwitch.SequenceExp:
@@ -159,8 +283,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptSpec;
       case LanguageConceptSwitch.SpecContent:
         return myConceptSpecContent;
+      case LanguageConceptSwitch.StringValue:
+        return myConceptStringValue;
       case LanguageConceptSwitch.Type:
         return myConceptType;
+      case LanguageConceptSwitch.Value:
+        return myConceptValue;
+      case LanguageConceptSwitch.Variable:
+        return myConceptVariable;
       case LanguageConceptSwitch.WildcardArgument:
         return myConceptWildcardArgument;
       case LanguageConceptSwitch.ZeroOrMore:
@@ -179,12 +309,67 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForAddConstraint() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "AddConstraint", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x23554d7be5560862L);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1380311a51779af7L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/2546026358871820386");
+    b.version(2);
+    b.aggregate("constraint", 0x23554d7be5560865L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb733L).optional(true).ordered(true).multiple(false).origin("2546026358871820389").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForAddEnsure() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "AddEnsure", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x23554d7be55608a8L);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73aL);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/2546026358871820456");
+    b.version(2);
+    b.aggregate("ensure", 0x23554d7be55608abL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266f86L).optional(false).ordered(true).multiple(false).origin("2546026358871820459").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForAddEvent() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "AddEvent", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x23554d7be5560827L);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1380311a51779af7L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/2546026358871820327");
+    b.version(2);
+    b.aggregate("event", 0x23554d7be5560828L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c209L).optional(false).ordered(true).multiple(false).origin("2546026358871820328").done();
+    b.alias("addEvent");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForAddRequire() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "AddRequire", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x23554d7be55608a3L);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1380311a51779af7L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/2546026358871820451");
+    b.version(2);
+    b.aggregate("require", 0x23554d7be55608a6L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266f86L).optional(false).ordered(true).multiple(false).origin("2546026358871820454").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForAggregateList() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "AggregateList", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb78aL);
     b.class_(false, false, false);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/2159885266397935498");
     b.version(2);
     b.aggregate("events", 0x3ac8e6d3fc52116fL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc52116cL).optional(false).ordered(true).multiple(true).origin("4235889247687676271").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForArithmeticExp() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "ArithmeticExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2e3110L);
+    b.class_(false, true, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266f86L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349650067728");
+    b.version(2);
+    b.aggregate("left", 0x4d3e0a266e2e312eL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266f86L).optional(false).ordered(true).multiple(false).origin("5565897349650067758").done();
+    b.aggregate("right", 0x4d3e0a266e2e3130L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266f86L).optional(false).ordered(true).multiple(false).origin("5565897349650067760").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForAtomicConstraintExp() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "AtomicConstraintExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867d527b1L);
+    b.interface_();
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e33d864L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3490815726188832692");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForBasicEventExp() {
@@ -196,6 +381,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("exp", 0x398346ae4a4348f1L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x398346ae4a4fb658L).optional(false).ordered(true).multiple(false).origin("4144233796495165681").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForBasicExp() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "BasicExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e33d864L);
+    b.interface_();
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266f86L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349650438245");
+    b.version(2);
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForBooleanExp() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "BooleanExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266fa3L);
     b.class_(false, true, false);
@@ -204,6 +397,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.aggregate("left", 0x4d3e0a266e266fbfL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266f86L).optional(false).ordered(true).multiple(false).origin("5565897349649559487").done();
     b.aggregate("right", 0x4d3e0a266e266fc1L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266f86L).optional(false).ordered(true).multiple(false).origin("5565897349649559489").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForCallTo() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "CallTo", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867b28351L);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e33d864L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3490815726186562385");
+    b.version(2);
+    b.property("label", 0x3071de6867b2836aL).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL)).origin("3490815726186562410").done();
+    b.alias("callTo");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForChoiceExp() {
@@ -218,6 +421,19 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("|");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForConfig() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "Config", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x23554d7be5779aceL);
+    b.class_(false, false, true);
+    b.super_("MetaCrySL.structure.Model", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4c97eL);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/2546026358874020558");
+    b.version(2);
+    b.property("label", 0x23554d7be5779af1L).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL)).origin("2546026358874020593").done();
+    b.property("inputDir", 0x23554d7be5779b7aL).type(PrimitiveTypeId.STRING).origin("2546026358874020730").done();
+    b.property("outputDir", 0x23554d7be5779b7dL).type(PrimitiveTypeId.STRING).origin("2546026358874020733").done();
+    b.aggregate("modules", 0x23554d7be5779b82L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x23554d7be5779b81L).optional(false).ordered(true).multiple(true).origin("2546026358874020738").done();
+    b.alias("CONFIG");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForConjunctionExp() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "ConjunctionExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e269459L);
     b.class_(false, false, false);
@@ -230,6 +446,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForConstraintExp() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "ConstraintExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266f86L);
     b.interface_();
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb733L);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349649563628");
     b.version(2);
     return b.create();
@@ -244,6 +461,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("CONSTRAINTS");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForDefineLiteralSet() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "DefineLiteralSet", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x23554d7be5560921L);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1380311a51779af7L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/2546026358871820577");
+    b.version(2);
+    b.property("label", 0x23554d7be5560924L).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL)).origin("2546026358871820580").done();
+    b.aggregate("set", 0x23554d7be5560926L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe95e3f2fL).optional(true).ordered(true).multiple(false).origin("2546026358871820582").done();
+    b.alias("define");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForDisjunctionExp() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "DisjunctionExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e269458L);
     b.class_(false, false, false);
@@ -256,10 +484,20 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForEnsuresSpec() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "EnsuresSpec", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x38bdb626f9180996L);
     b.class_(false, false, false);
+    b.super_("MetaCrySL.structure.SpecContent", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb41c7b7L);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4088624315226392982");
     b.version(2);
-    b.aggregate("content", 0xdf0d74c973eaa99L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb739L).optional(true).ordered(true).multiple(true).origin("1004539440858573465").done();
+    b.aggregate("content", 0xdf0d74c973eaa99L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266f86L).optional(true).ordered(true).multiple(true).origin("1004539440858573465").done();
     b.alias("ENSURES");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForEqual() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "Equal", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2e3108L);
+    b.class_(false, false, false);
+    b.super_("MetaCrySL.structure.RelationalExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2bdfdeL);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349650067720");
+    b.version(2);
+    b.alias("==");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForEventAggregate() {
@@ -308,6 +546,26 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("EVENTS");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForForbiddenMethod() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "ForbiddenMethod", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3cec4044d19f6346L);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3cec4044d197db9dL);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4389954401098228550");
+    b.version(2);
+    b.property("alternative", 0x3cec4044d19f634dL).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL)).origin("4389954401098228557").done();
+    b.aggregate("method", 0x3cec4044d19f6347L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb789L).optional(false).ordered(true).multiple(false).origin("4389954401098228551").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForForbiddenSpec() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "ForbiddenSpec", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3cec4044d197db9cL);
+    b.class_(false, false, false);
+    b.super_("MetaCrySL.structure.SpecContent", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb41c7b7L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4389954401097735068");
+    b.version(2);
+    b.aggregate("content", 0x3cec4044d197db9eL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3cec4044d197db9dL).optional(true).ordered(true).multiple(true).origin("4389954401097735070").done();
+    b.alias("FORBIDDEN");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForFormalArg() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "FormalArg", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc41821dL);
     b.interface_();
@@ -323,6 +581,34 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("args", 0x3ac8e6d3fc43191dL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc41821dL).optional(true).ordered(true).multiple(true).origin("4235889247686695197").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForFunctionCall() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "FunctionCall", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe9891170L);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867d527b1L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4935365387816079728");
+    b.version(2);
+    b.property("methodName", 0x447df0abe9891171L).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL)).origin("4935365387816079729").done();
+    b.aggregate("args", 0x447df0abe9891175L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867d527b6L).optional(true).ordered(true).multiple(true).origin("4935365387816079733").done();
+    b.alias("funCall");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForGreaterOrEqual() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "GreaterOrEqual", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2e3106L);
+    b.class_(false, false, false);
+    b.super_("MetaCrySL.structure.RelationalExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2bdfdeL);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349650067718");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForGreaterThan() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "GreaterThan", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2e3104L);
+    b.class_(false, false, false);
+    b.super_("MetaCrySL.structure.RelationalExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2bdfdeL);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349650067716");
+    b.version(2);
+    b.alias(">");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForIConstraintContent() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "IConstraintContent", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb733L);
     b.interface_();
@@ -333,6 +619,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForIEnsureContent() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "IEnsureContent", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb739L);
     b.interface_();
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266f86L);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/2159885266397935417");
     b.version(2);
     return b.create();
@@ -345,10 +632,32 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("label", 0x5b2eb88ae86d20ddL).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL)).origin("6570391813124595933").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForIForbiddenContent() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "IForbiddenContent", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3cec4044d197db9dL);
+    b.interface_();
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4389954401097735069");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForILiteralSet() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "ILiteralSet", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe95e3f2fL);
+    b.interface_();
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4935365387813273391");
+    b.version(2);
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForIModelContent() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "IModelContent", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53b7e3cL);
     b.interface_();
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5292687979099946556");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForINegatesContent() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "INegatesContent", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3cec4044d1865cd6L);
+    b.interface_();
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266f86L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4389954401096588502");
     b.version(2);
     return b.create();
   }
@@ -357,6 +666,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.interface_();
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5292687979099972623");
     b.version(2);
+    b.property("name", 0x3071de6867bde067L).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL)).origin("3490815726187307111").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForIOrderSpecContent() {
@@ -366,9 +676,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForIRefinementContent() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "IRefinementContent", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1380311a51779af7L);
+    b.interface_();
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/1405177072845298423");
+    b.version(2);
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForIRequiresContent() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "IRequiresContent", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73aL);
     b.interface_();
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266f86L);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/2159885266397935418");
     b.version(2);
     return b.create();
@@ -382,6 +700,91 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("=>");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForInSet() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "InSet", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe95e3eb8L);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e33d864L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4935365387813273272");
+    b.version(2);
+    b.aggregate("left", 0x447df0abe95e3eb9L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867d527b1L).optional(false).ordered(true).multiple(false).origin("4935365387813273273").done();
+    b.aggregate("right", 0x447df0abe95e3ebbL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe95e3f2fL).optional(false).ordered(true).multiple(false).origin("4935365387813273275").done();
+    b.alias("in");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForInstanceOf() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "InstanceOf", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867b28450L);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e33d864L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3490815726186562640");
+    b.version(2);
+    b.property("label", 0x3071de6867cf680bL).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL)).origin("3490815726188455947").done();
+    b.property("type", 0x3071de6867cf680dL).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL)).origin("3490815726188455949").done();
+    b.alias("instanceOf");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForIntValue() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "IntValue", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867f8ba66L);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867d527b6L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3490815726191164006");
+    b.version(2);
+    b.property("value", 0x3071de6867f8ba69L).type(PrimitiveTypeId.INTEGER).origin("3490815726191164009").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForLength() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "Length", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867b2840bL);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e33d864L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3490815726186562571");
+    b.version(2);
+    b.aggregate("label", 0x3071de6867c995a2L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867bde03dL).optional(false).ordered(true).multiple(false).origin("3490815726188074402").done();
+    b.alias("length");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForLessOrEqual() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "LessOrEqual", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2e3107L);
+    b.class_(false, false, false);
+    b.super_("MetaCrySL.structure.RelationalExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2bdfdeL);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349650067719");
+    b.version(2);
+    b.alias("<=");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForLessThan() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "LessThan", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2e3105L);
+    b.class_(false, false, false);
+    b.super_("MetaCrySL.structure.RelationalExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2bdfdeL);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349650067717");
+    b.version(2);
+    b.alias("<");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForLiteralSet() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "LiteralSet", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe95e3ebeL);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe95e3f2fL);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4935365387813273278");
+    b.version(2);
+    b.aggregate("set", 0x447df0abe95e3f34L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867d527b6L).optional(true).ordered(true).multiple(true).origin("4935365387813273396").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForLoadModule() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "LoadModule", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x23554d7be5779b81L);
+    b.class_(false, false, false);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/2546026358874020737");
+    b.version(2);
+    b.property("module", 0x23554d7be577c1efL).type(PrimitiveTypeId.STRING).origin("2546026358874030575").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMetaVariable() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "MetaVariable", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe95e3ef4L);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe95e3f2fL);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4935365387813273332");
+    b.version(2);
+    b.property("label", 0x447df0abe95e3ef5L).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL)).origin("4935365387813273333").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForMethodDef() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "MethodDef", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb789L);
     b.class_(false, false, false);
@@ -389,6 +792,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("label", 0x3ac8e6d3fc41821eL).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL)).origin("4235889247686591006").done();
     b.aggregate("args", 0x3ac8e6d3fc41821bL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc418235L).optional(false).ordered(true).multiple(false).origin("4235889247686591003").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMinusExpreesion() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "MinusExpreesion", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2e416bL);
+    b.class_(false, false, false);
+    b.super_("MetaCrySL.structure.ArithmeticExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2e3110L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349650071915");
+    b.version(2);
+    b.alias("-");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForModel() {
@@ -403,10 +815,51 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForNegatesSpec() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "NegatesSpec", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x38bdb626f918de70L);
     b.class_(false, false, false);
+    b.super_("MetaCrySL.structure.SpecContent", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb41c7b7L);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4088624315226447472");
     b.version(2);
-    b.aggregate("content", 0xdf0d74c9744b3cfL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb739L).optional(true).ordered(true).multiple(true).origin("1004539440858969039").done();
+    b.aggregate("content", 0xdf0d74c9744b3cfL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266f86L).optional(true).ordered(true).multiple(true).origin("1004539440858969039").done();
     b.alias("NEGATES");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForNeverTypeOf() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "NeverTypeOf", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867bde038L);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e33d864L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3490815726187307064");
+    b.version(2);
+    b.aggregate("label", 0x3071de6867bde06cL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867bde03dL).optional(false).ordered(true).multiple(false).origin("3490815726187307116").done();
+    b.aggregate("type", 0x3071de6867bde06eL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc25dc2aL).optional(false).ordered(true).multiple(false).origin("3490815726187307118").done();
+    b.alias("neverTypeOf");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForNoCallTo() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "NoCallTo", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e33d868L);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e33d864L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349650438248");
+    b.version(2);
+    b.property("label", 0x3071de68679a7db7L).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL)).origin("3490815726184988087").done();
+    b.alias("noCallTo");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForNotEqual() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "NotEqual", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2e3109L);
+    b.class_(false, false, false);
+    b.super_("MetaCrySL.structure.RelationalExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2bdfdeL);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349650067721");
+    b.version(2);
+    b.alias("!=");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForNotHardCoded() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "NotHardCoded", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867b283c4L);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e33d864L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3490815726186562500");
+    b.version(2);
+    b.property("label", 0x3071de6867b283c9L).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL)).origin("3490815726186562505").done();
+    b.alias("notHardCoded");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForObject() {
@@ -415,8 +868,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53be40fL);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/8063880014109550711");
     b.version(2);
-    b.property("name", 0x6fe8a826085f287eL).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL)).origin("8063880014109550718").done();
     b.aggregate("objectType", 0x6fe8a826085f2880L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc25dc2aL).optional(false).ordered(true).multiple(false).origin("8063880014109550720").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForObjectRef() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "ObjectRef", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867bde03dL);
+    b.class_(false, false, false);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3490815726187307069");
+    b.version(2);
+    b.associate("ref", 0x3071de6867bde03eL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x497367acd53be40fL).optional(false).origin("3490815726187307070").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForObjectSpec() {
@@ -458,6 +918,27 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("ORDER");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForPlusExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "PlusExpression", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2e416aL);
+    b.class_(false, false, false);
+    b.super_("MetaCrySL.structure.ArithmeticExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2e3110L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349650071914");
+    b.version(2);
+    b.alias("+");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForPredicate() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "Predicate", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe997b026L);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266f86L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4935365387817037862");
+    b.version(2);
+    b.property("negate", 0x447df0abe997b027L).type(PrimitiveTypeId.BOOLEAN).origin("4935365387817037863").done();
+    b.property("label", 0x447df0abe997b064L).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL)).origin("4935365387817037924").done();
+    b.aggregate("exp", 0x447df0abe997b059L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e33d864L).optional(false).ordered(true).multiple(true).origin("4935365387817037913").done();
+    b.alias("Predicate");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForPrimaryExp() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "PrimaryExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x398346ae4a4fb658L);
     b.class_(false, false, false);
@@ -485,12 +966,44 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("JavaQualifiedName");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForRefinement() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "Refinement", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1380311a51779a75L);
+    b.class_(false, false, true);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/1405177072845298293");
+    b.version(2);
+    b.property("name", 0x1380311a51779a95L).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL)).origin("1405177072845298325").done();
+    b.aggregate("type", 0x1380311a51779a9fL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc25dc2aL).optional(false).ordered(true).multiple(false).origin("1405177072845298335").done();
+    b.aggregate("content", 0x1380311a51779af4L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1380311a51779af7L).optional(true).ordered(true).multiple(true).origin("1405177072845298420").done();
+    b.alias("REFINEMENT");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRelationalExp() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "RelationalExp", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2bdfdeL);
+    b.class_(false, true, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266f86L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/5565897349649915870");
+    b.version(2);
+    b.aggregate("left", 0x4d3e0a266e2be006L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266f86L).optional(false).ordered(true).multiple(false).origin("5565897349649915910").done();
+    b.aggregate("right", 0x4d3e0a266e2be008L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266f86L).optional(false).ordered(true).multiple(false).origin("5565897349649915912").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRename() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "Rename", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1380311a51779b09L);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1380311a51779af7L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/1405177072845298441");
+    b.version(2);
+    b.aggregate("type", 0x1380311a51779b60L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc25dc2aL).optional(false).ordered(true).multiple(false).origin("1405177072845298528").done();
+    b.alias("rename");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForRequiresSpec() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "RequiresSpec", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x38bdb626f9180931L);
     b.class_(false, false, false);
+    b.super_("MetaCrySL.structure.SpecContent", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb41c7b7L);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4088624315226392881");
     b.version(2);
-    b.aggregate("content", 0x68f5a8c2fe8a5881L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73aL).optional(true).ordered(true).multiple(true).origin("7563136704686217345").done();
+    b.aggregate("content", 0x68f5a8c2fe8a5881L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e266f86L).optional(true).ordered(true).multiple(true).origin("7563136704686217345").done();
     b.alias("REQUIRES");
     return b.create();
   }
@@ -518,6 +1031,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("events", 0x38bdb626f9180837L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c1ffL).optional(false).ordered(true).multiple(false).origin("4088624315226392631").done();
     b.aggregate("order", 0x38bdb626f918089fL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa48770aeL).optional(false).ordered(true).multiple(false).origin("4088624315226392735").done();
     b.aggregate("adicional", 0x398346ae4a5901a9L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb41c7b7L).optional(true).ordered(true).multiple(true).origin("4144233796496589225").done();
+    b.aggregate("type", 0x3cec4044d1a712bfL).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc25dc2aL).optional(false).ordered(true).multiple(false).origin("4389954401098732223").done();
     b.alias("SPEC");
     return b.create();
   }
@@ -528,14 +1042,42 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForStringValue() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "StringValue", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867f8ba7aL);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867d527b6L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3490815726191164026");
+    b.version(2);
+    b.property("value", 0x3071de6867f8ba7dL).type(PrimitiveTypeId.STRING).origin("3490815726191164029").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForType() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "Type", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc25dc2aL);
     b.class_(false, false, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x11f8a0774f2L);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4235889247684779050");
     b.version(2);
+    b.property("name1", 0x3cec4044d1ef4616L).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL)).origin("4389954401103463958").done();
     b.aggregate("name", 0x3ac8e6d3fc25dc37L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4e8bdL).optional(false).ordered(true).multiple(false).origin("4235889247684779063").done();
     b.aggregate("generic", 0x3ac8e6d3fc28cc32L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4e8bdL).optional(true).ordered(true).multiple(false).origin("4235889247684971570").done();
+    b.aggregate("test", 0x3cec4044d206acf4L).target(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x11f8a0774f2L).optional(true).ordered(true).multiple(false).origin("4389954401104997620").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForValue() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "Value", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867d527b6L);
+    b.interface_();
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867d527b1L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3490815726188832694");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForVariable() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "Variable", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867f8bad4L);
+    b.class_(false, false, false);
+    b.parent(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867d527b6L);
+    b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3490815726191164116");
+    b.version(2);
+    b.property("label", 0x3071de6867f8bad5L).type(MetaIdFactory.dataTypeId(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb73bL)).origin("3490815726191164117").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForWildcardArgument() {
