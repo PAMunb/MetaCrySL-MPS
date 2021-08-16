@@ -26,6 +26,7 @@
         <child id="4088624315226392735" name="order" index="31DrUT" />
         <child id="8598353117207694615" name="objects" index="3jQJ6d" />
         <child id="4389954401098732223" name="type" index="3HiPbV" />
+        <child id="4144233796496589225" name="adicional" index="1NQ$s7" />
       </concept>
       <concept id="5292687979099972623" name="MetaCrySL.structure.IObjectsContent" flags="ng" index="2si8ez">
         <property id="3490815726187307111" name="name" index="1nN3Sf" />
@@ -120,6 +121,12 @@
       <concept id="8063880014109550711" name="MetaCrySL.structure.Object" flags="ng" index="1BHS1h">
         <child id="8063880014109550720" name="objectType" index="1BHS2A" />
       </concept>
+      <concept id="4389954401098228550" name="MetaCrySL.structure.ForbiddenMethod" flags="ng" index="3HsMc2">
+        <child id="4389954401098228551" name="method" index="3HsMc3" />
+      </concept>
+      <concept id="4389954401097735068" name="MetaCrySL.structure.ForbiddenSpec" flags="ng" index="3HuTJo">
+        <child id="4389954401097735070" name="content" index="3HuTJq" />
+      </concept>
       <concept id="4144233796494843467" name="MetaCrySL.structure.ChoiceExp" flags="ng" index="1NJhz_">
         <child id="4144233796494843475" name="right" index="1NJhzX" />
         <child id="4144233796494843473" name="left" index="1NJhzZ" />
@@ -134,7 +141,7 @@
     </language>
   </registry>
   <node concept="h7EKp" id="3F8THfW5xnO">
-    <property role="TrG5h" value="testingFile" />
+    <property role="TrG5h" value="SPEC" />
     <property role="2sjOev" value="false" />
     <node concept="2sifTH" id="3F8THfW5xnP" role="3jQJ6d">
       <node concept="1BHS1h" id="31LRAxBKWUE" role="2si8e6">
@@ -213,6 +220,14 @@
         <property role="1AewAe" value="asasa" />
       </node>
     </node>
+    <node concept="3HuTJo" id="30EUbnSYEX3" role="1NQ$s7">
+      <node concept="3HsMc2" id="30EUbnT3D9j" role="3HuTJq">
+        <node concept="3mLGeX" id="30EUbnT3D9l" role="3HsMc3">
+          <property role="36ymjd" value="sa" />
+          <node concept="36ymjA" id="30EUbnT3D9n" role="36ymj8" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="12XUHJ" id="1e0chDhwaps">
     <property role="12XUIf" value="ref" />
@@ -266,7 +281,7 @@
     </node>
   </node>
   <node concept="368HuP" id="2dljnJ_tW7H">
-    <property role="TrG5h" value="asasas" />
+    <property role="TrG5h" value="CONFIG" />
     <node concept="368HrU" id="2dljnJ_tW7I" role="368HrT" />
   </node>
 </model>

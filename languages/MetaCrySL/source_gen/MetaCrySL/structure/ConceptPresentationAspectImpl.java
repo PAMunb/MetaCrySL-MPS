@@ -34,6 +34,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_EventMethod;
   private ConceptPresentation props_EventRef;
   private ConceptPresentation props_EventSpec;
+  private ConceptPresentation props_ForbiddenEmptyLine;
   private ConceptPresentation props_ForbiddenMethod;
   private ConceptPresentation props_ForbiddenSpec;
   private ConceptPresentation props_FormalArg;
@@ -183,7 +184,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_Config == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a21b0id);
+          cpb.icon(IconContainer.RESOURCE_a0a2a0a21b0jd);
           props_Config = cpb.create();
         }
         return props_Config;
@@ -271,6 +272,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_EventSpec = cpb.create();
         }
         return props_EventSpec;
+      case LanguageConceptSwitch.ForbiddenEmptyLine:
+        if (props_ForbiddenEmptyLine == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ForbiddenEmptyLine");
+          props_ForbiddenEmptyLine = cpb.create();
+        }
+        return props_ForbiddenEmptyLine;
       case LanguageConceptSwitch.ForbiddenMethod:
         if (props_ForbiddenMethod == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -595,7 +603,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_Refinement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.rawPresentation("REFINEMENT");
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a27b0id);
+          cpb.icon(IconContainer.RESOURCE_a0a2a0a37b0jd);
           props_Refinement = cpb.create();
         }
         return props_Refinement;
@@ -630,7 +638,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_Spec == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a77b0id);
+          cpb.icon(IconContainer.RESOURCE_a0a2a0a87b0jd);
           props_Spec = cpb.create();
         }
         return props_Spec;
