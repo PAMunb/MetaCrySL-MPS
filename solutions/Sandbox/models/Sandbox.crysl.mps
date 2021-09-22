@@ -56,11 +56,21 @@
       <concept id="4935365387813273332" name="MetaCrySL.structure.MetaVariable" flags="ng" index="2H8WTv">
         <property id="4935365387813273333" name="label" index="2H8WTu" />
       </concept>
+      <concept id="3139031731993775133" name="MetaCrySL.structure.ConfigTesting" flags="ng" index="2RILyB">
+        <child id="3139031731997035383" name="inputRef" index="2RNdZd" />
+        <child id="3139031731997035381" name="inputSpec" index="2RNdZf" />
+      </concept>
+      <concept id="3139031731997035371" name="MetaCrySL.structure.SpecRef" flags="ng" index="2RNdZh">
+        <reference id="3139031731997035372" name="ref" index="2RNdZm" />
+      </concept>
+      <concept id="3139031731997035374" name="MetaCrySL.structure.RefinementRef" flags="ng" index="2RNdZk">
+        <reference id="3139031731997035375" name="ref" index="2RNdZl" />
+      </concept>
       <concept id="1405177072845298441" name="MetaCrySL.structure.Rename" flags="ng" index="12XUCj">
         <child id="1405177072845298528" name="type" index="12XUDU" />
       </concept>
       <concept id="1405177072845298293" name="MetaCrySL.structure.Refinement" flags="ng" index="12XUHJ">
-        <property id="1405177072845298325" name="name" index="12XUIf" />
+        <property id="1405177072845298325" name="label" index="12XUIf" />
         <child id="1405177072845298335" name="type" index="12XUI5" />
         <child id="1405177072845298420" name="content" index="12XUJI" />
       </concept>
@@ -76,10 +86,6 @@
       </concept>
       <concept id="2546026358871820451" name="MetaCrySL.structure.AddRequire" flags="ng" index="360Ono">
         <child id="2546026358871820454" name="require" index="360Ont" />
-      </concept>
-      <concept id="2546026358874020737" name="MetaCrySL.structure.LoadModule" flags="ng" index="368HrU" />
-      <concept id="2546026358874020558" name="MetaCrySL.structure.Config" flags="ng" index="368HuP">
-        <child id="2546026358874020738" name="modules" index="368HrT" />
       </concept>
       <concept id="4235889247686591029" name="MetaCrySL.structure.FormalArgList" flags="ng" index="36ymjA">
         <child id="4235889247686695197" name="args" index="36yZZe" />
@@ -231,6 +237,7 @@
   </node>
   <node concept="12XUHJ" id="1e0chDhwaps">
     <property role="12XUIf" value="ref" />
+    <property role="TrG5h" value="REFACTORING" />
     <node concept="36VjFT" id="1e0chDhwapt" role="12XUI5">
       <property role="3H0Kpi" value="someRefinement" />
       <node concept="2yrA1U" id="1e0chDhwapu" role="36VjF$" />
@@ -280,9 +287,13 @@
       </node>
     </node>
   </node>
-  <node concept="368HuP" id="2dljnJ_tW7H">
-    <property role="TrG5h" value="CONFIG" />
-    <node concept="368HrU" id="2dljnJ_tW7I" role="368HrT" />
+  <node concept="2RILyB" id="2Ug8$ezRqAa">
+    <node concept="2RNdZh" id="2Ug8$ezRqAb" role="2RNdZf">
+      <ref role="2RNdZm" node="3F8THfW5xnO" resolve="SPEC" />
+    </node>
+    <node concept="2RNdZk" id="2Ug8$ezRqAc" role="2RNdZd">
+      <ref role="2RNdZl" node="1e0chDhwaps" resolve="REFACTORING" />
+    </node>
   </node>
 </model>
 
