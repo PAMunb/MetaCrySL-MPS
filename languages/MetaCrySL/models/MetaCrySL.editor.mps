@@ -403,15 +403,13 @@
       <node concept="3F0A7n" id="5GII8FCrlPJ" role="3EZMnx">
         <ref role="1NtTu8" to="qgj4:5GII8FCri3t" resolve="label" />
       </node>
-      <node concept="3F0ifn" id="5GII8FCsg_d" role="3EZMnx">
+      <node concept="3F0ifn" id="6MFMRGe8TTp" role="3EZMnx">
         <property role="3F0ifm" value=":=" />
       </node>
-      <node concept="2iRfu4" id="1HhIoyXjRg4" role="2iSdaV" />
-      <node concept="3F2HdR" id="1HhIoyXjeAK" role="3EZMnx">
-        <property role="2czwfO" value="|" />
+      <node concept="3F1sOY" id="6MFMRGe8TTx" role="3EZMnx">
         <ref role="1NtTu8" to="qgj4:1HhIoyXjezt" resolve="aggregate" />
-        <node concept="2iRfu4" id="1HhIoyXjeAM" role="2czzBx" />
       </node>
+      <node concept="2iRfu4" id="1HhIoyXjRg4" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="5GII8FCvhkJ">

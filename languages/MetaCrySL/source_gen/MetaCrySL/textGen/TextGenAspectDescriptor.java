@@ -23,10 +23,32 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   @Override
   public TextGenDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
     switch (myIndex.index(concept)) {
+      case LanguageConceptSwitch.AggregateList:
+        return new AggregateList_TextGen();
+      case LanguageConceptSwitch.EventAggregate:
+        return new EventAggregate_TextGen();
+      case LanguageConceptSwitch.EventMethod:
+        return new EventMethod_TextGen();
+      case LanguageConceptSwitch.EventRef:
+        return new EventRef_TextGen();
+      case LanguageConceptSwitch.EventSpec:
+        return new EventSpec_TextGen();
+      case LanguageConceptSwitch.FormalArgList:
+        return new FormalArgList_TextGen();
+      case LanguageConceptSwitch.MethodDef:
+        return new MethodDef_TextGen();
+      case LanguageConceptSwitch.Object:
+        return new Object_TextGen();
+      case LanguageConceptSwitch.ObjectSpec:
+        return new ObjectSpec_TextGen();
+      case LanguageConceptSwitch.QualifiedFormalArg:
+        return new QualifiedFormalArg_TextGen();
       case LanguageConceptSwitch.Spec:
         return new Spec_TextGen();
       case LanguageConceptSwitch.Type:
         return new Type_TextGen();
+      case LanguageConceptSwitch.WildcardArgument:
+        return new WildcardArgument_TextGen();
     }
     return null;
   }
@@ -46,7 +68,7 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
     return node.getName();
   }
   private static String getFileExtension_Spec(SNode node) {
-    return "spec";
+    return "crysl";
   }
 
   private static final class CONCEPTS {

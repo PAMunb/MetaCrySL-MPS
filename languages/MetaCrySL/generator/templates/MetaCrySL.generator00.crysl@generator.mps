@@ -83,8 +83,16 @@
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
+      <concept id="1202776937179" name="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" flags="lg" index="b5Tf3" />
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
+        <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1195502100749" name="preMappingScript" index="1puA0r" />
+      </concept>
+      <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
+        <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
+      </concept>
+      <concept id="1167327847730" name="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" flags="lg" index="3aamgX">
+        <child id="1169672767469" name="ruleConsequence" index="1lVwrX" />
       </concept>
       <concept id="1195499912406" name="jetbrains.mps.lang.generator.structure.MappingScript" flags="lg" index="1pmfR0">
         <property id="1195595592106" name="scriptKind" index="1v3f2W" />
@@ -124,11 +132,9 @@
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
-      <concept id="6995935425733782641" name="jetbrains.mps.lang.smodel.structure.Model_GetModule" flags="nn" index="13u695" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
-      <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -503,31 +509,9 @@
     <node concept="1puMqW" id="2Ug8$e$8Rqt" role="1puA0r">
       <ref role="1puQsG" node="2Ug8$ezMrnW" resolve="RefinementApply" />
     </node>
-  </node>
-  <node concept="1pmfR0" id="2Ug8$e$8RN5">
-    <property role="TrG5h" value="SpecToText" />
-    <node concept="1pplIY" id="2Ug8$e$8RN6" role="1pqMTA">
-      <node concept="3clFbS" id="2Ug8$e$8RN7" role="2VODD2">
-        <node concept="3clFbF" id="2Ug8$e$8WYK" role="3cqZAp">
-          <node concept="2OqwBi" id="2Ug8$e$8Xxo" role="3clFbG">
-            <node concept="2OqwBi" id="2Ug8$e$8Xic" role="2Oq$k0">
-              <node concept="2OqwBi" id="2Ug8$e$8X5H" role="2Oq$k0">
-                <node concept="1iwH7S" id="2Ug8$e$8WYJ" role="2Oq$k0" />
-                <node concept="1r8y6K" id="2Ug8$e$8Xa_" role="2OqNvi" />
-              </node>
-              <node concept="13u695" id="2Ug8$e$8Xnk" role="2OqNvi" />
-            </node>
-            <node concept="1$rogu" id="2Ug8$e$8XDl" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1pmfR0" id="4pYWG12TQZZ">
-    <property role="TrG5h" value="Copy" />
-    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
-    <node concept="1pplIY" id="4pYWG12TR00" role="1pqMTA">
-      <node concept="3clFbS" id="4pYWG12TR01" role="2VODD2" />
+    <node concept="3aamgX" id="6TLo2NFcqK" role="3acgRq">
+      <ref role="30HIoZ" to="qgj4:2Ig5bEsncHI" resolve="RefinementRef" />
+      <node concept="b5Tf3" id="6TLo2NFcqO" role="1lVwrX" />
     </node>
   </node>
 </model>
