@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-c99ylr5iarbaqfokg8k1zcg6t797b2i">
+  <files names="AggregateList_TextGen.java:EventAggregate_TextGen.java:EventMethod_TextGen.java:EventRef_TextGen.java:EventSpec_TextGen.java:FormalArgList_TextGen.java:MethodDef_TextGen.java:ObjectSpec_TextGen.java:Object_TextGen.java:QualifiedFormalArg_TextGen.java:Spec_TextGen.java:TextGenAspectDescriptor.java:Type_TextGen.java:WildcardArgument_TextGen.java" />
+</product>
+

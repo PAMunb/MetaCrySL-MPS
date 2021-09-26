@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="QueriesGenerated.java">
+      <unit at="100,0,106,0" name="MetaCrySL.generator00.crysl.QueriesGenerated$CONCEPTS" />
+      <unit at="107,0,118,0" name="MetaCrySL.generator00.crysl.QueriesGenerated$LINKS" />
+      <unit at="80,0,96,0" name="MetaCrySL.generator00.crysl.QueriesGenerated$SCB" />
+      <unit at="29,0,119,0" name="MetaCrySL.generator00.crysl.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:6d7b70cb-81fb-46c8-912d-069139622890(MetaCrySL.generator00.crysl@generator)/3355219396297078268">
+    <file name="QueriesGenerated.java">
+      <node id="3355219396297111796" at="34,85,35,99" concept="5" />
+      <node id="3355219396297115760" at="35,99,36,128" concept="5" />
+      <node id="3355219396297187214" at="37,38,38,107" concept="1" />
+      <node id="3355219396297317274" at="39,127,40,75" concept="5" />
+      <node id="3355219396299365343" at="40,75,41,110" concept="5" />
+      <node id="3355219396297234013" at="42,9,43,38" concept="5" />
+      <node id="3355219396297319698" at="44,77,45,204" concept="1" />
+      <node id="3355219396299335385" at="48,9,49,39" concept="5" />
+      <node id="3355219396299395406" at="52,48,53,46" concept="6" />
+      <node id="3355219396300434930" at="56,45,57,55" concept="5" />
+      <node id="3355219396300440793" at="57,55,58,166" concept="1" />
+      <node id="3355219396300479586" at="59,20,60,194" concept="5" />
+      <node id="3355219396300481559" at="60,194,61,164" concept="1" />
+      <node id="3355219396300463054" at="61,164,62,118" concept="1" />
+      <node id="3355219396297078268" at="71,14,72,57" concept="1" />
+      <node id="3355219396297078268" at="88,15,89,58" concept="1" />
+      <node id="3355219396297078268" at="89,58,90,17" concept="6" />
+      <node id="3355219396300437914" at="96,74,97,47" concept="6" />
+      <node id="3355219396297234013" at="43,38,46,11" concept="3" />
+      <node id="3355219396299389662" at="52,0,55,0" concept="4" trace="test#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="3355219396300437914" at="96,0,99,0" concept="7" trace="as_x583g4_a0a0a1a3a1a2a1#(Ljava/lang/Object;Ljava/lang/Class;)null" />
+      <node id="3355219396299499673" at="59,18,63,13" concept="0" />
+      <node id="3355219396299399657" at="50,79,55,44" concept="5" />
+      <node id="3355219396297234013" at="41,110,47,9" concept="0" />
+      <node id="3355219396299337936" at="55,44,63,13" concept="3" />
+      <node id="3355219396299335385" at="49,39,64,11" concept="3" />
+      <node id="3355219396299335385" at="47,9,65,9" concept="0" />
+      <node id="3355219396297202039" at="38,107,66,7" concept="2" />
+      <node id="3355219396297154005" at="36,128,67,5" concept="2" />
+      <node id="3355219396297078269" at="34,0,69,0" concept="7" trace="mappingScript_CodeBlock_0#(Ljetbrains/mps/generator/template/MappingScriptContext;)V" />
+      <scope id="3355219396297234017" at="44,77,45,204" />
+      <scope id="3355219396299389663" at="52,48,53,46" />
+      <scope id="3355219396300437914" at="96,74,97,47" />
+      <scope id="3355219396299337938" at="56,45,58,166">
+        <var name="ensureField" id="3355219396300434931" />
+      </scope>
+      <scope id="3355219396297078268" at="88,15,90,17" />
+      <scope id="3355219396299389662" at="52,0,55,0">
+        <var name="field" id="3355219396299389662" />
+      </scope>
+      <scope id="3355219396299499674" at="59,20,62,118">
+        <var name="nodeToAdd" id="3355219396300479588" />
+      </scope>
+      <scope id="3355219396300437914" at="96,0,99,0">
+        <var name="o" id="3355219396300437914" />
+        <var name="type" id="3355219396300437914" />
+      </scope>
+      <scope id="3355219396297234013" at="42,9,46,11">
+        <var name="addEvent" id="3355219396297234013" />
+      </scope>
+      <scope id="3355219396299335387" at="50,79,63,13">
+        <var name="hasEnsureField" id="3355219396299399653" />
+      </scope>
+      <scope id="3355219396299335385" at="48,9,64,11">
+        <var name="addEnsure" id="3355219396299335385" />
+      </scope>
+      <scope id="3355219396297202041" at="39,127,65,9">
+        <var name="specContentStream" id="3355219396299365339" />
+        <var name="specDef" id="3355219396297317270" />
+      </scope>
+      <scope id="3355219396297202039" at="38,107,66,7">
+        <var name="rule" id="3355219396297202042" />
+      </scope>
+      <scope id="3355219396297154007" at="37,38,66,7" />
+      <scope id="3355219396297154005" at="36,128,67,5">
+        <var name="specRef" id="3355219396297154008" />
+      </scope>
+      <scope id="3355219396297078270" at="34,85,67,5">
+        <var name="refInput" id="3355219396297115763" />
+        <var name="specInputs" id="3355219396297111799" />
+      </scope>
+      <scope id="3355219396297078269" at="34,0,69,0">
+        <var name="_context" id="3355219396297078269" />
+      </scope>
+      <unit id="3355219396299389662" at="51,99,55,13" name="MetaCrySL.generator00.crysl.QueriesGenerated$1" />
+    </file>
+  </root>
+</debug-info>
+

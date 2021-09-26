@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="909bb958-00db-4373-9fa0-19071b158520" name="Default Changelist" comment="Adicionados elementos iniciais de um Refinement:&#10;- Rename&#10;- AddEvent&#10;- AddConstraint&#10;- AddRequire&#10;- AddEnsure&#10;- DefineLiteralSet">
+    <list default="true" id="909bb958-00db-4373-9fa0-19071b158520" name="Default Changelist" comment="Iniciando testes com o gerador">
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/BasicEventExp_EditorBuilder_a$eventSingleRoleHandler_d7eiot_a0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/BasicEventExp_EditorBuilder_a$eventSingleRoleHandler_d7eiot_a0.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/ChoiceExp_EditorBuilder_a$leftSingleRoleHandler_wsqj48_a0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/ChoiceExp_EditorBuilder_a$leftSingleRoleHandler_wsqj48_a0.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/ChoiceExp_EditorBuilder_a$rightSingleRoleHandler_wsqj48_c0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/ChoiceExp_EditorBuilder_a$rightSingleRoleHandler_wsqj48_c0.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/DefineLiteralSet_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/DefineLiteralSet_EditorBuilder_a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EditorAspectDescriptorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EditorAspectDescriptorImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/ConfigTesting_EditorBuilder_a$inputFilesListHandler_s0l73_a1a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/ConfigTesting_EditorBuilder_a$inputFilesListHandler_s0l73_a1a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventAggregate_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventAggregate_EditorBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventAggregate_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventAggregate_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventAggregate_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventAggregate_EditorBuilder_a$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventAggregate_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventAggregate_EditorBuilder_a$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventAggregate_EditorBuilder_a$aggregateListHandler_lydwsz_c0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventAggregate_EditorBuilder_a$aggregateListHandler_lydwsz_c0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventAggregate_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventAggregate_EditorBuilder_a.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventRef_SubstituteMenu$SMP_Subconcepts_bedxz3_b.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/EventRef_SubstituteMenu$SMP_Subconcepts_bedxz3_b.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$1$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$1$1$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$18$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$18$1$1.class" afterDir="false" />
@@ -20,10 +25,10 @@
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$23$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$23$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$24$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$24$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$25$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$25$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$26$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$26$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$27$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$27$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$3$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$3$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$33$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$33$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$31$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$31$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$38$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$38$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$39$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$39$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$40$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$40$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$48$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$48$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$49$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$49$3.class" afterDir="false" />
@@ -31,6 +36,7 @@
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$50$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$50$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$51$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$51$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$53$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$53$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$55$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$55$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$56$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$56$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$57$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$57$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$58$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$58$3.class" afterDir="false" />
@@ -39,56 +45,100 @@
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$60$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$60$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$61$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$61$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$62$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$62$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$63$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$63$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$64$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$64$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$65$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$65$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$66$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$66$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$67$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$67$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$68$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$68$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$69$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$69$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$70$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$70$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$71$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$71$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$73$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$73$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$75$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/GrammarActionsDescriptor$75$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/InSet_EditorBuilder_a$rightSingleRoleHandler_1w5tav_c0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/InSet_EditorBuilder_a$rightSingleRoleHandler_1w5tav_c0.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/LiteralSet_EditorBuilder_a$setListHandler_461xbw_a0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/LiteralSet_EditorBuilder_a$setListHandler_461xbw_a0.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/ObjectRef_SubstituteMenu$SMP_Subconcepts_8bwa36_b.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/ObjectRef_SubstituteMenu$SMP_Subconcepts_8bwa36_b.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Object_EditorBuilder_a$objectTypeSingleRoleHandler_3ja71y_a0a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Object_EditorBuilder_a$objectTypeSingleRoleHandler_3ja71y_a0a.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/OrderSpec_EditorBuilder_a$contentListHandler_b0j60x_b0a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/OrderSpec_EditorBuilder_a$contentListHandler_b0j60x_b0a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Predicate_EditorBuilder_a$expListHandler_cvnc7u_d0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Predicate_EditorBuilder_a$expListHandler_cvnc7u_d0.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Refinement_EditorBuilder_a$contentListHandler_gfcr5c_b0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Refinement_EditorBuilder_a$contentListHandler_gfcr5c_b0.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/SequenceExp_EditorBuilder_a$leftSingleRoleHandler_ekar88_a0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/SequenceExp_EditorBuilder_a$leftSingleRoleHandler_ekar88_a0.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/SequenceExp_EditorBuilder_a$rightSingleRoleHandler_ekar88_c0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/SequenceExp_EditorBuilder_a$rightSingleRoleHandler_ekar88_c0.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Spec_EditorBuilder_a$classTypeSingleRoleHandler_x1u9mg_c0a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Spec_EditorBuilder_a$classTypeSingleRoleHandler_x1u9mg_c0a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Spec_EditorBuilder_a$typeSingleRoleHandler_x1u9mg_c0a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Spec_EditorBuilder_a$typeSingleRoleHandler_x1u9mg_c0a.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$abSingleRoleHandler_a1nfgp_a0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$abSingleRoleHandler_a1nfgp_a0.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$genericSingleRoleHandler_a1nfgp_a0b0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$genericSingleRoleHandler_a1nfgp_a0b0.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$genericSingleRoleHandler_a1nfgp_a1a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$genericSingleRoleHandler_a1nfgp_a1a.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$genericSingleRoleHandler_a1nfgp_b0a1a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$genericSingleRoleHandler_a1nfgp_b0a1a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$genericSingleRoleHandler_a1nfgp_b0a2a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$genericSingleRoleHandler_a1nfgp_b0a2a.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$genericSingleRoleHandler_a1nfgp_b1a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$genericSingleRoleHandler_a1nfgp_b1a.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$nameSingleRoleHandler_a1nfgp_a0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$nameSingleRoleHandler_a1nfgp_a0.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$nameSingleRoleHandler_a1nfgp_a0a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$nameSingleRoleHandler_a1nfgp_a0a.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$nameSingleRoleHandler_a1nfgp_b0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$nameSingleRoleHandler_a1nfgp_b0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$testSingleRoleHandler_a1nfgp_b0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/Type_EditorBuilder_a$testSingleRoleHandler_a1nfgp_b0.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/ConceptPresentationAspectImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/ConceptPresentationAspectImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/IconContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/IconContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/LanguageConceptSwitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/LanguageConceptSwitch.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/StructureAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/StructureAspectDescriptor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/structure/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/textGen/Spec_TextGen$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/textGen/Spec_TextGen$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/textGen/Spec_TextGen$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/textGen/Spec_TextGen$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/textGen/Spec_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/textGen/Spec_TextGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/textGen/TextGenAspectDescriptor$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/textGen/TextGenAspectDescriptor$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/textGen/TextGenAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/textGen/TextGenAspectDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/textGen/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/textGen/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/classes_gen/MetaCrySL/textGen/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/generator/classes_gen/MetaCrySL/generator00/Generator.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/generator/classes_gen/MetaCrySL/generator00/Generator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/generator/classes_gen/MetaCrySL/generator00/crysl/QueriesGenerated$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/generator/classes_gen/MetaCrySL/generator00/crysl/QueriesGenerated$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/generator/classes_gen/MetaCrySL/generator00/crysl/QueriesGenerated$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/generator/classes_gen/MetaCrySL/generator00/crysl/QueriesGenerated$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/generator/classes_gen/MetaCrySL/generator00/crysl/QueriesGenerated$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/generator/classes_gen/MetaCrySL/generator00/crysl/QueriesGenerated$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/generator/classes_gen/MetaCrySL/generator00/crysl/QueriesGenerated$SCB.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/generator/classes_gen/MetaCrySL/generator00/crysl/QueriesGenerated$SCB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/generator/classes_gen/MetaCrySL/generator00/crysl/QueriesGenerated$SNQ.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/generator/classes_gen/MetaCrySL/generator00/crysl/QueriesGenerated$SNQ.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/generator/classes_gen/MetaCrySL/generator00/crysl/QueriesGenerated.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/generator/classes_gen/MetaCrySL/generator00/crysl/QueriesGenerated.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/generator/classes_gen/MetaCrySL/generator00/crysl/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/generator/classes_gen/MetaCrySL/generator00/crysl/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/generator/classes_gen/MetaCrySL/generator00/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/generator/classes_gen/MetaCrySL/generator00/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/generator/source_gen.caches/MetaCrySL/generator00/crysl/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/generator/source_gen.caches/MetaCrySL/generator00/crysl/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/generator/source_gen.caches/MetaCrySL/generator00/crysl/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/generator/source_gen.caches/MetaCrySL/generator00/crysl/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/generator/source_gen.caches/MetaCrySL/generator00/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/generator/source_gen.caches/MetaCrySL/generator00/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/generator/source_gen.caches/MetaCrySL/generator00/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/generator/source_gen.caches/MetaCrySL/generator00/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/generator/source_gen/MetaCrySL/generator00/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/generator/source_gen/MetaCrySL/generator00/Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/generator/source_gen/MetaCrySL/generator00/crysl/QueriesGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/generator/source_gen/MetaCrySL/generator00/crysl/QueriesGenerated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/generator/source_gen/MetaCrySL/generator00/crysl/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/generator/source_gen/MetaCrySL/generator00/crysl/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/generator/source_gen/MetaCrySL/generator00/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/generator/source_gen/MetaCrySL/generator00/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/generator/templates/MetaCrySL.generator00.crysl@generator.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/generator/templates/MetaCrySL.generator00.crysl@generator.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.editor.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.structure/EventAggregate.mpsr" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.structure/EventAggregate.mpsr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.textGen.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/models/MetaCrySL.textGen.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/editor/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/editor/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/structure/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/structure/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/DefineLiteralSet_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/DefineLiteralSet_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/EditorAspectDescriptorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/EditorAspectDescriptorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/textGen/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/textGen/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/textGen/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen.caches/MetaCrySL/textGen/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/EventAggregate_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/EventAggregate_EditorBuilder_a.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/structure/ConceptPresentationAspectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/structure/ConceptPresentationAspectImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/structure/IconContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/structure/IconContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/structure/LanguageConceptSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/structure/LanguageConceptSwitch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/structure/StructureAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/structure/StructureAspectDescriptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/structure/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/textGen/Spec_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/textGen/Spec_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/textGen/TextGenAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/textGen/TextGenAspectDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/textGen/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/textGen/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/MetaCrySL/source_gen/MetaCrySL/textGen/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/Sandbox/classes_gen/Sandbox/crysl/SPEC.spec" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/Sandbox/models/Sandbox.crysl.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Sandbox/models/Sandbox.crysl.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/Sandbox/source_gen.caches/Sandbox/crysl/generated" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Sandbox/source_gen.caches/Sandbox/crysl/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/Sandbox/source_gen/Sandbox/crysl/SPEC.spec" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ConceptEditorHintSettings">
+    <option name="enabledHints">
+      <set>
+        <option value="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+        <option value="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+      </set>
+    </option>
   </component>
   <component name="ConsoleHistory">
     <option name="tabs">
@@ -96,7 +146,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="b9eab274-3bac-4a95-8030-173f06f47e59/r:35918e0d-b4c5-466d-ab05-638352bfed23(TempModuleb9eab274-3bac-4a95-8030-173f06f47e59/ConsoleModel_102468297348)">
+            <model ref="011f31d1-057b-45eb-876a-b2f7373399dd/r:8f4d9f7a-6c9f-485d-9131-8b36a26a56be(TempModule011f31d1-057b-45eb-876a-b2f7373399dd/ConsoleModel_3310632120423)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -116,11 +166,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="2dljnJ_gGMm">
-                <node concept="3balQm" id="2dljnJ_gGMn" role="aymYE" />
-                <node concept="2Clz$F" id="2dljnJ_gGMo" role="aymYO" />
-                <node concept="2_V_lH" id="2dljnJ_gGMp" role="1PhJh3">
-                  <ref role="2_V_lI" node="2dljnJ_gGMo" resolve="CommandHolder" />
+              <node concept="aymSD" id="6MFMRGe1Ctw">
+                <node concept="3balQm" id="6MFMRGe1Ctx" role="aymYE" />
+                <node concept="2Clz$F" id="6MFMRGe1Cty" role="aymYO" />
+                <node concept="2_V_lH" id="6MFMRGe1Ctz" role="1PhJh3">
+                  <ref role="2_V_lI" node="6MFMRGe1Cty" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -194,12 +244,175 @@
   </component>
   <component name="ProjectPluginManager">
     <option name="pluginsState">
+      <option name="com.dslfoundry.langvis.plugin.plugin.Plugin_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.core.base.pluginSolution.plugin.PluginSolution_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.core.codereview.plugin.Codereview_ProjectPlugin">
+        <value>
+          <PluginState>
+            <option name="myComponentsState">
+              <list>
+                <ComponentState>
+                  <option name="first" value="com.mbeddr.core.codereview.plugin.Codereview_ProjectPlugin$2" />
+                </ComponentState>
+              </list>
+            </option>
+          </PluginState>
+        </value>
+      </option>
+      <option name="com.mbeddr.doc.aspect.ui.plugin.Ui_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.doc.pluginSolution.plugin.PluginSolution_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.mpsutil.asynccell.plugin.Asynccell_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.mpsutil.breadcrumb.runtime.plugin.Runtime_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.mpsutil.ccmenu.runtime.plugin.Runtime_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.mpsutil.contextactions.runtime.plugin.Runtime_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.mpsutil.ecore.ui.plugin.Ui_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.mpsutil.editingGuide.execution.plugin.Execution_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.mpsutil.genreview.plugin.Genreview_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.mpsutil.httpserver.plugin.Httpserver_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.mpsutil.hyperlink.plugin.Hyperlink_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.mpsutil.intentions.runtime.plugin.Runtime_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.mpsutil.jfreechart.runtime.plugin.Runtime_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.mpsutil.jung.pluginSolution.plugin.PluginSolution_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.mpsutil.multilingual.concept.runtime.plugin.Runtime_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.mpsutil.multilingual.settings.runtime.plugin.Runtime_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.mpsutil.plantuml.pluginSolution.plugin.PluginSolution_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.mpsutil.projectview.runtime.plugin.Runtime_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.mpsutil.projectview.vcs.plugin.Vcs_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.mpsutil.traceExplorer.plugin.TraceExplorer_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.mpsutil.userstyles.runtime.plugin.Runtime_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
       <option name="de.itemis.mps.editor.celllayout.runtime.plugin.Runtime_ProjectPlugin">
         <value>
           <PluginState />
         </value>
       </option>
+      <option name="de.itemis.mps.editor.diagram.runtime.plugin.Runtime_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="de.itemis.mps.mouselistener.runtime.plugin.Runtime_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
       <option name="de.itemis.mps.selection.runtime.plugin.Runtime_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="de.itemis.mps.tooltips.runtime.plugin.Runtime_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="de.q60.mps.explorer.plugin.Explorer_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="de.q60.mps.shadowmodels.modelcheck.runtime.plugin.Runtime_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="de.q60.mps.shadowmodels.runtime.plugin.Runtime_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="de.slisson.mps.conditionalEditor.runtime.plugin.Runtime_ProjectPlugin">
         <value>
           <PluginState />
         </value>
@@ -272,6 +485,29 @@
           <PluginState />
         </value>
       </option>
+      <option name="org.iets3.analysis.base.plugin.Base_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="org.iets3.core.expr.plugin.plugin.Plugin_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="org.iets3.core.expr.testExecution.plugin.TestExecution_ProjectPlugin">
+        <value>
+          <PluginState>
+            <option name="myComponentsState">
+              <list>
+                <ComponentState>
+                  <option name="first" value="org.iets3.core.expr.testExecution.plugin.TestExecution_ProjectPlugin$2" />
+                </ComponentState>
+              </list>
+            </option>
+          </PluginState>
+        </value>
+      </option>
     </option>
   </component>
   <component name="ProjectReloadState">
@@ -280,8 +516,59 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
+      <pane id="FileSystem">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/test/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.structure]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
@@ -302,11 +589,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/test/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.editor.mps]" />
+              <option name="myItemId" value="ba6b983b-dee1-424d-a73b-867d051ffe67" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -321,44 +604,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/test/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.structure]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/test/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.structure]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:f6b52abb-01aa-4fc5-ab27-1be83220cae4(MetaCrySL.intentions) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/test/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.intentions.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -385,10 +630,6 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -396,7 +637,15 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ba6b983b-dee1-424d-a73b-867d051ffe67" />
+              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure) in IdeaFile[path: /home/santosdanilo/workspace-unb/TG/test/MetaCrySL-MPS/languages/MetaCrySL/models/MetaCrySL.structure]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -405,31 +654,17 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
-      <pane id="FileSystem">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="" />
-            </path>
-            <path>
-              <item name="" type="" />
-              <item name="" type="" />
-            </path>
-            <path>
-              <item name="" type="" />
-              <item name="" type="" />
-              <item name="" type="" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
+      <pane id="CustomProjectView_org.iets3.core.plugin.plugin.SpecExplorer">
+        <subPane />
+      </pane>
+      <pane id="CustomProjectView_org.iets3.core.expr.doc.plugin.plugin.BookmarkExplorer">
+        <subPane />
+      </pane>
+      <pane id="CustomProjectView_com.mbeddr.mpsutil.favourites.plugin.plugin.FavouritesProjectView">
+        <subPane />
       </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Open Files'; set:Open Files; class com.intellij.openapi.fileEditor.impl.OpenFilesScope">
@@ -462,6 +697,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager">
@@ -830,7 +1066,21 @@
       <option name="project" value="LOCAL" />
       <updated>1627957157808</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Testando empty line em forbidden spec">
+      <created>1629154290015</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1629154290015</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Iniciando testes com o gerador">
+      <created>1632345772555</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1632345772555</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="UsagesViewTool">
@@ -1078,8 +1328,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Criado concept e editor do Ensures" />
-    <MESSAGE value="Criado concept e editor do Negates" />
     <MESSAGE value="Alterando estrutura de order" />
     <MESSAGE value="Adicionados constrations concepts:&#10;- Implies&#10;- Conjunction&#10;- Disjunction" />
     <MESSAGE value="Adicionados constrations concepts:&#10;- Relational&#10;- Arithmetic" />
@@ -1103,7 +1351,9 @@
     <MESSAGE value="Adicionado flag para negar Predicate em Constraints" />
     <MESSAGE value="Testando algumas alteraçoes no editor. Sem muitas novidades." />
     <MESSAGE value="Adicionados elementos iniciais de um Refinement:&#10;- Rename&#10;- AddEvent&#10;- AddConstraint&#10;- AddRequire&#10;- AddEnsure&#10;- DefineLiteralSet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionados elementos iniciais de um Refinement:&#10;- Rename&#10;- AddEvent&#10;- AddConstraint&#10;- AddRequire&#10;- AddEnsure&#10;- DefineLiteralSet" />
+    <MESSAGE value="Testando empty line em forbidden spec" />
+    <MESSAGE value="Iniciando testes com o gerador" />
+    <option name="LAST_COMMIT_MESSAGE" value="Iniciando testes com o gerador" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

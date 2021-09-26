@@ -22,6 +22,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_CallTo;
   private ConceptPresentation props_ChoiceExp;
   private ConceptPresentation props_Config;
+  private ConceptPresentation props_ConfigTesting;
   private ConceptPresentation props_ConjunctionExp;
   private ConceptPresentation props_ConstraintExp;
   private ConceptPresentation props_ConstraintSpec;
@@ -34,6 +35,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_EventMethod;
   private ConceptPresentation props_EventRef;
   private ConceptPresentation props_EventSpec;
+  private ConceptPresentation props_ForbiddenEmptyLine;
   private ConceptPresentation props_ForbiddenMethod;
   private ConceptPresentation props_ForbiddenSpec;
   private ConceptPresentation props_FormalArg;
@@ -65,6 +67,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_MethodDef;
   private ConceptPresentation props_MinusExpreesion;
   private ConceptPresentation props_Model;
+  private ConceptPresentation props_ModelRef;
   private ConceptPresentation props_NegatesSpec;
   private ConceptPresentation props_NeverTypeOf;
   private ConceptPresentation props_NoCallTo;
@@ -82,12 +85,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_QualifiedFormalArg;
   private ConceptPresentation props_QualifiedName;
   private ConceptPresentation props_Refinement;
+  private ConceptPresentation props_RefinementRef;
   private ConceptPresentation props_RelationalExp;
   private ConceptPresentation props_Rename;
   private ConceptPresentation props_RequiresSpec;
   private ConceptPresentation props_SequenceExp;
   private ConceptPresentation props_Spec;
   private ConceptPresentation props_SpecContent;
+  private ConceptPresentation props_SpecRef;
   private ConceptPresentation props_StringValue;
   private ConceptPresentation props_Type;
   private ConceptPresentation props_Value;
@@ -183,10 +188,17 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_Config == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a21b0id);
+          cpb.icon(IconContainer.RESOURCE_a0a2a0a21b0nd);
           props_Config = cpb.create();
         }
         return props_Config;
+      case LanguageConceptSwitch.ConfigTesting:
+        if (props_ConfigTesting == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ConfigTesting = cpb.create();
+        }
+        return props_ConfigTesting;
       case LanguageConceptSwitch.ConjunctionExp:
         if (props_ConjunctionExp == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -271,6 +283,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_EventSpec = cpb.create();
         }
         return props_EventSpec;
+      case LanguageConceptSwitch.ForbiddenEmptyLine:
+        if (props_ForbiddenEmptyLine == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ForbiddenEmptyLine");
+          props_ForbiddenEmptyLine = cpb.create();
+        }
+        return props_ForbiddenEmptyLine;
       case LanguageConceptSwitch.ForbiddenMethod:
         if (props_ForbiddenMethod == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -476,6 +495,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Model = cpb.create();
         }
         return props_Model;
+      case LanguageConceptSwitch.ModelRef:
+        if (props_ModelRef == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x2b9014ba9c2ad5baL, 0x2b9014ba9c2ad5bbL, "ref", "", "");
+          props_ModelRef = cpb.create();
+        }
+        return props_ModelRef;
       case LanguageConceptSwitch.NegatesSpec:
         if (props_NegatesSpec == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -594,11 +620,18 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Refinement:
         if (props_Refinement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("REFINEMENT");
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a27b0id);
+          cpb.presentationByName();
+          cpb.icon(IconContainer.RESOURCE_a0a2a0a57b0nd);
           props_Refinement = cpb.create();
         }
         return props_Refinement;
+      case LanguageConceptSwitch.RefinementRef:
+        if (props_RefinementRef == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x2b9014ba9c5ccb6eL, 0x2b9014ba9c5ccb6fL, "ref", "", "");
+          props_RefinementRef = cpb.create();
+        }
+        return props_RefinementRef;
       case LanguageConceptSwitch.RelationalExp:
         if (props_RelationalExp == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -630,7 +663,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_Spec == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a77b0id);
+          cpb.icon(IconContainer.RESOURCE_a0a2a0a18b0nd);
           props_Spec = cpb.create();
         }
         return props_Spec;
@@ -640,6 +673,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SpecContent = cpb.create();
         }
         return props_SpecContent;
+      case LanguageConceptSwitch.SpecRef:
+        if (props_SpecRef == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x2b9014ba9c5ccb6bL, 0x2b9014ba9c5ccb6cL, "ref", "", "");
+          props_SpecRef = cpb.create();
+        }
+        return props_SpecRef;
       case LanguageConceptSwitch.StringValue:
         if (props_StringValue == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
