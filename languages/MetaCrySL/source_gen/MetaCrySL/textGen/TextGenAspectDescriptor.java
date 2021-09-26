@@ -33,6 +33,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new EventRef_TextGen();
       case LanguageConceptSwitch.EventSpec:
         return new EventSpec_TextGen();
+      case LanguageConceptSwitch.ForbiddenSpec:
+        return new ForbiddenSpec_TextGen();
       case LanguageConceptSwitch.FormalArgList:
         return new FormalArgList_TextGen();
       case LanguageConceptSwitch.MethodDef:
@@ -41,6 +43,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Object_TextGen();
       case LanguageConceptSwitch.ObjectSpec:
         return new ObjectSpec_TextGen();
+      case LanguageConceptSwitch.OrderSpec:
+        return new OrderSpec_TextGen();
       case LanguageConceptSwitch.QualifiedFormalArg:
         return new QualifiedFormalArg_TextGen();
       case LanguageConceptSwitch.Spec:
