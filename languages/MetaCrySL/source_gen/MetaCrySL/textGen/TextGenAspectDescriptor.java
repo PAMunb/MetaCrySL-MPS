@@ -27,6 +27,10 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new AggregateList_TextGen();
       case LanguageConceptSwitch.ChoiceExp:
         return new ChoiceExp_TextGen();
+      case LanguageConceptSwitch.ConstraintSpec:
+        return new ConstraintSpec_TextGen();
+      case LanguageConceptSwitch.EnsuresSpec:
+        return new EnsuresSpec_TextGen();
       case LanguageConceptSwitch.EventAggregate:
         return new EventAggregate_TextGen();
       case LanguageConceptSwitch.EventMethod:
@@ -43,6 +47,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new FormalArgList_TextGen();
       case LanguageConceptSwitch.MethodDef:
         return new MethodDef_TextGen();
+      case LanguageConceptSwitch.NegatesSpec:
+        return new NegatesSpec_TextGen();
       case LanguageConceptSwitch.Object:
         return new Object_TextGen();
       case LanguageConceptSwitch.ObjectSpec:
@@ -53,6 +59,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new PrimaryExp_TextGen();
       case LanguageConceptSwitch.QualifiedFormalArg:
         return new QualifiedFormalArg_TextGen();
+      case LanguageConceptSwitch.RequiresSpec:
+        return new RequiresSpec_TextGen();
       case LanguageConceptSwitch.SequenceExp:
         return new SequenceExp_TextGen();
       case LanguageConceptSwitch.Spec:

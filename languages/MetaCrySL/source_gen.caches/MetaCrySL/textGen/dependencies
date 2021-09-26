@@ -21,6 +21,28 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
+  <dependency className="MetaCrySL.textGen.ConstraintSpec_TextGen">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
+  <dependency className="MetaCrySL.textGen.EnsuresSpec_TextGen">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
   <dependency className="MetaCrySL.textGen.EventAggregate_TextGen">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
@@ -108,6 +130,17 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
+  <dependency className="MetaCrySL.textGen.NegatesSpec_TextGen">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
   <dependency className="MetaCrySL.textGen.ObjectSpec_TextGen">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
@@ -159,6 +192,17 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
+  <dependency className="MetaCrySL.textGen.RequiresSpec_TextGen">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
   <dependency className="MetaCrySL.textGen.SequenceExp_TextGen">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
@@ -186,6 +230,8 @@
     <classNode dependClassName="MetaCrySL.structure.LanguageConceptSwitch" />
     <classNode dependClassName="MetaCrySL.textGen.AggregateList_TextGen" />
     <classNode dependClassName="MetaCrySL.textGen.ChoiceExp_TextGen" />
+    <classNode dependClassName="MetaCrySL.textGen.ConstraintSpec_TextGen" />
+    <classNode dependClassName="MetaCrySL.textGen.EnsuresSpec_TextGen" />
     <classNode dependClassName="MetaCrySL.textGen.EventAggregate_TextGen" />
     <classNode dependClassName="MetaCrySL.textGen.EventMethod_TextGen" />
     <classNode dependClassName="MetaCrySL.textGen.EventRef_TextGen" />
@@ -194,11 +240,13 @@
     <classNode dependClassName="MetaCrySL.textGen.ForbiddenSpec_TextGen" />
     <classNode dependClassName="MetaCrySL.textGen.FormalArgList_TextGen" />
     <classNode dependClassName="MetaCrySL.textGen.MethodDef_TextGen" />
+    <classNode dependClassName="MetaCrySL.textGen.NegatesSpec_TextGen" />
     <classNode dependClassName="MetaCrySL.textGen.ObjectSpec_TextGen" />
     <classNode dependClassName="MetaCrySL.textGen.Object_TextGen" />
     <classNode dependClassName="MetaCrySL.textGen.OrderSpec_TextGen" />
     <classNode dependClassName="MetaCrySL.textGen.PrimaryExp_TextGen" />
     <classNode dependClassName="MetaCrySL.textGen.QualifiedFormalArg_TextGen" />
+    <classNode dependClassName="MetaCrySL.textGen.RequiresSpec_TextGen" />
     <classNode dependClassName="MetaCrySL.textGen.SequenceExp_TextGen" />
     <classNode dependClassName="MetaCrySL.textGen.Spec_TextGen" />
     <classNode dependClassName="MetaCrySL.textGen.Type_TextGen" />

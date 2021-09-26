@@ -66,6 +66,7 @@
       <concept id="3139031731997035374" name="MetaCrySL.structure.RefinementRef" flags="ng" index="2RNdZk">
         <reference id="3139031731997035375" name="ref" index="2RNdZl" />
       </concept>
+      <concept id="4088624315226392982" name="MetaCrySL.structure.EnsuresSpec" flags="ng" index="31DrYK" />
       <concept id="1405177072845298441" name="MetaCrySL.structure.Rename" flags="ng" index="12XUCj">
         <child id="1405177072845298528" name="type" index="12XUDU" />
       </concept>
@@ -148,7 +149,7 @@
   </registry>
   <node concept="h7EKp" id="3F8THfW5xnO">
     <property role="TrG5h" value="SPEC" />
-    <property role="2sjOev" value="true" />
+    <property role="2sjOev" value="false" />
     <node concept="2sifTH" id="3F8THfW5xnP" role="3jQJ6d">
       <node concept="1BHS1h" id="31LRAxBKWUE" role="2si8e6">
         <property role="1nN3Sf" value="asasas" />
@@ -234,6 +235,7 @@
         </node>
       </node>
     </node>
+    <node concept="31DrYK" id="6MFMRGeBTJo" role="1NQ$s7" />
   </node>
   <node concept="12XUHJ" id="1e0chDhwaps">
     <property role="12XUIf" value="ref" />

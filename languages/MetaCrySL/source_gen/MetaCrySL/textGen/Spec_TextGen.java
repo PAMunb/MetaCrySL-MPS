@@ -34,6 +34,7 @@ public class Spec_TextGen extends TextGenDescriptorBase {
     for (SNode block : ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.adicional$aUw1))) {
       if (!((SNodeOperations.getChildren(block).isEmpty()))) {
         tgs.appendNode(block);
+        tgs.newLine();
       }
     }
   }
