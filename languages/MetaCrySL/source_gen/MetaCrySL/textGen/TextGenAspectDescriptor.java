@@ -25,6 +25,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
     switch (myIndex.index(concept)) {
       case LanguageConceptSwitch.AggregateList:
         return new AggregateList_TextGen();
+      case LanguageConceptSwitch.ChoiceExp:
+        return new ChoiceExp_TextGen();
       case LanguageConceptSwitch.EventAggregate:
         return new EventAggregate_TextGen();
       case LanguageConceptSwitch.EventMethod:
@@ -45,8 +47,12 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new ObjectSpec_TextGen();
       case LanguageConceptSwitch.OrderSpec:
         return new OrderSpec_TextGen();
+      case LanguageConceptSwitch.PrimaryExp:
+        return new PrimaryExp_TextGen();
       case LanguageConceptSwitch.QualifiedFormalArg:
         return new QualifiedFormalArg_TextGen();
+      case LanguageConceptSwitch.SequenceExp:
+        return new SequenceExp_TextGen();
       case LanguageConceptSwitch.Spec:
         return new Spec_TextGen();
       case LanguageConceptSwitch.Type:

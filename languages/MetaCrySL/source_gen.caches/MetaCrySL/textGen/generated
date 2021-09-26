@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="7t7dkc7tb1yxd8jp4haxpfj1q5mmm90">
-  <files names="AggregateList_TextGen.java:EventAggregate_TextGen.java:EventMethod_TextGen.java:EventRef_TextGen.java:EventSpec_TextGen.java:ForbiddenSpec_TextGen.java:FormalArgList_TextGen.java:MethodDef_TextGen.java:ObjectSpec_TextGen.java:Object_TextGen.java:OrderSpec_TextGen.java:QualifiedFormalArg_TextGen.java:Spec_TextGen.java:TextGenAspectDescriptor.java:Type_TextGen.java:WildcardArgument_TextGen.java" />
+<product version="3" modelHash="52sjyf9ckcwwctp6s27qqso1g1076x6">
+  <files names="AggregateList_TextGen.java:ChoiceExp_TextGen.java:EventAggregate_TextGen.java:EventMethod_TextGen.java:EventRef_TextGen.java:EventSpec_TextGen.java:ForbiddenSpec_TextGen.java:FormalArgList_TextGen.java:MethodDef_TextGen.java:ObjectSpec_TextGen.java:Object_TextGen.java:OrderSpec_TextGen.java:PrimaryExp_TextGen.java:QualifiedFormalArg_TextGen.java:SequenceExp_TextGen.java:Spec_TextGen.java:TextGenAspectDescriptor.java:Type_TextGen.java:WildcardArgument_TextGen.java" />
 </product>
 
