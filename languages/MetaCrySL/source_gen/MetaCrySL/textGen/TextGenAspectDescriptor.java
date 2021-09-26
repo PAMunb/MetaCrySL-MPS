@@ -35,6 +35,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new EventRef_TextGen();
       case LanguageConceptSwitch.EventSpec:
         return new EventSpec_TextGen();
+      case LanguageConceptSwitch.ForbiddenMethod:
+        return new ForbiddenMethod_TextGen();
       case LanguageConceptSwitch.ForbiddenSpec:
         return new ForbiddenSpec_TextGen();
       case LanguageConceptSwitch.FormalArgList:

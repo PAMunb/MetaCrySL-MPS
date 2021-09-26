@@ -666,5 +666,23 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="6MFMRGe_EHA">
+    <property role="3GE5qa" value="spec.forbidden" />
+    <ref role="WuzLi" to="qgj4:3NGg4jhBQd6" resolve="ForbiddenMethod" />
+    <node concept="11bSqf" id="6MFMRGe_EHB" role="11c4hB">
+      <node concept="3clFbS" id="6MFMRGe_EHC" role="2VODD2">
+        <node concept="lc7rE" id="6MFMRGe_EMJ" role="3cqZAp">
+          <node concept="l9hG8" id="6MFMRGe_ENm" role="lcghm">
+            <node concept="2OqwBi" id="6MFMRGe_EXr" role="lb14g">
+              <node concept="117lpO" id="6MFMRGe_EOc" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6MFMRGe_F8U" role="2OqNvi">
+                <ref role="3Tt5mk" to="qgj4:3NGg4jhBQd7" resolve="method" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
