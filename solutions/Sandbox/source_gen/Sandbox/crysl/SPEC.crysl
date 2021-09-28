@@ -1,4 +1,4 @@
-ABSTRACT SPEC 
+SPEC 
 
 OBJECTS
 	asasas
@@ -8,4 +8,16 @@ EVENTS
 	c2 : methjode()
 	asc := c1 | c2
 	c1 : ethod1m()
+
+ORDER
+	c1 | c2 | c1, c2
+
+FORBIDDEN
+	ahah()
+
+NEGATES
+	!asas
+
+CONSTRAINTS
+	15 + 16
 

@@ -10,12 +10,8 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import java.util.stream.Stream;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import java.util.Optional;
-import java.util.function.Predicate;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import MetaCrySL.generator00.refiment_util.Util;
 import java.util.Map;
 import jetbrains.mps.generator.impl.query.ScriptCodeBlock;
 import java.util.HashMap;
@@ -23,6 +19,7 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.generator.impl.query.QueryKey;
 import jetbrains.mps.generator.impl.GenerationFailureException;
 import org.jetbrains.mps.openapi.language.SConcept;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 
@@ -32,35 +29,22 @@ public class QueriesGenerated extends QueryProviderBase {
     super(1);
   }
   public static void mappingScript_CodeBlock_0(final MappingScriptContext _context) {
-    List<SNode> specInputs = SModelOperations.nodes(_context.getInputModel(), CONCEPTS.SpecRef$KG);
-    SNode refInput = ListSequence.fromList(SModelOperations.nodes(_context.getInputModel(), CONCEPTS.RefinementRef$M9)).first();
-    for (SNode specRef : specInputs) {
-      SLinkOperations.getChildren(SLinkOperations.getTarget(refInput, LINKS.ref$61Hi), LINKS.content$dnuR);
-      for (SNode rule : SLinkOperations.getChildren(SLinkOperations.getTarget(refInput, LINKS.ref$61Hi), LINKS.content$dnuR)) {
-        SNode specDef = SLinkOperations.getTarget(specRef, LINKS.ref$60YM);
-        Stream<SNode> specContentStream = SLinkOperations.getChildren(specDef, LINKS.adicional$aUw1).stream();
+    List<SNode> specificationInputs = SModelOperations.nodes(_context.getInputModel(), CONCEPTS.SpecRef$KG);
+    SNode refinementInput = ListSequence.fromList(SModelOperations.nodes(_context.getInputModel(), CONCEPTS.RefinementRef$M9)).first();
+
+    for (SNode specRef : specificationInputs) {
+      SNode specDef = SLinkOperations.getTarget(specRef, LINKS.ref$60YM);
+      for (SNode rule : SLinkOperations.getChildren(SLinkOperations.getTarget(refinementInput, LINKS.ref$61Hi), LINKS.content$dnuR)) {
         {
           final SNode addEvent = rule;
           if (SNodeOperations.isInstanceOf(addEvent, CONCEPTS.AddEvent$L6)) {
-            ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(specDef, LINKS.events$My3j), LINKS.content$XvKG)).addElement(SLinkOperations.getTarget(addEvent, LINKS.event$rxbM));
+            Util.AddEvent(specDef, addEvent);
           }
         }
         {
-          final SNode addEnsure = rule;
-          if (SNodeOperations.isInstanceOf(addEnsure, CONCEPTS.AddEnsure$J9)) {
-            Optional<SNode> hasEnsureField = as_x583g4_a0a0a1a3a1a2a1(specContentStream.filter(new Predicate<SNode>() {
-              public boolean test(SNode field) {
-                return field instanceof SNode;
-              }
-            }).findFirst(), Optional.class);
-            if (hasEnsureField.isPresent()) {
-              SNode ensureField = hasEnsureField.get();
-              ListSequence.fromList(SLinkOperations.getChildren(ensureField, LINKS.content$9EAO)).addElement(SLinkOperations.getTarget(addEnsure, LINKS.ensure$vwFk));
-            } else {
-              SNode nodeToAdd = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x38bdb626f9180996L, "MetaCrySL.structure.EnsuresSpec"));
-              ListSequence.fromList(SLinkOperations.getChildren(nodeToAdd, LINKS.content$9EAO)).addElement(SLinkOperations.getTarget(addEnsure, LINKS.ensure$vwFk));
-              ListSequence.fromList(SLinkOperations.getChildren(specDef, LINKS.adicional$aUw1)).addElement(nodeToAdd);
-            }
+          final SNode addConstraint = rule;
+          if (SNodeOperations.isInstanceOf(addConstraint, CONCEPTS.AddConstraint$aH)) {
+            Util.AddConstraint(specDef, addConstraint);
           }
         }
       }
@@ -93,26 +77,17 @@ public class QueriesGenerated extends QueryProviderBase {
       }
     }
   }
-  private static <T> T as_x583g4_a0a0a1a3a1a2a1(Object o, Class<T> type) {
-    return (type.isInstance(o) ? (T) o : null);
-  }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept SpecRef$KG = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x2b9014ba9c5ccb6bL, "MetaCrySL.structure.SpecRef");
     /*package*/ static final SConcept RefinementRef$M9 = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x2b9014ba9c5ccb6eL, "MetaCrySL.structure.RefinementRef");
     /*package*/ static final SConcept AddEvent$L6 = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x23554d7be5560827L, "MetaCrySL.structure.AddEvent");
-    /*package*/ static final SConcept AddEnsure$J9 = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x23554d7be55608a8L, "MetaCrySL.structure.AddEnsure");
+    /*package*/ static final SConcept AddConstraint$aH = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x23554d7be5560862L, "MetaCrySL.structure.AddConstraint");
   }
 
   private static final class LINKS {
+    /*package*/ static final SReferenceLink ref$60YM = MetaAdapterFactory.getReferenceLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x2b9014ba9c5ccb6bL, 0x2b9014ba9c5ccb6cL, "ref");
     /*package*/ static final SReferenceLink ref$61Hi = MetaAdapterFactory.getReferenceLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x2b9014ba9c5ccb6eL, 0x2b9014ba9c5ccb6fL, "ref");
     /*package*/ static final SContainmentLink content$dnuR = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1380311a51779a75L, 0x1380311a51779af4L, "content");
-    /*package*/ static final SReferenceLink ref$60YM = MetaAdapterFactory.getReferenceLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x2b9014ba9c5ccb6bL, 0x2b9014ba9c5ccb6cL, "ref");
-    /*package*/ static final SContainmentLink adicional$aUw1 = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3063bd30217d1129L, 0x398346ae4a5901a9L, "adicional");
-    /*package*/ static final SContainmentLink events$My3j = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3063bd30217d1129L, 0x38bdb626f9180837L, "events");
-    /*package*/ static final SContainmentLink content$XvKG = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c1ffL, 0x77537c9aa486c226L, "content");
-    /*package*/ static final SContainmentLink event$rxbM = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x23554d7be5560827L, 0x23554d7be5560828L, "event");
-    /*package*/ static final SContainmentLink content$9EAO = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x38bdb626f9180996L, 0xdf0d74c973eaa99L, "content");
-    /*package*/ static final SContainmentLink ensure$vwFk = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x23554d7be55608a8L, 0x23554d7be55608abL, "ensure");
   }
 }

@@ -17,7 +17,7 @@ public class ConstraintSpec_TextGen extends TextGenDescriptorBase {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.append("CONSTRAINTS");
     tgs.newLine();
-    for (SNode rule : ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.constraints$LTjR))) {
+    for (SNode rule : ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.content$LTjR))) {
       tgs.append("\t");
       tgs.appendNode(rule);
       tgs.newLine();
@@ -25,6 +25,6 @@ public class ConstraintSpec_TextGen extends TextGenDescriptorBase {
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink constraints$LTjR = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x38bdb626f91808b8L, 0x5b2eb88ae87d1513L, "constraints");
+    /*package*/ static final SContainmentLink content$LTjR = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x38bdb626f91808b8L, 0x5b2eb88ae87d1513L, "content");
   }
 }

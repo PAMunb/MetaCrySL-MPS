@@ -12,8 +12,77 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TextGenAspectDescriptor.java">
-      <unit at="94,0,97,0" name="MetaCrySL.textGen.TextGenAspectDescriptor$CONCEPTS" />
-      <unit at="16,0,98,0" name="MetaCrySL.textGen.TextGenAspectDescriptor" />
+      <unit at="100,0,103,0" name="MetaCrySL.textGen.TextGenAspectDescriptor$CONCEPTS" />
+      <unit at="16,0,104,0" name="MetaCrySL.textGen.TextGenAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/3499202411741261276">
+    <file name="Predicate_TextGen.java">
+      <node id="3499202411741261276" at="14,54,15,55" concept="6" />
+      <node id="3499202411741263039" at="16,83,17,22" concept="2" />
+      <node id="3499202411741263144" at="18,5,19,87" concept="2" />
+      <node id="3499202411741261276" at="23,0,24,0" concept="8" trace="negate$SamM" />
+      <node id="3499202411741261276" at="24,0,25,0" concept="8" trace="label$VeXS" />
+      <node id="3499202411741261376" at="15,55,18,5" concept="4" />
+      <node id="3499202411741261276" at="13,0,21,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="3499202411741261378" at="16,83,17,22" />
+      <scope id="3499202411741261276" at="14,54,19,87">
+        <var name="tgs" id="3499202411741261276" />
+      </scope>
+      <scope id="3499202411741261276" at="13,0,21,0">
+        <var name="ctx" id="3499202411741261276" />
+      </scope>
+      <unit id="3499202411741261276" at="22,0,26,0" name="MetaCrySL.textGen.Predicate_TextGen$PROPS" />
+      <unit id="3499202411741261276" at="12,0,27,0" name="MetaCrySL.textGen.Predicate_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="3499202411741261276" at="62,43,63,39" concept="7" />
+      <scope id="3499202411741261276" at="62,43,63,39" />
+    </file>
+  </root>
+  <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/3499202411742514524">
+    <file name="ArithmeticExp_TextGen.java">
+      <node id="3499202411742514524" at="16,54,17,55" concept="6" />
+      <node id="3499202411742514563" at="17,55,18,86" concept="2" />
+      <node id="3499202411742520085" at="18,86,19,20" concept="2" />
+      <node id="3499202411742516886" at="19,20,20,99" concept="2" />
+      <node id="3499202411742520332" at="20,99,21,20" concept="2" />
+      <node id="3499202411742519656" at="21,20,22,87" concept="2" />
+      <node id="3499202411742514524" at="26,0,27,0" concept="8" trace="left$t7TI" />
+      <node id="3499202411742514524" at="27,0,28,0" concept="8" trace="right$tdj5" />
+      <node id="3499202411742514524" at="15,0,24,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="3499202411742514524" at="16,54,22,87">
+        <var name="tgs" id="3499202411742514524" />
+      </scope>
+      <scope id="3499202411742514524" at="15,0,24,0">
+        <var name="ctx" id="3499202411742514524" />
+      </scope>
+      <unit id="3499202411742514524" at="25,0,29,0" name="MetaCrySL.textGen.ArithmeticExp_TextGen$LINKS" />
+      <unit id="3499202411742514524" at="14,0,30,0" name="MetaCrySL.textGen.ArithmeticExp_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="3499202411742514524" at="28,47,29,43" concept="7" />
+      <scope id="3499202411742514524" at="28,47,29,43" />
+    </file>
+  </root>
+  <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/3499202411743125968">
+    <file name="IntValue_TextGen.java">
+      <node id="3499202411743125968" at="14,54,15,55" concept="6" />
+      <node id="3499202411743126099" at="15,55,16,106" concept="2" />
+      <node id="3499202411743125968" at="20,0,21,0" concept="8" trace="value$gXjO" />
+      <node id="3499202411743125968" at="13,0,18,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="3499202411743125968" at="14,54,16,106">
+        <var name="tgs" id="3499202411743125968" />
+      </scope>
+      <scope id="3499202411743125968" at="13,0,18,0">
+        <var name="ctx" id="3499202411743125968" />
+      </scope>
+      <unit id="3499202411743125968" at="19,0,22,0" name="MetaCrySL.textGen.IntValue_TextGen$PROPS" />
+      <unit id="3499202411743125968" at="12,0,23,0" name="MetaCrySL.textGen.IntValue_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="3499202411743125968" at="50,42,51,38" concept="7" />
+      <scope id="3499202411743125968" at="50,42,51,38" />
     </file>
   </root>
   <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/6160985533012254838">
@@ -59,26 +128,26 @@
       <unit id="6160985533012254838" at="17,0,54,0" name="MetaCrySL.textGen.Spec_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="6160985533012254838" at="66,38,67,34" concept="7" />
-      <node id="6160985533012254838" at="79,55,80,46" concept="6" />
-      <node id="6160985533012254838" at="80,46,81,49" concept="6" />
-      <node id="6160985533012254838" at="81,49,82,84" concept="2" />
-      <node id="6160985533012254838" at="82,84,83,17" concept="1" />
-      <node id="6160985533012254838" at="87,54,88,26" concept="7" />
-      <node id="6160985533012261544" at="90,59,91,19" concept="7" />
-      <node id="6160985533012254838" at="87,0,90,0" concept="9" trace="getFileName_Spec#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="6160985533012254838" at="90,0,93,0" concept="9" trace="getFileExtension_Spec#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="6160985533012254838" at="78,58,84,7" concept="4" />
-      <scope id="6160985533012254838" at="66,38,67,34" />
-      <scope id="6160985533012254838" at="87,54,88,26" />
-      <scope id="6160985533012254838" at="90,59,91,19" />
-      <scope id="6160985533012254838" at="87,0,90,0">
+      <node id="6160985533012254838" at="72,38,73,34" concept="7" />
+      <node id="6160985533012254838" at="85,55,86,46" concept="6" />
+      <node id="6160985533012254838" at="86,46,87,49" concept="6" />
+      <node id="6160985533012254838" at="87,49,88,84" concept="2" />
+      <node id="6160985533012254838" at="88,84,89,17" concept="1" />
+      <node id="6160985533012254838" at="93,54,94,26" concept="7" />
+      <node id="6160985533012261544" at="96,59,97,19" concept="7" />
+      <node id="6160985533012254838" at="93,0,96,0" concept="9" trace="getFileName_Spec#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="6160985533012254838" at="96,0,99,0" concept="9" trace="getFileExtension_Spec#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="6160985533012254838" at="84,58,90,7" concept="4" />
+      <scope id="6160985533012254838" at="72,38,73,34" />
+      <scope id="6160985533012254838" at="93,54,94,26" />
+      <scope id="6160985533012254838" at="96,59,97,19" />
+      <scope id="6160985533012254838" at="93,0,96,0">
         <var name="node" id="6160985533012254838" />
       </scope>
-      <scope id="6160985533012254838" at="90,0,93,0">
+      <scope id="6160985533012254838" at="96,0,99,0">
         <var name="node" id="6160985533012254838" />
       </scope>
-      <scope id="6160985533012254838" at="79,55,83,17">
+      <scope id="6160985533012254838" at="85,55,89,17">
         <var name="ext" id="6160985533012254838" />
         <var name="fname" id="6160985533012254838" />
       </scope>
@@ -86,8 +155,8 @@
   </root>
   <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/6160985533012905261">
     <file name="TextGenAspectDescriptor.java">
-      <node id="6160985533012905261" at="68,38,69,34" concept="7" />
-      <scope id="6160985533012905261" at="68,38,69,34" />
+      <node id="6160985533012905261" at="74,38,75,34" concept="7" />
+      <scope id="6160985533012905261" at="74,38,75,34" />
     </file>
     <file name="Type_TextGen.java">
       <node id="6160985533012905261" at="11,54,12,55" concept="6" />
@@ -126,8 +195,8 @@
       <unit id="7449269690191089275" at="14,0,31,0" name="MetaCrySL.textGen.ObjectSpec_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7449269690191089275" at="54,44,55,40" concept="7" />
-      <scope id="7449269690191089275" at="54,44,55,40" />
+      <node id="7449269690191089275" at="58,44,59,40" concept="7" />
+      <scope id="7449269690191089275" at="58,44,59,40" />
     </file>
   </root>
   <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/7449269690191102673">
@@ -149,8 +218,8 @@
       <unit id="7449269690191102673" at="14,0,30,0" name="MetaCrySL.textGen.Object_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7449269690191102673" at="52,40,53,36" concept="7" />
-      <scope id="7449269690191102673" at="52,40,53,36" />
+      <node id="7449269690191102673" at="56,40,57,36" concept="7" />
+      <scope id="7449269690191102673" at="56,40,57,36" />
     </file>
   </root>
   <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/7830576106492312974">
@@ -178,8 +247,8 @@
       <unit id="7830576106492312974" at="14,0,31,0" name="MetaCrySL.textGen.EventSpec_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7830576106492312974" at="40,43,41,39" concept="7" />
-      <scope id="7830576106492312974" at="40,43,41,39" />
+      <node id="7830576106492312974" at="42,43,43,39" concept="7" />
+      <scope id="7830576106492312974" at="42,43,43,39" />
     </file>
   </root>
   <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/7830576106492316286">
@@ -202,8 +271,8 @@
       <unit id="7830576106492316286" at="14,0,31,0" name="MetaCrySL.textGen.EventMethod_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7830576106492316286" at="36,45,37,41" concept="7" />
-      <scope id="7830576106492316286" at="36,45,37,41" />
+      <node id="7830576106492316286" at="38,45,39,41" concept="7" />
+      <scope id="7830576106492316286" at="38,45,39,41" />
     </file>
   </root>
   <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/7830576106492319789">
@@ -227,8 +296,8 @@
       <unit id="7830576106492319789" at="14,0,32,0" name="MetaCrySL.textGen.MethodDef_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7830576106492319789" at="48,43,49,39" concept="7" />
-      <scope id="7830576106492319789" at="48,43,49,39" />
+      <node id="7830576106492319789" at="52,43,53,39" concept="7" />
+      <scope id="7830576106492319789" at="52,43,53,39" />
     </file>
   </root>
   <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/7830576106492323480">
@@ -251,8 +320,8 @@
       <unit id="7830576106492323480" at="14,0,31,0" name="MetaCrySL.textGen.EventAggregate_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7830576106492323480" at="34,48,35,44" concept="7" />
-      <scope id="7830576106492323480" at="34,48,35,44" />
+      <node id="7830576106492323480" at="36,48,37,44" concept="7" />
+      <scope id="7830576106492323480" at="36,48,37,44" />
     </file>
   </root>
   <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/7830576106494070528">
@@ -286,14 +355,14 @@
       <unit id="7830576106494070528" at="14,0,34,0" name="MetaCrySL.textGen.FormalArgList_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7830576106494070528" at="46,47,47,43" concept="7" />
-      <scope id="7830576106494070528" at="46,47,47,43" />
+      <node id="7830576106494070528" at="48,47,49,43" concept="7" />
+      <scope id="7830576106494070528" at="48,47,49,43" />
     </file>
   </root>
   <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/7830576106495206654">
     <file name="TextGenAspectDescriptor.java">
-      <node id="7830576106495206654" at="70,50,71,46" concept="7" />
-      <scope id="7830576106495206654" at="70,50,71,46" />
+      <node id="7830576106495206654" at="76,50,77,46" concept="7" />
+      <scope id="7830576106495206654" at="76,50,77,46" />
     </file>
     <file name="WildcardArgument_TextGen.java">
       <node id="7830576106495206654" at="11,54,12,55" concept="6" />
@@ -324,8 +393,8 @@
       <unit id="7830576106495206753" at="12,0,23,0" name="MetaCrySL.textGen.QualifiedFormalArg_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7830576106495206753" at="60,52,61,48" concept="7" />
-      <scope id="7830576106495206753" at="60,52,61,48" />
+      <node id="7830576106495206753" at="66,52,67,48" concept="7" />
+      <scope id="7830576106495206753" at="66,52,67,48" />
     </file>
   </root>
   <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/7830576106495221757">
@@ -381,8 +450,8 @@
       <unit id="7830576106495222982" at="14,0,29,0" name="MetaCrySL.textGen.EventRef_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7830576106495222982" at="38,42,39,38" concept="7" />
-      <scope id="7830576106495222982" at="38,42,39,38" />
+      <node id="7830576106495222982" at="40,42,41,38" concept="7" />
+      <scope id="7830576106495222982" at="40,42,41,38" />
     </file>
   </root>
   <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/7830576106497538508">
@@ -410,8 +479,8 @@
       <unit id="7830576106497538508" at="14,0,31,0" name="MetaCrySL.textGen.OrderSpec_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7830576106497538508" at="56,43,57,39" concept="7" />
-      <scope id="7830576106497538508" at="56,43,57,39" />
+      <node id="7830576106497538508" at="60,43,61,39" concept="7" />
+      <scope id="7830576106497538508" at="60,43,61,39" />
     </file>
   </root>
   <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/7830576106497541415">
@@ -439,8 +508,8 @@
       <unit id="7830576106497541415" at="14,0,31,0" name="MetaCrySL.textGen.ForbiddenSpec_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7830576106497541415" at="44,47,45,43" concept="7" />
-      <scope id="7830576106497541415" at="44,47,45,43" />
+      <node id="7830576106497541415" at="46,47,47,43" concept="7" />
+      <scope id="7830576106497541415" at="46,47,47,43" />
     </file>
   </root>
   <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/7830576106498158557">
@@ -462,8 +531,8 @@
       <unit id="7830576106498158557" at="12,0,26,0" name="MetaCrySL.textGen.ChoiceExp_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7830576106498158557" at="28,43,29,39" concept="7" />
-      <scope id="7830576106498158557" at="28,43,29,39" />
+      <node id="7830576106498158557" at="30,43,31,39" concept="7" />
+      <scope id="7830576106498158557" at="30,43,31,39" />
     </file>
   </root>
   <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/7830576106498162839">
@@ -485,8 +554,8 @@
       <unit id="7830576106498162839" at="12,0,26,0" name="MetaCrySL.textGen.SequenceExp_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7830576106498162839" at="64,45,65,41" concept="7" />
-      <scope id="7830576106498162839" at="64,45,65,41" />
+      <node id="7830576106498162839" at="70,45,71,41" concept="7" />
+      <scope id="7830576106498162839" at="70,45,71,41" />
     </file>
   </root>
   <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/7830576106498747999">
@@ -505,8 +574,8 @@
       <unit id="7830576106498747999" at="12,0,23,0" name="MetaCrySL.textGen.PrimaryExp_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7830576106498747999" at="58,44,59,40" concept="7" />
-      <scope id="7830576106498747999" at="58,44,59,40" />
+      <node id="7830576106498747999" at="64,44,65,40" concept="7" />
+      <scope id="7830576106498747999" at="64,44,65,40" />
     </file>
   </root>
   <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/7830576106499910502">
@@ -525,8 +594,8 @@
       <unit id="7830576106499910502" at="12,0,23,0" name="MetaCrySL.textGen.ForbiddenMethod_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7830576106499910502" at="42,49,43,45" concept="7" />
-      <scope id="7830576106499910502" at="42,49,43,45" />
+      <node id="7830576106499910502" at="44,49,45,45" concept="7" />
+      <scope id="7830576106499910502" at="44,49,45,45" />
     </file>
   </root>
   <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/7830576106500496410">
@@ -554,8 +623,8 @@
       <unit id="7830576106500496410" at="14,0,31,0" name="MetaCrySL.textGen.EnsuresSpec_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7830576106500496410" at="32,45,33,41" concept="7" />
-      <scope id="7830576106500496410" at="32,45,33,41" />
+      <node id="7830576106500496410" at="34,45,35,41" concept="7" />
+      <scope id="7830576106500496410" at="34,45,35,41" />
     </file>
   </root>
   <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/7830576106501664392">
@@ -563,13 +632,13 @@
       <node id="7830576106501664392" at="16,54,17,55" concept="6" />
       <node id="7830576106501664431" at="17,55,18,30" concept="2" />
       <node id="7830576106501664563" at="18,30,19,18" concept="2" />
-      <node id="7830576106501666747" at="20,122,21,23" concept="2" />
+      <node id="7830576106501666747" at="20,118,21,23" concept="2" />
       <node id="7830576106501666788" at="21,23,22,27" concept="2" />
       <node id="7830576106501667018" at="22,27,23,20" concept="2" />
-      <node id="7830576106501664392" at="28,0,29,0" concept="8" trace="constraints$LTjR" />
+      <node id="7830576106501664392" at="28,0,29,0" concept="8" trace="content$LTjR" />
       <node id="7830576106501665236" at="19,18,24,5" concept="3" />
       <node id="7830576106501664392" at="15,0,26,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="7830576106501665242" at="20,122,23,20" />
+      <scope id="7830576106501665242" at="20,118,23,20" />
       <scope id="7830576106501665236" at="19,18,24,5">
         <var name="rule" id="7830576106501665238" />
       </scope>
@@ -583,8 +652,8 @@
       <unit id="7830576106501664392" at="14,0,31,0" name="MetaCrySL.textGen.ConstraintSpec_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7830576106501664392" at="30,48,31,44" concept="7" />
-      <scope id="7830576106501664392" at="30,48,31,44" />
+      <node id="7830576106501664392" at="32,48,33,44" concept="7" />
+      <scope id="7830576106501664392" at="32,48,33,44" />
     </file>
   </root>
   <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/7830576106501667067">
@@ -612,8 +681,8 @@
       <unit id="7830576106501667067" at="14,0,31,0" name="MetaCrySL.textGen.NegatesSpec_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7830576106501667067" at="50,45,51,41" concept="7" />
-      <scope id="7830576106501667067" at="50,45,51,41" />
+      <node id="7830576106501667067" at="54,45,55,41" concept="7" />
+      <scope id="7830576106501667067" at="54,45,55,41" />
     </file>
   </root>
   <root nodeRef="r:d1984143-1790-41c5-b390-241c39a9960d(MetaCrySL.textGen)/7830576106501669501">
@@ -641,8 +710,8 @@
       <unit id="7830576106501669501" at="14,0,31,0" name="MetaCrySL.textGen.RequiresSpec_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7830576106501669501" at="62,46,63,42" concept="7" />
-      <scope id="7830576106501669501" at="62,46,63,42" />
+      <node id="7830576106501669501" at="68,46,69,42" concept="7" />
+      <scope id="7830576106501669501" at="68,46,69,42" />
     </file>
   </root>
 </debug-info>

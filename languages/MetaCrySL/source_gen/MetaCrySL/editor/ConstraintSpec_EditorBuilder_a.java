@@ -79,17 +79,17 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new constraintsListHandler_zdmotm_b1a(myNode, getEditorContext());
+    AbstractCellListHandler handler = new contentListHandler_zdmotm_b1a(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
-    editorCell.setCellId("refNodeList_constraints");
+    editorCell.setCellId("refNodeList_content");
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class constraintsListHandler_zdmotm_b1a extends RefNodeListHandler {
+  private static class contentListHandler_zdmotm_b1a extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public constraintsListHandler_zdmotm_b1a(SNode ownerNode, EditorContext context) {
+    public contentListHandler_zdmotm_b1a(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -99,7 +99,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return LINKS.constraints$LTjR;
+      return LINKS.content$LTjR;
     }
     public SAbstractConcept getChildSConcept() {
       return CONCEPTS.IConstraintContent$M9;
@@ -112,7 +112,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(constraintsListHandler_zdmotm_b1a.this.getNode(), LINKS.constraints$LTjR));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(contentListHandler_zdmotm_b1a.this.getNode(), LINKS.content$LTjR));
       try {
         EditorCell emptyCell = null;
         emptyCell = createConstant_0();
@@ -160,7 +160,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink constraints$LTjR = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x38bdb626f91808b8L, 0x5b2eb88ae87d1513L, "constraints");
+    /*package*/ static final SContainmentLink content$LTjR = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x38bdb626f91808b8L, 0x5b2eb88ae87d1513L, "content");
   }
 
   private static final class CONCEPTS {

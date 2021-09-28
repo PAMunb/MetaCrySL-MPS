@@ -483,7 +483,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("MetaCrySL.structure.SpecContent", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb41c7b7L);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/4088624315226392760");
     b.version(2);
-    b.aggregate("constraints", 0x5b2eb88ae87d1513L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb733L).optional(true).ordered(true).multiple(true).origin("6570391813125641491").done();
+    b.aggregate("content", 0x5b2eb88ae87d1513L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb733L).optional(true).ordered(true).multiple(true).origin("6570391813125641491").done();
     b.alias("CONSTRAINTS");
     return b.create();
   }

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:a1bf2d48-aad2-4aa4-ac5b-080eaede4b31(MetaCrySL.generator00.refiment_util)/7449269690191797994">
+    <file name="Util.java">
+      <node id="7830576106503469959" at="19,59,20,97" concept="4" />
+      <node id="3355219396297319698" at="20,97,21,144" concept="1" />
+      <node id="3355219396299365343" at="24,61,25,103" concept="4" />
+      <node id="3355219396299395406" at="27,40,28,38" concept="5" />
+      <node id="3355219396300434930" at="31,31,32,41" concept="4" />
+      <node id="3355219396300440793" at="32,41,33,158" concept="1" />
+      <node id="3355219396300479586" at="34,12,35,186" concept="4" />
+      <node id="3355219396300481559" at="35,186,36,156" concept="1" />
+      <node id="3355219396300463054" at="36,156,37,107" concept="1" />
+      <node id="3499202411743771665" at="41,69,42,107" concept="4" />
+      <node id="3499202411745353770" at="44,39,45,76" concept="5" />
+      <node id="7830576106504244209" at="48,23,49,25" concept="4" />
+      <node id="7830576106504244215" at="49,25,50,101" concept="1" />
+      <node id="7830576106504244229" at="51,12,52,189" concept="4" />
+      <node id="7830576106504244235" at="52,189,53,105" concept="1" />
+      <node id="7830576106504244244" at="53,105,54,107" concept="1" />
+      <node id="3355219396300437914" at="58,64,59,47" concept="5" />
+      <node id="7449269690191797994" at="63,0,64,0" concept="6" trace="event$rxbM" />
+      <node id="7449269690191797994" at="64,0,65,0" concept="6" trace="events$My3j" />
+      <node id="7449269690191797994" at="65,0,66,0" concept="6" trace="content$XvKG" />
+      <node id="7449269690191797994" at="66,0,67,0" concept="6" trace="adicional$aUw1" />
+      <node id="7449269690191797994" at="67,0,68,0" concept="6" trace="content$9EAO" />
+      <node id="7449269690191797994" at="68,0,69,0" concept="6" trace="ensure$vwFk" />
+      <node id="7449269690191797994" at="69,0,70,0" concept="6" trace="constraint$setk" />
+      <node id="7449269690191797994" at="70,0,71,0" concept="6" trace="content$LTjR" />
+      <node id="7449269690191797994" at="74,0,75,0" concept="6" trace="ConstraintSpec$xj" />
+      <node id="3355219396299389662" at="27,0,30,0" concept="3" trace="test#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="3499202411745351460" at="44,0,47,0" concept="3" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="3355219396300437914" at="58,0,61,0" concept="7" trace="as_sd8x_a0a1a2#(Ljava/lang/Object;Ljava/lang/Class;)null" />
+      <node id="124347621291433324" at="19,0,23,0" concept="7" trace="AddEvent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3355219396299499673" at="34,10,38,5" concept="0" />
+      <node id="7830576106504244227" at="51,10,55,5" concept="0" />
+      <node id="3355219396299399657" at="25,103,30,36" concept="4" />
+      <node id="3499202411745327049" at="42,107,47,7" concept="4" />
+      <node id="3355219396299337936" at="30,36,38,5" concept="2" />
+      <node id="7830576106504244207" at="47,7,55,5" concept="2" />
+      <node id="7830576106504155373" at="24,0,40,0" concept="7" trace="AddEnsure#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7830576106504244172" at="41,0,57,0" concept="7" trace="AddConstraint#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="3355219396299389663" at="27,40,28,38" />
+      <scope id="3499202411745351461" at="44,39,45,76" />
+      <scope id="3355219396300437914" at="58,64,59,47" />
+      <scope id="124347621291433327" at="19,59,21,144">
+        <var name="copy" id="7830576106503469961" />
+      </scope>
+      <scope id="3355219396299337938" at="31,31,33,158">
+        <var name="ensureField" id="3355219396300434931" />
+      </scope>
+      <scope id="7830576106504244208" at="48,23,50,101">
+        <var name="field" id="7830576106504244210" />
+      </scope>
+      <scope id="3355219396299389662" at="27,0,30,0">
+        <var name="field" id="3355219396299389662" />
+      </scope>
+      <scope id="3355219396299499674" at="34,12,37,107">
+        <var name="nodeToAdd" id="3355219396300479588" />
+      </scope>
+      <scope id="3499202411745351460" at="44,0,47,0">
+        <var name="it" id="3499202411745351460" />
+      </scope>
+      <scope id="7830576106504244228" at="51,12,54,107">
+        <var name="nodeToAdd" id="7830576106504244230" />
+      </scope>
+      <scope id="3355219396300437914" at="58,0,61,0">
+        <var name="o" id="3355219396300437914" />
+        <var name="type" id="3355219396300437914" />
+      </scope>
+      <scope id="124347621291433324" at="19,0,23,0">
+        <var name="addEvent" id="7830576106504089360" />
+        <var name="spec" id="7830576106504089268" />
+      </scope>
+      <scope id="7830576106504155376" at="24,61,38,5">
+        <var name="hasField" id="3355219396299399653" />
+        <var name="specContentStream" id="3355219396299365339" />
+      </scope>
+      <scope id="7830576106504244177" at="41,69,55,5">
+        <var name="copy" id="3499202411743771667" />
+        <var name="list" id="3499202411745327051" />
+      </scope>
+      <scope id="7830576106504155373" at="24,0,40,0">
+        <var name="addEnsure" id="7830576106504155473" />
+        <var name="spec" id="7830576106504155471" />
+      </scope>
+      <scope id="7830576106504244172" at="41,0,57,0">
+        <var name="addConstraint" id="7830576106504244175" />
+        <var name="spec" id="7830576106504244173" />
+      </scope>
+      <unit id="7449269690191797994" at="73,0,76,0" name="MetaCrySL.generator00.refiment_util.Util$CONCEPTS" />
+      <unit id="3355219396299389662" at="26,75,30,5" name="MetaCrySL.generator00.refiment_util.Util$1" />
+      <unit id="3499202411745351460" at="43,118,47,5" name="MetaCrySL.generator00.refiment_util.Util$2" />
+      <unit id="7449269690191797994" at="62,0,72,0" name="MetaCrySL.generator00.refiment_util.Util$LINKS" />
+      <unit id="7449269690191797994" at="18,0,77,0" name="MetaCrySL.generator00.refiment_util.Util" />
+    </file>
+  </root>
+</debug-info>
+

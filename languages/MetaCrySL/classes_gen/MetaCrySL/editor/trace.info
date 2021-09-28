@@ -14268,21 +14268,21 @@
       <node id="6570391813125641519" at="74,52,75,22" concept="8" />
       <node id="6570391813125641544" at="77,43,78,85" concept="7" />
       <node id="6570391813125641544" at="78,85,79,22" concept="8" />
-      <node id="6570391813125641519" at="81,44,82,104" concept="7" />
-      <node id="6570391813125641519" at="82,104,83,93" concept="7" />
-      <node id="6570391813125641519" at="83,93,84,52" concept="2" />
-      <node id="6570391813125641519" at="84,52,85,51" concept="2" />
+      <node id="6570391813125641519" at="81,44,82,100" concept="7" />
+      <node id="6570391813125641519" at="82,100,83,93" concept="7" />
+      <node id="6570391813125641519" at="83,93,84,48" concept="2" />
+      <node id="6570391813125641519" at="84,48,85,51" concept="2" />
       <node id="6570391813125641519" at="85,51,86,22" concept="8" />
-      <node id="6570391813125641519" at="92,86,93,28" concept="13" />
+      <node id="6570391813125641519" at="92,82,93,28" concept="13" />
       <node id="6570391813125641519" at="93,28,94,25" concept="2" />
       <node id="6570391813125641519" at="98,28,99,20" concept="8" />
-      <node id="6570391813125641519" at="101,40,102,36" concept="8" />
+      <node id="6570391813125641519" at="101,40,102,32" concept="8" />
       <node id="6570391813125641519" at="104,48,105,44" concept="8" />
       <node id="6570391813125641519" at="108,57,109,83" concept="7" />
       <node id="6570391813125641519" at="109,83,110,65" concept="2" />
       <node id="6570391813125641519" at="110,65,111,25" concept="8" />
       <node id="6570391813125641519" at="113,41,114,41" concept="2" />
-      <node id="6570391813125641519" at="114,41,115,150" concept="2" />
+      <node id="6570391813125641519" at="114,41,115,142" concept="2" />
       <node id="6570391813125641519" at="116,11,117,36" concept="7" />
       <node id="6570391813125641519" at="117,36,118,39" concept="2" />
       <node id="6570391813125641519" at="118,39,119,57" concept="2" />
@@ -14301,7 +14301,7 @@
       <node id="6570391813125641556" at="155,95,156,51" concept="2" />
       <node id="6570391813125641556" at="156,51,157,36" concept="2" />
       <node id="6570391813125641556" at="157,36,158,24" concept="8" />
-      <node id="6570391813125641519" at="163,0,164,0" concept="11" trace="constraints$LTjR" />
+      <node id="6570391813125641519" at="163,0,164,0" concept="11" trace="content$LTjR" />
       <node id="6570391813125641519" at="167,0,168,0" concept="11" trace="IConstraintContent$M9" />
       <node id="6570391813125641519" at="33,0,35,0" concept="3" trace="myNode" />
       <node id="6570391813125641519" at="89,0,91,0" concept="3" trace="myNode" />
@@ -14311,7 +14311,7 @@
       <node id="6570391813125641519" at="148,96,151,9" concept="5" />
       <node id="6570391813125641519" at="36,0,40,0" concept="1" trace="ConstraintSpec_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="6570391813125641544" at="77,0,81,0" concept="6" trace="createIndentCell_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="6570391813125641519" at="92,0,96,0" concept="1" trace="constraintsListHandler_zdmotm_b1a#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="6570391813125641519" at="92,0,96,0" concept="1" trace="contentListHandler_zdmotm_b1a#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="6570391813125641519" at="97,0,101,0" concept="6" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="6570391813125641519" at="130,97,134,9" concept="5" />
       <node id="6570391813125641519" at="136,95,140,9" concept="5" />
@@ -14326,14 +14326,14 @@
       <node id="6570391813125641528" at="60,0,67,0" concept="6" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="6570391813125641519" at="81,0,88,0" concept="6" trace="createRefNodeList_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="6570391813125641519" at="51,0,60,0" concept="6" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="6570391813125641519" at="115,150,124,7" concept="14" />
+      <node id="6570391813125641519" at="115,142,124,7" concept="14" />
       <node id="6570391813125641519" at="67,0,77,0" concept="6" trace="createCollection_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="6570391813125641519" at="113,0,126,0" concept="6" trace="createEmptyCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="6570391813125641519" at="129,0,154,0" concept="6" trace="installElementCellActions#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/cells/EditorCell;Z)V" />
       <scope id="6570391813125641519" at="43,26,44,18" />
       <scope id="6570391813125641519" at="47,39,48,32" />
       <scope id="6570391813125641519" at="98,28,99,20" />
-      <scope id="6570391813125641519" at="101,40,102,36" />
+      <scope id="6570391813125641519" at="101,40,102,32" />
       <scope id="6570391813125641519" at="104,48,105,44" />
       <scope id="6570391813125641519" at="122,17,123,42" />
       <scope id="6570391813125641519" at="149,34,150,91" />
@@ -14341,7 +14341,7 @@
       <scope id="6570391813125641544" at="77,43,79,22">
         <var name="editorCell" id="6570391813125641544" />
       </scope>
-      <scope id="6570391813125641519" at="92,86,94,25" />
+      <scope id="6570391813125641519" at="92,82,94,25" />
       <scope id="6570391813125641519" at="131,122,133,146" />
       <scope id="6570391813125641519" at="137,34,139,142" />
       <scope id="6570391813125641519" at="143,34,145,146" />
@@ -14405,7 +14405,7 @@
       </scope>
       <unit id="6570391813125641519" at="162,0,165,0" name="MetaCrySL.editor.ConstraintSpec_EditorBuilder_a$LINKS" />
       <unit id="6570391813125641519" at="166,0,169,0" name="MetaCrySL.editor.ConstraintSpec_EditorBuilder_a$CONCEPTS" />
-      <unit id="6570391813125641519" at="88,0,161,0" name="MetaCrySL.editor.ConstraintSpec_EditorBuilder_a$constraintsListHandler_zdmotm_b1a" />
+      <unit id="6570391813125641519" at="88,0,161,0" name="MetaCrySL.editor.ConstraintSpec_EditorBuilder_a$contentListHandler_zdmotm_b1a" />
       <unit id="6570391813125641519" at="32,0,170,0" name="MetaCrySL.editor.ConstraintSpec_EditorBuilder_a" />
     </file>
   </root>

@@ -56,6 +56,11 @@
       <concept id="4935365387813273332" name="MetaCrySL.structure.MetaVariable" flags="ng" index="2H8WTv">
         <property id="4935365387813273333" name="label" index="2H8WTu" />
       </concept>
+      <concept id="4935365387817037862" name="MetaCrySL.structure.Predicate" flags="ng" index="2HU$2d">
+        <property id="4935365387817037863" name="negate" index="2HU$2c" />
+        <property id="4935365387817037924" name="label" index="2HU$3f" />
+        <child id="4935365387817037913" name="exp" index="2HU$3M" />
+      </concept>
       <concept id="3139031731993775133" name="MetaCrySL.structure.ConfigTesting" flags="ng" index="2RILyB">
         <child id="3139031731997035383" name="inputRef" index="2RNdZd" />
         <child id="3139031731997035381" name="inputSpec" index="2RNdZf" />
@@ -66,7 +71,9 @@
       <concept id="3139031731997035374" name="MetaCrySL.structure.RefinementRef" flags="ng" index="2RNdZk">
         <reference id="3139031731997035375" name="ref" index="2RNdZl" />
       </concept>
-      <concept id="4088624315226392982" name="MetaCrySL.structure.EnsuresSpec" flags="ng" index="31DrYK" />
+      <concept id="4088624315226447472" name="MetaCrySL.structure.NegatesSpec" flags="ng" index="31Dmxm">
+        <child id="1004539440858969039" name="content" index="2qH6i3" />
+      </concept>
       <concept id="1405177072845298441" name="MetaCrySL.structure.Rename" flags="ng" index="12XUCj">
         <child id="1405177072845298528" name="type" index="12XUDU" />
       </concept>
@@ -222,20 +229,28 @@
       </node>
     </node>
     <node concept="36VjFT" id="3NGg4jhFQVi" role="3HiPbV">
-      <property role="3H0Kpi" value="asasas" />
+      <property role="3H0Kpi" value="test1" />
       <node concept="2yrA1U" id="3NGg4jhRWuG" role="36VjF$">
         <property role="1AewAe" value="asasa" />
       </node>
     </node>
-    <node concept="3HuTJo" id="30EUbnSYEX3" role="1NQ$s7">
-      <node concept="3HsMc2" id="30EUbnT3D9j" role="3HuTJq">
-        <node concept="3mLGeX" id="30EUbnT3D9l" role="3HsMc3">
-          <property role="36ymjd" value="sa" />
-          <node concept="36ymjA" id="30EUbnT3D9n" role="36ymj8" />
+    <node concept="3HuTJo" id="32fEwRddUH1" role="1NQ$s7">
+      <node concept="3HsMc2" id="32fEwRddUH5" role="3HuTJq">
+        <node concept="3mLGeX" id="32fEwRddUH7" role="3HsMc3">
+          <property role="36ymjd" value="ahah" />
+          <node concept="36ymjA" id="32fEwRddUH9" role="36ymj8" />
         </node>
       </node>
     </node>
-    <node concept="31DrYK" id="6MFMRGeBTJo" role="1NQ$s7" />
+    <node concept="31Dmxm" id="32fEwRderYA" role="1NQ$s7">
+      <node concept="2HU$2d" id="32fEwRderYJ" role="2qH6i3">
+        <property role="2HU$2c" value="true" />
+        <property role="2HU$3f" value="asas" />
+        <node concept="1nymgi" id="32fEwRderYO" role="2HU$3M">
+          <property role="1nymgl" value="asasa" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="12XUHJ" id="1e0chDhwaps">
     <property role="12XUIf" value="ref" />
@@ -295,6 +310,27 @@
     </node>
     <node concept="2RNdZh" id="6tx7P2S053U" role="2RNdZf">
       <ref role="2RNdZm" node="3F8THfW5xnO" resolve="SPEC" />
+    </node>
+    <node concept="2RNdZh" id="6MFMRGeKTdD" role="2RNdZf">
+      <ref role="2RNdZm" node="6MFMRGeKTd1" resolve="SPEC-2" />
+    </node>
+  </node>
+  <node concept="h7EKp" id="6MFMRGeKTd1">
+    <property role="TrG5h" value="SPEC-2" />
+    <node concept="2sifTH" id="6MFMRGeKTd2" role="3jQJ6d">
+      <node concept="1BHS1h" id="6MFMRGeKTdb" role="2si8e6">
+        <property role="1nN3Sf" value="asas" />
+        <node concept="36VjFT" id="6MFMRGeKTdc" role="1BHS2A">
+          <property role="3H0Kpi" value="ta" />
+          <node concept="2yrA1U" id="6MFMRGeKTdd" role="36VjF$" />
+        </node>
+      </node>
+    </node>
+    <node concept="3jPrP_" id="6MFMRGeKTd3" role="31DrSh" />
+    <node concept="3jP0KO" id="6MFMRGeKTd4" role="31DrUT" />
+    <node concept="36VjFT" id="6MFMRGeKTd5" role="3HiPbV">
+      <property role="3H0Kpi" value="test2" />
+      <node concept="2yrA1U" id="6MFMRGeKTd6" role="36VjF$" />
     </node>
   </node>
 </model>

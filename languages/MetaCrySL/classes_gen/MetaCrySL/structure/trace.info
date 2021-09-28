@@ -1303,8 +1303,8 @@
       <node id="4088624315226392760" at="482,34,483,111" concept="0" />
       <node id="4088624315226392760" at="483,111,484,96" concept="0" />
       <node id="4088624315226392760" at="484,96,485,17" concept="0" />
-      <node id="6570391813125641491" at="485,17,486,203" concept="0" />
-      <node id="4088624315226392760" at="486,203,487,27" concept="0" />
+      <node id="6570391813125641491" at="485,17,486,199" concept="0" />
+      <node id="4088624315226392760" at="486,199,487,27" concept="0" />
       <node id="4088624315226392760" at="487,27,488,22" concept="4" />
       <node id="4088624315226392760" at="480,0,490,0" concept="6" trace="createDescriptorForConstraintSpec#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="4088624315226392760" at="165,48,166,39" />

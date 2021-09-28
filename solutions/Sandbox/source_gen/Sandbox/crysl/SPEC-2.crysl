@@ -1,0 +1,13 @@
+SPEC 
+
+OBJECTS
+	asas
+
+EVENTS
+	c1 : ethod1m()
+
+ORDER
+
+CONSTRAINTS
+	15 + 16
+
