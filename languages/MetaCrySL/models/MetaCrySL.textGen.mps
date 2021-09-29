@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="qgj4" ref="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -76,6 +77,7 @@
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
@@ -142,10 +144,15 @@
             <property role="lacIc" value="SPEC " />
           </node>
           <node concept="l9hG8" id="5m0dVcLx59A" role="lcghm">
-            <node concept="2OqwBi" id="5m0dVcLx5q7" role="lb14g">
-              <node concept="117lpO" id="5m0dVcLx5gc" role="2Oq$k0" />
-              <node concept="3TrEf2" id="5m0dVcLx5FT" role="2OqNvi">
-                <ref role="3Tt5mk" to="qgj4:3NGg4jhDLaZ" resolve="type" />
+            <node concept="2OqwBi" id="3zjb71xfXZj" role="lb14g">
+              <node concept="2OqwBi" id="5m0dVcLx5q7" role="2Oq$k0">
+                <node concept="117lpO" id="5m0dVcLx5gc" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5m0dVcLx5FT" role="2OqNvi">
+                  <ref role="3Tt5mk" to="qgj4:3zjb71xfX9s" resolve="type" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="3zjb71xfYjB" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
               </node>
             </node>
           </node>
@@ -230,12 +237,6 @@
       </node>
     </node>
   </node>
-  <node concept="WtQ9Q" id="5m0dVcLzwOH">
-    <ref role="WuzLi" to="qgj4:3F8THfW9tKE" resolve="Type" />
-    <node concept="11bSqf" id="5m0dVcLzwOI" role="11c4hB">
-      <node concept="3clFbS" id="5m0dVcLzwOJ" role="2VODD2" />
-    </node>
-  </node>
   <node concept="WtQ9Q" id="6tx7P2RV8TV">
     <property role="3GE5qa" value="spec.objects" />
     <ref role="WuzLi" to="qgj4:4_NpUNleTB1" resolve="ObjectSpec" />
@@ -281,12 +282,20 @@
       <node concept="3clFbS" id="6tx7P2RVcbj" role="2VODD2">
         <node concept="lc7rE" id="6tx7P2RVcb$" role="3cqZAp">
           <node concept="l9hG8" id="6tx7P2RVcbS" role="lcghm">
-            <node concept="2OqwBi" id="6tx7P2RVcli" role="lb14g">
-              <node concept="117lpO" id="6tx7P2RVccI" role="2Oq$k0" />
-              <node concept="3TrEf2" id="6tx7P2RVcue" role="2OqNvi">
-                <ref role="3Tt5mk" to="qgj4:6ZCE2o8nMy0" resolve="objectType" />
+            <node concept="2OqwBi" id="3zjb71xnj3D" role="lb14g">
+              <node concept="2OqwBi" id="6tx7P2RVcli" role="2Oq$k0">
+                <node concept="117lpO" id="6tx7P2RVccI" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6tx7P2RVcue" role="2OqNvi">
+                  <ref role="3Tt5mk" to="qgj4:6ZCE2o8nMy0" resolve="type" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="3zjb71xs9Q$" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
               </node>
             </node>
+          </node>
+          <node concept="la8eA" id="3zjb71xpJ8q" role="lcghm">
+            <property role="lacIc" value=" " />
           </node>
           <node concept="l9hG8" id="6tx7P2RVczz" role="lcghm">
             <node concept="2OqwBi" id="6tx7P2RVc_u" role="lb14g">

@@ -72,7 +72,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     setCellContext(editorCell);
     editorCell.addEditorCell(createCollection_1());
     editorCell.addEditorCell(createCollection_2());
-    editorCell.addEditorCell(createConstant_2());
+    editorCell.addEditorCell(createConstant_3());
     return editorCell;
   }
   private EditorCell createCollection_1() {
@@ -83,8 +83,9 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createConstant_0());
     editorCell.addEditorCell(createProperty_0());
-    editorCell.addEditorCell(createRefNode_0());
     editorCell.addEditorCell(createConstant_1());
+    editorCell.addEditorCell(createRefNode_0());
+    editorCell.addEditorCell(createConstant_2());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -99,11 +100,11 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
   private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
     try {
-      final SProperty property = PROPS.label$9RbV;
+      final SProperty property = PROPS.name$MnvL;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
-      editorCell.setDefaultText("<no label>");
-      editorCell.setCellId("property_label");
+      editorCell.setDefaultText("<no name>");
+      editorCell.setCellId("property_name");
       editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
       setCellContext(editorCell);
       Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(new IAttributeDescriptor.AllAttributes().list(myNode), CONCEPTS.PropertyAttribute$Gb);
@@ -121,15 +122,24 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       getCellFactory().popCellContext();
     }
   }
+  private EditorCell createConstant_1() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "REFINES");
+    editorCell.setCellId("Constant_gfcr5c_c0a");
+    Style style = new StyleImpl();
+    new KeyWordStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new typeSingleRoleHandler_gfcr5c_c0a(myNode, LINKS.type$9Ytq, getEditorContext());
+    SingleRoleCellProvider provider = new typeSingleRoleHandler_gfcr5c_d0a(myNode, LINKS.type$9Ytq, getEditorContext());
     return provider.createCell();
   }
-  private static class typeSingleRoleHandler_gfcr5c_c0a extends SingleRoleCellProvider {
+  private static class typeSingleRoleHandler_gfcr5c_d0a extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public typeSingleRoleHandler_gfcr5c_c0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public typeSingleRoleHandler_gfcr5c_d0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -176,9 +186,9 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       return "<no type>";
     }
   }
-  private EditorCell createConstant_1() {
+  private EditorCell createConstant_2() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "{");
-    editorCell.setCellId("Constant_gfcr5c_d0a");
+    editorCell.setCellId("Constant_gfcr5c_e0a");
     Style style = new StyleImpl();
     new BraceStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     editorCell.getStyle().putAll(style);
@@ -273,7 +283,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       }
     }
   }
-  private EditorCell createConstant_2() {
+  private EditorCell createConstant_3() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "}");
     editorCell.setCellId("Constant_gfcr5c_c0");
     Style style = new StyleImpl();
@@ -284,7 +294,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty label$9RbV = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1380311a51779a75L, 0x1380311a51779a95L, "label");
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 
   private static final class CONCEPTS {

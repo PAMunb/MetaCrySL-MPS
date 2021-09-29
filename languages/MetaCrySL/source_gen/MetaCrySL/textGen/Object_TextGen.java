@@ -5,6 +5,7 @@ package MetaCrySL.textGen;
 import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
+import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -15,12 +16,13 @@ public class Object_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.objectType$Bbhf));
+    tgs.append(BaseConcept__BehaviorDescriptor.getDetailedPresentation_id22G2W3WJ92t.invoke(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.type$Bbhf)));
+    tgs.append(" ");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.name$GIHa));
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink objectType$Bbhf = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x6fe8a826085f2877L, 0x6fe8a826085f2880L, "objectType");
+    /*package*/ static final SContainmentLink type$Bbhf = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x6fe8a826085f2877L, 0x6fe8a826085f2880L, "type");
   }
 
   private static final class PROPS {

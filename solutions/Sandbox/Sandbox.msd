@@ -11,6 +11,9 @@
     </facet>
   </facets>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+  </dependencies>
   <languageVersions>
     <language slang="l:fbc67e5c-fd70-43b1-b837-3c3551c2500b:MetaCrySL" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
@@ -18,6 +21,7 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="ba6b983b-dee1-424d-a73b-867d051ffe67(Sandbox)" version="0" />
   </dependencyVersions>
 </solution>

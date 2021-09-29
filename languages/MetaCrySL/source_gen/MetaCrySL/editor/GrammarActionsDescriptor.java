@@ -12,28 +12,28 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import org.jetbrains.mps.openapi.language.SConcept;
+import jetbrains.mps.smodel.SNodePointer;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import org.jetbrains.mps.openapi.model.SNode;
+import org.jetbrains.mps.openapi.language.SConcept;
 import com.mbeddr.mpsutil.grammarcells.runtime.GrammarCellsUtil;
-import com.mbeddr.mpsutil.grammarcells.runtime.FlagSubstituteMenuItem;
-import com.mbeddr.mpsutil.grammarcells.runtime.DefaultFlagModelAccess;
-import jetbrains.mps.smodel.SNodePointer;
-import com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuItem;
-import org.jetbrains.mps.openapi.language.SProperty;
-import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.smodel.action.SNodeFactoryOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.editor.menus.substitute.DefaultSubstituteMenuLookup;
 import jetbrains.mps.smodel.language.LanguageRegistry;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.openapi.editor.EditorContext;
+import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.editor.menus.substitute.ReferenceScopeSubstituteMenuItem;
 import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.lang.editor.menus.substitute.SubstituteMenuItemWrapper;
+import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.action.NodeFactoryManager;
+import com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuItem;
+import com.mbeddr.mpsutil.grammarcells.runtime.FlagSubstituteMenuItem;
+import com.mbeddr.mpsutil.grammarcells.runtime.DefaultFlagModelAccess;
+import org.jetbrains.mps.openapi.language.SProperty;
+import jetbrains.mps.smodel.action.SNodeFactoryOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuItem;
 import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuContext;
 import jetbrains.mps.lang.editor.menus.transformation.MenuLocations;
@@ -64,8 +64,8 @@ import org.jetbrains.mps.openapi.language.SLanguage;
 import com.mbeddr.mpsutil.grammarcells.runtime.AbstractRule;
 import com.mbeddr.mpsutil.grammarcells.runtime.ISymbol;
 import com.mbeddr.mpsutil.grammarcells.runtime.PropertySymbol;
-import com.mbeddr.mpsutil.grammarcells.runtime.ChildSymbol;
 import com.mbeddr.mpsutil.grammarcells.runtime.ConstantSymbol;
+import com.mbeddr.mpsutil.grammarcells.runtime.ChildSymbol;
 import MetaCrySL.behavior.BooleanExp__BehaviorDescriptor;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -81,6 +81,84 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
     _context.getEditorMenuTrace().pushTraceInfo();
     _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("MetaCrySL.editor.GrammarActionsDescriptor.getActions", null));
     try {
+      ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+        public Iterable<SubstituteMenuItem> query() {
+          List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
+          _context.getEditorMenuTrace().pushTraceInfo();
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "Object", new SNodePointer("r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)", "4094665347390100880")));
+          try {
+            if (SConceptOperations.isExactly(SNodeOperations.asSConcept(expectedOutputConceptExactly), CONCEPTS.Object$RE)) {
+              final SAbstractConcept wrappedConcept = CONCEPTS.Type$bu;
+              for (SConcept subconcept : ListSequence.fromList(GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.Object$RE, _context.getModel(), Object_Editor.class, _context.getEditorContext()))) {
+                final SConcept outputConcept = ((SConcept) subconcept);
+
+                final SAbstractConcept expectedOutputConcept = GrammarCellsUtil.getExpectedOutputConcept(_context, expectedOutputConceptExactly);
+
+                boolean wrapRequired = !(SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(wrappedConcept), SNodeOperations.asSConcept(expectedOutputConcept)));
+                if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept)) && wrapRequired) {
+
+                  boolean isApplicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                  if (isApplicable) {
+                    List<SubstituteMenuItem> actions = _context.withLink(LINKS.type$Bbhf).createItems(new DefaultSubstituteMenuLookup(LanguageRegistry.getInstance(_context.getEditorContext().getRepository()), wrappedConcept));
+                    List<SubstituteMenuItem> wrappedActions = ListSequence.fromList(actions).where(new IWhereFilter<SubstituteMenuItem>() {
+                      public boolean accept(SubstituteMenuItem it) {
+                        boolean isApplicable = true;
+                        final SAbstractConcept wrappedConcept = it.getOutputConcept();
+                        if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(wrappedConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
+                          return false;
+                        }
+                        final EditorContext editorContext = _context.getEditorContext();
+                        final SNode smartReferent = ((it instanceof ReferenceScopeSubstituteMenuItem) ? ((SNode) ReflectionUtil_copy.readField(ReferenceScopeSubstituteMenuItem.class, ((ReferenceScopeSubstituteMenuItem) it), "myReferent")) : null);
+
+                        return isApplicable;
+                      }
+                    }).select(new ISelector<SubstituteMenuItem, SubstituteMenuItem>() {
+                      public SubstituteMenuItem select(SubstituteMenuItem it) {
+                        final SNode smartReferent = ((it instanceof ReferenceScopeSubstituteMenuItem) ? ((SNode) ReflectionUtil_copy.readField(ReferenceScopeSubstituteMenuItem.class, ((ReferenceScopeSubstituteMenuItem) it), "myReferent")) : null);
+
+                        SubstituteMenuItem wrapper = new SubstituteMenuItemWrapper(it) {
+                          private SNode wrappedNode;
+                          @Override
+                          public SNode createNode(@NotNull String pattern) {
+                            SNode nodeToWrap = super.createNode(pattern);
+                            wrappedNode = nodeToWrap;
+                            // use setupNode after setting wrapped element to allow access to the wrapped element in node factories
+                            SNode wrapper = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(outputConcept));
+                            SLinkOperations.setTarget(wrapper, LINKS.type$Bbhf, SNodeOperations.cast(nodeToWrap, CONCEPTS.Type$bu));
+                            NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
+
+                            return wrapper;
+                          }
+                          @Override
+                          public SAbstractConcept getOutputConcept() {
+                            return outputConcept;
+                          }
+
+                          @Override
+                          public void select(@NotNull SNode createdNode, @NotNull String pattern) {
+                            GrammarCellsSubstituteMenuItem.select(_context.getEditorContext().getEditorComponent(), createdNode);
+                          }
+                        };
+                        return wrapper;
+                      }
+                    }).toListSequence();
+
+                    ListSequence.fromList(result).addSequence(ListSequence.fromList(wrappedActions));
+                  }
+
+                }
+              }
+            }
+          } finally {
+            _context.getEditorMenuTrace().popTraceInfo();
+          }
+          return ListSequence.fromList(result).where(new IWhereFilter<SubstituteMenuItem>() {
+            public boolean accept(SubstituteMenuItem it) {
+              return it != null;
+            }
+          }).toListSequence();
+        }
+      }.query()));
       ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
         public Iterable<SubstituteMenuItem> query() {
           List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
@@ -1379,6 +1457,29 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
     _context.getEditorMenuTrace().pushTraceInfo();
     _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("MetaCrySL.editor.GrammarActionsDescriptor.doGetSideTransformActions", null));
     try {
+      {
+        boolean sideEnabled = false;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM;
+        if (sideEnabled) {
+          ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+            public Iterable<TransformationMenuItem> query(final TransformationMenuContext _context) {
+              List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
+              _context.getEditorMenuTrace().pushTraceInfo();
+              _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "Object", new SNodePointer("r:baf14e14-5aad-49ff-afdc-75f27d6f7047(MetaCrySL.editor)", "4094665347390100880")));
+              try {
+              } finally {
+                _context.getEditorMenuTrace().popTraceInfo();
+              }
+              return ListSequence.fromList(result).where(new IWhereFilter<TransformationMenuItem>() {
+                public boolean accept(TransformationMenuItem it) {
+                  return it != null;
+                }
+              }).toListSequence();
+            }
+          }.query(_context)));
+        }
+      }
       {
         boolean sideEnabled = false;
         sideEnabled |= _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM;
@@ -2948,42 +3049,6 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
     final Set<SLanguage> visibleLanguages = GrammarCellsUtil.getVisibleLanguages(contextModel);
 
     {
-      final List<SConcept> subconcepts = GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.Type$9F, visibleLanguages);
-      for (final SAbstractConcept subconcept : subconcepts) {
-        ListSequence.fromList(rules).addElement(new AbstractRule() {
-          private List<ISymbol> symbols = ListSequence.fromList(new ArrayList<ISymbol>());
-          {
-            ListSequence.fromList(symbols).addElement(new PropertySymbol(CONCEPTS.Type$9F, PROPS.name1$DoJb));
-            ListSequence.fromList(symbols).addElement(new ChildSymbol(LINKS.test$EyQY));
-            ListSequence.fromList(symbols).addElement(new ConstantSymbol("<"));
-            ListSequence.fromList(symbols).addElement(new ChildSymbol(LINKS.generic$Usrq));
-            ListSequence.fromList(symbols).addElement(new ConstantSymbol(">"));
-            symbols = ListSequence.fromList(symbols).where(new IWhereFilter<ISymbol>() {
-              public boolean accept(ISymbol it) {
-                return it != null;
-              }
-            }).toListSequence();
-          }
-          @Override
-          public List<ISymbol> getSymbols() {
-            return symbols;
-          }
-          @Override
-          public SAbstractConcept getOutputConcept() {
-            return subconcept;
-          }
-          @Override
-          public SAbstractConcept getDefinedForConcept() {
-            return CONCEPTS.Type$9F;
-          }
-          @Override
-          public String toString() {
-            return subconcept.getName();
-          }
-        });
-      }
-    }
-    {
       final List<SConcept> subconcepts = GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.MethodDef$Hb, visibleLanguages);
       for (final SAbstractConcept subconcept : subconcepts) {
         ListSequence.fromList(rules).addElement(new AbstractRule() {
@@ -3294,6 +3359,8 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
   }
 
   private static final class CONCEPTS {
+    /*package*/ static final SConcept Type$bu = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506dL, "jetbrains.mps.baseLanguage.structure.Type");
+    /*package*/ static final SConcept Object$RE = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x6fe8a826085f2877L, "MetaCrySL.structure.Object");
     /*package*/ static final SConcept Spec$$M = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3063bd30217d1129L, "MetaCrySL.structure.Spec");
     /*package*/ static final SConcept EventMethod$bC = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x2cacad8f8a455d04L, "MetaCrySL.structure.EventMethod");
     /*package*/ static final SConcept MethodDef$Hb = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb789L, "MetaCrySL.structure.MethodDef");
@@ -3310,23 +3377,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
     /*package*/ static final SConcept ArithmeticExp$jn = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2e3110L, "MetaCrySL.structure.ArithmeticExp");
     /*package*/ static final SConcept Predicate$3s = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe997b026L, "MetaCrySL.structure.Predicate");
     /*package*/ static final SConcept ForbiddenMethod$e9 = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3cec4044d19f6346L, "MetaCrySL.structure.ForbiddenMethod");
-    /*package*/ static final SConcept Type$9F = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc25dc2aL, "MetaCrySL.structure.Type");
     /*package*/ static final SConcept StringValue$6s = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867f8ba7aL, "MetaCrySL.structure.StringValue");
   }
 
-  private static final class PROPS {
-    /*package*/ static final SProperty ABSTRACT$WQNp = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3063bd30217d1129L, 0x497367acd53c2433L, "ABSTRACT");
-    /*package*/ static final SProperty label$PDXj = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c209L, 0x5b2eb88ae86d20ddL, "label");
-    /*package*/ static final SProperty label$8VcE = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb789L, 0x3ac8e6d3fc41821eL, "label");
-    /*package*/ static final SProperty argument$lGCM = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc44db55L, 0x3ac8e6d3fc44db56L, "argument");
-    /*package*/ static final SProperty negate$SamM = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe997b026L, 0x447df0abe997b027L, "negate");
-    /*package*/ static final SProperty label$VeXS = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe997b026L, 0x447df0abe997b064L, "label");
-    /*package*/ static final SProperty alternative$lL7o = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3cec4044d19f6346L, 0x3cec4044d19f634dL, "alternative");
-    /*package*/ static final SProperty name1$DoJb = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc25dc2aL, 0x3cec4044d1ef4616L, "name1");
-    /*package*/ static final SProperty value$hckO = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867f8ba7aL, 0x3071de6867f8ba7dL, "value");
-  }
-
   private static final class LINKS {
+    /*package*/ static final SContainmentLink type$Bbhf = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x6fe8a826085f2877L, 0x6fe8a826085f2880L, "type");
     /*package*/ static final SContainmentLink left$wnxG = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x398346ae4a3e5e4bL, 0x398346ae4a3e5e51L, "left");
     /*package*/ static final SContainmentLink right$wnZI = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x398346ae4a3e5e4bL, 0x398346ae4a3e5e53L, "right");
     /*package*/ static final SContainmentLink exp$3cK8 = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x398346ae4a4348efL, 0x398346ae4a4348f1L, "exp");
@@ -3340,8 +3395,17 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
     /*package*/ static final SContainmentLink left$t7TI = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2e3110L, 0x4d3e0a266e2e312eL, "left");
     /*package*/ static final SContainmentLink right$tdj5 = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x4d3e0a266e2e3110L, 0x4d3e0a266e2e3130L, "right");
     /*package*/ static final SContainmentLink method$lJHi = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3cec4044d19f6346L, 0x3cec4044d19f6347L, "method");
-    /*package*/ static final SContainmentLink test$EyQY = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc25dc2aL, 0x3cec4044d206acf4L, "test");
-    /*package*/ static final SContainmentLink generic$Usrq = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc25dc2aL, 0x3ac8e6d3fc28cc32L, "generic");
     /*package*/ static final SContainmentLink args$8UvB = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb789L, 0x3ac8e6d3fc41821bL, "args");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty ABSTRACT$WQNp = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3063bd30217d1129L, 0x497367acd53c2433L, "ABSTRACT");
+    /*package*/ static final SProperty label$PDXj = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x77537c9aa486c209L, 0x5b2eb88ae86d20ddL, "label");
+    /*package*/ static final SProperty label$8VcE = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x1df97434cb3fb789L, 0x3ac8e6d3fc41821eL, "label");
+    /*package*/ static final SProperty argument$lGCM = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3ac8e6d3fc44db55L, 0x3ac8e6d3fc44db56L, "argument");
+    /*package*/ static final SProperty negate$SamM = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe997b026L, 0x447df0abe997b027L, "negate");
+    /*package*/ static final SProperty label$VeXS = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x447df0abe997b026L, 0x447df0abe997b064L, "label");
+    /*package*/ static final SProperty alternative$lL7o = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3cec4044d19f6346L, 0x3cec4044d19f634dL, "alternative");
+    /*package*/ static final SProperty value$hckO = MetaAdapterFactory.getProperty(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x3071de6867f8ba7aL, 0x3071de6867f8ba7dL, "value");
   }
 }

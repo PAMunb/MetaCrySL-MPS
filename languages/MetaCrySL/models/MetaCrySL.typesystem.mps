@@ -71,7 +71,7 @@
                 <ref role="1YBMHb" node="3F8THfW8v7O" resolve="object" />
               </node>
               <node concept="3TrEf2" id="3F8THfW9XfK" role="2OqNvi">
-                <ref role="3Tt5mk" to="qgj4:6ZCE2o8nMy0" resolve="objectType" />
+                <ref role="3Tt5mk" to="qgj4:6ZCE2o8nMy0" resolve="type" />
               </node>
             </node>
           </node>
@@ -88,14 +88,6 @@
     <node concept="1YaCAy" id="3F8THfW8v7O" role="1YuTPh">
       <property role="TrG5h" value="object" />
       <ref role="1YaFvo" to="qgj4:6ZCE2o8nMxR" resolve="Object" />
-    </node>
-  </node>
-  <node concept="1YbPZF" id="3F8THfW9Wvv">
-    <property role="TrG5h" value="typeof_Type" />
-    <node concept="3clFbS" id="3F8THfW9Wvw" role="18ibNy" />
-    <node concept="1YaCAy" id="3F8THfW9Wvy" role="1YuTPh">
-      <property role="TrG5h" value="type" />
-      <ref role="1YaFvo" to="qgj4:3F8THfW9tKE" resolve="Type" />
     </node>
   </node>
 </model>

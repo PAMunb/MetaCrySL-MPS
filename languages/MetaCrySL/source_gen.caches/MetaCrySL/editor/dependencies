@@ -8,6 +8,7 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="MetaCrySL.editor.AddConstraint_EditorBuilder_a">
+    <classNode dependClassName="MetaCrySL.editor.MetaCryslHighlight_StyleSheet.KeyWordStyleClass" />
     <classNode dependClassName="MetaCrySL.editor.MetaCryslHighlight_StyleSheet.SemicolonStyleClass" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -39,9 +40,11 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="MetaCrySL.editor.AddEnsure_EditorBuilder_a">
+    <classNode dependClassName="MetaCrySL.editor.MetaCryslHighlight_StyleSheet.KeyWordStyleClass" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo" />
@@ -53,6 +56,7 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
@@ -67,6 +71,7 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="MetaCrySL.editor.AddEvent_EditorBuilder_a">
+    <classNode dependClassName="MetaCrySL.editor.MetaCryslHighlight_StyleSheet.KeyWordStyleClass" />
     <classNode dependClassName="MetaCrySL.editor.MetaCryslHighlight_StyleSheet.SemicolonStyleClass" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -98,6 +103,7 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="MetaCrySL.editor.AddRequire_EditorBuilder_a">
+    <classNode dependClassName="MetaCrySL.editor.MetaCryslHighlight_StyleSheet.KeyWordStyleClass" />
     <classNode dependClassName="MetaCrySL.editor.MetaCryslHighlight_StyleSheet.SemicolonStyleClass" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -518,6 +524,7 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="MetaCrySL.editor.DefineLiteralSet_EditorBuilder_a">
+    <classNode dependClassName="MetaCrySL.editor.MetaCryslHighlight_StyleSheet.KeyWordStyleClass" />
     <classNode dependClassName="MetaCrySL.editor.MetaCryslHighlight_StyleSheet.SemicolonStyleClass" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
@@ -553,6 +560,38 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
+  </dependency>
+  <dependency className="MetaCrySL.editor.DefineQualifiedType_Editor">
+    <classNode dependClassName="MetaCrySL.editor.DefineQualifiedType_EditorBuilder_a" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="MetaCrySL.editor.DefineQualifiedType_EditorBuilder_a">
+    <classNode dependClassName="MetaCrySL.editor.MetaCryslHighlight_StyleSheet.KeyWordStyleClass" />
+    <classNode dependClassName="MetaCrySL.editor.MetaCryslHighlight_StyleSheet.SemicolonStyleClass" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
@@ -592,6 +631,7 @@
     <classNode dependClassName="MetaCrySL.editor.Config_Editor" />
     <classNode dependClassName="MetaCrySL.editor.ConstraintSpec_Editor" />
     <classNode dependClassName="MetaCrySL.editor.DefineLiteralSet_Editor" />
+    <classNode dependClassName="MetaCrySL.editor.DefineQualifiedType_Editor" />
     <classNode dependClassName="MetaCrySL.editor.DummyForGrammarCells" />
     <classNode dependClassName="MetaCrySL.editor.EmptyLine_Editor" />
     <classNode dependClassName="MetaCrySL.editor.EmptyLine_SubstituteMenu" />
@@ -623,6 +663,7 @@
     <classNode dependClassName="MetaCrySL.editor.GrammarCellsSubstituteMenu_ConstraintExp" />
     <classNode dependClassName="MetaCrySL.editor.GrammarCellsSubstituteMenu_ConstraintSpec" />
     <classNode dependClassName="MetaCrySL.editor.GrammarCellsSubstituteMenu_DefineLiteralSet" />
+    <classNode dependClassName="MetaCrySL.editor.GrammarCellsSubstituteMenu_DefineQualifiedType" />
     <classNode dependClassName="MetaCrySL.editor.GrammarCellsSubstituteMenu_DisjunctionExp" />
     <classNode dependClassName="MetaCrySL.editor.GrammarCellsSubstituteMenu_EmptyLine" />
     <classNode dependClassName="MetaCrySL.editor.GrammarCellsSubstituteMenu_EnsuresSpec" />
@@ -690,7 +731,6 @@
     <classNode dependClassName="MetaCrySL.editor.GrammarCellsSubstituteMenu_SpecContent" />
     <classNode dependClassName="MetaCrySL.editor.GrammarCellsSubstituteMenu_SpecRef" />
     <classNode dependClassName="MetaCrySL.editor.GrammarCellsSubstituteMenu_StringValue" />
-    <classNode dependClassName="MetaCrySL.editor.GrammarCellsSubstituteMenu_Type" />
     <classNode dependClassName="MetaCrySL.editor.GrammarCellsSubstituteMenu_Value" />
     <classNode dependClassName="MetaCrySL.editor.GrammarCellsSubstituteMenu_Variable" />
     <classNode dependClassName="MetaCrySL.editor.GrammarCellsSubstituteMenu_WildcardArgument" />
@@ -730,7 +770,6 @@
     <classNode dependClassName="MetaCrySL.editor.SpecRef_SubstituteMenu" />
     <classNode dependClassName="MetaCrySL.editor.Spec_Editor" />
     <classNode dependClassName="MetaCrySL.editor.StringValue_Editor" />
-    <classNode dependClassName="MetaCrySL.editor.Type_Editor" />
     <classNode dependClassName="MetaCrySL.editor.Variable_Editor" />
     <classNode dependClassName="MetaCrySL.editor.WildcardArgument_Editor" />
     <classNode dependClassName="MetaCrySL.editor.template_GrammarCellsSideTransformationsMenu" />
@@ -1214,6 +1253,7 @@
     <classNode dependClassName="MetaCrySL.editor.EventMethod_Editor" />
     <classNode dependClassName="MetaCrySL.editor.ForbiddenMethod_Editor" />
     <classNode dependClassName="MetaCrySL.editor.MethodDef_Editor" />
+    <classNode dependClassName="MetaCrySL.editor.Object_Editor" />
     <classNode dependClassName="MetaCrySL.editor.Predicate_Editor" />
     <classNode dependClassName="MetaCrySL.editor.PrimaryExp_Editor" />
     <classNode dependClassName="MetaCrySL.editor.QualifiedFormalArg_Editor" />
@@ -1600,6 +1640,24 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
   <dependency className="MetaCrySL.editor.GrammarCellsSubstituteMenu_DefineLiteralSet">
+    <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuPart" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.MenuPart" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuItem" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.module.SModule" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.module.SRepository" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
+  </dependency>
+  <dependency className="MetaCrySL.editor.GrammarCellsSubstituteMenu_DefineQualifiedType">
     <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuPart" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.ArrayList" />
@@ -2828,24 +2886,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
-  <dependency className="MetaCrySL.editor.GrammarCellsSubstituteMenu_Type">
-    <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuPart" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.util.ArrayList" />
-    <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.menus.MenuPart" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuItem" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.module.SModule" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.module.SRepository" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
-  </dependency>
   <dependency className="MetaCrySL.editor.GrammarCellsSubstituteMenu_Value">
     <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuPart" />
     <classNode dependClassName="java.lang.Override" />
@@ -3543,21 +3583,24 @@
   </dependency>
   <dependency className="MetaCrySL.editor.Object_EditorBuilder_a">
     <classNode dependClassName="MetaCrySL.editor.MetaCryslHighlight_StyleSheet.SemicolonStyleClass" />
+    <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.CellActionWithReadAccess" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Objects" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.EditorCell_Empty" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.selection.SelectionUtil" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo" />
@@ -3572,10 +3615,12 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.SPropertyInfo" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.selection.SelectionManager" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.update.AttributeKind" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
@@ -3946,6 +3991,7 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="MetaCrySL.editor.Rename_EditorBuilder_a">
+    <classNode dependClassName="MetaCrySL.editor.MetaCryslHighlight_StyleSheet.KeyWordStyleClass" />
     <classNode dependClassName="MetaCrySL.editor.MetaCryslHighlight_StyleSheet.SemicolonStyleClass" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -4242,71 +4288,6 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
-  </dependency>
-  <dependency className="MetaCrySL.editor.Type_Editor">
-    <classNode dependClassName="MetaCrySL.editor.Type_EditorBuilder_a" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
-  </dependency>
-  <dependency className="MetaCrySL.editor.Type_EditorBuilder_a">
-    <classNode dependClassName="MetaCrySL.editor.MetaCryslHighlight_StyleSheet.bracketsStyleClass" />
-    <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.CellActionWithReadAccess" />
-    <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.DelegateToParentCellAction" />
-    <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.MultiTextActionItem" />
-    <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.SavedCaretPosition" />
-    <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.SideTransformationHolderCell" />
-    <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.StringOrSequenceQuery" />
-    <classNode dependClassName="java.lang.Iterable" />
-    <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.ArrayList" />
-    <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="java.util.Objects" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.menus.MenuPart" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.AttributeOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.SPropertySubstituteInfo" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Property" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.SPropertyAccessor" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell_Collection" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.SPropertyInfo" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuItem" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.update.AttributeKind" />
-    <classNode dependClassName="jetbrains.mps.smodel.action.SNodeFactoryOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />

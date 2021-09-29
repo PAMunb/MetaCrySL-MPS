@@ -71,8 +71,6 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new SequenceExp_TextGen();
       case LanguageConceptSwitch.Spec:
         return new Spec_TextGen();
-      case LanguageConceptSwitch.Type:
-        return new Type_TextGen();
       case LanguageConceptSwitch.WildcardArgument:
         return new WildcardArgument_TextGen();
     }

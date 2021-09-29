@@ -9,7 +9,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="8,0,20,0" name="MetaCrySL.typesystem.TypesystemDescriptor" />
+      <unit at="8,0,16,0" name="MetaCrySL.typesystem.TypesystemDescriptor" />
     </file>
   </root>
   <root nodeRef="r:37cf7c21-7aff-495e-a21a-92ea40fa25ca(MetaCrySL.typesystem)/4235889247684522481">
@@ -24,11 +24,11 @@
     <file name="typeof_Object_InferenceRule.java">
       <node id="4235889247684906887" at="21,5,22,48" concept="4" />
       <node id="4235889247684906887" at="22,48,23,186" concept="4" />
-      <node id="4235889247684906887" at="23,186,24,404" concept="2" />
+      <node id="4235889247684906887" at="23,186,24,398" concept="2" />
       <node id="4235889247684522481" at="27,50,28,30" concept="5" />
       <node id="4235889247684522481" at="30,68,31,102" concept="5" />
       <node id="4235889247684522481" at="33,30,34,17" concept="5" />
-      <node id="4235889247684522481" at="38,0,39,0" concept="6" trace="objectType$Bbhf" />
+      <node id="4235889247684522481" at="38,0,39,0" concept="6" trace="type$Bbhf" />
       <node id="4235889247684522481" at="42,0,43,0" concept="6" trace="Object$RE" />
       <node id="4235889247684522481" at="18,0,20,0" concept="1" trace="typeof_Object_InferenceRule#()V" />
       <node id="4235889247684522481" at="27,0,30,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
@@ -41,7 +41,7 @@
       <scope id="4235889247684522481" at="30,68,31,102" />
       <scope id="4235889247684522481" at="33,30,34,17" />
       <scope id="4235889247684522481" at="18,0,20,0" />
-      <scope id="4235889247684906887" at="21,5,24,404">
+      <scope id="4235889247684906887" at="21,5,24,398">
         <var name="_info_12389875345" id="4235889247684906887" />
         <var name="_nodeToCheck_1029348928467" id="4235889247684906887" />
       </scope>
@@ -59,45 +59,6 @@
       <unit id="4235889247684522481" at="37,0,40,0" name="MetaCrySL.typesystem.typeof_Object_InferenceRule$LINKS" />
       <unit id="4235889247684522481" at="41,0,44,0" name="MetaCrySL.typesystem.typeof_Object_InferenceRule$CONCEPTS" />
       <unit id="4235889247684522481" at="17,0,45,0" name="MetaCrySL.typesystem.typeof_Object_InferenceRule" />
-    </file>
-  </root>
-  <root nodeRef="r:37cf7c21-7aff-495e-a21a-92ea40fa25ca(MetaCrySL.typesystem)/4235889247684904927">
-    <file name="TypesystemDescriptor.java">
-      <node id="4235889247684904927" at="14,5,15,76" concept="4" />
-      <node id="4235889247684904927" at="15,76,16,47" concept="2" />
-      <node id="4235889247684904927" at="13,5,17,5" concept="0" />
-      <scope id="4235889247684904927" at="14,5,16,47">
-        <var name="inferenceRule" id="4235889247684904927" />
-      </scope>
-    </file>
-    <file name="typeof_Type_InferenceRule.java">
-      <node id="4235889247684904927" at="19,50,20,28" concept="5" />
-      <node id="4235889247684904927" at="22,68,23,102" concept="5" />
-      <node id="4235889247684904927" at="25,30,26,17" concept="5" />
-      <node id="4235889247684904927" at="30,0,31,0" concept="6" trace="Type$9F" />
-      <node id="4235889247684904927" at="15,0,17,0" concept="1" trace="typeof_Type_InferenceRule#()V" />
-      <node id="4235889247684904927" at="17,0,19,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <node id="4235889247684904927" at="19,0,22,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="4235889247684904927" at="22,0,25,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="4235889247684904927" at="25,0,28,0" concept="3" trace="overrides#()Z" />
-      <scope id="4235889247684904927" at="15,38,15,38" />
-      <scope id="4235889247684904928" at="17,117,17,117" />
-      <scope id="4235889247684904927" at="19,50,20,28" />
-      <scope id="4235889247684904927" at="22,68,23,102" />
-      <scope id="4235889247684904927" at="25,30,26,17" />
-      <scope id="4235889247684904927" at="15,0,17,0" />
-      <scope id="4235889247684904927" at="17,0,19,0">
-        <var name="status" id="4235889247684904927" />
-        <var name="type" id="4235889247684904927" />
-        <var name="typeCheckingContext" id="4235889247684904927" />
-      </scope>
-      <scope id="4235889247684904927" at="19,0,22,0" />
-      <scope id="4235889247684904927" at="22,0,25,0">
-        <var name="argument" id="4235889247684904927" />
-      </scope>
-      <scope id="4235889247684904927" at="25,0,28,0" />
-      <unit id="4235889247684904927" at="29,0,32,0" name="MetaCrySL.typesystem.typeof_Type_InferenceRule$CONCEPTS" />
-      <unit id="4235889247684904927" at="14,0,33,0" name="MetaCrySL.typesystem.typeof_Type_InferenceRule" />
     </file>
   </root>
 </debug-info>

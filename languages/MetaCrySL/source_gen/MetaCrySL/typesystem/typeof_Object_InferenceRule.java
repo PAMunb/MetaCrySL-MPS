@@ -21,7 +21,7 @@ public class typeof_Object_InferenceRule extends AbstractInferenceRule_Runtime i
     {
       SNode _nodeToCheck_1029348928467 = object;
       EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:37cf7c21-7aff-495e-a21a-92ea40fa25ca(MetaCrySL.typesystem)", "4235889247684906887", 0, null);
-      typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:37cf7c21-7aff-495e-a21a-92ea40fa25ca(MetaCrySL.typesystem)", "4235889247684906115", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(object, LINKS.objectType$Bbhf), "r:37cf7c21-7aff-495e-a21a-92ea40fa25ca(MetaCrySL.typesystem)", "4235889247684906903", true), _info_12389875345);
+      typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:37cf7c21-7aff-495e-a21a-92ea40fa25ca(MetaCrySL.typesystem)", "4235889247684906115", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(object, LINKS.type$Bbhf), "r:37cf7c21-7aff-495e-a21a-92ea40fa25ca(MetaCrySL.typesystem)", "4235889247684906903", true), _info_12389875345);
     }
   }
   public SAbstractConcept getApplicableConcept() {
@@ -35,7 +35,7 @@ public class typeof_Object_InferenceRule extends AbstractInferenceRule_Runtime i
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink objectType$Bbhf = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x6fe8a826085f2877L, 0x6fe8a826085f2880L, "objectType");
+    /*package*/ static final SContainmentLink type$Bbhf = MetaAdapterFactory.getContainmentLink(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x6fe8a826085f2877L, 0x6fe8a826085f2880L, "type");
   }
 
   private static final class CONCEPTS {

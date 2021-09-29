@@ -2,6 +2,7 @@
 <model ref="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)" content="root">
   <persistence version="9" />
   <imports>
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -67,6 +68,12 @@
     <property role="EcuMT" value="3486838550932820265" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="3uqyculXeyx" resolve="Model" />
+    <node concept="1TJgyj" id="3zjb71xfX9s" role="1TKVEi">
+      <property role="IQ2ns" value="4094665347389444700" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="type" />
+      <ref role="20lvS9" to="tpee:g7uibYu" resolve="ClassifierType" />
+    </node>
     <node concept="1TJgyj" id="7tjv9E$yoOn" role="1TKVEi">
       <property role="IQ2ns" value="8598353117207694615" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -94,13 +101,6 @@
       <property role="20kJfa" value="adicional" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1RTt3jbgsuR" resolve="SpecContent" />
-    </node>
-    <node concept="1TJgyj" id="3NGg4jhDLaZ" role="1TKVEi">
-      <property role="IQ2ns" value="4389954401098732223" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="3F8THfW9tKE" resolve="Type" />
     </node>
     <node concept="1TJgyi" id="4_NpUNlf2gN" role="1TKVEl">
       <property role="IQ2nx" value="5292687979099989043" />
