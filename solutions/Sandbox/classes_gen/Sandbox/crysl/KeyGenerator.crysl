@@ -1,0 +1,14 @@
+SPEC javax.crypto.KeyGenerator
+
+OBJECTS
+	java.lang.String obj1
+	int obj2
+
+EVENTS
+	c1 : method1()
+
+ORDER
+
+CONSTRAINTS
+	15 + 16
+

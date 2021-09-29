@@ -53,6 +53,7 @@
         <property id="4935365387813273333" name="label" index="2H8WTu" />
       </concept>
       <concept id="3139031731993775133" name="MetaCrySL.structure.ConfigTesting" flags="ng" index="2RILyB">
+        <property id="4094665347399070013" name="outputDir" index="1p0pPd" />
         <child id="3139031731997035383" name="inputRef" index="2RNdZd" />
         <child id="3139031731997035381" name="inputSpec" index="2RNdZf" />
       </concept>
@@ -105,11 +106,13 @@
     </language>
   </registry>
   <node concept="2RILyB" id="2Ug8$ezRqAa">
-    <node concept="2RNdZk" id="2Ug8$ezRqAc" role="2RNdZd">
-      <ref role="2RNdZl" node="3zjb71xJJar" resolve="Cipher" />
-    </node>
+    <property role="TrG5h" value="BasicConfig" />
+    <property role="1p0pPd" value="&quot;asasasas&quot;" />
     <node concept="2RNdZh" id="3zjb71xuCsa" role="2RNdZf">
       <ref role="2RNdZm" node="3zjb71xisQs" resolve="KeyGenerator" />
+    </node>
+    <node concept="2RNdZk" id="3zjb71xY_G5" role="2RNdZd">
+      <ref role="2RNdZl" node="3zjb71xJJar" resolve="Cipher" />
     </node>
   </node>
   <node concept="h7EKp" id="3zjb71xisQs">

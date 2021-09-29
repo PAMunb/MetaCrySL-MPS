@@ -456,8 +456,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MetaCrySL", "ConfigTesting", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x2b9014ba9c2b0c1dL);
     b.class_(false, false, true);
     b.super_("MetaCrySL.structure.Model", 0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x379a88c795f4c97eL);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)/3139031731993775133");
     b.version(2);
+    b.property("outputDir", 0x38d32c7061d2b13dL).type(PrimitiveTypeId.STRING).origin("4094665347399070013").done();
     b.aggregate("inputSpec", 0x2b9014ba9c5ccb75L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x2b9014ba9c5ccb6bL).optional(false).ordered(true).multiple(true).origin("3139031731997035381").done();
     b.aggregate("inputRef", 0x2b9014ba9c5ccb77L).target(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x2b9014ba9c5ccb6eL).optional(true).ordered(true).multiple(false).origin("3139031731997035383").done();
     b.alias("CFG-TEST");
