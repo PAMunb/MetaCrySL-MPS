@@ -28,6 +28,9 @@ import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import MetaCrySL.editor.MetaCryslHighlight_StyleSheet.SemicolonStyleClass;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 
@@ -58,6 +61,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     editorCell.addEditorCell(createCustomFactory_1());
     editorCell.addEditorCell(createCustomFactory_3());
     editorCell.addEditorCell(createCustomFactory_7());
+    editorCell.addEditorCell(createCustomFactory_9());
     return editorCell;
   }
   private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
@@ -450,6 +454,75 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     protected String getNoTargetText() {
       return "<no right>";
     }
+  }
+  private EditorCell createCustomFactory_8(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createConstant_1();
+    EditorCell editorCell = new _FunctionTypes._return_P0_E0<EditorCell>() {
+      public EditorCell invoke() {
+        cell.setAction(CellActionType.DELETE, new CellActionWithReadAccess() {
+          public void execute(EditorContext editorContext) {
+
+            SNode unwrapped = SNodeOperations.replaceWithAnother(node, SLinkOperations.getTarget(node, LINKS.left$t7TI));
+            boolean caretLeft = false;
+            if (caretLeft) {
+              SelectionUtil.selectLabelCellAnSetCaret(editorContext, unwrapped, SelectionManager.FIRST_CELL, 0);
+            } else {
+              SelectionUtil.selectLabelCellAnSetCaret(editorContext, unwrapped, SelectionManager.LAST_CELL, -1);
+            }
+          }
+          @Override
+          public boolean canExecute_inReadAction(EditorContext editorContext) {
+
+            SNode replacement = SLinkOperations.getTarget(node, LINKS.left$t7TI);
+            SContainmentLink containmentLink = node.getContainmentLink();
+            if (containmentLink == null) {
+              return true;
+            }
+            SAbstractConcept expectedConcept = containmentLink.getTargetConcept();
+            return expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(SNodeOperations.getConcept(replacement)), SNodeOperations.asSConcept(expectedConcept));
+          }
+        });
+        cell.setAction(CellActionType.BACKSPACE, new CellActionWithReadAccess() {
+          public void execute(EditorContext editorContext) {
+
+            SNode unwrapped = SNodeOperations.replaceWithAnother(node, SLinkOperations.getTarget(node, LINKS.left$t7TI));
+            boolean caretLeft = false;
+            if (caretLeft) {
+              SelectionUtil.selectLabelCellAnSetCaret(editorContext, unwrapped, SelectionManager.FIRST_CELL, 0);
+            } else {
+              SelectionUtil.selectLabelCellAnSetCaret(editorContext, unwrapped, SelectionManager.LAST_CELL, -1);
+            }
+          }
+          @Override
+          public boolean canExecute_inReadAction(EditorContext editorContext) {
+
+            SNode replacement = SLinkOperations.getTarget(node, LINKS.left$t7TI);
+            SContainmentLink containmentLink = node.getContainmentLink();
+            if (containmentLink == null) {
+              return true;
+            }
+            SAbstractConcept expectedConcept = containmentLink.getTargetConcept();
+            return expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(SNodeOperations.getConcept(replacement)), SNodeOperations.asSConcept(expectedConcept));
+          }
+        });
+        return cell;
+      }
+    }.invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_9() {
+    return createCustomFactory_8(getEditorContext(), myNode);
+  }
+  private EditorCell createConstant_1() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ";");
+    editorCell.setCellId("Constant_aj1u0c_a3a");
+    Style style = new StyleImpl();
+    new SemicolonStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
   }
 
   private static final class LINKS {

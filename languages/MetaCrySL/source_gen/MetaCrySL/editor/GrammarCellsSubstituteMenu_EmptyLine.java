@@ -18,15 +18,15 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
-public class GrammarCellsSubstituteMenu_ForbiddenEmptyLine extends SubstituteMenuBase {
-  public GrammarCellsSubstituteMenu_ForbiddenEmptyLine() {
+public class GrammarCellsSubstituteMenu_EmptyLine extends SubstituteMenuBase {
+  public GrammarCellsSubstituteMenu_EmptyLine() {
     super(true);
   }
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new GrammarCellsSubstituteMenuPart_elzkoy_a());
+    result.add(new GrammarCellsSubstituteMenuPart_mp19e_a());
     return result;
   }
 
@@ -34,7 +34,7 @@ public class GrammarCellsSubstituteMenu_ForbiddenEmptyLine extends SubstituteMen
   @Override
   public List<SubstituteMenuItem> createMenuItems(@NotNull SubstituteMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("contribution to the " + "default substitute menu for " + "ForbiddenEmptyLine", null));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("contribution to the " + "default substitute menu for " + "EmptyLine", null));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -43,18 +43,18 @@ public class GrammarCellsSubstituteMenu_ForbiddenEmptyLine extends SubstituteMen
   }
 
 
-  private class GrammarCellsSubstituteMenuPart_elzkoy_a extends GrammarCellsSubstituteMenuPart {
+  private class GrammarCellsSubstituteMenuPart_mp19e_a extends GrammarCellsSubstituteMenuPart {
     @Override
     public SModule getModule(SRepository repository) {
       return PersistenceFacade.getInstance().createModuleReference("fbc67e5c-fd70-43b1-b837-3c3551c2500b(MetaCrySL)").resolve(repository);
     }
     @Override
     public SAbstractConcept getExpectedOutputConcept() {
-      return CONCEPTS.ForbiddenEmptyLine$CN;
+      return CONCEPTS.EmptyLine$CN;
     }
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept ForbiddenEmptyLine$CN = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x302ae8b5f8fa609eL, "MetaCrySL.structure.ForbiddenEmptyLine");
+    /*package*/ static final SConcept EmptyLine$CN = MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x302ae8b5f8fa609eL, "MetaCrySL.structure.EmptyLine");
   }
 }

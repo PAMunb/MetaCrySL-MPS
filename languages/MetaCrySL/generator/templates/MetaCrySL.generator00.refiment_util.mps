@@ -2,14 +2,10 @@
 <model ref="r:a1bf2d48-aad2-4aa4-ac5b-080eaede4b31(MetaCrySL.generator00.refiment_util)">
   <persistence version="9" />
   <languages>
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
     <import index="qgj4" ref="r:dcee7ccb-1ec0-4645-b24f-ab498bf018f7(MetaCrySL.structure)" />
-    <import index="babm" ref="r:6d7b70cb-81fb-46c8-912d-069139622890(MetaCrySL.generator00.crysl@generator)" />
-    <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -286,8 +282,8 @@
                     <ref role="3TtcxE" to="qgj4:5GII8FCvhkj" resolve="content" />
                   </node>
                 </node>
-                <node concept="TSZUe" id="6MFMRGeQcJW" role="2OqNvi">
-                  <node concept="37vLTw" id="32fEwRdbtDZ" role="25WWJ7">
+                <node concept="2Ke9KJ" id="4IhPXjhgYCA" role="2OqNvi">
+                  <node concept="37vLTw" id="4IhPXjhgYCC" role="25WWJ7">
                     <ref role="3cqZAo" node="32fEwRdbnKj" resolve="copy" />
                   </node>
                 </node>

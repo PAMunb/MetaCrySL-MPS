@@ -28,14 +28,14 @@ public final class LanguageConceptSwitch {
   public static final int ConstraintSpec = 16;
   public static final int DefineLiteralSet = 17;
   public static final int DisjunctionExp = 18;
-  public static final int EnsuresSpec = 19;
-  public static final int Equal = 20;
-  public static final int EventAggregate = 21;
-  public static final int EventExp = 22;
-  public static final int EventMethod = 23;
-  public static final int EventRef = 24;
-  public static final int EventSpec = 25;
-  public static final int ForbiddenEmptyLine = 26;
+  public static final int EmptyLine = 19;
+  public static final int EnsuresSpec = 20;
+  public static final int Equal = 21;
+  public static final int EventAggregate = 22;
+  public static final int EventExp = 23;
+  public static final int EventMethod = 24;
+  public static final int EventRef = 25;
+  public static final int EventSpec = 26;
   public static final int ForbiddenMethod = 27;
   public static final int ForbiddenSpec = 28;
   public static final int FormalArg = 29;
@@ -121,6 +121,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x38bdb626f91808b8L, ConstraintSpec);
     builder.put(0x23554d7be5560921L, DefineLiteralSet);
     builder.put(0x4d3e0a266e269458L, DisjunctionExp);
+    builder.put(0x302ae8b5f8fa609eL, EmptyLine);
     builder.put(0x38bdb626f9180996L, EnsuresSpec);
     builder.put(0x4d3e0a266e2e3108L, Equal);
     builder.put(0x2cacad8f8a455d07L, EventAggregate);
@@ -128,7 +129,6 @@ public final class LanguageConceptSwitch {
     builder.put(0x2cacad8f8a455d04L, EventMethod);
     builder.put(0x3ac8e6d3fc52116cL, EventRef);
     builder.put(0x77537c9aa486c1ffL, EventSpec);
-    builder.put(0x302ae8b5f8fa609eL, ForbiddenEmptyLine);
     builder.put(0x3cec4044d19f6346L, ForbiddenMethod);
     builder.put(0x3cec4044d197db9cL, ForbiddenSpec);
     builder.put(0x3ac8e6d3fc41821dL, FormalArg);

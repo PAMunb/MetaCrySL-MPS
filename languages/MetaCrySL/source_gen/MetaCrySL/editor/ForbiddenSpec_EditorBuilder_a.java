@@ -9,9 +9,10 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
-import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
+import MetaCrySL.editor.MetaCryslHighlight_StyleSheet.KeyWordStyleClass;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Indent;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
@@ -58,6 +59,9 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
   }
   private EditorCell createComponent_0() {
     EditorCell editorCell = getCellFactory().createEditorComponentCell(myNode, "jetbrains.mps.lang.core.editor.alias");
+    Style style = new StyleImpl();
+    new KeyWordStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    editorCell.getStyle().putAll(style);
     return editorCell;
   }
   private EditorCell createCollection_1() {
@@ -76,7 +80,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
   }
   private EditorCell createRefNodeList_0() {
     AbstractCellListHandler handler = new contentListHandler_3ym6ws_b1a(myNode, getEditorContext());
-    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Horizontal(), false);
+    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_content");
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
@@ -105,7 +109,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     }
 
     public SNode nodeFactory() {
-      return SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x302ae8b5f8fa609eL, "MetaCrySL.structure.ForbiddenEmptyLine"));
+      return SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xfbc67e5cfd7043b1L, 0xb8373c3551c2500bL, 0x302ae8b5f8fa609eL, "MetaCrySL.structure.EmptyLine"));
     }
     public EditorCell createNodeCell(SNode elementNode) {
       EditorCell elementCell = getUpdateSession().updateChildNodeCell(elementNode);

@@ -22,7 +22,9 @@ import java.util.Objects;
 import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.openapi.editor.update.AttributeKind;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import MetaCrySL.editor.MetaCryslHighlight_StyleSheet.SeparatorStyleClass;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
@@ -31,6 +33,8 @@ import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import MetaCrySL.editor.MetaCryslHighlight_StyleSheet.SemicolonStyleClass;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
@@ -59,8 +63,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setBig(true);
     setCellContext(editorCell);
     editorCell.addEditorCell(createProperty_0());
-    editorCell.addEditorCell(createConstant_0());
+    editorCell.addEditorCell(createComponent_0());
     editorCell.addEditorCell(createRefNode_0());
+    editorCell.addEditorCell(createConstant_0());
     return editorCell;
   }
   private EditorCell createProperty_0() {
@@ -88,10 +93,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
       getCellFactory().popCellContext();
     }
   }
-  private EditorCell createConstant_0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":=");
-    editorCell.setCellId("Constant_lydwsz_b0");
-    editorCell.setDefaultText("");
+  private EditorCell createComponent_0() {
+    EditorCell editorCell = getCellFactory().createEditorComponentCell(myNode, "jetbrains.mps.lang.core.editor.alias");
+    Style style = new StyleImpl();
+    new SeparatorStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    editorCell.getStyle().putAll(style);
     return editorCell;
   }
   private EditorCell createRefNode_0() {
@@ -148,6 +154,15 @@ import org.jetbrains.mps.openapi.language.SConcept;
     protected String getNoTargetText() {
       return "<no aggregate>";
     }
+  }
+  private EditorCell createConstant_0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ";");
+    editorCell.setCellId("Constant_lydwsz_d0");
+    Style style = new StyleImpl();
+    new SemicolonStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
   }
 
   private static final class PROPS {

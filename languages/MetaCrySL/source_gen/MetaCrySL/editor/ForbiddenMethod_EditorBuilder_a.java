@@ -35,6 +35,9 @@ import java.util.Objects;
 import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.openapi.editor.update.AttributeKind;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import MetaCrySL.editor.MetaCryslHighlight_StyleSheet.SemicolonStyleClass;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
@@ -66,6 +69,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     if (nodeCondition_c0y2zt_a1a()) {
       editorCell.addEditorCell(createCustomFactory_1());
     }
+    editorCell.addEditorCell(createConstant_1());
     return editorCell;
   }
   private boolean nodeCondition_c0y2zt_a1a() {
@@ -236,6 +240,15 @@ import org.jetbrains.mps.openapi.language.SConcept;
     } finally {
       getCellFactory().popCellContext();
     }
+  }
+  private EditorCell createConstant_1() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ";");
+    editorCell.setCellId("Constant_c0y2zt_c0");
+    Style style = new StyleImpl();
+    new SemicolonStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
   }
 
   private static final class PROPS {

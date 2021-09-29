@@ -28,6 +28,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ConstraintSpec;
   private ConceptPresentation props_DefineLiteralSet;
   private ConceptPresentation props_DisjunctionExp;
+  private ConceptPresentation props_EmptyLine;
   private ConceptPresentation props_EnsuresSpec;
   private ConceptPresentation props_Equal;
   private ConceptPresentation props_EventAggregate;
@@ -35,7 +36,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_EventMethod;
   private ConceptPresentation props_EventRef;
   private ConceptPresentation props_EventSpec;
-  private ConceptPresentation props_ForbiddenEmptyLine;
   private ConceptPresentation props_ForbiddenMethod;
   private ConceptPresentation props_ForbiddenSpec;
   private ConceptPresentation props_FormalArg;
@@ -234,6 +234,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_DisjunctionExp = cpb.create();
         }
         return props_DisjunctionExp;
+      case LanguageConceptSwitch.EmptyLine:
+        if (props_EmptyLine == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("EmptyLine");
+          props_EmptyLine = cpb.create();
+        }
+        return props_EmptyLine;
       case LanguageConceptSwitch.EnsuresSpec:
         if (props_EnsuresSpec == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -251,7 +258,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.EventAggregate:
         if (props_EventAggregate == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation(":=");
           props_EventAggregate = cpb.create();
         }
         return props_EventAggregate;
@@ -264,7 +271,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.EventMethod:
         if (props_EventMethod == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("EventMethod");
+          cpb.rawPresentation(":");
           props_EventMethod = cpb.create();
         }
         return props_EventMethod;
@@ -283,13 +290,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_EventSpec = cpb.create();
         }
         return props_EventSpec;
-      case LanguageConceptSwitch.ForbiddenEmptyLine:
-        if (props_ForbiddenEmptyLine == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ForbiddenEmptyLine");
-          props_ForbiddenEmptyLine = cpb.create();
-        }
-        return props_ForbiddenEmptyLine;
       case LanguageConceptSwitch.ForbiddenMethod:
         if (props_ForbiddenMethod == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

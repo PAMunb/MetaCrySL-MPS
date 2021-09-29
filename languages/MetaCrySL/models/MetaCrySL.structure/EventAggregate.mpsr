@@ -38,11 +38,8 @@
     <property role="EcuMT" value="3219138665674792199" />
     <property role="3GE5qa" value="spec.events" />
     <property role="TrG5h" value="EventAggregate" />
-    <property role="34LRSv" value="EventAggregate" />
+    <property role="34LRSv" value=":=" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="2MGFoYahlO8" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="PrWs8" id="2MGFoYahlOd" role="PzmwI">
       <ref role="PrY4T" node="7tjv9E$xG89" resolve="IEventSpecContent" />
     </node>

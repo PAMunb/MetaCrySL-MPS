@@ -56,11 +56,6 @@
       <concept id="4935365387813273332" name="MetaCrySL.structure.MetaVariable" flags="ng" index="2H8WTv">
         <property id="4935365387813273333" name="label" index="2H8WTu" />
       </concept>
-      <concept id="4935365387817037862" name="MetaCrySL.structure.Predicate" flags="ng" index="2HU$2d">
-        <property id="4935365387817037863" name="negate" index="2HU$2c" />
-        <property id="4935365387817037924" name="label" index="2HU$3f" />
-        <child id="4935365387817037913" name="exp" index="2HU$3M" />
-      </concept>
       <concept id="3139031731993775133" name="MetaCrySL.structure.ConfigTesting" flags="ng" index="2RILyB">
         <child id="3139031731997035383" name="inputRef" index="2RNdZd" />
         <child id="3139031731997035381" name="inputSpec" index="2RNdZf" />
@@ -70,9 +65,6 @@
       </concept>
       <concept id="3139031731997035374" name="MetaCrySL.structure.RefinementRef" flags="ng" index="2RNdZk">
         <reference id="3139031731997035375" name="ref" index="2RNdZl" />
-      </concept>
-      <concept id="4088624315226447472" name="MetaCrySL.structure.NegatesSpec" flags="ng" index="31Dmxm">
-        <child id="1004539440858969039" name="content" index="2qH6i3" />
       </concept>
       <concept id="1405177072845298441" name="MetaCrySL.structure.Rename" flags="ng" index="12XUCj">
         <child id="1405177072845298528" name="type" index="12XUDU" />
@@ -185,7 +177,12 @@
         <property role="2NgTxn" value="c2" />
         <node concept="3mLGeX" id="3A3hETaf_SF" role="1ntmhb">
           <property role="36ymjd" value="methjode" />
-          <node concept="36ymjA" id="3A3hETaf_SG" role="36ymj8" />
+          <node concept="36ymjA" id="3A3hETaf_SG" role="36ymj8">
+            <node concept="36z3QI" id="3zjb71wKtEY" role="36yZZe" />
+            <node concept="36z3Q6" id="3zjb71wKu$Z" role="36yZZe">
+              <property role="36z3Q5" value="asas" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2AUv28" id="3F8THfWkx4N" role="3jPrUW">
@@ -194,7 +191,7 @@
           <node concept="36AJuZ" id="3A3hETaf_I9" role="36AJuW">
             <ref role="36AJuY" node="3F8THfWg3Jv" />
           </node>
-          <node concept="36AJuZ" id="3A3hETaf_T4" role="36AJuW">
+          <node concept="36AJuZ" id="3zjb71ww78O" role="36AJuW">
             <ref role="36AJuY" node="3A3hETaf_Sc" />
           </node>
         </node>
@@ -239,15 +236,6 @@
         <node concept="3mLGeX" id="32fEwRddUH7" role="3HsMc3">
           <property role="36ymjd" value="ahah" />
           <node concept="36ymjA" id="32fEwRddUH9" role="36ymj8" />
-        </node>
-      </node>
-    </node>
-    <node concept="31Dmxm" id="32fEwRderYA" role="1NQ$s7">
-      <node concept="2HU$2d" id="32fEwRderYJ" role="2qH6i3">
-        <property role="2HU$2c" value="true" />
-        <property role="2HU$3f" value="asas" />
-        <node concept="1nymgi" id="32fEwRderYO" role="2HU$3M">
-          <property role="1nymgl" value="asasa" />
         </node>
       </node>
     </node>

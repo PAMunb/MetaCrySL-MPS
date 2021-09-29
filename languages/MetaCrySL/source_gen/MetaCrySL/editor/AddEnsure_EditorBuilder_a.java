@@ -47,6 +47,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     editorCell.addEditorCell(createConstant_0());
     editorCell.addEditorCell(createConstant_1());
     editorCell.addEditorCell(createRefNode_0());
+    editorCell.addEditorCell(createConstant_2());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -115,6 +116,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     protected String getNoTargetText() {
       return "<no ensure>";
     }
+  }
+  private EditorCell createConstant_2() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ";");
+    editorCell.setCellId("Constant_u6drkm_d0");
+    editorCell.setDefaultText("");
+    return editorCell;
   }
 
   private static final class LINKS {

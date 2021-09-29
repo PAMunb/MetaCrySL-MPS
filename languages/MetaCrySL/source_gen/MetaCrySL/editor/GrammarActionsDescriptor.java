@@ -2154,6 +2154,71 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                     }
                   }
                 }
+                if (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) {
+                  final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.ConstraintExp$S1, null);
+
+                  if (sourceNode != null) {
+                    final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
+                    SContainmentLink link = sourceNode.getContainmentLink();
+                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.BooleanExp$qq, _context.getModel(), BooleanExp_Editor.class, _context.getEditorContext())) {
+                      boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
+                      if (wrapperAllowed) {
+                        final Iterable<String> matchingText = Sequence.<String>singleton(";");
+                        if (Sequence.fromIterable(matchingText).isNotEmpty()) {
+                          boolean sideTransformationEnabled = ConstraintsCanBeFacade.checkCanBeParent(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
+                          sideTransformationEnabled &= GrammarCellsUtil.canBeAncestor(SNodeOperations.getParent(sourceNode), subconcept, sourceNode.getContainmentLink());
+                          sideTransformationEnabled &= ConstraintsCanBeFacade.checkCanBeChild(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
+                          if (sideTransformationEnabled) {
+                            ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
+
+                              public String getDescriptionText(String string) {
+                                return NodePresentationUtil.descriptionText(subconcept);
+                              }
+                              @Override
+                              public void execute(@NotNull String pattern) {
+                                doSubstitute(_context.getEditorContext(), pattern);
+                              }
+                              protected SNode doSubstitute(@Nullable EditorContext editorContext, String pattern) {
+                                String matchingText = getMatchingText(pattern);
+                                SNode wrapper = SNodeOperations.cast(SNodeFactoryOperations.createNewNode(subconcept, null), CONCEPTS.BooleanExp$qq);
+                                SNodeOperations.replaceWithAnother(sourceNode, wrapper);
+                                SLinkOperations.setTarget(wrapper, LINKS.right$RFre, SNodeOperations.cast(sourceNode, CONCEPTS.ConstraintExp$S1));
+
+
+                                SNode newChild = ListSequence.fromList(SNodeOperations.getChildren(wrapper)).findFirst(new IWhereFilter<SNode>() {
+                                  public boolean accept(SNode it) {
+                                    return it != sourceNode;
+                                  }
+                                });
+                                editorContext.flushEvents();
+                                if (newChild == null) {
+                                  GrammarCellsUtil.selectCellWithText(editorContext, wrapper, matchingText);
+                                } else {
+                                  SelectionUtil.selectNode(editorContext, newChild);
+                                }
+
+                                SavedCaretPosition caretPosition = new SavedCaretPosition(editorContext);
+                                caretPosition.save();
+                                Parser parser = new Parser(editorContext.getModel());
+                                SNode rebalanced = parser.rebalanceIfRequired(parser.findRootExpression(wrapper));
+                                if (rebalanced != null) {
+                                  editorContext.flushEvents();
+                                  caretPosition.restore();
+                                }
+                                return newChild;
+                              }
+                              public SAbstractConcept getOutputConcept() {
+                                return subconcept;
+                              }
+                            }.getMultipleOrSingleAction(false)));
+                            addSideTransformRemoval(_context);
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
               } finally {
                 _context.getEditorMenuTrace().popTraceInfo();
               }
@@ -2292,6 +2357,71 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             return (it != null && it.length() > 0);
                           }
                         });
+                        if (Sequence.fromIterable(matchingText).isNotEmpty()) {
+                          boolean sideTransformationEnabled = ConstraintsCanBeFacade.checkCanBeParent(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
+                          sideTransformationEnabled &= GrammarCellsUtil.canBeAncestor(SNodeOperations.getParent(sourceNode), subconcept, sourceNode.getContainmentLink());
+                          sideTransformationEnabled &= ConstraintsCanBeFacade.checkCanBeChild(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
+                          if (sideTransformationEnabled) {
+                            ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
+
+                              public String getDescriptionText(String string) {
+                                return NodePresentationUtil.descriptionText(subconcept);
+                              }
+                              @Override
+                              public void execute(@NotNull String pattern) {
+                                doSubstitute(_context.getEditorContext(), pattern);
+                              }
+                              protected SNode doSubstitute(@Nullable EditorContext editorContext, String pattern) {
+                                String matchingText = getMatchingText(pattern);
+                                SNode wrapper = SNodeOperations.cast(SNodeFactoryOperations.createNewNode(subconcept, null), CONCEPTS.RelationalExp$G5);
+                                SNodeOperations.replaceWithAnother(sourceNode, wrapper);
+                                SLinkOperations.setTarget(wrapper, LINKS.right$MkJq, SNodeOperations.cast(sourceNode, CONCEPTS.ConstraintExp$S1));
+
+
+                                SNode newChild = ListSequence.fromList(SNodeOperations.getChildren(wrapper)).findFirst(new IWhereFilter<SNode>() {
+                                  public boolean accept(SNode it) {
+                                    return it != sourceNode;
+                                  }
+                                });
+                                editorContext.flushEvents();
+                                if (newChild == null) {
+                                  GrammarCellsUtil.selectCellWithText(editorContext, wrapper, matchingText);
+                                } else {
+                                  SelectionUtil.selectNode(editorContext, newChild);
+                                }
+
+                                SavedCaretPosition caretPosition = new SavedCaretPosition(editorContext);
+                                caretPosition.save();
+                                Parser parser = new Parser(editorContext.getModel());
+                                SNode rebalanced = parser.rebalanceIfRequired(parser.findRootExpression(wrapper));
+                                if (rebalanced != null) {
+                                  editorContext.flushEvents();
+                                  caretPosition.restore();
+                                }
+                                return newChild;
+                              }
+                              public SAbstractConcept getOutputConcept() {
+                                return subconcept;
+                              }
+                            }.getMultipleOrSingleAction(false)));
+                            addSideTransformRemoval(_context);
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                if (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) {
+                  final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.ConstraintExp$S1, null);
+
+                  if (sourceNode != null) {
+                    final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
+                    SContainmentLink link = sourceNode.getContainmentLink();
+                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.RelationalExp$G5, _context.getModel(), RelationalExp_Editor.class, _context.getEditorContext())) {
+                      boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
+                      if (wrapperAllowed) {
+                        final Iterable<String> matchingText = Sequence.<String>singleton(";");
                         if (Sequence.fromIterable(matchingText).isNotEmpty()) {
                           boolean sideTransformationEnabled = ConstraintsCanBeFacade.checkCanBeParent(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           sideTransformationEnabled &= GrammarCellsUtil.canBeAncestor(SNodeOperations.getParent(sourceNode), subconcept, sourceNode.getContainmentLink());
@@ -2538,6 +2668,71 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                     }
                   }
                 }
+                if (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) {
+                  final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.ConstraintExp$S1, null);
+
+                  if (sourceNode != null) {
+                    final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
+                    SContainmentLink link = sourceNode.getContainmentLink();
+                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.ArithmeticExp$jn, _context.getModel(), ArithmeticExp_Editor.class, _context.getEditorContext())) {
+                      boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
+                      if (wrapperAllowed) {
+                        final Iterable<String> matchingText = Sequence.<String>singleton(";");
+                        if (Sequence.fromIterable(matchingText).isNotEmpty()) {
+                          boolean sideTransformationEnabled = ConstraintsCanBeFacade.checkCanBeParent(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
+                          sideTransformationEnabled &= GrammarCellsUtil.canBeAncestor(SNodeOperations.getParent(sourceNode), subconcept, sourceNode.getContainmentLink());
+                          sideTransformationEnabled &= ConstraintsCanBeFacade.checkCanBeChild(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
+                          if (sideTransformationEnabled) {
+                            ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
+
+                              public String getDescriptionText(String string) {
+                                return NodePresentationUtil.descriptionText(subconcept);
+                              }
+                              @Override
+                              public void execute(@NotNull String pattern) {
+                                doSubstitute(_context.getEditorContext(), pattern);
+                              }
+                              protected SNode doSubstitute(@Nullable EditorContext editorContext, String pattern) {
+                                String matchingText = getMatchingText(pattern);
+                                SNode wrapper = SNodeOperations.cast(SNodeFactoryOperations.createNewNode(subconcept, null), CONCEPTS.ArithmeticExp$jn);
+                                SNodeOperations.replaceWithAnother(sourceNode, wrapper);
+                                SLinkOperations.setTarget(wrapper, LINKS.right$tdj5, SNodeOperations.cast(sourceNode, CONCEPTS.ConstraintExp$S1));
+
+
+                                SNode newChild = ListSequence.fromList(SNodeOperations.getChildren(wrapper)).findFirst(new IWhereFilter<SNode>() {
+                                  public boolean accept(SNode it) {
+                                    return it != sourceNode;
+                                  }
+                                });
+                                editorContext.flushEvents();
+                                if (newChild == null) {
+                                  GrammarCellsUtil.selectCellWithText(editorContext, wrapper, matchingText);
+                                } else {
+                                  SelectionUtil.selectNode(editorContext, newChild);
+                                }
+
+                                SavedCaretPosition caretPosition = new SavedCaretPosition(editorContext);
+                                caretPosition.save();
+                                Parser parser = new Parser(editorContext.getModel());
+                                SNode rebalanced = parser.rebalanceIfRequired(parser.findRootExpression(wrapper));
+                                if (rebalanced != null) {
+                                  editorContext.flushEvents();
+                                  caretPosition.restore();
+                                }
+                                return newChild;
+                              }
+                              public SAbstractConcept getOutputConcept() {
+                                return subconcept;
+                              }
+                            }.getMultipleOrSingleAction(false)));
+                            addSideTransformRemoval(_context);
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
               } finally {
                 _context.getEditorMenuTrace().popTraceInfo();
               }
@@ -2644,6 +2839,12 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                 return node.getProperty(PROPS.alternative$lL7o) != null;
               }
             }.renderingCondition(sourceNode);
+          }
+        }));
+        ListSequence.fromList(redirectedAfter).addElement(MultiTuple.<TransformationMenuContext,_FunctionTypes._return_P1_E0<? extends Boolean, ? super TransformationMenuContext>>from((SNodeOperations.isInstanceOf(((SNode) _context.getNode()), CONCEPTS.ForbiddenMethod$e9) ? _context : null), new _FunctionTypes._return_P1_E0<Boolean, TransformationMenuContext>() {
+          public Boolean invoke(TransformationMenuContext parentContext) {
+            final SNode sourceNode = parentContext.getNode();
+            return true;
           }
         }));
         new Object() {
@@ -2946,6 +3147,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               }
             }.query(subconcept)));
             ListSequence.fromList(symbols).addElement(new ChildSymbol(LINKS.right$RFre));
+            ListSequence.fromList(symbols).addElement(new ConstantSymbol(";"));
             symbols = ListSequence.fromList(symbols).where(new IWhereFilter<ISymbol>() {
               public boolean accept(ISymbol it) {
                 return it != null;
@@ -2988,6 +3190,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               }
             }.query(subconcept)));
             ListSequence.fromList(symbols).addElement(new ChildSymbol(LINKS.right$MkJq));
+            ListSequence.fromList(symbols).addElement(new ConstantSymbol(";"));
             symbols = ListSequence.fromList(symbols).where(new IWhereFilter<ISymbol>() {
               public boolean accept(ISymbol it) {
                 return it != null;
@@ -3026,6 +3229,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               }
             }.query(subconcept)));
             ListSequence.fromList(symbols).addElement(new ChildSymbol(LINKS.right$tdj5));
+            ListSequence.fromList(symbols).addElement(new ConstantSymbol(";"));
             symbols = ListSequence.fromList(symbols).where(new IWhereFilter<ISymbol>() {
               public boolean accept(ISymbol it) {
                 return it != null;
